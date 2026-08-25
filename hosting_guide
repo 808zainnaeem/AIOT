@@ -1,0 +1,7 @@
+To make website live open cmd and do this 
+
+1-------------first npm run build
+2-------------then scp -i c:/Users/Sys.Admin/Downloads/aiot.pem -r dist/* ec2-user@16.170.163.87:/var/www/aiotcons.com
+
+
+i am using aws ec2 instance to host this website
