@@ -1,0 +1,521 @@
+{
+    "navbar": {
+        "topBar": {
+            "phone": "+92 3123456778",
+            "email": "info@aiotcons.com",
+            "address": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punjab, Pakistan"
+        },
+        "menu": {
+            "home": "HJEM",
+            "aboutUs": "OM OS",
+            "whatWeDo": "HVAD VI GØR",
+            "solutions": "LØSNINGER",
+            "resources": "RESSOURCER",
+            "partners": "PARTNERE",
+            "marketplace": "MARKEDSPLADS"
+        },
+        "viewPlans": "SE PLANER",
+        "learnMore": "Læs mere",
+        "explore": "Udforsk",
+        "bookADemo": "Book en demo",
+        "menuLabel": "Menu",
+        "exploreArrow": "Udforsk →",
+        "demoBannerTitle": "Din løsningspartner til forretningssucces"
+    },
+    "dropdown": {
+        "aboutUs": {
+            "whoWeAre": "Hvem vi er",
+            "whoWeAreDesc": "Vi forener kunstig intelligens og Internet of Things for at drive innovation og levere fremtidssikrede teknologiløsninger.",
+            "clientWall": "Kundevæg",
+            "clientWallDesc": "Vi betjener stolt branchens ledere med innovative teknologiløsninger, der skaber reelle resultater.",
+            "contactUs": "Kontakt",
+            "contactUsDesc": "Kontakt AIOT IT Solutions – din indgang til smarte, innovative og transformative teknologiløsninger."
+        },
+        "whatWeDo": {
+            "technology": "Teknologi",
+            "technologyDesc": "AIOT IT Solutions driver digital transformation",
+            "technologyDrivenInnovation": "Teknologidrevne innovationsløsninger",
+            "nextGenTechnology": "Next-gen teknologiløsninger",
+            "enterpriseSap": "Enterprise SAP-løsninger",
+            "utilityModernization": "Modernisering af forsyning",
+            "oracleNetsuite": "Oracle NetSuite-løsninger",
+            "consulting": "Rådgivning",
+            "consultingDesc": "Strategisk teknologirådgivning til at optimere drift og drive vækst.",
+            "technologySolutionsProvider": "Leverandør af teknologiløsninger",
+            "outSourcing": "Outsourcing",
+            "outSourcingDesc": "Pålidelig offshore-outsourcing med omkostningseffektivitet og ekspertise.",
+            "strategicOffshore": "Strategiske offshore-løsninger"
+        },
+        "solutions": {
+            "industries": "Brancher",
+            "healthIndustry": "Sundhed",
+            "engineeringIndustry": "Ingeniørvirksomhed",
+            "constructionIndustry": "Byggeri",
+            "retail": "Detail",
+            "allInOneSuit": "All-in-one-suite",
+            "attendee": "Attendee",
+            "hcm": "HCM",
+            "pos": "POS",
+            "solutions": "Løsninger",
+            "connector": "Connector",
+            "hireLawyerOnline": "Ansæt advokat online",
+            "sapBusinessOneUi": "SAP Business One-brugerflade",
+            "hrManagementSystem": "HR-styringssystem"
+        },
+        "resources": {
+            "news": "Nyheder",
+            "newsDesc": "Hold dig opdateret med de seneste nyheder og innovationer fra AIOT IT Solutions.",
+            "blogs": "Blogs",
+            "blogsDesc": "Udforsk indsigter, trends og ekspertvurderinger om teknologi og innovation.",
+            "innovateWithInsights": "Innover med indsigter",
+            "innovateWithInsightsDesc": "Opdag strategier til at styrke din forretning gennem nye trends og thought leadership."
+        },
+        "partners": {
+            "sapDesc": "Samarbejd med os om at transformere, hvordan SMV’er arbejder globalt med moderne cloudløsninger.",
+            "oracleNetsuiteDesc": "Opdag fordelene ved et partnerskab med Oracle NetSuite til omfattende forretningsløsninger.",
+            "microsoftDesc": "Vores Microsoft-partnerskab styrker virksomheders kapaciteter med moderne løsninger.",
+            "cloudiaxDesc": "Cloudiax gør det muligt at styrke SAP-kapaciteter med kraftfulde cloudløsninger.",
+            "cloudSolutionsDesc": "Vores ekspertise sikrer gnidningsfri cloudmigration og multi-cloud-integration."
+        }
+    },
+    "Hero": {
+        "demoBannerTitle": "Din løsningspartner <br> til forretningssucces",
+        "whoWeAreDesc": "Vi forener kunstig intelligens og Internet of Things for at drive innovation og levere fremtidssikrede teknologiløsninger.",
+        "learnMore": "Læs mere"
+    },
+    "whatWeDoSection": {
+        "title": "Hvad vi gør",
+        "subtitle": "Skræddersyede løsninger til intelligent konnektivitet",
+        "consulting": "Rådgivning",
+        "consultingDesc": "Vi hjælper med at skabe en strategi, der driver teknologiledet forretningssucces. Vores team udvikler planer, der optimerer din vækstvej ved hjælp af avancerede digitale værktøjer og teknologier.",
+        "implementation": "Implementering",
+        "implementationDesc": "Vores eksperter på tværs af centrale teknologier og forretningsfunktioner leverer omfattende forretningsløsninger.",
+        "managedServices": "Managed services",
+        "managedServicesDesc": "Vores managed services-team sikrer din digitale investering med overvågning, vedligeholdelse og support fra ende til anden."
+    },
+    "philosophy": {
+        "title": "Vores filosofi",
+        "heading": "Innovation til en forbundet fremtid",
+        "paragraph1": "Vi fokuserer på at udvikle og levere teknologiløsninger, der imødekommer vores kunders skiftende behov og udfordringer. Vi prioriterer agilitet, tilpasningsevne og respons, så vi hurtigt kan skifte kurs i takt med markedet og kundernes krav.",
+        "quote": "Transformér driften med smarte, clouddrevne løsninger designet til vækst og enkelhed.",
+        "paragraph2": "Vi skaber fremadskuende løsninger, der redefinerer, hvordan virksomheder arbejder, og sikrer, at de holder sig foran i et digitalt landskab i forandring.",
+        "readMore": "Læs mere"
+    },
+    "servicesStats": {
+        "servicesTitle": "Vores services",
+        "servicesHeading": "Hvad vi tilbyder",
+        "servicesDescription": "Vi hjælper virksomheder med at strømline drift, styrke beslutninger og drive digital transformation med præcision.",
+        "statFeedback": "Positiv feedback",
+        "statProjects": "Projekter",
+        "statUsers": "Brugere",
+        "statContributors": "Bidragsydere",
+        "serviceInfrastructure": "Infrastruktur",
+        "descInfrastructure": "Vi bygger skalerbar infrastruktur, der understøtter gnidningsfri konnektivitet, sikker datahåndtering og effektiv drift, så din virksomhed er klar til fremtidig vækst.",
+        "serviceSecurity": "Sikkerhed",
+        "descSecurity": "Vi implementerer sikkerhedsløsninger, der beskytter dine digitale aktiver, sikrer omfattende beskyttelse mod trusler og opretholder dataintegritet.",
+        "serviceCloud": "Cloudservices",
+        "descCloud": "Vi leverer skalerbare cloudløsninger, der øger effektivitet og fleksibilitet, så din virksomhed hurtigt kan tilpasse sig og arbejde gnidningsfrit i den digitale tidsalder.",
+        "serviceApps": "Forretningsapplikationer",
+        "descApps": "Vi leverer forretningsapplikationer tilpasset dine processer, der øger produktiviteten og strømliner driften.",
+        "serviceData": "Datahåndtering og analytics",
+        "descData": "Vi omdanner data til handlingsrettet indsigt med avanceret analytics og strømliner datahåndtering for bedre beslutninger og effektivitet.",
+        "serviceSupport": "Kundesupport",
+        "descSupport": "Vi tilbyder kundesupport 24/7, så dine kunder får rettidig hjælp, med personlig support der opretholder kundetilfredshed."
+    },
+    "techInnovation": {
+        "subtitle": "Morgendagens teknologi",
+        "heading": "Styrk virksomheder med ekspertise og excellence",
+        "paragraph1": "Med et engagement i excellence og passion for innovation specialiserer vi os i avancerede teknologiløsninger, der skaber succes. Vores team kombinerer dyb brancheviden med banebrydende teknologi for at styrke virksomheder og hjælpe dem med at holde sig foran.",
+        "paragraph2": "I fronten af teknologisk innovation leverer vi skræddersyede løsninger, der driver succes og effektivitet.",
+        "readMore": "Læs mere",
+        "productsTitle": "Vores produkter"
+    },
+    "ourProducts": {
+        "sectionTitle": "Vores produkter",
+        "heading": "Avancerede løsninger til ethvert behov",
+        "description": "Udforsk vores produkter designet til at øge performance, strømline drift og drive vækst. Fra AI-drevet analytics til skalerbare cloudløsninger dækker vores udbud forskellige forretningsbehov med præcision og pålidelighed.",
+        "items": [
+            {
+                "title": "SAP Business One-brugerflade",
+                "description": "Styrk din forretningsdrift med vores brugervenlige SAP Business One-interface, designet til gnidningsfri navigation og effektiv styring af virksomhedens ressourcer."
+            },
+            {
+                "title": "Personaleadministration",
+                "description": "En komplet HCM-platform til at ansætte, lede og udvikle din arbejdsstyrke med løn, fremmøde og talentværktøjer samlet ét sted."
+            },
+            {
+                "title": "Driftssuite",
+                "description": "Strømlin den daglige drift med forbundne workflows, automatisering og synlighed på tværs af teams og processer."
+            },
+            {
+                "title": "Handelsplatform",
+                "description": "En unified commerce-platform, der forbinder salgskanaler, lager og kunderejser, så du kan sælge og levere med konsistens."
+            },
+            {
+                "title": "Ansæt advokat online",
+                "description": "Kom i kontakt med erfarne juridiske fagfolk via vores strømlinede onlineplatform, så det er nemt at finde og ansætte den rette advokat."
+            },
+            {
+                "title": "Visuel AI",
+                "description": "Omdan visuelle data til handlingsrettet indsigt med AI-drevet vision til overvågning, detektion og klogere beslutninger."
+            },
+            {
+                "title": "Patientpleje",
+                "description": "En patientplejeplatform, der hjælper sundhedsteams med journaler, aftaler og opfølgning for en mere gnidningsfri klinisk oplevelse."
+            },
+            {
+                "title": "Forretningssystem",
+                "description": "Et integreret ERP til at styre økonomi, lager og drift fra én sandhedskilde for voksende virksomheder."
+            },
+            {
+                "title": "Forbinder",
+                "description": "Integrer og administrer dine systemer med vores connector til kommunikation via WhatsApp, cellulære API’er og e-mail, designet til at strømline dataflow."
+            }
+        ],
+        "showMore": "Vis mere"
+    },
+    "about": {
+        "heroTitle": "Hvem vi er",
+        "heroSubtitle": "Vi redefinerer resultater ved hvert skridt",
+        "whoWeAre": "Hvem vi er",
+        "mainHeading": "Innover fremtiden med AIOT-løsninger",
+        "desc1": "Vi er en fremadskuende IT-virksomhed, der revolutionerer brancher med banebrydende AI- og IoT-teknologier.",
+        "desc2": "I hjertet af vores virksomhed ligger passion for innovation. Vores ekspertteam udnytter AIoT til at levere smarte, skalerbare og sikre løsninger.",
+        "feature1Title": "AI-drevet innovation",
+        "feature1Desc": "Frigør effektivitet og automatisering med kraftfulde AI-løsninger.",
+        "feature2Title": "Gnidningsfri IoT-integration",
+        "feature2Desc": "Forbind enheder for realtidsindsigt og smartere drift.",
+        "feature3Title": "Skalerbare og sikre løsninger",
+        "feature3Desc": "Voks trygt med sikre, skalerbare AIoT-løsninger.",
+        "darkSectionTitle": "Styrk morgendagen med smarte AIOT-løsninger",
+        "darkSectionDesc1": "AIOT er en leverandør af forretnings-IT-løsninger, der styrker virksomheder med innovativ teknologi. Vi specialiserer os i softwareudvikling, AI-integration, IoT, cloud og digital transformation. Vores mission er at levere moderne, pålidelige og skalerbare løsninger, der driver effektivitet, produktivitet og vækst.",
+        "darkSectionDesc2": "Vi vil lede vejen inden for AIOT-innovation og styrke virksomheder med intelligente løsninger, der transformerer drift og skaber vækst.",
+        "visionTitle": "Vision",
+        "visionDesc": "At blive en førende leverandør af transformative teknologiløsninger, der hjælper virksomheder med at trives i et digitalt landskab i hurtig forandring. Vi vil skabe en fremtid, hvor teknologi er katalysator for innovation, vækst og positiv forandring.",
+        "missionTitle": "Mission",
+        "missionDesc": "Vi prioriterer innovation og investerer i forskning og udvikling for at skabe nye produkter, services og platforme, der imødekommer markedstendenser og kundebehov. Vi sætter kundens behov i centrum for drift og beslutninger.",
+        "smartSolutions": "Smarte løsninger",
+        "smartSolutionsHeading": "Udnyt kraften i AI og IoT til at drive innovation, effektivitet og vækst på tværs af brancher.",
+        "transformTitle": "Transformér fremtiden med AIOT",
+        "transformDesc": "Styrk virksomheder med intelligente, forbundne løsninger til øget produktivitet. Lever sikre, skalerbare AIoT-teknologier, der driver innovation og vækst.",
+        "transformBoxTitle": "Transformér fremtiden med AIOT",
+        "list1": "Intelligent automatisering",
+        "list2": "Realtidsindsigt",
+        "list3": "Skalerbar vækst",
+        "presenceTitle": "Vores tilstedeværelse",
+        "presenceHighlight": "Tilstedeværelse",
+        "presenceHeading": "Udvid globalt, innover lokalt",
+        "presenceDesc": "Med kontorer i Asien og Europa er vi tilgængelige 24/7.",
+        "pakistan": "Pakistan",
+        "uk": "UK",
+        "uae": "UAE",
+        "ksa": "Saudi-Arabien",
+        "australia": "Australien",
+        "lahore": "Lahore",
+        "glasgow": "Glasgow",
+        "dubai": "Dubai",
+        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
+        "companyUK": "AIOT Consulting LLC",
+        "companyUAE": "A I O Information Technology Consultancy - L.L.C - S.P.C",
+        "companyGeneral": "AIOT Consulting",
+        "address": "Adresse:",
+        "email": "E-mail:",
+        "phone": "Telefon:",
+        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gaden, Abu Dhabi, UAE",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien"
+    },
+    "clientWall": {
+        "heroTitle": "kundevæg",
+        "heroHighlight": "kunde",
+        "heroSubtitle": "Forpligtet til en grønnere fremtid: vores kundevæg",
+        "sectionSubtitle": "AIOT IT Solutions: styrk din forretning med gnidningsfri IT-outsourcing",
+        "sectionTitle": "Effektivitet, innovation og ekspertise tilpasset dine behov",
+        "sectionDesc": "Hos AIOT IT Solutions specialiserer vi os i pålidelig IT-outsourcing, der driver operationel excellence og omkostningseffektivitet. Vores ekspertteam sikrer, at din virksomhed drager fordel af moderne teknologier og innovative løsninger, samtidig med at overhead reduceres og produktiviteten øges.",
+        "clientsTitle": "Vores kunder",
+        "clientsHighlight": "Kunder",
+        "clientsDesc": "Betroet af førende virksomheder for innovative IT-løsninger og uovertruffen ekspertise."
+    },
+    "contact": {
+        "heroTitle": "Kontakt os",
+        "heroHighlight": "Kontakt",
+        "heroSubtitle": "Kom i kontakt med vores team",
+        "introTitle": "Lad os forbindes",
+        "introHeading": "Vi vil gerne høre fra dig",
+        "introDesc": "Uanset om du har et spørgsmål om vores services, har brug for teknisk support eller vil drøfte et projekt, er vores team klar til at hjælpe. Kontakt os via kanalerne nedenfor eller formularen.",
+        "phoneTitle": "Telefon",
+        "emailTitle": "E-mail",
+        "hoursTitle": "Åbningstider",
+        "hours": "Man – fre / 10:00 – 19:00",
+        "formTitle": "Send os en besked",
+        "nameLabel": "Fulde navn *",
+        "namePlaceholder": "Indtast dit fulde navn",
+        "emailLabel": "E-mailadresse *",
+        "emailPlaceholder": "Indtast din e-mail",
+        "phoneLabel": "Telefonnummer",
+        "phonePlaceholder": "Indtast dit telefonnummer",
+        "subjectLabel": "Emne *",
+        "subjectPlaceholder": "Hvordan kan vi hjælpe?",
+        "messageLabel": "Besked *",
+        "messagePlaceholder": "Fortæl os mere om din henvendelse...",
+        "sendButton": "Send besked",
+        "officesTitle": "Vores kontorer",
+        "pakistanOffice": "Kontor i Pakistan",
+        "ukOffice": "Kontor i UK",
+        "uaeOffice": "Kontor i UAE",
+        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyUAE": "A I O Information Technology",
+        "companyUK": "AIOT Consulting LLC",
+        "pakistanAddress": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punjab, Pakistan",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien",
+        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gaden, Abu Dhabi, UAE",
+        "mapView": "Kortvisning",
+        "mapCity": "Lahore, Pakistan"
+    },
+    "footer": {
+        "newsletterTitle": "FÅ OPDATERINGER",
+        "emailPlaceholder": "Indtast din e-mail...",
+        "subscribe": "Abonner",
+        "description": "Vi former din fremtid på ny.",
+        "quickLinks": "Genveje",
+        "home": "Hjem",
+        "about": "Om os",
+        "contact": "Kontakt",
+        "solutions": "Løsninger",
+        "allInOneSuit": "All-in-one-suite",
+        "sapUI": "SAP Business One-brugerflade",
+        "hrSystem": "HR-styringssystem",
+        "hireLawyer": "Ansæt advokat online",
+        "moreSolutions": "Flere løsninger",
+        "attendee": "Attendee",
+        "pos": "POS",
+        "connector": "Connector",
+        "hcm": "HCM"
+    },
+    "banner": {
+        "upperText": "Teknologi",
+        "mainText": "Løsninger til digital transformation",
+        "subText": "Innovation og effektivitet til fremtidssikrede virksomheder"
+    },
+    "section1": {
+        "title": "Form fremtiden for forretning",
+        "subtitle": "Styrk vækst gennem innovation, effektivitet og agilitet",
+        "description": "Vores løsninger til digital transformation er designet til at revolutionere, hvordan virksomheder arbejder på et marked i hurtig forandring. Med AI, cloud og automatisering hjælper vi organisationer med at forbedre processer, kundeoplevelser og bæredygtig vækst.",
+        "imageAlt": "Visualisering af banebrydende teknologi"
+    },
+    "servicesSection": {
+        "title": "Services inden for",
+        "serviceIconAlt": "Serviceikon"
+    },
+    "services": [
+        "Enterprise API-styring",
+        "Avanceret DevSecOps",
+        "AI-drevne chatbots",
+        "Modernisering af enterprise-arkitektur",
+        "Containerisering og autoskalering",
+        "Serverless computing",
+        "AI-drevne enterprise-løsningsdesigns",
+        "Skræddersyet applikationsudvikling",
+        "Modenheds- og governance-framework",
+        "Next-gen API-markedsplads",
+        "Tekniske rådgivningsydelser",
+        "Process mining",
+        "Multi-cloud-styringssystemer",
+        "Udviklingsplatforme",
+        "Microservices-framework-lag"
+    ],
+    "emergingTech": {
+        "bannerUpper": "Innovation",
+        "bannerMain": "Løsninger inden for emerging technology",
+        "bannerSub": "Drive innovation og forme fremtidens forretning",
+        "sectionTitle": "Lås op for innovationens fremtid",
+        "sectionSubtitle": "Hold dig foran med banebrydende løsninger, der transformerer din forretning",
+        "sectionDescription": "Emerging technologies omformer brancher, og vi hjælper din virksomhed med at holde sig i front. Ved at udnytte fremskridt inden for AI, IoT, blockchain og mere leverer vi løsninger, der driver innovation, øger effektivitet og skaber nye vækstmuligheder.",
+        "servicesTitle": "Services inden for",
+        "servicesHighlight": "ETS",
+        "services": [
+            "IT-strategi og roadmap",
+            "Microservices-arkitektur",
+            "End-to-end implementeringsstøtte",
+            "Rådgivning om IT-standarder",
+            "DevOps",
+            "Licensindkøb og -styring",
+            "Rådgivning om IT-organisation",
+            "App-udvikling med low-code/no-code",
+            "IT-vurdering",
+            "Data engineering og warehousing",
+            "JIRA Software-implementering",
+            "AS-IS-vurdering",
+            "Datavisualisering og storytelling",
+            "JIRA Service Management",
+            "GAP-vurdering"
+        ]
+    },
+    "sap": {
+        "bannerUpper": "Teknologi",
+        "bannerMain": "SAP-løsninger til enterprise",
+        "bannerSub": "Transformér virksomheder med banebrydende SAP-løsninger.",
+        "sectionTitle": "Driv enterprise-succes",
+        "sectionSubtitle": "Optimér, automatisér og skalér din forretning med AIOTs SAP-ekspertise.",
+        "sectionDescription": "Hos AIOT leverer vi banebrydende SAP-løsninger, der strømliner drift, øger effektivitet og driver bæredygtig vækst. Uanset om du har brug for ERP-integration, cloudtransformation eller tilpassede SAP-moduler, sikrer vores team en gnidningsfri implementering tilpasset dine behov.",
+        "servicesTitle": "Services",
+        "services3": [
+            "GROW with SAP (S/4HANA Cloud Public Edition)",
+            "SAP S/4HANA (On Premise)",
+            "RISE with SAP (S/4HANA Cloud Private Edition)",
+            "SAP Ariba",
+            "SAP Success Factors",
+            "SAP OpenText",
+            "SAP Analytics Cloud",
+            "SAP BTP",
+            "SAP Industry Solutions",
+            "SAP Integration Services"
+        ]
+    },
+    "utility": {
+        "bannerUpper": "Teknologi",
+        "bannerMain": "Transformation af forsyning",
+        "bannerSub": "Revolutionér forsyning med smarte, skalerbare og bæredygtige løsninger.",
+        "sectionTitle": "Driv en smartere fremtid",
+        "sectionSubtitle": "Innover, optimér og led med AIOTs forsyningsløsninger",
+        "sectionDescription": "Hos AIOT transformerer vi forsyningssektoren med digitale løsninger, der øger effektivitet, bæredygtighed og robusthed. Vores teknologier hjælper leverandører med at optimere drift, reducere omkostninger og levere smartere energiløsninger.",
+        "servicesTitle": "Services",
+        "services": [
+            "Fakturering",
+            "Måleraflæsning og drift",
+            "Net-aktiv- og udstyrsstyring",
+            "Kundefinans",
+            "Energidatahåndtering"
+        ]
+    },
+    "netsuite": {
+        "bannerUpper": "Teknologi",
+        "bannerMain": "Oracle NetSuite",
+        "bannerSub": "Strømlin forretningen til den digitale tidsalder.",
+        "sectionTitle": "Løft din forretningsdrift",
+        "sectionSubtitle": "Gnidningsfri ERP-transformation med AIOT og Oracle NetSuite.",
+        "sectionDescription": "AIOT bringer Oracle NetSuite til virksomheder med en fuldt integreret cloud-ERP-løsning designet til skalerbarhed og effektivitet. Vores ekspertise i NetSuite-implementering hjælper med at strømline økonomi, automatisere workflows og optimere drift på én central platform.",
+        "servicesTitle": "Services",
+        "services": [
+            "Analytics og business intelligence",
+            "Integration og interoperabilitet",
+            "Applikationsudvikling og udrulning",
+            "Sikkerhed og compliance",
+            "Skalerbarhed og fleksibilitet"
+        ]
+    },
+    "consulting": {
+        "bannerMain": "Rådgivning med AIOT",
+        "bannerSub": "Frigør agilitet, omfavn innovation: AIOT, din partner i transformation",
+        "expertiseLabel": "Vores ekspertise",
+        "introTitle": "Rådgivning der skaber resultater",
+        "introDesc": "Transformér din forretning med vores omfattende rådgivningsløsninger. Vi kombinerer strategisk indsigt, brancheekspertise og innovativ teknologi for bæredygtig vækst og konkurrencefordel.",
+        "learnMore": "Læs mere",
+        "services": [
+            {
+                "title": "Forretningsrådgivning",
+                "heading": "Transformation og udvikling i den offentlige sektor",
+                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+                "content": "Med omfattende erfaring i offentlig rådgivning tilbyder AIOT skræddersyede strategier til inkluderende governance, effektiv servicelevering og økonomisk vækst."
+            },
+            {
+                "title": "Digital transformation",
+                "heading": "Omfattende human capital-løsninger",
+                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+                "content": "AIOT styrker medarbejderengagement, talentudvikling og organisationskultur. Fra ledelsesudvikling til succession planning fremmer vores human capital-løsninger høj performance og langsigtet succes."
+            },
+            {
+                "title": "Offentlig sektor",
+                "heading": "Rådgivning om bæredygtighed og impact",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT Sustainability Consulting specialiserer sig i ESG-drevne ydelser og hjælper kunder med at nå bæredygtighedsmål i tråd med de globale SDG’er."
+            }
+        ],
+        "stats": {
+            "projects": "500+ leverede projekter",
+            "consultants": "50+ ekspertrådgivere",
+            "satisfaction": "98 % kundetilfredshed",
+            "industries": "25+ brancher betjent"
+        },
+        "ctaTitle": "Klar til at transformere din forretning?",
+        "ctaDesc": "Lad os tale om, hvordan vores rådgivning kan hjælpe dig med at nå dine mål",
+        "ctaButton": "Book en konsultation"
+    },
+    "outsourcing": {
+        "bannerMain": "Outsourcing med AIOT",
+        "bannerSub": "Frigør agilitet, omfavn innovation: AIOT, din partner i transformation",
+        "whyOutsourceLabel": "Hvorfor outsource?",
+        "introTitle": "Transformér din forretningsdrift",
+        "introDesc": "Samarbejd med AIOT om at strømline drift, reducere omkostninger og få adgang til førsteklasses ekspertise. Vores outsourcingløsninger lader dig fokusere på det vigtigste – at vokse din forretning.",
+        "keyBenefitsTitle": "Nøglefordele",
+        "servicesTitle": "Vores outsourcing-services",
+        "learnMore": "Læs mere",
+        "processTitle": "Vores proces",
+        "ctaTitle": "Klar til at optimere din drift?",
+        "ctaDesc": "Lad os tale om, hvordan vores outsourcing kan transformere din forretning",
+        "ctaButton": "Anmod om et tilbud",
+        "services": [
+            {
+                "title": "Forretningsprocesser",
+                "heading": "Effektiv business process outsourcing",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+                "content": "AIOT tilbyder effektive BPO-løsninger til at optimere drift og reducere omkostninger. Fra kundeservice til HR og økonomi leverer vi skalerbar støtte med teknologi og ekspertise.",
+                "benefits": [
+                    "Omkostningsreduktion",
+                    "24/7-support",
+                    "Skalerbare løsninger"
+                ]
+            },
+            {
+                "title": "HR-løsninger",
+                "heading": "HR-outsourcingløsninger",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT leverer skræddersyede HRO-løsninger til at optimere HR-funktioner – fra talentacquisition til løn og compliance.",
+                "benefits": [
+                    "Talentacquisition",
+                    "Lønstyring",
+                    "Compliance"
+                ]
+            }
+        ],
+        "benefits": [
+            {
+                "title": "Omkostningseffektivitet",
+                "description": "Reducer driftsomkostninger med op til 60 % uden at gå på kompromis med kvaliteten"
+            },
+            {
+                "title": "Tidsbesparelse",
+                "description": "Frigør værdifuld tid til kerneforretningen"
+            },
+            {
+                "title": "Skalerbarhed",
+                "description": "Skalér din drift op eller ned efter behov"
+            },
+            {
+                "title": "Kvalitetssikring",
+                "description": "Adgang til ekspertteams med dokumenterede resultater"
+            }
+        ],
+        "processSteps": [
+            {
+                "step": "01",
+                "title": "Konsultation",
+                "desc": "Forstå dine behov"
+            },
+            {
+                "step": "02",
+                "title": "Strategi",
+                "desc": "Udvikle skræddersyede løsninger"
+            },
+            {
+                "step": "03",
+                "title": "Implementering",
+                "desc": "Gnidningsfri overgang"
+            },
+            {
+                "step": "04",
+                "title": "Support",
+                "desc": "Løbende optimering"
+            }
+        ]
+    }
+}

@@ -1,160 +1,269 @@
-import React, { useContext } from 'react';
-import { Database, Scale, Cloud } from 'lucide-react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { Scale, Cloud, Store, Workflow, Eye, HeartPulse, Building2, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
+import { getProductCatalog } from '../../Utils/productCatalog';
 import { motion } from 'framer-motion';
+
+const GAP = 28;
+
+const ICONS = [null, null, Workflow, Store, Scale, Eye, HeartPulse, Building2, Cloud];
+
+function getVisibleCount() {
+    if (typeof window === 'undefined') return 3;
+    if (window.innerWidth < 768) return 1;
+    if (window.innerWidth < 1024) return 2;
+    return 3;
+}
 
 export default function OurProducts() {
     const { translations, language } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
-
     const t = translations.ourProducts || {};
+    const isRTL = language === 'ar';
 
-    const products = [
-        {
-            icon: <Database className="w-16 h-16" />,
-            title: t.product1Title || "SAP Business One User Interface",
-            description: t.product1Desc || "Enhance your business operations with our user-friendly SAP Business One interface, designed for seamless navigation and efficient management of your enterprise resources."
-        },
-        {
-            icon: <Scale className="w-16 h-16" />,
-            title: t.product2Title || "Hire Lawyer Online",
-            description: t.product2Desc || "Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs."
-        },
-        {
-            icon: <Cloud className="w-16 h-16" />,
-            title: t.product3Title || "Connector",
-            description: t.product3Desc || "Effortlessly integrate and manage your systems with our versatile connector, designed to streamline data flow and enhance connectivity across your platforms."
-        }
-    ];
+    const products = getProductCatalog(translations).map((item, index) => ({
+        ...item,
+        Icon: ICONS[index],
+    }));
 
-    // Variants for header children
+    const viewportRef = useRef(null);
+    const [visible, setVisible] = useState(3);
+    const [index, setIndex] = useState(0);
+    const [step, setStep] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const maxIndex = Math.max(0, products.length - visible);
+
+    const measure = () => {
+        const nextVisible = getVisibleCount();
+        setVisible(nextVisible);
+        const viewport = viewportRef.current;
+        if (!viewport) return;
+        const cardWidth = Math.floor((viewport.clientWidth - GAP * (nextVisible - 1)) / nextVisible);
+        setStep(cardWidth + GAP);
+        setIndex((current) => Math.min(current, Math.max(0, products.length - nextVisible)));
+    };
+
+    useEffect(() => {
+        const frame = window.requestAnimationFrame(measure);
+        window.addEventListener('resize', measure);
+        return () => {
+            window.cancelAnimationFrame(frame);
+            window.removeEventListener('resize', measure);
+        };
+    }, [products.length]);
+
+    useEffect(() => {
+        if (maxIndex === 0 || paused) return undefined;
+        const timer = setInterval(() => {
+            setIndex((current) => (current >= maxIndex ? 0 : current + 1));
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [maxIndex, paused]);
+
+    const goTo = (next) => {
+        setIndex(Math.min(Math.max(next, 0), maxIndex));
+    };
+
     const headerVariants = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     };
 
-    // Variants for product cards
-    const cardVariants = {
-        hidden: { opacity: 0, y: 60, scale: 0.95 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            transition: { duration: 0.7, ease: "easeOut" }
-        }
-    };
+    const accent = (product) => product.brand?.color || colors.logo;
 
     return (
-        <div className="bg-white py-20 px-8" style={{ backgroundColor: colors.background }}>
-            <div className="max-w-7xl mx-auto">
-                {/* Header */}
+        <section
+            key={language}
+            className="relative overflow-hidden py-20 px-6 md:px-8 md:py-24"
+            style={{ backgroundColor: colors.background }}
+        >
+            <div
+                className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full opacity-50 blur-3xl"
+                style={{ background: `${colors.logo}22` }}
+            />
+
+            <div className="relative max-w-7xl mx-auto">
                 <motion.div
                     className="text-center mb-16"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.4 }}
-                    variants={{
-                        visible: { transition: { staggerChildren: 0.2 } }
-                    }}
+                    variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
                 >
-                    <motion.h2
-                        className="text-gray-800 text-xl font-semibold mb-2"
+                    <motion.p
+                        className="text-sm md:text-base font-semibold tracking-[0.22em] uppercase mb-3"
+                        style={{ color: colors.logo }}
                         variants={headerVariants}
                     >
-                        {t.sectionTitle || "Our Products"}
-                    </motion.h2>
-
+                        {t.sectionTitle || 'Our Products'}
+                    </motion.p>
                     <motion.div
-                        className="w-24 h-0.5 bg-gray-800 mx-auto mb-8 rounded-full"
+                        className="w-16 h-1 mx-auto mb-6 rounded-full"
+                        style={{ backgroundColor: colors.logo }}
                         variants={{
-                            hidden: { scaleX: 0, originX: 0.5 },
-                            visible: { scaleX: 1, transition: { duration: 0.8 } }
+                            hidden: { scaleX: 0 },
+                            visible: { scaleX: 1, transition: { duration: 0.7 } },
                         }}
                     />
-
-                    <motion.h3
-                        className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+                    <motion.h2
+                        className="text-3xl md:text-4xl font-bold text-gray-900 mb-5"
                         variants={headerVariants}
                     >
-                        {t.heading || "Advanced Solutions for Every Need"}
-                    </motion.h3>
-
+                        {t.heading || 'Advanced Solutions for Every Need'}
+                    </motion.h2>
                     <motion.p
-                        className="text-gray-600 leading-relaxed max-w-4xl mx-auto text-base"
+                        className="text-gray-600 leading-relaxed max-w-3xl mx-auto"
                         variants={headerVariants}
                     >
-                        {t.description || "Explore our range of innovative products designed to enhance performance, streamline operations, and drive growth..."}
+                        {t.description}
                     </motion.p>
                 </motion.div>
 
-                {/* Products Grid */}
-                <motion.div
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.2 }}
-                    variants={{
-                        visible: { transition: { staggerChildren: 0.15 } }
-                    }}
-                >
-                    {products.map((product, index) => (
-                        <motion.div
-                            key={index}
-                            className="p-7 text-center border rounded-xl relative overflow-hidden transition-all duration-300"
-                            style={{
-                                borderColor: colors.logo,
-                                boxShadow: "0 4px 15px rgba(0,0,0,0.05)"
-                            }}
-                            variants={cardVariants}
-                            whileHover={{
-                                y: -10,
-                                scale: 1.03,
-                                boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
-                            }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                        >
-                            <div className="flex justify-center mb-6 relative">
-                                <motion.div
-                                    className="relative inline-block"
-                                    whileHover={{ scale: 1.15 }}
-                                    transition={{ type: "spring", stiffness: 400 }}
-                                >
-                                    <div style={{ color: colors.logo || "#1e293b" }}>{product.icon}</div>
-                                    <motion.div
-                                        className="absolute -bottom-2 -right-3 w-10 h-10 bg-yellow-400 rounded-full"
-                                        initial={{ scale: 0 }}
-                                        whileInView={{ scale: 1 }}
-                                        transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
-                                        viewport={{ once: true }}
-                                    />
-                                </motion.div>
-                            </div>
-
-                            <h4 className="text-xl font-bold text-gray-900 mb-5">
-                                {product.title}
-                            </h4>
-                            <p className="text-gray-600 leading-relaxed text-sm">
-                                {product.description}
-                            </p>
-                        </motion.div>
-                    ))}
-                </motion.div>
-
-                {/* Show More Button */}
-                {/* <div className="text-center">
-                    <motion.button
-                        className="border-2 border-gray-900 text-gray-900 font-medium px-10 py-3 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300 text-sm"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                <div className="relative px-12 md:px-16">
+                    <button
+                        type="button"
+                        aria-label="Previous products"
+                        onClick={() => goTo(index - 1)}
+                        disabled={index === 0}
+                        className="absolute top-1/2 z-10 -translate-y-1/2 disabled:opacity-30 disabled:cursor-not-allowed w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition"
+                        style={{
+                            [isRTL ? 'right' : 'left']: '0px',
+                            color: colors.logo,
+                            boxShadow: '0 10px 24px rgba(15, 23, 42, 0.12)',
+                        }}
                     >
-                        {t.showMore || "Show more"}
-                    </motion.button>
-                </div> */}
+                        {isRTL ? <ChevronRight size={22} /> : <ChevronLeft size={22} />}
+                    </button>
+
+                    <button
+                        type="button"
+                        aria-label="Next products"
+                        onClick={() => goTo(index + 1)}
+                        disabled={index === maxIndex}
+                        className="absolute top-1/2 z-10 -translate-y-1/2 disabled:opacity-30 disabled:cursor-not-allowed w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition"
+                        style={{
+                            [isRTL ? 'left' : 'right']: '0px',
+                            color: colors.logo,
+                            boxShadow: '0 10px 24px rgba(15, 23, 42, 0.12)',
+                        }}
+                    >
+                        {isRTL ? <ChevronLeft size={22} /> : <ChevronRight size={22} />}
+                    </button>
+
+                    <div
+                        ref={viewportRef}
+                        className="overflow-hidden py-2"
+                        dir="ltr"
+                        onMouseEnter={() => setPaused(true)}
+                        onMouseLeave={() => setPaused(false)}
+                    >
+                        <div
+                            className="flex transition-transform duration-500 ease-out"
+                            style={{
+                                gap: `${GAP}px`,
+                                transform: `translateX(${-index * step}px)`,
+                            }}
+                        >
+                            {products.map((product) => {
+                                const CardTag = product.url ? 'a' : 'div';
+                                const cardProps = product.url
+                                    ? {
+                                        href: product.url,
+                                        target: '_blank',
+                                        rel: 'noopener noreferrer',
+                                    }
+                                    : {};
+                                const Icon = product.Icon;
+                                const brandColor = accent(product);
+
+                                return (
+                                    <CardTag
+                                        key={product.id}
+                                        {...cardProps}
+                                        className={`group relative shrink-0 rounded-2xl bg-white p-7 text-center overflow-hidden transition-all duration-300 hover:-translate-y-2 ${product.url ? 'cursor-pointer' : ''}`}
+                                        style={{
+                                            width: step ? `${step - GAP}px` : `calc((100% - ${(visible - 1) * GAP}px) / ${visible})`,
+                                            minHeight: '360px',
+                                            border: `1px solid ${brandColor}33`,
+                                            boxShadow: '0 12px 32px rgba(15, 23, 42, 0.06)',
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                        }}
+                                    >
+                                        <span
+                                            className="absolute inset-x-0 top-0 h-1 rounded-t-2xl origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+                                            style={{ backgroundColor: brandColor }}
+                                        />
+
+                                        <div className="flex justify-center mb-6">
+                                            {product.brand ? (
+                                                <div
+                                                    className="w-24 h-24 rounded-2xl flex items-center justify-center p-2.5 transition-transform duration-300 group-hover:scale-105"
+                                                    style={{ backgroundColor: product.brand.color }}
+                                                >
+                                                    <div
+                                                        className="w-full h-full rounded-xl flex items-center justify-center overflow-hidden"
+                                                        style={{ backgroundColor: product.brand.innerBg }}
+                                                    >
+                                                        <img
+                                                            src={product.brand.logo}
+                                                            alt={product.title}
+                                                            className="w-[86%] h-[86%] object-contain"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            ) : (
+                                                <div
+                                                    className="w-20 h-20 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+                                                    style={{ backgroundColor: `${colors.logo}12`, color: colors.logo }}
+                                                >
+                                                    {Icon && <Icon className="w-9 h-9" />}
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug">
+                                            {product.title}
+                                        </h3>
+                                        <p className="text-gray-600 leading-relaxed text-[15px] flex-1">
+                                            {product.description}
+                                        </p>
+
+                                        {product.url && (
+                                            <span
+                                                className="mt-5 inline-flex items-center justify-center gap-1 text-sm font-semibold"
+                                                style={{ color: brandColor }}
+                                            >
+                                                {t.showMore || 'Learn more'}
+                                                <ArrowUpRight size={16} />
+                                            </span>
+                                        )}
+                                    </CardTag>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className="flex justify-center gap-2 mt-8">
+                        {Array.from({ length: maxIndex + 1 }).map((_, dotIndex) => (
+                            <button
+                                key={dotIndex}
+                                type="button"
+                                aria-label={`Go to slide ${dotIndex + 1}`}
+                                onClick={() => goTo(dotIndex)}
+                                className="h-2.5 rounded-full transition-all"
+                                style={{
+                                    width: index === dotIndex ? '1.75rem' : '0.65rem',
+                                    backgroundColor: index === dotIndex ? colors.logo : '#d1d5db',
+                                }}
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     );
 }

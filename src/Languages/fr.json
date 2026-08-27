@@ -1,0 +1,521 @@
+{
+    "navbar": {
+        "topBar": {
+            "phone": "+92 3123456778",
+            "email": "info@aiotcons.com",
+            "address": "15/1C, GECHS, 3e phase, route PECO, Lahore 54100, Pendjab, Pakistan"
+        },
+        "menu": {
+            "home": "ACCUEIL",
+            "aboutUs": "À PROPOS",
+            "whatWeDo": "NOTRE MÉTIER",
+            "solutions": "SOLUTIONS",
+            "resources": "RESSOURCES",
+            "partners": "PARTENAIRES",
+            "marketplace": "MARKETPLACE"
+        },
+        "viewPlans": "VOIR LES OFFRES",
+        "learnMore": "En savoir plus",
+        "explore": "Explorer",
+        "bookADemo": "Réserver une démo",
+        "menuLabel": "Menu",
+        "exploreArrow": "Explorer →",
+        "demoBannerTitle": "Votre partenaire de solutions pour la réussite d'entreprise"
+    },
+    "dropdown": {
+        "aboutUs": {
+            "whoWeAre": "Qui nous sommes",
+            "whoWeAreDesc": "Nous allions l'intelligence artificielle et l'Internet des objets pour stimuler l'innovation et livrer des solutions technologiques prêtes pour l'avenir.",
+            "clientWall": "Mur des clients",
+            "clientWallDesc": "Nous accompagnons fièrement les leaders du secteur avec des solutions technologiques innovantes qui produisent de vrais résultats.",
+            "contactUs": "Contact",
+            "contactUsDesc": "Contactez AIOT IT Solutions, votre passerelle vers des solutions technologiques intelligentes, innovantes et transformatrices."
+        },
+        "whatWeDo": {
+            "technology": "Technologie",
+            "technologyDesc": "AIOT IT Solutions accélère la transformation numérique",
+            "technologyDrivenInnovation": "Solutions d'innovation technologiques",
+            "nextGenTechnology": "Solutions technologiques de nouvelle génération",
+            "enterpriseSap": "Solutions SAP d'entreprise",
+            "utilityModernization": "Modernisation des services publics",
+            "oracleNetsuite": "Solutions Oracle NetSuite",
+            "consulting": "Conseil",
+            "consultingDesc": "Conseil technologique stratégique pour optimiser les opérations et stimuler la croissance.",
+            "technologySolutionsProvider": "Fournisseur de solutions technologiques",
+            "outSourcing": "Externalisation",
+            "outSourcingDesc": "Externalisation offshore fiable, avec efficacité des coûts et talents experts.",
+            "strategicOffshore": "Solutions offshore stratégiques"
+        },
+        "solutions": {
+            "industries": "Secteurs",
+            "healthIndustry": "Santé",
+            "engineeringIndustry": "Ingénierie",
+            "constructionIndustry": "Construction",
+            "retail": "Commerce de détail",
+            "allInOneSuit": "Suite tout-en-un",
+            "attendee": "Attendee",
+            "hcm": "HCM",
+            "pos": "POS",
+            "solutions": "Solutions",
+            "connector": "Connector",
+            "hireLawyerOnline": "Engager un avocat en ligne",
+            "sapBusinessOneUi": "Interface SAP Business One",
+            "hrManagementSystem": "Système de gestion RH"
+        },
+        "resources": {
+            "news": "Actualités",
+            "newsDesc": "Restez informé des dernières actualités et innovations d'AIOT IT Solutions.",
+            "blogs": "Blogs",
+            "blogsDesc": "Explorez analyses, tendances et avis d'experts sur la technologie et l'innovation.",
+            "innovateWithInsights": "Innover grâce aux insights",
+            "innovateWithInsightsDesc": "Découvrez des stratégies pour renforcer votre entreprise grâce aux tendances émergentes."
+        },
+        "partners": {
+            "sapDesc": "Partenaire pour transformer le fonctionnement des PME dans le monde avec des solutions cloud de pointe.",
+            "oracleNetsuiteDesc": "Découvrez les avantages d'un partenariat Oracle NetSuite pour des solutions métier complètes.",
+            "microsoftDesc": "Notre partenariat Microsoft renforce les capacités des entreprises avec des solutions de pointe.",
+            "cloudiaxDesc": "Cloudiax permet d'étendre les capacités SAP grâce à des solutions cloud puissantes.",
+            "cloudSolutionsDesc": "Notre expertise assure une migration cloud fluide et une intégration multi-cloud."
+        }
+    },
+    "Hero": {
+        "demoBannerTitle": "Votre partenaire de solutions <br> pour la réussite d'entreprise",
+        "whoWeAreDesc": "Nous allions l'intelligence artificielle et l'Internet des objets pour stimuler l'innovation et livrer des solutions technologiques prêtes pour l'avenir.",
+        "learnMore": "En savoir plus"
+    },
+    "whatWeDoSection": {
+        "title": "Notre métier",
+        "subtitle": "Des solutions sur mesure pour une connectivité intelligente",
+        "consulting": "Conseil",
+        "consultingDesc": "Nous aidons à créer une stratégie qui favorise une réussite d'entreprise menée par la technologie. Notre équipe élabore des plans qui optimisent votre trajectoire de croissance grâce aux outils et technologies numériques avancés.",
+        "implementation": "Mise en œuvre",
+        "implementationDesc": "Nos experts, dans les principales technologies et fonctions métier, livrent des solutions d'entreprise complètes.",
+        "managedServices": "Services managés",
+        "managedServicesDesc": "Notre équipe de services managés sécurise votre investissement numérique avec supervision, maintenance et support de bout en bout."
+    },
+    "philosophy": {
+        "title": "Notre philosophie",
+        "heading": "Innover pour un avenir connecté",
+        "paragraph1": "Nous concevons et livrons des solutions technologiques qui répondent aux besoins et défis évolutifs de nos clients. Nous privilégions l'agilité, l'adaptabilité et la réactivité pour pivoter rapidement face aux marchés et aux exigences clients.",
+        "quote": "Transformez vos opérations avec des solutions cloud intelligentes conçues pour la croissance et la simplicité.",
+        "paragraph2": "Nous créons des solutions visionnaires qui redéfinissent le fonctionnement des entreprises et les aident à rester en tête dans un paysage numérique en évolution.",
+        "readMore": "Lire la suite"
+    },
+    "servicesStats": {
+        "servicesTitle": "Nos services",
+        "servicesHeading": "Ce que nous proposons",
+        "servicesDescription": "Nous aidons les entreprises à fluidifier leurs opérations, améliorer la prise de décision et conduire la transformation numérique avec précision.",
+        "statFeedback": "Retours positifs",
+        "statProjects": "Projets",
+        "statUsers": "Utilisateurs",
+        "statContributors": "Contributeurs",
+        "serviceInfrastructure": "Infrastructure",
+        "descInfrastructure": "Nous construisons une infrastructure évolutive qui soutient une connectivité fluide, une gestion sécurisée des données et des opérations efficaces, pour préparer votre entreprise à la croissance.",
+        "serviceSecurity": "Sécurité",
+        "descSecurity": "Nous déployons des solutions de sécurité pour protéger vos actifs numériques, assurer une protection complète contre les menaces et préserver l'intégrité des données.",
+        "serviceCloud": "Services cloud",
+        "descCloud": "Nous livrons des solutions cloud évolutives qui renforcent l'efficacité et la flexibilité, pour vous adapter rapidement et opérer sans friction à l'ère numérique.",
+        "serviceApps": "Applications métier",
+        "descApps": "Nous fournissons des applications métier adaptées à vos processus, pour augmenter la productivité et fluidifier les opérations.",
+        "serviceData": "Gestion des données et analytique",
+        "descData": "Nous transformons les données en insights actionnables grâce à l'analytique avancée, pour de meilleures décisions et plus d'efficacité.",
+        "serviceSupport": "Support client",
+        "descSupport": "Nous proposons un support client 24h/24 et 7j/7 pour une assistance rapide, avec un accompagnement personnalisé pour la satisfaction client."
+    },
+    "techInnovation": {
+        "subtitle": "La tech de demain",
+        "heading": "Donner aux entreprises les moyens d'agir avec expertise et excellence",
+        "paragraph1": "Avec un engagement d'excellence et une passion pour l'innovation, nous livrons des solutions technologiques avancées qui génèrent le succès. Notre équipe allie une connaissance approfondie du secteur et des technologies de pointe pour aider les entreprises à rester en tête.",
+        "paragraph2": "À la pointe de l'innovation technologique, nous livrons des solutions sur mesure qui favorisent le succès et l'efficacité.",
+        "readMore": "Lire la suite",
+        "productsTitle": "Nos produits"
+    },
+    "ourProducts": {
+        "sectionTitle": "Nos produits",
+        "heading": "Des solutions avancées pour chaque besoin",
+        "description": "Découvrez notre gamme de produits conçus pour améliorer la performance, fluidifier les opérations et stimuler la croissance. De l'analytique IA aux solutions cloud évolutives, nos offres répondent à des besoins métier variés avec précision et fiabilité.",
+        "items": [
+            {
+                "title": "Interface utilisateur SAP Business One",
+                "description": "Améliorez vos opérations avec notre interface SAP Business One conviviale, conçue pour une navigation fluide et une gestion efficace des ressources d'entreprise."
+            },
+            {
+                "title": "Gestion du capital humain",
+                "description": "Une plateforme HCM complète pour recruter, gérer et développer vos équipes, avec paie, présence et outils talent au même endroit."
+            },
+            {
+                "title": "Suite d’opérations",
+                "description": "Fluidifiez les opérations quotidiennes grâce à des workflows connectés, l'automatisation et la visibilité sur les équipes et les processus."
+            },
+            {
+                "title": "Commerce unifié",
+                "description": "Une plateforme de commerce unifié qui relie canaux de vente, stocks et parcours client pour vendre et livrer avec constance."
+            },
+            {
+                "title": "Engager un avocat en ligne",
+                "description": "Connectez-vous à des professionnels du droit expérimentés via notre plateforme en ligne, pour trouver et engager l'avocat adapté à vos besoins."
+            },
+            {
+                "title": "Vision par IA",
+                "description": "Transformez les données visuelles en insights actionnables grâce à la vision IA pour le monitoring, la détection et des décisions plus intelligentes."
+            },
+            {
+                "title": "Soins aux patients",
+                "description": "Une plateforme de soins patients qui aide les équipes de santé à gérer dossiers, rendez-vous et suivis pour une expérience clinique plus fluide."
+            },
+            {
+                "title": "Progiciel de gestion",
+                "description": "Un ERP intégré pour gérer finance, stocks et opérations à partir d'une source unique de vérité, pour les entreprises en croissance."
+            },
+            {
+                "title": "Connecteur",
+                "description": "Intégrez et gérez vos systèmes facilement avec notre connecteur pour WhatsApp, les API cellulaires et les échanges e-mail, conçu pour fluidifier les flux de données."
+            }
+        ],
+        "showMore": "Voir plus"
+    },
+    "about": {
+        "heroTitle": "Qui nous sommes",
+        "heroSubtitle": "Redéfinir la réussite à chaque étape",
+        "whoWeAre": "Qui nous sommes",
+        "mainHeading": "Innover l'avenir avec les solutions AIOT",
+        "desc1": "Nous sommes une entreprise IT tournée vers l'avenir, dédiée à transformer les industries grâce aux technologies IA et IoT de pointe.",
+        "desc2": "Au cœur de notre entreprise : la passion de l'innovation. Notre équipe d'experts exploite la puissance de l'AIoT pour livrer des solutions intelligentes, évolutives et sécurisées.",
+        "feature1Title": "Innovation portée par l'IA",
+        "feature1Desc": "Libérez l'efficacité et l'automatisation grâce à des solutions IA puissantes.",
+        "feature2Title": "Intégration IoT fluide",
+        "feature2Desc": "Connectez les appareils pour des insights en temps réel et des opérations plus intelligentes.",
+        "feature3Title": "Solutions évolutives et sécurisées",
+        "feature3Desc": "Grandissez en confiance avec des solutions AIoT sécurisées et évolutives.",
+        "darkSectionTitle": "Préparer demain avec des solutions AIOT intelligentes",
+        "darkSectionDesc1": "AIOT est un fournisseur de solutions IT métier dédié à doter les entreprises d'une technologie innovante. Nous sommes spécialisés dans le développement logiciel, l'intégration IA, l'IoT, le cloud et la transformation numérique. Notre mission : livrer des solutions de pointe, fiables et évolutives qui stimulent l'efficacité, la productivité et la croissance.",
+        "darkSectionDesc2": "Nous visons à mener l'innovation AIOT et à doter les entreprises de solutions intelligentes qui transforment les opérations et stimulent la croissance.",
+        "visionTitle": "Vision",
+        "visionDesc": "Devenir un fournisseur majeur de solutions technologiques transformatrices qui aident les organisations à prospérer dans un paysage numérique en mutation rapide. Nous voulons un avenir où la technologie est un catalyseur d'innovation, de croissance et de changement positif.",
+        "missionTitle": "Mission",
+        "missionDesc": "Nous priorisons l'innovation et investissons dans la R&D pour créer de nouveaux produits, services et plateformes adaptés aux tendances du marché et aux besoins clients. Nous plaçons les clients au centre de nos opérations et de nos décisions.",
+        "smartSolutions": "Solutions intelligentes",
+        "smartSolutionsHeading": "Exploiter la puissance de l'IA et de l'IoT pour stimuler l'innovation, l'efficacité et la croissance dans tous les secteurs.",
+        "transformTitle": "Transformer l'avenir avec AIOT",
+        "transformDesc": "Donner aux entreprises des solutions intelligentes et connectées pour une productivité accrue. Livrer des technologies AIoT sécurisées et évolutives qui stimulent l'innovation et la croissance.",
+        "transformBoxTitle": "Transformer l'avenir avec AIOT",
+        "list1": "Automatisation intelligente",
+        "list2": "Insights en temps réel",
+        "list3": "Croissance évolutive",
+        "presenceTitle": "Notre présence",
+        "presenceHighlight": "Présence",
+        "presenceHeading": "S'étendre à l'échelle mondiale, innover localement",
+        "presenceDesc": "Avec des bureaux en Asie et en Europe, nous sommes joignables 24h/24 et 7j/7.",
+        "pakistan": "Pakistan",
+        "uk": "Royaume-Uni",
+        "uae": "EAU",
+        "ksa": "Arabie saoudite",
+        "australia": "Australie",
+        "lahore": "Lahore",
+        "glasgow": "Glasgow",
+        "dubai": "Dubaï",
+        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
+        "companyUK": "AIOT Consulting LLC",
+        "companyUAE": "A I O Information Technology Consultancy - L.L.C - S.P.C",
+        "companyGeneral": "AIOT Consulting",
+        "address": "Adresse :",
+        "email": "E-mail :",
+        "phone": "Téléphone :",
+        "uaeAddress": "Bureau M23, Madinat Office, rue Al Najda, Abou Dabi, EAU",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Royaume-Uni"
+    },
+    "clientWall": {
+        "heroTitle": "mur des clients",
+        "heroHighlight": "clients",
+        "heroSubtitle": "Engagés pour un avenir plus vert : notre mur des clients",
+        "sectionSubtitle": "AIOT IT Solutions : dotez votre entreprise d'une externalisation IT fluide",
+        "sectionTitle": "Efficacité, innovation et expertise adaptées à vos besoins",
+        "sectionDesc": "Chez AIOT IT Solutions, nous proposons des services d'externalisation IT fiables qui favorisent l'excellence opérationnelle et l'efficacité des coûts. Notre équipe d'experts s'assure que votre entreprise bénéficie de technologies de pointe et de solutions innovantes, tout en réduisant les frais généraux et en renforçant la productivité.",
+        "clientsTitle": "Nos clients",
+        "clientsHighlight": "Clients",
+        "clientsDesc": "La confiance des entreprises leaders pour des solutions IT innovantes et une expertise inégalée."
+    },
+    "contact": {
+        "heroTitle": "Contactez-nous",
+        "heroHighlight": "Contact",
+        "heroSubtitle": "Échangez avec notre équipe",
+        "introTitle": "Restons en contact",
+        "introHeading": "Nous serions ravis de vous lire",
+        "introDesc": "Que vous ayez une question sur nos services, besoin d'un support technique ou un projet à discuter, notre équipe est prête à vous aider. Contactez-nous via les canaux ci-dessous ou le formulaire.",
+        "phoneTitle": "Téléphone",
+        "emailTitle": "E-mail",
+        "hoursTitle": "Horaires",
+        "hours": "Lun – Ven / 10:00 – 19:00",
+        "formTitle": "Envoyez-nous un message",
+        "nameLabel": "Nom complet *",
+        "namePlaceholder": "Saisissez votre nom complet",
+        "emailLabel": "Adresse e-mail *",
+        "emailPlaceholder": "Saisissez votre e-mail",
+        "phoneLabel": "Numéro de téléphone",
+        "phonePlaceholder": "Saisissez votre numéro de téléphone",
+        "subjectLabel": "Objet *",
+        "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+        "messageLabel": "Message *",
+        "messagePlaceholder": "Parlez-nous davantage de votre demande...",
+        "sendButton": "Envoyer le message",
+        "officesTitle": "Nos bureaux",
+        "pakistanOffice": "Bureau Pakistan",
+        "ukOffice": "Bureau Royaume-Uni",
+        "uaeOffice": "Bureau EAU",
+        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyUAE": "A I O Information Technology",
+        "companyUK": "AIOT Consulting LLC",
+        "pakistanAddress": "15/1C, GECHS, 3e phase, route PECO, Lahore 54100, Pendjab, Pakistan",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Royaume-Uni",
+        "uaeAddress": "Bureau M23, Madinat Office, rue Al Najda, Abou Dabi, EAU",
+        "mapView": "Vue carte",
+        "mapCity": "Lahore, Pakistan"
+    },
+    "footer": {
+        "newsletterTitle": "RECEVOIR LES ACTUALITÉS",
+        "emailPlaceholder": "Saisissez votre e-mail...",
+        "subscribe": "S'abonner",
+        "description": "Nous redessinons votre avenir.",
+        "quickLinks": "Liens rapides",
+        "home": "Accueil",
+        "about": "À propos",
+        "contact": "Contact",
+        "solutions": "Solutions",
+        "allInOneSuit": "Suite tout-en-un",
+        "sapUI": "Interface SAP Business One",
+        "hrSystem": "Système de gestion RH",
+        "hireLawyer": "Engager un avocat en ligne",
+        "moreSolutions": "Plus de solutions",
+        "attendee": "Attendee",
+        "pos": "POS",
+        "connector": "Connector",
+        "hcm": "HCM"
+    },
+    "banner": {
+        "upperText": "Technologie",
+        "mainText": "Solutions de transformation numérique",
+        "subText": "Libérer l'innovation et l'efficacité pour des entreprises prêtes pour l'avenir"
+    },
+    "section1": {
+        "title": "Façonner l'avenir de l'entreprise",
+        "subtitle": "Stimuler la croissance par l'innovation, l'efficacité et l'agilité",
+        "description": "Nos solutions de transformation numérique sont conçues pour révolutionner le fonctionnement des entreprises sur un marché en évolution rapide. Grâce à l'IA, au cloud et à l'automatisation, nous aidons les organisations à améliorer leurs processus, l'expérience client et une croissance durable.",
+        "imageAlt": "Visualisation technologique de pointe"
+    },
+    "servicesSection": {
+        "title": "Services en",
+        "serviceIconAlt": "Icône de service"
+    },
+    "services": [
+        "Gestion des API d'entreprise",
+        "DevSecOps avancé",
+        "Chatbots alimentés par l'IA",
+        "Modernisation de l'architecture d'entreprise",
+        "Conteneurisation et auto-scaling",
+        "Informatique sans serveur",
+        "Conceptions de solutions d'entreprise alimentées par l'IA",
+        "Développement d'applications sur mesure",
+        "Cadre de maturité et de gouvernance",
+        "Marketplace API de nouvelle génération",
+        "Services de conseil technique",
+        "Process Mining",
+        "Systèmes de gestion multi-cloud",
+        "Plateformes de développement",
+        "Couches de framework microservices"
+    ],
+    "emergingTech": {
+        "bannerUpper": "Innovation",
+        "bannerMain": "Solutions de technologies émergentes",
+        "bannerSub": "Stimuler l'innovation et façonner l'avenir de l'entreprise",
+        "sectionTitle": "Déverrouiller l'avenir de l'innovation",
+        "sectionSubtitle": "Restez en tête avec des solutions de pointe qui transforment votre entreprise",
+        "sectionDescription": "Les technologies émergentes transforment les industries, et nous aidons votre entreprise à rester à l'avant-garde. En exploitant l'IA, l'IoT, la blockchain et plus encore, nous livrons des solutions qui stimulent l'innovation, renforcent l'efficacité et créent de nouvelles opportunités de croissance.",
+        "servicesTitle": "Services en",
+        "servicesHighlight": "ETS",
+        "services": [
+            "Stratégie IT et feuille de route",
+            "Architecture microservices",
+            "Support de mise en œuvre de bout en bout",
+            "Conseil en normes IT",
+            "DevOps",
+            "Acquisition et gestion des licences",
+            "Conseil en organisation IT",
+            "Développement d'apps low-code/no-code",
+            "Évaluation IT",
+            "Data engineering et entrepôts de données",
+            "Mise en œuvre JIRA Software",
+            "Évaluation AS-IS",
+            "Visualisation des données et storytelling",
+            "JIRA Service Management",
+            "Évaluation des écarts"
+        ]
+    },
+    "sap": {
+        "bannerUpper": "Technologie",
+        "bannerMain": "Solutions SAP pour l'entreprise",
+        "bannerSub": "Transformer les entreprises avec des solutions SAP de pointe.",
+        "sectionTitle": "Propulsér le succès d'entreprise",
+        "sectionSubtitle": "Optimisez, automatisez et faites évoluer votre entreprise avec l'expertise SAP d'AIOT.",
+        "sectionDescription": "Chez AIOT, nous proposons des solutions SAP de pointe pour fluidifier vos opérations, renforcer l'efficacité et stimuler une croissance durable. Qu'il s'agisse d'intégration ERP, de transformation cloud ou de modules SAP personnalisés, notre équipe assure une mise en œuvre fluide, adaptée à vos besoins.",
+        "servicesTitle": "Services",
+        "services3": [
+            "GROW with SAP (S/4HANA Cloud Public Edition)",
+            "SAP S/4HANA (On Premise)",
+            "RISE with SAP (S/4HANA Cloud Private Edition)",
+            "SAP Ariba",
+            "SAP Success Factors",
+            "SAP OpenText",
+            "SAP Analytics Cloud",
+            "SAP BTP",
+            "SAP Industry Solutions",
+            "SAP Integration Services"
+        ]
+    },
+    "utility": {
+        "bannerUpper": "Technologie",
+        "bannerMain": "Transformation des services publics",
+        "bannerSub": "Révolutionner les utilities avec des solutions intelligentes, évolutives et durables.",
+        "sectionTitle": "Propulsér un avenir plus intelligent",
+        "sectionSubtitle": "Innovez, optimisez et prenez la tête avec les solutions utilities d'AIOT",
+        "sectionDescription": "AIOT transforme le secteur des utilities avec des solutions numériques de pointe qui renforcent l'efficacité, la durabilité et la résilience. Nos technologies aident les fournisseurs à optimiser les opérations, réduire les coûts et livrer des solutions énergétiques plus intelligentes.",
+        "servicesTitle": "Services",
+        "services": [
+            "Facturation",
+            "Relevé de compteurs et opérations",
+            "Gestion des actifs et équipements réseau",
+            "Finances clients",
+            "Gestion des données énergétiques"
+        ]
+    },
+    "netsuite": {
+        "bannerUpper": "Technologie",
+        "bannerMain": "Oracle NetSuite",
+        "bannerSub": "Fluidifier l'entreprise à l'ère numérique.",
+        "sectionTitle": "Élevez vos opérations",
+        "sectionSubtitle": "Transformation ERP fluide avec AIOT et Oracle NetSuite.",
+        "sectionDescription": "AIOT apporte Oracle NetSuite aux entreprises, avec une solution ERP cloud intégrée conçue pour l'évolutivité et l'efficacité. Notre expertise d'implémentation NetSuite aide à fluidifier les finances, automatiser les workflows et optimiser les opérations sur une plateforme centralisée.",
+        "servicesTitle": "Services",
+        "services": [
+            "Analytique et business intelligence",
+            "Intégration et interopérabilité",
+            "Développement et déploiement d'applications",
+            "Sécurité et conformité",
+            "Évolutivité et flexibilité"
+        ]
+    },
+    "consulting": {
+        "bannerMain": "Conseil avec AIOT",
+        "bannerSub": "Libérez l'agilité, embrassez l'innovation : AIOT, votre partenaire de transformation",
+        "expertiseLabel": "Notre expertise",
+        "introTitle": "Des services de conseil qui produisent des résultats",
+        "introDesc": "Transformez votre entreprise avec nos solutions de conseil. Nous combinons vision stratégique, expertise sectorielle et technologie innovante pour une croissance durable et un avantage concurrentiel.",
+        "learnMore": "En savoir plus",
+        "services": [
+            {
+                "title": "Conseil métier",
+                "heading": "Transformation et développement du secteur public",
+                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+                "content": "Forte d'une vaste expérience dans le conseil au secteur public, AIOT propose des stratégies sur mesure pour une gouvernance inclusive, une prestation de services efficace et la croissance économique."
+            },
+            {
+                "title": "Transformation numérique",
+                "heading": "Solutions capital humain complètes",
+                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+                "content": "AIOT renforce l'engagement des collaborateurs, le développement des talents et la culture d'entreprise. Du leadership à la relève, nos solutions capital humain favorisent la haute performance et le succès à long terme."
+            },
+            {
+                "title": "Secteur public",
+                "heading": "Conseil en durabilité et impact",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT Sustainability Consulting se spécialise dans les services ESG et aide les clients à atteindre leurs objectifs de durabilité alignés sur les ODD mondiaux."
+            }
+        ],
+        "stats": {
+            "projects": "500+ projets livrés",
+            "consultants": "50+ consultants experts",
+            "satisfaction": "98 % de satisfaction client",
+            "industries": "25+ secteurs accompagnés"
+        },
+        "ctaTitle": "Prêt à transformer votre entreprise ?",
+        "ctaDesc": "Discutons de la façon dont notre conseil peut vous aider à atteindre vos objectifs",
+        "ctaButton": "Planifier une consultation"
+    },
+    "outsourcing": {
+        "bannerMain": "Externalisation avec AIOT",
+        "bannerSub": "Libérez l'agilité, embrassez l'innovation : AIOT, votre partenaire de transformation",
+        "whyOutsourceLabel": "Pourquoi externaliser ?",
+        "introTitle": "Transformez vos opérations",
+        "introDesc": "Associez-vous à AIOT pour fluidifier vos opérations, réduire les coûts et accéder à une expertise de premier plan. Nos solutions d'externalisation vous permettent de vous concentrer sur l'essentiel : la croissance de votre entreprise.",
+        "keyBenefitsTitle": "Avantages clés",
+        "servicesTitle": "Nos services d'externalisation",
+        "learnMore": "En savoir plus",
+        "processTitle": "Notre processus",
+        "ctaTitle": "Prêt à optimiser vos opérations ?",
+        "ctaDesc": "Discutons de la façon dont notre externalisation peut transformer votre entreprise",
+        "ctaButton": "Demander un devis",
+        "services": [
+            {
+                "title": "Processus métier",
+                "heading": "Externalisation efficace des processus métier",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+                "content": "AIOT propose des solutions BPO efficaces pour optimiser les opérations et réduire les coûts. Du service client aux RH et à la finance, nous fournissons un support évolutif adossé à la technologie et à l'expertise.",
+                "benefits": [
+                    "Réduction des coûts",
+                    "Support 24/7",
+                    "Solutions évolutives"
+                ]
+            },
+            {
+                "title": "Solutions RH",
+                "heading": "Solutions d'externalisation RH",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT fournit des solutions HRO sur mesure pour optimiser les fonctions RH, du recrutement à la paie et à la conformité.",
+                "benefits": [
+                    "Acquisition de talents",
+                    "Gestion de la paie",
+                    "Conformité"
+                ]
+            }
+        ],
+        "benefits": [
+            {
+                "title": "Efficacité des coûts",
+                "description": "Réduisez les coûts opérationnels jusqu'à 60 % tout en maintenant la qualité"
+            },
+            {
+                "title": "Gain de temps",
+                "description": "Libérez du temps pour vous concentrer sur les activités cœur de métier"
+            },
+            {
+                "title": "Évolutivité",
+                "description": "Faites évoluer vos opérations à la hausse ou à la baisse selon la demande"
+            },
+            {
+                "title": "Assurance qualité",
+                "description": "Accès à des équipes expertes au palmarès éprouvé"
+            }
+        ],
+        "processSteps": [
+            {
+                "step": "01",
+                "title": "Consultation",
+                "desc": "Comprendre vos besoins"
+            },
+            {
+                "step": "02",
+                "title": "Stratégie",
+                "desc": "Développer des solutions sur mesure"
+            },
+            {
+                "step": "03",
+                "title": "Mise en œuvre",
+                "desc": "Transition fluide"
+            },
+            {
+                "step": "04",
+                "title": "Support",
+                "desc": "Optimisation continue"
+            }
+        ]
+    }
+}

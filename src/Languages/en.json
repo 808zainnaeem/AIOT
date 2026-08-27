@@ -20,12 +20,12 @@
         "bookADemo": "Book a Demo",
         "menuLabel": "Menu",
         "exploreArrow": "Explore →",
-        "demoBannerTitle": "Your All-in-One Solution for Business Success"
+        "demoBannerTitle": "Your Solution Partner for Business Success"
     },
     "dropdown": {
         "aboutUs": {
             "whoWeAre": "Who We Are",
-            "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and future-ready tech solutions.",
+            "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.",
             "clientWall": "Client wall",
             "clientWallDesc": "Proudly serving industry leaders with innovative technology solutions that deliver real results.",
             "contactUs": "Contact Us",
@@ -79,53 +79,53 @@
         }
     },
     "Hero": {
-        "demoBannerTitle": "Your All-in-One Solution <br> for Business Success",
-        "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and future-ready tech solutions.",
+        "demoBannerTitle": "Your Solution Partner <br> for Business Success",
+        "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.",
         "learnMore": "Learn More"
     },
     "whatWeDoSection": {
         "title": "What We Do",
         "subtitle": "Tailored Solutions for Intelligent Connectivity",
         "consulting": "Consulting",
-        "consultingDesc": "We assist in creating a digital strategy that leads to technology-driven business success. Our team develops tailored plans that optimize your path to growth by leveraging advanced digital tools and technologies.",
+        "consultingDesc": "We help create a strategy that drives technology-led business success. Our team develops plans that optimise your path to growth by leveraging advanced digital tools and technologies.",
         "implementation": "Implementation",
-        "implementationDesc": "Our experts in all major technologies and business functions, empower us to deliver comprehensive business solutions.",
+        "implementationDesc": "Our experts across major technologies and business functions deliver comprehensive business solutions.",
         "managedServices": "Managed Services",
-        "managedServicesDesc": "Our Global Managed Services team secures your digital investment with monitoring, maintenance, and end-to-end 24×7 support."
+        "managedServicesDesc": "Our Managed Services team secures your digital investment with monitoring, maintenance, and end-to-end support."
     },
     "philosophy": {
         "title": "Our Philosophy",
         "heading": "Innovating for a Connected Future",
-        "paragraph1": "We focus on developing and delivering innovative technology solutions that address the evolving needs and challenges of our customers. We prioritize agility, adaptability, and responsiveness, enabling it to quickly pivot and adjust to changing market conditions and customer requirements.",
+        "paragraph1": "We focus on developing and delivering technology solutions that address our customers' evolving needs and challenges. We prioritise agility, adaptability, and responsiveness, enabling us to pivot quickly to changing market conditions and customer requirements.",
         "quote": "Transform operations with smart, cloud-driven solutions designed for growth and simplicity.",
-        "paragraph2": "Focused on harnessing the power of AI and IoT, we create forward-thinking solutions that redefine how businesses operate, ensuring they stay ahead in an evolving digital landscape.",
+        "paragraph2": "We create forward-thinking solutions that redefine how businesses operate, ensuring they stay ahead in an evolving digital landscape.",
         "readMore": "Read More"
     },
     "servicesStats": {
         "servicesTitle": "Our Services",
-        "servicesHeading": "What we Offers",
-        "servicesDescription": "Delivering cutting-edge AI, IoT, and analytics solutions, we help businesses streamline operations, enhance decision-making, and drive digital transformation with precision.",
+        "servicesHeading": "What we offer",
+        "servicesDescription": "We help businesses streamline operations, enhance decision-making, and drive digital transformation with precision.",
         "statFeedback": "Positive Feedback",
         "statProjects": "Projects",
         "statUsers": "Users",
         "statContributors": "Contributors",
         "serviceInfrastructure": "Infrastructure",
-        "descInfrastructure": "Building robust, scalable infrastructures that support seamless connectivity, secure data management, and efficient operations, ensuring your business is ready for future growth",
+        "descInfrastructure": "We build scalable infrastructure that supports seamless connectivity, secure data management, and efficient operations, ensuring your business is ready for future growth.",
         "serviceSecurity": "Security",
-        "descSecurity": "Deploying cutting-edge security solutions to safeguard your digital assets. Ensuring comprehensive protection against threats and maintaining data integrity.",
+        "descSecurity": "We deploy security solutions to safeguard your digital assets, ensuring comprehensive protection against threats and maintaining data integrity.",
         "serviceCloud": "Cloud Services",
-        "descCloud": "Delivering scalable cloud solutions that enhance efficiency and flexibility. Empowering your business to adapt quickly and operate seamlessly in the digital age.",
+        "descCloud": "We deliver scalable cloud solutions that enhance efficiency and flexibility, empowering your business to adapt quickly and operate seamlessly in the digital age.",
         "serviceApps": "Business Applications",
-        "descApps": "Developing customized business applications tailored to your unique needs. Enhancing productivity and streamlining processes for optimal performance.",
+        "descApps": "We provide business applications tailored to your processes, boosting productivity and streamlining operations for optimal performance.",
         "serviceData": "Data Management & Analytics",
-        "descData": "Transforming data into actionable insights with advanced analytics. Streamlining data management for better decision-making and efficiency.",
+        "descData": "We transform data into actionable insights with advanced analytics, streamlining data management for better decision-making and efficiency.",
         "serviceSupport": "Customer Support",
-        "descSupport": "Providing 24/7 customer support services to ensure your clients receive timely assistance. Offering personalized support to maintain customer satisfaction."
+        "descSupport": "We provide 24/7 customer support services to ensure your clients receive timely assistance, offering personalised support to maintain customer satisfaction."
     },
     "techInnovation": {
         "subtitle": "Innovating Tomorrow's Tech",
         "heading": "Empowering Businesses with Expertise and Excellence",
-        "paragraph1": "With a commitment to excellence and a passion for innovation, we specialize in delivering advanced technology solutions that drive success. Our team combines deep industry knowledge with cutting-edge technology to empower businesses, ensuring they stay ahead in a rapidly evolving digital landscape.",
+        "paragraph1": "With a commitment to excellence and a passion for innovation, we specialise in delivering advanced technology solutions that drive success. Our team combines deep industry knowledge with cutting-edge technology to empower businesses and help them stay ahead in a rapidly evolving digital landscape.",
         "paragraph2": "At the forefront of technological innovation, we deliver tailored solutions that drive success and efficiency.",
         "readMore": "Read more",
         "productsTitle": "Our Products"
@@ -133,13 +133,45 @@
     "ourProducts": {
         "sectionTitle": "Our Products",
         "heading": "Advanced Solutions for Every Need",
-        "description": "Explore our range of innovative products designed to enhance performance, streamline operations, and drive growth. From AI-driven analytics to scalable cloud solutions, our offerings cater to diverse business needs with precision and reliability.",
-        "product1Title": "SAP Business One User Interface",
-        "product1Desc": "Enhance your business operations with our user-friendly SAP Business One interface, designed for seamless navigation and efficient management of your enterprise resources.",
-        "product2Title": "Hire Lawyer Online",
-        "product2Desc": "Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs.",
-        "product3Title": "Connector",
-        "product3Desc": "Effortlessly integrate and manage your systems with our versatile connector, designed to streamline data flow and enhance connectivity across your platforms.",
+        "description": "Explore our range of products designed to enhance performance, streamline operations, and drive growth. From AI-driven analytics to scalable cloud solutions, our offerings cater to diverse business needs with precision and reliability.",
+        "items": [
+            {
+                "title": "SAP Business One User Interface",
+                "description": "Enhance your business operations with our user-friendly SAP Business One interface, designed for seamless navigation and efficient management of your enterprise resources."
+            },
+            {
+                "title": "PeopleHub HCM",
+                "description": "A complete human capital management platform to hire, manage, and grow your workforce with payroll, attendance, and talent tools in one place."
+            },
+            {
+                "title": "ProcessHub Operations Suite",
+                "description": "Streamline day-to-day operations with connected workflows, automation, and visibility across teams and processes."
+            },
+            {
+                "title": "CommerceHub UCP",
+                "description": "A unified commerce platform that connects sales channels, inventory, and customer journeys so you can sell and fulfil with consistency."
+            },
+            {
+                "title": "Hire Lawyer Online",
+                "description": "Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs."
+            },
+            {
+                "title": "InsightHub Vision AI",
+                "description": "Turn visual data into actionable insight with AI-powered vision that supports monitoring, detection, and smarter decisions."
+            },
+            {
+                "title": "HealthHub Patient Care",
+                "description": "A patient-care platform that helps healthcare teams manage records, appointments, and follow-ups with a smoother clinical experience."
+            },
+            {
+                "title": "BusinessHub ERP",
+                "description": "An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses."
+            },
+            {
+                "title": "Connector",
+                "description": "Effortlessly integrate and manage your systems with our connector for communication through WhatsApp, cellular APIs, and email exchanges, designed to streamline data flow."
+            }
+        ],
         "showMore": "Show more"
     },
     "about": {
@@ -188,7 +220,9 @@
         "companyGeneral": "AIOT Consulting",
         "address": "Address:",
         "email": "Email:",
-        "phone": "Phone no:"
+        "phone": "Phone no:",
+        "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
+        "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom"
     },
     "clientWall": {
         "heroTitle": "client wall",
@@ -230,14 +264,18 @@
         "uaeOffice": "UAE Office",
         "companyPakistan": "AIOT Consulting (Private) Limited",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC"
-
+        "companyUK": "AIOT Consulting LLC",
+        "pakistanAddress": "15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN",
+        "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom",
+        "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
+        "mapView": "Map View",
+        "mapCity": "Lahore, Pakistan"
     },
     "footer": {
         "newsletterTitle": "GET UPDATES",
         "emailPlaceholder": "Enter your email...",
         "subscribe": "Subscribe",
-        "description": "We aim to create a future where technology is a catalyst for innovation, growth, and positive change.",
+        "description": "Reshaping your future.",
         "quickLinks": "Quick Links",
         "home": "Home",
         "about": "About",

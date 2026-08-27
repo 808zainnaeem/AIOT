@@ -1,21 +1,24 @@
 // src/Components/Navbar.js (Updated with colors and language integration; design and all other things remain the same)
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Stethoscope, HardHat, Store, Wrench } from 'lucide-react';
+import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Sparkles, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2 } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
     Facebook,
     Twitter,
     Linkedin,
 } from 'lucide-react';
 
-import { LanguageContext } from '../Context/LanguageContext';
+import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
+import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/productCatalog';
 
 const Navbar = () => {
     const { language, setLanguage, translations } = useContext(LanguageContext);
-    const colors = Colors[language];
+    const colors = Colors[language] || Colors.en;
     const navbarTrans = translations.navbar || {};
     const dropdownTrans = translations.dropdown || {};
+    const footerTrans = translations.footer || {};
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [hoveredItem, setHoveredItem] = useState(null);
@@ -24,13 +27,12 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const languages = [
-        { code: 'en', name: 'English' },
-        { code: 'ar', name: 'العربية' }
-    ];
+    const languages = SUPPORTED_LANGUAGES;
     useEffect(() => {
         document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-        document.documentElement.lang = language;
+        document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
+        setHoveredItem(null);
+        setLanguageDropdownOpen(false);
     }, [language]);
 
     const socialIcons = [
@@ -40,13 +42,13 @@ const Navbar = () => {
     ];
 
     const menuItems = [
-        { title: navbarTrans.menu?.home || 'HOME', link: '/' },
-        { title: navbarTrans.menu?.aboutUs || 'ABOUT US', link: '/About' },
-        { title: navbarTrans.menu?.whatWeDo || 'WHAT WE DO', link: '/' },
-        { title: navbarTrans.menu?.solutions || 'SOLUTIONS', link: '/' },
-        { title: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
-        { title: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
-        { title: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com/Plans' },
+        { id: 'home', title: navbarTrans.menu?.home || 'HOME', link: '/' },
+        { id: 'aboutUs', title: navbarTrans.menu?.aboutUs || 'ABOUT US', link: '/About' },
+        { id: 'whatWeDo', title: navbarTrans.menu?.whatWeDo || 'WHAT WE DO', link: '/' },
+        { id: 'solutions', title: navbarTrans.menu?.solutions || 'SOLUTIONS', link: '/' },
+        { id: 'resources', title: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
+        { id: 'partners', title: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
+        { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com/Plans' },
     ];
 
     const partners = [
@@ -76,36 +78,40 @@ const Navbar = () => {
         },
         {
             name: 'Cloud Solutions',
-            logo: 'data:image/png;base64,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',
+            logo: '/partners/cloud-solutions.png',
+            cover: true,
             desc: dropdownTrans.partners?.cloudSolutionsDesc || 'Our expertise ensures seamless cloud migration and multi-cloud integration.',
             url: 'https://bmp-erp.com',
         },
     ];
 
-    const getDropdownContent = (title) => {
+    const getDropdownContent = (menuId) => {
         const content = {
-            [navbarTrans.menu?.aboutUs || 'ABOUT US']: {
+            aboutUs: {
                 cols: [
                     {
                         title: dropdownTrans.aboutUs?.whoWeAre || 'Who We Are',
-                        desc: dropdownTrans.aboutUs?.whoWeAreDesc || 'We blend Artificial Intelligence and the Internet of Things to drive innovation and future-ready tech solutions.',
-                        url: '/about'
+                        desc: dropdownTrans.aboutUs?.whoWeAreDesc || 'We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.',
+                        url: '/about',
+                        icon: Users,
                     },
                     {
                         title: dropdownTrans.aboutUs?.clientWall || 'Client wall',
                         desc: dropdownTrans.aboutUs?.clientWallDesc || 'Proudly serving industry leaders with innovative technology solutions that deliver real results.',
-                        url: '/clientwall'
+                        url: '/clientwall',
+                        icon: Building2,
                     },
                     {
                         title: dropdownTrans.aboutUs?.contactUs || 'Contact Us',
                         desc: dropdownTrans.aboutUs?.contactUsDesc || 'Get in touch with AIOT IT Solutions your gateway to smart, innovative, and transformative tech solutions.',
-                        url: '/contact'
+                        url: '/contact',
+                        icon: Phone,
                     },
                 ],
                 image: 'https://assets.entrepreneur.com/content/3x2/2000/20190109070104-shutterstock-529299211.jpeg?format=pjeg&auto=webp&crop=1:1',
                 imageLabel: 'Technology & Impact'
             },
-            [navbarTrans.menu?.whatWeDo || 'WHAT WE DO']: {
+            whatWeDo: {
                 cols: [
                     {
                         title: dropdownTrans.whatWeDo?.technology || 'Technology',
@@ -136,51 +142,41 @@ const Navbar = () => {
                 image: 'https://rockwellautomation.scene7.com/is/image/rockwellautomation/business-people-meeting-office-digital-transformation-SHS-2177507065.3840.jpg',
                 imageLabel: 'Digital Transformation'
             },
-            [navbarTrans.menu?.solutions || 'SOLUTIONS']: {
+            solutions: {
                 cols: [
                     {
-                        title: dropdownTrans.solutions?.industries || 'Industries',
-                        list: [
-                            { text: dropdownTrans.solutions?.healthIndustry || 'Health Industry', icon: Stethoscope, url: '/industries/health' },
-                            { text: dropdownTrans.solutions?.engineeringIndustry || 'Engineering Industry', icon: Wrench, url: '/industries/engineering' },
-                            { text: dropdownTrans.solutions?.constructionIndustry || 'Construction Industry', icon: HardHat, url: '/industries/construction' },
-                            { text: dropdownTrans.solutions?.retail || 'Retail', icon: Store, url: '/industries/retail' },
-                        ]
+                        title: footerTrans.solutions || dropdownTrans.solutions?.solutions || 'Solutions',
+                        list: getSolutionsProducts(translations).map((product, index) => ({
+                            text: product.title,
+                            url: product.url,
+                            icon: [Database, Users, Workflow, Store, Scale][index],
+                        })),
                     },
                     {
-                        title: dropdownTrans.solutions?.allInOneSuit || 'All In One Suit',
-                        list: [
-                            { text: dropdownTrans.solutions?.attendee || 'Attendee', url: '/solutions/attendee' },
-                            { text: dropdownTrans.solutions?.hcm || 'HCM', url: '/solutions/hcm' },
-                            { text: dropdownTrans.solutions?.pos || 'POS', url: '/solutions/pos' },
-                        ]
-                    },
-                    {
-                        title: dropdownTrans.solutions?.solutions || 'Solutions',
-                        content: (
-                            <div className="space-y-5">
-                                <div className="text-sm text-gray-800 cursor-pointer" style={{ '&:hover': { color: colors.logo } }}>{dropdownTrans.solutions?.connector || 'Connector'}</div>
-                                <div className="text-sm text-gray-800 cursor-pointer" style={{ '&:hover': { color: colors.logo } }}>{dropdownTrans.solutions?.hireLawyerOnline || 'Hire Lawyer Online'}</div>
-                                <div className="text-sm text-gray-800 cursor-pointer" style={{ '&:hover': { color: colors.logo } }}>{dropdownTrans.solutions?.sapBusinessOneUi || 'SAP Business One User Interface'}</div>
-                                <div className="text-sm text-gray-800 cursor-pointer" style={{ '&:hover': { color: colors.logo } }}>{dropdownTrans.solutions?.hrManagementSystem || 'HR Management System'}</div>
-                            </div>
-                        )
+                        title: footerTrans.moreSolutions || 'More Solutions',
+                        list: getMoreSolutionsProducts(translations).map((product, index) => ({
+                            text: product.title,
+                            url: product.url,
+                            icon: [Eye, HeartPulse, Building2, Cloud][index],
+                        })),
                     },
                     {
                         title: navbarTrans.bookADemo || 'Book a Demo',
                         content: (
-                            <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white flex flex-col items-center justify-center text-center h-full shadow-lg">
-                                {/* <img
-                                    src="/Philosophy.png"
-                                    alt="Solution Banner"
-                                    className="w-24 h-24 object-contain mb-4"
-                                /> */}
-                                <h3 className="text-xl font-bold mb-4 leading-tight">
-                                    {navbarTrans.demoBannerTitle || 'Your All-in-One Solution for Business Success'}
+                            <div
+                                className="h-full min-h-[260px] rounded-2xl p-8 text-white flex flex-col items-center justify-center text-center shadow-lg"
+                                style={{ background: `linear-gradient(145deg, ${colors.logo}, #F65314)` }}
+                            >
+                                <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center mb-5">
+                                    <Sparkles size={22} />
+                                </div>
+                                <h3 className="text-xl font-bold mb-6 leading-tight">
+                                    {navbarTrans.demoBannerTitle || 'Your Solution Partner for Business Success'}
                                 </h3>
                                 <button
                                     onClick={() => navigate('/book-demo')}
-                                    className="bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition text-sm"
+                                    className="bg-white px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition text-sm"
+                                    style={{ color: colors.logo }}
                                 >
                                     {navbarTrans.bookADemo || 'Book a Demo'}
                                 </button>
@@ -190,47 +186,53 @@ const Navbar = () => {
                 ],
                 image: null
             },
-            [navbarTrans.menu?.resources || 'RESOURCES']: {
+            resources: {
                 cols: [
                     {
                         title: dropdownTrans.resources?.news || 'News',
                         desc: dropdownTrans.resources?.newsDesc || 'Stay updated with the latest news and innovations from AIOT IT Solutions.',
-                        url: ''
+                        url: '',
+                        icon: Newspaper,
                     },
                     {
                         title: dropdownTrans.resources?.blogs || 'Blogs',
                         desc: dropdownTrans.resources?.blogsDesc || 'Explore insights, trends, and expert opinions on technology and innovation.',
-                        url: ''
+                        url: '',
+                        icon: BookOpen,
                     },
                     {
                         title: dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
                         desc: dropdownTrans.resources?.innovateWithInsightsDesc || 'Discover strategies to enhance your business through emerging trends and thought leadership.',
-                        url: null
+                        url: null,
+                        icon: Lightbulb,
                     },
                 ],
                 image: 'news.png',
                 imageLabel: 'Knowledge Hub'
             },
-            [navbarTrans.menu?.partners || 'PARTNERS']: {
+            partners: {
                 cols: partners.map(partner => ({
                     title: partner.name,
                     desc: partner.desc,
                     logo: partner.logo,
+                    cover: partner.cover,
                     url: partner.url
                 })),
             },
         };
-        return content[title] || content[navbarTrans.menu?.aboutUs || 'ABOUT US'];
+        return content[menuId] || content.aboutUs;
     };
 
-    const handleNavClick = (link, title) => {
+    const handleNavClick = (link) => {
         if (link && link.startsWith('http')) {
-            window.open(link, '_self');
+            const openInNewTab = !link.includes('/Plans');
+            window.open(link, openInNewTab ? '_blank' : '_self', openInNewTab ? 'noopener,noreferrer' : undefined);
         } else if (link) {
             navigate(link);
         }
         setSidebarOpen(false);
         setMobileDropdownItem(null);
+        setHoveredItem(null);
     };
 
     const toggleMobileDropdown = (index) => {
@@ -266,36 +268,40 @@ const Navbar = () => {
             </div>
 
             {/* Main Navigation */}
-            <nav style={{ backgroundColor: colors.background }} className="shadow-md sticky top-0 z-50">
+            <nav
+                style={{ backgroundColor: colors.background }}
+                className="shadow-md sticky top-0 z-50 relative"
+                onMouseLeave={() => setHoveredItem(null)}
+            >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className={`flex items-center h-20 ${language === 'ar' ? 'justify-between gap-35' : 'justify-between'}`}>
                         <div className='flex items-center gap-40'>
 
-                        <div onClick={() => handleNavClick('/', 'Home')} className="cursor-pointer">
+                        <div onClick={() => handleNavClick('/')} className="cursor-pointer">
                             <img src="/NewLogo.png" alt="AIOT Logo" className="h-auto w-13" />
                         </div>
 
                         {/* Desktop Menu */}
-                        <div className="hidden lg:flex items-center gap-10 relative h-[80px]" onMouseLeave={() => setHoveredItem(null)}>
+                        <div className="hidden lg:flex items-center gap-8 relative h-[80px]">
                             {menuItems.map((item, index) => {
-                                const hasDropdown = ![navbarTrans.menu?.home || 'HOME', navbarTrans.menu?.marketplace || 'MARKETPLACE'].includes(item.title);
+                                const hasDropdown = !['home', 'marketplace'].includes(item.id);
+                                const isOpen = hoveredItem === index;
                                 return (
                                     <button
-                                        key={item.title}
-                                        onClick={() => handleNavClick(item.link, item.title)}
+                                        key={item.id}
+                                        onClick={() => handleNavClick(item.link)}
                                         onMouseEnter={() => hasDropdown && setHoveredItem(index)}
-                                        className={`text-sm tracking-wider transition-all duration-200 font-[450] ${item.title === (navbarTrans.menu?.marketplace || 'MARKETPLACE') ? '' : ''
-                                            }`}
-                                        style={{
-                                            color: item.title === (navbarTrans.menu?.marketplace || 'MARKETPLACE') ? '#000000ff' : '#000000ff',
-                                        }}
+                                        className="relative h-full text-sm tracking-wider font-[500] transition-colors duration-200"
+                                        style={{ color: isOpen ? colors.logo : '#111111' }}
                                     >
                                         {item.title}
+                                        <span
+                                            className="absolute left-0 right-0 bottom-0 h-0.5 rounded-full transition-opacity duration-200"
+                                            style={{ backgroundColor: colors.logo, opacity: isOpen ? 1 : 0 }}
+                                        />
                                     </button>
                                 );
                             })}
-                            {/* Language Dropdown for Desktop */}
-                           
                         </div>
                         </div>
 
@@ -312,7 +318,7 @@ const Navbar = () => {
                                     </svg>
                                 </button>
                                 {languageDropdownOpen && (
-                                    <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-5000">
+                                    <div className="absolute right-0 mt-2 w-44 max-h-80 overflow-y-auto bg-white shadow-lg rounded-md z-5000">
                                         {languages.map((lang) => (
                                             <button
                                                 key={lang.code}
@@ -337,123 +343,148 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Mega Dropdown */}
-                {hoveredItem !== null && ![navbarTrans.menu?.home || 'HOME', navbarTrans.menu?.marketplace || 'MARKETPLACE'].includes(menuItems[hoveredItem]?.title) && (
-                    <div
-                        className="absolute top-full left-0 w-full bg-white shadow-2xl border-t-4 z-50"
-                        style={{ borderColor: colors.logo }}
+                <AnimatePresence>
+                {hoveredItem !== null && !['home', 'marketplace'].includes(menuItems[hoveredItem]?.id) && (
+                    <motion.div
+                        key={menuItems[hoveredItem].id}
+                        className="absolute top-full left-0 w-full z-50"
+                        style={{
+                            backgroundColor: '#fff',
+                            boxShadow: '0 24px 60px rgba(15, 23, 42, 0.12)',
+                            borderTop: `3px solid ${colors.logo}`,
+                        }}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 8 }}
+                        transition={{ duration: 0.2, ease: 'easeOut' }}
                         onMouseEnter={() => setHoveredItem(hoveredItem)}
                         onMouseLeave={() => setHoveredItem(null)}
                     >
-                        <div className="h-[55vh] overflow-y-auto">
-                            <div
-                                className="h-full grid gap-px border-l border-gray-300"
-                                style={{
-                                    gridTemplateColumns:
-                                        menuItems[hoveredItem].title === (navbarTrans.menu?.partners || 'PARTNERS')
-                                            ? 'repeat(5, 1fr)'
-                                            : menuItems[hoveredItem].title === (navbarTrans.menu?.solutions || 'SOLUTIONS')
-                                                ? 'repeat(4, 1fr)'
-                                                : 'repeat(3, 1fr) 1fr',
-                                }}
-                            >
-                                {(() => {
-                                    const { cols, image, imageLabel } = getDropdownContent(menuItems[hoveredItem].title);
-                                    const isPartners = menuItems[hoveredItem].title === (navbarTrans.menu?.partners || 'PARTNERS');
-                                    const isSolutions = menuItems[hoveredItem].title === (navbarTrans.menu?.solutions || 'SOLUTIONS');
+                        <div className="max-w-7xl mx-auto px-6 py-8">
+                            {(() => {
+                                const hoveredId = menuItems[hoveredItem].id;
+                                const { cols, image, imageLabel } = getDropdownContent(hoveredId);
+                                const isPartners = hoveredId === 'partners';
+                                const isSolutions = hoveredId === 'solutions';
 
-                                    return (
-                                        <>
-                                            {cols.map((col, idx) => (
-                                                <div
-                                                    key={idx}
-                                                    className="border-r border-gray-300 p-8 flex flex-col bg-white hover:bg-gray-50 transition-colors"
-                                                >
-                                                    {isPartners ? (
-                                                        <div className="flex flex-col items-center text-center">
-                                                            <div className="w-32 h-32 mb-6 rounded-2xl overflow-hidden border-2 border-dashed border-gray-300 flex items-center justify-center">
-                                                                <img
-                                                                    src={col.logo || 'https://via.placeholder.com/150?text=Logo'}
-                                                                    alt={col.title}
-                                                                    className="w-full h-full object-contain p-4"
-                                                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Logo'; }}
-                                                                />
-                                                            </div>
-                                                            <h3 className="text-lg font-bold text-orange-600">{col.title}</h3>
-                                                            <p className="text-sm text-gray-600 mt-2">{col.desc}</p>
-                                                            <a
-                                                                href={col.url}
-                                                                target="_blank"
-                                                                rel="noopener noreferrer"
-                                                                className="mt-6 text-white rounded-full px-6 py-2 text-sm font-medium hover:bg-orange-600 transition inline-block"
-                                                                style={{ backgroundColor: colors.logo }}
-                                                            >
-                                                                {navbarTrans.learnMore || 'Learn More'}
-                                                            </a>
+                                return (
+                                    <div
+                                        className="grid gap-5"
+                                        style={{
+                                            gridTemplateColumns:
+                                                isPartners
+                                                    ? 'repeat(5, 1fr)'
+                                                    : isSolutions
+                                                        ? '1.05fr 1.05fr 0.9fr'
+                                                        : 'repeat(3, 1fr) 0.95fr',
+                                        }}
+                                    >
+                                        {cols.map((col, idx) => (
+                                            <div key={idx} className="min-h-0">
+                                                {isPartners ? (
+                                                    <div className="h-full rounded-2xl border border-orange-100 bg-white p-5 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                        <div className={`w-full mb-4 rounded-xl overflow-hidden ${col.cover ? 'h-28' : 'h-24 bg-gray-50 flex items-center justify-center px-3'}`}>
+                                                            <img
+                                                                src={col.logo || 'https://via.placeholder.com/150?text=Logo'}
+                                                                alt={col.title}
+                                                                className={col.cover ? 'w-full h-full object-cover' : 'max-h-16 max-w-full object-contain'}
+                                                                onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Logo'; }}
+                                                            />
                                                         </div>
-                                                    ) : col.content ? (
-                                                        col.content
-                                                    ) : (
-                                                        <>
-                                                            <h2 className="text-2xl font-[550] mb-6" style={{ color: colors.logo }}>
-                                                                {col.title}
-                                                            </h2>
-
-                                                            {col.list ? (
-                                                                <ul className="space-y-4">
-                                                                    {col.list.map((item, i) => (
-                                                                        <li
-                                                                            key={i}
-                                                                            className="flex items-center gap-4 text-gray-700 text-base cursor-pointer transition group"
-                                                                            onClick={() => handleNavClick(item.url, item.text)}
-                                                                            style={{ '&:hover': { color: colors.logo } }}
-                                                                        >
-                                                                            {item.icon && <item.icon size={24} className="group-hover:scale-110 transition" style={{ color: colors.logo }} />}
-                                                                            <span className="group-hover:translate-x-1 transition">{item.text}</span>
-                                                                            <ArrowRight size={16} className="opacity-0 group-hover:opacity-100 transition ml-auto" />
-                                                                        </li>
-                                                                    ))}
-                                                                </ul>
-                                                            ) : (
-                                                                <p className="text-gray-700 text-sm leading-relaxed">{col.desc}</p>
-                                                            )}
-
-                                                            {col.url ? (
-                                                                <button
-                                                                    onClick={() => handleNavClick(col.url, col.title)}
-                                                                    className="mt-8 text-white rounded-full px-6 py-2 text-sm font-medium transition w-fit"
-                                                                    style={{ backgroundColor: colors.logo, '&:hover': { backgroundColor: '#F65314' } }}
-                                                                >
-                                                                    {navbarTrans.explore || 'Explore'} {col.title}
-                                                                </button>
-                                                            ) : !col.list && !isSolutions && (
-                                                                <button
-                                                                    onClick={() => handleNavClick('/contact', col.title)}
-                                                                    className="mt-8 text-white rounded-full px-6 py-2 text-sm font-medium transition w-fit"
-                                                                    style={{ backgroundColor: colors.logo, '&:hover': { backgroundColor: 'orange-600' } }}
-                                                                >
-                                                                    {navbarTrans.explore || 'Explore'} {col.title}
-                                                                </button>
-                                                            )}
-                                                        </>
-                                                    )}
-                                                </div>
-                                            ))}
-
-                                            {/* Image Column */}
-                                            {!isPartners && !isSolutions && image && (
-                                                <div className="p-6 flex items-center justify-center bg-gray-50">
-                                                    <div className="w-full h-full bg-gradient-to-r from-orange-200 via-amber-100 to-gray-300 rounded-lg flex items-center justify-center overflow-hidden">
-                                                        <img src={image} alt={imageLabel} className="w-full h-full object-cover" />
+                                                        <h3 className="text-base font-bold mb-2" style={{ color: colors.logo }}>{col.title}</h3>
+                                                        <p className="text-xs text-gray-600 leading-relaxed flex-1">{col.desc}</p>
+                                                        <a
+                                                            href={col.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="mt-4 text-white rounded-full px-5 py-2 text-xs font-semibold hover:opacity-90 transition inline-block"
+                                                            style={{ backgroundColor: colors.logo }}
+                                                        >
+                                                            {navbarTrans.learnMore || 'Learn More'}
+                                                        </a>
                                                     </div>
-                                                </div>
-                                            )}
-                                        </>
-                                    );
-                                })()}
-                            </div>
+                                                ) : col.content ? (
+                                                    col.content
+                                                ) : col.list ? (
+                                                    <div className="h-full rounded-2xl border border-orange-100 bg-[#fffaf7] p-5">
+                                                        <h2 className="text-lg font-bold mb-4" style={{ color: colors.logo }}>
+                                                            {col.title}
+                                                        </h2>
+                                                        <ul className="space-y-1">
+                                                            {col.list.map((item, i) => (
+                                                                <li
+                                                                    key={i}
+                                                                    className="group flex items-center gap-3 rounded-xl px-2.5 py-2.5 text-gray-700 cursor-pointer transition hover:bg-white hover:shadow-sm"
+                                                                    onClick={() => handleNavClick(item.url)}
+                                                                >
+                                                                    {item.icon && (
+                                                                        <span
+                                                                            className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                                                                            style={{ backgroundColor: `${colors.logo}14`, color: colors.logo }}
+                                                                        >
+                                                                            <item.icon size={16} />
+                                                                        </span>
+                                                                    )}
+                                                                    <span className="text-sm font-medium flex-1 group-hover:translate-x-0.5 transition">{item.text}</span>
+                                                                    <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition shrink-0" style={{ color: colors.logo }} />
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                ) : (
+                                                    <div className="h-full rounded-2xl border border-orange-100 bg-[#fffaf7] p-6 flex flex-col hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                                        {col.icon && (
+                                                            <div
+                                                                className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+                                                                style={{ backgroundColor: `${colors.logo}14`, color: colors.logo }}
+                                                            >
+                                                                <col.icon size={22} />
+                                                            </div>
+                                                        )}
+                                                        <h2 className="text-lg font-bold mb-3" style={{ color: colors.logo }}>
+                                                            {col.title}
+                                                        </h2>
+                                                        <p className="text-gray-600 text-sm leading-relaxed flex-1">{col.desc}</p>
+                                                        {col.url ? (
+                                                            <button
+                                                                onClick={() => handleNavClick(col.url)}
+                                                                className="mt-5 text-sm font-semibold inline-flex items-center gap-1 w-fit"
+                                                                style={{ color: colors.logo }}
+                                                            >
+                                                                {navbarTrans.explore || 'Explore'} {col.title}
+                                                                <ArrowRight size={14} />
+                                                            </button>
+                                                        ) : !isSolutions && (
+                                                            <button
+                                                                onClick={() => handleNavClick('/contact')}
+                                                                className="mt-5 text-sm font-semibold inline-flex items-center gap-1 w-fit"
+                                                                style={{ color: colors.logo }}
+                                                            >
+                                                                {navbarTrans.explore || 'Explore'} {col.title}
+                                                                <ArrowRight size={14} />
+                                                            </button>
+                                                        )}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+
+                                        {!isPartners && !isSolutions && image && (
+                                            <div className="relative min-h-[240px] rounded-2xl overflow-hidden">
+                                                <img src={image} alt={imageLabel} className="absolute inset-0 w-full h-full object-cover" />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                                                <p className="absolute bottom-4 left-4 right-4 text-white font-semibold text-sm tracking-wide">
+                                                    {imageLabel}
+                                                </p>
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })()}
                         </div>
-                    </div>
+                    </motion.div>
                 )}
+                </AnimatePresence>
             </nav>
 
             {/* Mobile Sidebar */}
@@ -469,15 +500,15 @@ const Navbar = () => {
                         </div>
                         <div className="py-4">
                             {menuItems.map((item, index) => {
-                                const hasDropdown = ![navbarTrans.menu?.home || 'HOME', navbarTrans.menu?.marketplace || 'MARKETPLACE'].includes(item.title);
+                                const hasDropdown = !['home', 'marketplace'].includes(item.id);
                                 const isOpen = mobileDropdownItem === index;
                                 return (
-                                    <div key={item.title}>
+                                    <div key={item.id}>
                                         <button
-                                            onClick={() => hasDropdown ? toggleMobileDropdown(index) : handleNavClick(item.link, item.title)}
+                                            onClick={() => hasDropdown ? toggleMobileDropdown(index) : handleNavClick(item.link)}
                                             className={`w-full text-left px-6 py-4 font-semibold hover:bg-gray-50 flex justify-between items-center `}
                                         >
-                                            <span style={{ color: item.title === (navbarTrans.menu?.marketplace || 'MARKETPLACE') ? colors.logo : '#000000ff' }}>{item.title}</span>
+                                            <span style={{ color: item.id === 'marketplace' ? colors.logo : '#000000ff' }}>{item.title}</span>
                                             {hasDropdown && (
                                                 <svg className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -486,7 +517,7 @@ const Navbar = () => {
                                         </button>
                                         {hasDropdown && isOpen && (
                                             <div className="bg-gray-50 px-6 py-6 border-t border-gray-200 text-sm">
-                                                {getDropdownContent(item.title).cols.map((col, i) => (
+                                                {getDropdownContent(item.id).cols.map((col, i) => (
                                                     <div key={i} className="mb-6 last:mb-0">
                                                         <h4 className="font-bold mb-3" style={{ color: colors.logo }}>{col.title || col.name}</h4>
                                                         {col.list ? (
@@ -496,7 +527,7 @@ const Navbar = () => {
                                                                         key={idx}
                                                                         className="flex items-center gap-3 text-gray-600 cursor-pointer"
                                                                         style={{ '&:hover': { color: colors.logo } }}
-                                                                        onClick={() => handleNavClick(li.url, li.text)}
+                                                                        onClick={() => handleNavClick(li.url)}
                                                                     >
                                                                         {li.icon && <li.icon size={16} style={{ color: colors.logo }} />}
                                                                         <span>{li.text}</span>
@@ -508,7 +539,7 @@ const Navbar = () => {
                                                                 <p className="text-gray-600 text-xs leading-relaxed mb-3">{col.desc}</p>
                                                                 {col.url && (
                                                                     <button
-                                                                        onClick={() => handleNavClick(col.url, col.title)}
+                                                                        onClick={() => handleNavClick(col.url)}
                                                                         className="text-sm font-medium hover:underline"
                                                                         style={{ color: colors.logo }}
                                                                     >

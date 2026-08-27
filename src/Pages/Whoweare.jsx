@@ -8,9 +8,9 @@ export default function AboutPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const { translations } = useContext(LanguageContext);
+    const { translations, language } = useContext(LanguageContext);
     const t = translations.about; // Shortcut
-    const colors = Colors.en; // Will automatically use Colors.ar if you extend it later
+    const colors = Colors[language] || Colors.en;
 
     return (
         <div className="bg-white">
@@ -239,7 +239,7 @@ export default function AboutPage() {
                                 <h5 className="text-gray-900 font-bold mb-2">{t.companyPakistan}</h5>
                                 <p className="mb-3" style={{ color: colors.accent }}>{t.lahore}</p>
                                 <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> 15/C, CECHS, PHASE II, PECO ROAD, LAHORE 54000, PUNJAB, PAKISTAN
+                                    <span className="font-semibold">{t.address}</span> {t.pakistanAddress || translations.navbar?.topBar?.address}
                                 </p>
                                 <p className="text-gray-700 text-sm mb-2">
                                     <span className="font-semibold">{t.email}</span> info@aiotcons.com
@@ -256,7 +256,7 @@ export default function AboutPage() {
                                 <h5 className="text-gray-900 font-bold mb-2">{t.companyUAE}</h5>
                                 <p className="mb-3" style={{ color: colors.accent }}>{t.dubai}</p>
                                 <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> Office M23, Makhzin Office, Al Najda Street, Abu Dhabi, UAE
+                                    <span className="font-semibold">{t.address}</span> {t.uaeAddress}
                                 </p>
                                 <p className="text-gray-700 text-sm mb-2">
                                     <span className="font-semibold">{t.email}</span> info@aiotcons.com
@@ -270,7 +270,7 @@ export default function AboutPage() {
                                 <h5 className="text-gray-900 font-bold mb-2">{t.companyUK}</h5>
                                 <p className="mb-3" style={{ color: colors.accent }}>{t.glasgow}</p>
                                 <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> 3 Hoey Avenue, Glasgow, United Kingdom
+                                    <span className="font-semibold">{t.address}</span> {t.ukAddress}
                                 </p>
                                 <p className="text-gray-700 text-sm mb-2">
                                     <span className="font-semibold">{t.email}</span> info@aiotcons.uk

@@ -1,0 +1,521 @@
+{
+    "navbar": {
+        "topBar": {
+            "phone": "+92 3123456778",
+            "email": "info@aiotcons.com",
+            "address": "巴基斯坦旁遮普省拉合尔54100，PECO路，GECHS第三期，15/1C"
+        },
+        "menu": {
+            "home": "首页",
+            "aboutUs": "关于我们",
+            "whatWeDo": "我们的业务",
+            "solutions": "解决方案",
+            "resources": "资源",
+            "partners": "合作伙伴",
+            "marketplace": "市场"
+        },
+        "viewPlans": "查看套餐",
+        "learnMore": "了解更多",
+        "explore": "探索",
+        "bookADemo": "预约演示",
+        "menuLabel": "菜单",
+        "exploreArrow": "探索 →",
+        "demoBannerTitle": "助力企业成功的解决方案伙伴"
+    },
+    "dropdown": {
+        "aboutUs": {
+            "whoWeAre": "我们是谁",
+            "whoWeAreDesc": "我们将人工智能与物联网相结合，推动创新并交付面向未来的技术解决方案。",
+            "clientWall": "客户墙",
+            "clientWallDesc": "我们自豪地为行业领导者提供创新技术解决方案，带来切实成果。",
+            "contactUs": "联系我们",
+            "contactUsDesc": "联系 AIOT IT Solutions，开启智能、创新且具有变革力的技术解决方案。"
+        },
+        "whatWeDo": {
+            "technology": "技术",
+            "technologyDesc": "AIOT IT Solutions 驱动数字化转型",
+            "technologyDrivenInnovation": "技术驱动的创新解决方案",
+            "nextGenTechnology": "下一代技术解决方案",
+            "enterpriseSap": "企业 SAP 解决方案",
+            "utilityModernization": "公用事业现代化",
+            "oracleNetsuite": "Oracle NetSuite 解决方案",
+            "consulting": "咨询",
+            "consultingDesc": "战略性技术咨询，优化运营并推动增长。",
+            "technologySolutionsProvider": "技术解决方案提供商",
+            "outSourcing": "外包",
+            "outSourcingDesc": "可靠的离岸外包服务，兼顾成本效益与专业人才。",
+            "strategicOffshore": "战略性离岸解决方案"
+        },
+        "solutions": {
+            "industries": "行业",
+            "healthIndustry": "医疗行业",
+            "engineeringIndustry": "工程行业",
+            "constructionIndustry": "建筑行业",
+            "retail": "零售",
+            "allInOneSuit": "一体化套件",
+            "attendee": "Attendee",
+            "hcm": "HCM",
+            "pos": "POS",
+            "solutions": "解决方案",
+            "connector": "Connector",
+            "hireLawyerOnline": "在线聘请律师",
+            "sapBusinessOneUi": "SAP Business One 用户界面",
+            "hrManagementSystem": "人力资源管理系统"
+        },
+        "resources": {
+            "news": "新闻",
+            "newsDesc": "了解 AIOT IT Solutions 的最新新闻与创新动态。",
+            "blogs": "博客",
+            "blogsDesc": "探索关于技术与创新的洞察、趋势和专家观点。",
+            "innovateWithInsights": "以洞察推动创新",
+            "innovateWithInsightsDesc": "通过新兴趋势与思想领导力，发现提升业务的策略。"
+        },
+        "partners": {
+            "sapDesc": "与我们合作，借助先进的云解决方案，改变中小企业的全球运营方式。",
+            "oracleNetsuiteDesc": "了解与 Oracle NetSuite 合作带来的全面业务解决方案优势。",
+            "microsoftDesc": "我们的微软合作伙伴关系以先进解决方案增强企业能力。",
+            "cloudiaxDesc": "Cloudiax 帮助企业以强大的云解决方案增强 SAP 能力。",
+            "cloudSolutionsDesc": "我们的专业能力确保顺畅的云迁移与多云集成。"
+        }
+    },
+    "Hero": {
+        "demoBannerTitle": "助力企业成功的 <br> 解决方案伙伴",
+        "whoWeAreDesc": "我们将人工智能与物联网相结合，推动创新并交付面向未来的技术解决方案。",
+        "learnMore": "了解更多"
+    },
+    "whatWeDoSection": {
+        "title": "我们的业务",
+        "subtitle": "面向智能连接的定制化解决方案",
+        "consulting": "咨询",
+        "consultingDesc": "我们帮助制定以技术驱动业务成功的战略。团队通过先进的数字化工具与技术，优化您的增长路径。",
+        "implementation": "实施",
+        "implementationDesc": "我们在主要技术和业务职能领域的专家，交付全面的业务解决方案。",
+        "managedServices": "托管服务",
+        "managedServicesDesc": "我们的托管服务团队通过监控、维护和端到端支持，守护您的数字化投资。"
+    },
+    "philosophy": {
+        "title": "我们的理念",
+        "heading": "为互联未来而创新",
+        "paragraph1": "我们专注于开发并交付能够应对客户不断变化的需求与挑战的技术解决方案。我们重视敏捷、适应与响应能力，以便快速应对市场变化和客户要求。",
+        "quote": "以智能、云驱动的解决方案变革运营，兼顾增长与简洁。",
+        "paragraph2": "我们打造具有前瞻性的解决方案，重新定义企业运营方式，帮助他们在不断演进的数字环境中保持领先。",
+        "readMore": "阅读更多"
+    },
+    "servicesStats": {
+        "servicesTitle": "我们的服务",
+        "servicesHeading": "我们提供什么",
+        "servicesDescription": "我们帮助企业精简运营、提升决策，并以精准方式推动数字化转型。",
+        "statFeedback": "好评",
+        "statProjects": "项目",
+        "statUsers": "用户",
+        "statContributors": "贡献者",
+        "serviceInfrastructure": "基础设施",
+        "descInfrastructure": "我们构建可扩展的基础设施，支持无缝连接、安全的数据管理和高效运营，确保业务为未来增长做好准备。",
+        "serviceSecurity": "安全",
+        "descSecurity": "我们部署安全解决方案以保护数字资产，全面抵御威胁并维护数据完整性。",
+        "serviceCloud": "云服务",
+        "descCloud": "我们交付可扩展的云解决方案，提升效率与灵活性，助力企业快速适应并在数字时代顺畅运营。",
+        "serviceApps": "业务应用",
+        "descApps": "我们提供贴合您流程的业务应用，提升生产力并精简运营，实现最佳绩效。",
+        "serviceData": "数据管理与分析",
+        "descData": "我们借助先进分析将数据转化为可执行洞察，精简数据管理，提升决策与效率。",
+        "serviceSupport": "客户支持",
+        "descSupport": "我们提供全天候客户支持，确保您的客户及时获得协助，并以个性化支持维护客户满意度。"
+    },
+    "techInnovation": {
+        "subtitle": "明日科技",
+        "heading": "以专业与卓越赋能企业",
+        "paragraph1": "我们致力于卓越，热爱创新，专注交付推动成功的先进技术解决方案。团队将深厚的行业知识与前沿技术相结合，赋能企业在快速变化的数字环境中保持领先。",
+        "paragraph2": "站在技术创新前沿，我们交付量身定制的解决方案，驱动成功与效率。",
+        "readMore": "阅读更多",
+        "productsTitle": "我们的产品"
+    },
+    "ourProducts": {
+        "sectionTitle": "我们的产品",
+        "heading": "满足各种需求的先进解决方案",
+        "description": "探索我们的产品系列，旨在提升性能、精简运营并推动增长。从人工智能分析到可扩展云解决方案，我们的产品以精准可靠满足多样化业务需求。",
+        "items": [
+            {
+                "title": "SAP Business One 用户界面",
+                "description": "通过我们易用的 SAP Business One 界面提升业务运营，实现顺畅导航与高效的企业资源管理。"
+            },
+            {
+                "title": "人力资本管理",
+                "description": "完整的人力资本管理平台，帮助招聘、管理并发展团队，薪资、考勤与人才工具集于一体。"
+            },
+            {
+                "title": "运营套件",
+                "description": "通过互联工作流、自动化以及跨团队与流程的可见性，精简日常运营。"
+            },
+            {
+                "title": "统一商务平台",
+                "description": "统一商务平台，连接销售渠道、库存与客户旅程，实现一致的销售与履约。"
+            },
+            {
+                "title": "在线聘请律师",
+                "description": "通过我们简洁的在线平台连接经验丰富的法律专业人士，轻松找到并聘请合适的律师。"
+            },
+            {
+                "title": "视觉人工智能",
+                "description": "借助人工智能视觉，将视觉数据转化为可执行洞察，支持监控、检测与更明智的决策。"
+            },
+            {
+                "title": "患者护理",
+                "description": "患者护理平台，帮助医疗团队管理病历、预约与随访，带来更顺畅的临床体验。"
+            },
+            {
+                "title": "企业资源计划",
+                "description": "一体化 ERP，从单一可信数据源管理财务、库存与运营，助力成长型企业。"
+            },
+            {
+                "title": "连接器",
+                "description": "通过我们的连接器轻松集成并管理系统，支持 WhatsApp、蜂窝 API 与邮件通信，简化数据流。"
+            }
+        ],
+        "showMore": "显示更多"
+    },
+    "about": {
+        "heroTitle": "我们是谁",
+        "heroSubtitle": "在每一步重新定义成就",
+        "whoWeAre": "我们是谁",
+        "mainHeading": "以 AIOT 解决方案创新未来",
+        "desc1": "我们是一家前瞻性的 IT 公司，致力于通过尖端人工智能与物联网技术变革行业。",
+        "desc2": "创新热情是公司的核心。我们的专家团队运用 AIoT 的力量，交付智能、可扩展且安全的解决方案。",
+        "feature1Title": "人工智能驱动的创新",
+        "feature1Desc": "通过强大的人工智能解决方案释放效率与自动化。",
+        "feature2Title": "无缝物联网集成",
+        "feature2Desc": "连接设备，获取实时洞察并实现更智能的运营。",
+        "feature3Title": "可扩展且安全的解决方案",
+        "feature3Desc": "凭借安全、可扩展的 AIoT 解决方案自信成长。",
+        "darkSectionTitle": "以智能 AIOT 解决方案赋能明天",
+        "darkSectionDesc1": "AIOT 是面向企业的 IT 解决方案提供商，致力于以创新技术赋能企业。我们专注于软件开发、人工智能集成、物联网、云计算与数字化转型。我们的使命是交付先进、可靠且可扩展的解决方案，推动效率、生产力与增长。",
+        "darkSectionDesc2": "我们致力于引领 AIOT 创新，以智能解决方案赋能企业，变革运营并推动增长。",
+        "visionTitle": "愿景",
+        "visionDesc": "成为变革性技术解决方案的领先提供商，帮助企业与组织在快速变化的数字环境中蓬勃发展。我们希望创造一个以技术作为创新、增长与积极变革催化剂的未来。",
+        "missionTitle": "使命",
+        "missionDesc": "我们重视创新，投资研发以打造应对新兴市场趋势与客户需求的新产品、服务与平台。我们也以客户为中心，将客户需求置于运营与决策的核心。",
+        "smartSolutions": "智能解决方案",
+        "smartSolutionsHeading": "发挥人工智能与物联网的力量，在各行业推动创新、效率与增长。",
+        "transformTitle": "以 AIOT 变革未来",
+        "transformDesc": "以智能互联解决方案赋能企业，提升生产力。交付安全、可扩展的 AIoT 技术，推动创新与增长。",
+        "transformBoxTitle": "以 AIOT 变革未来",
+        "list1": "智能自动化",
+        "list2": "实时洞察",
+        "list3": "可扩展增长",
+        "presenceTitle": "我们的布局",
+        "presenceHighlight": "布局",
+        "presenceHeading": "全球拓展，本地创新",
+        "presenceDesc": "我们在亚洲与欧洲设有办公室，全天候可联系。",
+        "pakistan": "巴基斯坦",
+        "uk": "英国",
+        "uae": "阿联酋",
+        "ksa": "沙特阿拉伯",
+        "australia": "澳大利亚",
+        "lahore": "拉合尔",
+        "glasgow": "格拉斯哥",
+        "dubai": "迪拜",
+        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
+        "companyUK": "AIOT Consulting LLC",
+        "companyUAE": "A I O Information Technology Consultancy - L.L.C - S.P.C",
+        "companyGeneral": "AIOT Consulting",
+        "address": "地址：",
+        "email": "邮箱：",
+        "phone": "电话：",
+        "uaeAddress": "M23办公室，Madinat Office，纳达街，阿布扎比，阿联酋",
+        "ukAddress": "3 Hoy Avenue，格拉斯哥，英国"
+    },
+    "clientWall": {
+        "heroTitle": "客户墙",
+        "heroHighlight": "客户",
+        "heroSubtitle": "致力于更绿色的未来：我们的客户墙",
+        "sectionSubtitle": "AIOT IT Solutions：以顺畅的 IT 外包赋能您的业务",
+        "sectionTitle": "量身定制的效率、创新与专业能力",
+        "sectionDesc": "在 AIOT IT Solutions，我们专注于可靠的 IT 外包服务，推动卓越运营与成本效率。专家团队确保您的企业受益于前沿技术与创新解决方案，同时降低开销并提升生产力。",
+        "clientsTitle": "我们的客户",
+        "clientsHighlight": "客户",
+        "clientsDesc": "领先企业信赖我们提供创新的 IT 解决方案与卓越专业能力。"
+    },
+    "contact": {
+        "heroTitle": "联系我们",
+        "heroHighlight": "联系",
+        "heroSubtitle": "与我们的团队取得联系",
+        "introTitle": "让我们连接",
+        "introHeading": "我们期待您的来信",
+        "introDesc": "无论您对我们的服务有疑问、需要技术支持，还是想讨论潜在项目，我们的团队都随时准备协助。请通过以下渠道或联系表单与我们联系。",
+        "phoneTitle": "电话",
+        "emailTitle": "邮箱",
+        "hoursTitle": "营业时间",
+        "hours": "周一至周五 / 10:00 – 19:00",
+        "formTitle": "发送消息",
+        "nameLabel": "全名 *",
+        "namePlaceholder": "请输入您的全名",
+        "emailLabel": "电子邮箱 *",
+        "emailPlaceholder": "请输入您的邮箱",
+        "phoneLabel": "电话号码",
+        "phonePlaceholder": "请输入您的电话号码",
+        "subjectLabel": "主题 *",
+        "subjectPlaceholder": "我们能如何帮助您？",
+        "messageLabel": "留言 *",
+        "messagePlaceholder": "请告诉我们更多关于您的咨询……",
+        "sendButton": "发送消息",
+        "officesTitle": "我们的办公室",
+        "pakistanOffice": "巴基斯坦办公室",
+        "ukOffice": "英国办公室",
+        "uaeOffice": "阿联酋办公室",
+        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyUAE": "A I O Information Technology",
+        "companyUK": "AIOT Consulting LLC",
+        "pakistanAddress": "巴基斯坦旁遮普省拉合尔54100，PECO路，GECHS第三期，15/1C",
+        "ukAddress": "3 Hoy Avenue，格拉斯哥，英国",
+        "uaeAddress": "M23办公室，Madinat Office，纳达街，阿布扎比，阿联酋",
+        "mapView": "地图视图",
+        "mapCity": "巴基斯坦拉合尔"
+    },
+    "footer": {
+        "newsletterTitle": "获取更新",
+        "emailPlaceholder": "请输入您的邮箱……",
+        "subscribe": "订阅",
+        "description": "重塑您的未来。",
+        "quickLinks": "快捷链接",
+        "home": "首页",
+        "about": "关于我们",
+        "contact": "联系我们",
+        "solutions": "解决方案",
+        "allInOneSuit": "一体化套件",
+        "sapUI": "SAP Business One 用户界面",
+        "hrSystem": "人力资源管理系统",
+        "hireLawyer": "在线聘请律师",
+        "moreSolutions": "更多解决方案",
+        "attendee": "Attendee",
+        "pos": "POS",
+        "connector": "Connector",
+        "hcm": "HCM"
+    },
+    "banner": {
+        "upperText": "技术",
+        "mainText": "数字化转型解决方案",
+        "subText": "为面向未来的企业释放创新与效率"
+    },
+    "section1": {
+        "title": "塑造商业的未来",
+        "subtitle": "以创新、效率与敏捷赋能增长",
+        "description": "我们的数字化转型解决方案旨在变革企业在快速变化市场中的运营方式。借助人工智能、云计算与自动化，我们帮助组织优化流程、改善客户体验并推动可持续增长。",
+        "imageAlt": "前沿技术可视化"
+    },
+    "servicesSection": {
+        "title": "服务范围",
+        "serviceIconAlt": "服务图标"
+    },
+    "services": [
+        "企业 API 管理",
+        "高级 DevSecOps",
+        "人工智能聊天机器人",
+        "企业架构现代化",
+        "容器化与自动扩缩",
+        "无服务器计算",
+        "人工智能企业解决方案设计",
+        "定制应用开发",
+        "成熟度与治理框架",
+        "下一代 API 市场",
+        "技术咨询服务",
+        "流程挖掘",
+        "多云管理系统",
+        "开发平台",
+        "微服务框架层"
+    ],
+    "emergingTech": {
+        "bannerUpper": "创新",
+        "bannerMain": "新兴技术解决方案",
+        "bannerSub": "推动创新，塑造商业的未来",
+        "sectionTitle": "解锁创新的未来",
+        "sectionSubtitle": "以前沿解决方案保持领先并变革您的业务",
+        "sectionDescription": "新兴技术正在重塑行业，我们帮助您的企业走在前沿。通过人工智能、物联网、区块链等进展，我们交付推动创新、提升效率并创造新增长机会的解决方案。",
+        "servicesTitle": "服务范围",
+        "servicesHighlight": "ETS",
+        "services": [
+            "IT 战略与路线图制定",
+            "微服务架构",
+            "端到端实施支持",
+            "IT 标准咨询",
+            "DevOps",
+            "许可证采购与管理",
+            "IT 组织咨询",
+            "低代码/无代码应用开发",
+            "IT 评估",
+            "数据工程与数据仓库",
+            "JIRA Software 实施",
+            "AS-IS 评估",
+            "数据可视化与叙事",
+            "JIRA Service Management",
+            "差距评估"
+        ]
+    },
+    "sap": {
+        "bannerUpper": "技术",
+        "bannerMain": "面向企业的 SAP 解决方案",
+        "bannerSub": "以前沿 SAP 解决方案变革企业。",
+        "sectionTitle": "赋能企业成功",
+        "sectionSubtitle": "借助 AIOT 的 SAP 专长优化、自动化并扩展您的业务。",
+        "sectionDescription": "在 AIOT，我们提供前沿 SAP 解决方案，精简运营、提升效率并推动可持续增长。无论您需要 ERP 集成、云转型还是定制 SAP 模块，我们的专家团队都会确保贴合企业需求的顺畅实施。",
+        "servicesTitle": "服务",
+        "services3": [
+            "GROW with SAP (S/4HANA Cloud Public Edition)",
+            "SAP S/4HANA (On Premise)",
+            "RISE with SAP (S/4HANA Cloud Private Edition)",
+            "SAP Ariba",
+            "SAP Success Factors",
+            "SAP OpenText",
+            "SAP Analytics Cloud",
+            "SAP BTP",
+            "SAP Industry Solutions",
+            "SAP Integration Services"
+        ]
+    },
+    "utility": {
+        "bannerUpper": "技术",
+        "bannerMain": "公用事业转型",
+        "bannerSub": "以智能、可扩展且可持续的解决方案革新公用事业。",
+        "sectionTitle": "驱动更智慧的未来",
+        "sectionSubtitle": "借助 AIOT 的公用事业解决方案创新、优化并领先",
+        "sectionDescription": "AIOT 以先进数字解决方案变革公用事业，提升效率、可持续性与韧性。我们的技术帮助供应商优化运营、降低成本并交付更智能的能源解决方案。",
+        "servicesTitle": "服务",
+        "services": [
+            "计费与发票",
+            "抄表与运营",
+            "电网资产与设备管理",
+            "客户财务",
+            "能源数据管理"
+        ]
+    },
+    "netsuite": {
+        "bannerUpper": "技术",
+        "bannerMain": "Oracle NetSuite",
+        "bannerSub": "为数字时代精简业务。",
+        "sectionTitle": "提升您的业务运营",
+        "sectionSubtitle": "通过 AIOT 与 Oracle NetSuite 实现顺畅的 ERP 转型。",
+        "sectionDescription": "AIOT 将 Oracle NetSuite 带给企业，提供专为可扩展性与效率设计的一体化云 ERP 解决方案。我们的 NetSuite 实施专长帮助企业精简财务、自动化工作流，并在一个集中平台上优化运营。",
+        "servicesTitle": "服务",
+        "services": [
+            "分析与商业智能",
+            "集成与互操作性",
+            "应用开发与部署",
+            "安全与合规",
+            "可扩展性与灵活性"
+        ]
+    },
+    "consulting": {
+        "bannerMain": "与 AIOT 一起咨询",
+        "bannerSub": "释放敏捷，拥抱创新：AIOT，您的转型伙伴",
+        "expertiseLabel": "我们的专长",
+        "introTitle": "带来成果的咨询服务",
+        "introDesc": "通过我们全面的咨询解决方案变革您的业务。我们将战略洞察、行业专长与创新技术相结合，助力可持续增长与竞争优势。",
+        "learnMore": "了解更多",
+        "services": [
+            {
+                "title": "业务咨询",
+                "heading": "公共部门转型与发展",
+                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+                "content": "凭借丰富的公共部门咨询经验，AIOT 提供定制战略，促进包容性治理、高效服务交付与经济增长。"
+            },
+            {
+                "title": "数字化转型",
+                "heading": "全面的人力资本解决方案",
+                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+                "content": "AIOT 专注于提升员工敬业度、人才发展与组织文化。从领导力发展到继任规划，我们的人力资本解决方案促进高绩效与长期成功。"
+            },
+            {
+                "title": "公共部门",
+                "heading": "可持续发展与影响力咨询",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT 可持续发展咨询专注于 ESG 驱动的服务，帮助客户实现与全球可持续发展目标一致的可持续目标。"
+            }
+        ],
+        "stats": {
+            "projects": "已交付 500+ 个项目",
+            "consultants": "50+ 位专家顾问",
+            "satisfaction": "98% 客户满意度",
+            "industries": "服务 25+ 个行业"
+        },
+        "ctaTitle": "准备好变革您的业务了吗？",
+        "ctaDesc": "让我们讨论咨询服务如何帮助您实现目标",
+        "ctaButton": "预约咨询"
+    },
+    "outsourcing": {
+        "bannerMain": "与 AIOT 一起外包",
+        "bannerSub": "释放敏捷，拥抱创新：AIOT，您的转型伙伴",
+        "whyOutsourceLabel": "为什么外包？",
+        "introTitle": "变革您的业务运营",
+        "introDesc": "与 AIOT 合作，精简运营、降低成本并获得一流专业能力。我们全面的外包解决方案让您专注于最重要的事——发展业务。",
+        "keyBenefitsTitle": "核心优势",
+        "servicesTitle": "我们的外包服务",
+        "learnMore": "了解更多",
+        "processTitle": "我们的流程",
+        "ctaTitle": "准备好优化运营了吗？",
+        "ctaDesc": "让我们讨论外包解决方案如何变革您的业务",
+        "ctaButton": "请求报价",
+        "services": [
+            {
+                "title": "业务流程",
+                "heading": "高效的业务流程外包",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+                "content": "AIOT 提供高效的 BPO 解决方案，优化运营并降低成本。从客户服务到人力资源与财务，我们以先进技术与专业能力提供可扩展支持。",
+                "benefits": [
+                    "降低成本",
+                    "全天候支持",
+                    "可扩展解决方案"
+                ]
+            },
+            {
+                "title": "人力资源解决方案",
+                "heading": "人力资源外包解决方案",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT 提供定制化人力资源外包解决方案，优化从人才招聘到薪资与合规的人力资源职能。",
+                "benefits": [
+                    "人才招聘",
+                    "薪资管理",
+                    "合规"
+                ]
+            }
+        ],
+        "benefits": [
+            {
+                "title": "成本效率",
+                "description": "在保持质量的同时将运营成本降低至多 60%"
+            },
+            {
+                "title": "节省时间",
+                "description": "释放宝贵时间，专注核心业务活动"
+            },
+            {
+                "title": "可扩展性",
+                "description": "根据需求轻松扩大或缩小运营规模"
+            },
+            {
+                "title": "质量保障",
+                "description": "获得拥有卓越业绩的专家团队"
+            }
+        ],
+        "processSteps": [
+            {
+                "step": "01",
+                "title": "咨询",
+                "desc": "了解您的需求"
+            },
+            {
+                "step": "02",
+                "title": "战略",
+                "desc": "制定定制解决方案"
+            },
+            {
+                "step": "03",
+                "title": "实施",
+                "desc": "顺畅过渡"
+            },
+            {
+                "step": "04",
+                "title": "支持",
+                "desc": "持续优化"
+            }
+        ]
+    }
+}

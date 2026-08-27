@@ -4,9 +4,9 @@ import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 
 export default function ContactUs() {
-    const { translations } = useContext(LanguageContext);
+    const { translations, language } = useContext(LanguageContext);
     const t = translations.contact;
-    const colors = Colors.en;
+    const colors = Colors[language] || Colors.en;
 
     const [formData, setFormData] = useState({
         name: '',
@@ -208,8 +208,7 @@ export default function ContactUs() {
                                                 <span className="font-semibold">{t.companyPakistan}</span>
                                             </p>
                                             <p className="text-gray-600">
-                                                15/1C, GECHS, PHASE III, PECO ROAD,<br />
-                                                LAHORE 54100, PUNJAB, PAKISTAN
+                                                {t.pakistanAddress || translations.navbar?.topBar?.address}
                                             </p>
                                         </div>
                                     </div>
@@ -224,8 +223,7 @@ export default function ContactUs() {
                                                 <span className="font-semibold">{t.companyUK}</span>
                                             </p>
                                             <p className="text-gray-600">
-                                                3 Hoy Avenue,<br />
-                                                Glasgow, United Kingdom
+                                                {t.ukAddress}
                                             </p>
                                         </div>
                                     </div>
@@ -240,8 +238,7 @@ export default function ContactUs() {
                                                 <span className="font-semibold">{t.companyUAE}</span>
                                             </p>
                                             <p className="text-gray-600">
-                                                Office M23, Madinat Office,<br />
-                                                Al Najda Street, Abu Dhabi, UAE
+                                                {t.uaeAddress}
                                             </p>
                                         </div>
                                     </div>
@@ -252,8 +249,8 @@ export default function ContactUs() {
                             <div className="mt-8 bg-gray-200 rounded-lg overflow-hidden h-64 flex items-center justify-center">
                                 <div className="text-center p-8">
                                     <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                                    <p className="text-gray-500">Map View</p>
-                                    <p className="text-sm text-gray-400">Lahore, Pakistan</p>
+                                    <p className="text-gray-500">{t.mapView || 'Map View'}</p>
+                                    <p className="text-sm text-gray-400">{t.mapCity || 'Lahore, Pakistan'}</p>
                                 </div>
                             </div>
                         </div>

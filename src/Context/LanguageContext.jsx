@@ -1,28 +1,44 @@
-// src/Context/LanguageContext.js (Unchanged as provided, assuming ar.json exists similarly)
 import React, { createContext, useState, useEffect } from 'react';
-
-// Import JSON files
 import en from '../Languages/en.json';
 import ar from '../Languages/ar.json';
+import da from '../Languages/da.json';
+import de from '../Languages/de.json';
+import es from '../Languages/es.json';
+import zh from '../Languages/zh.json';
+import fr from '../Languages/fr.json';
+import sv from '../Languages/sv.json';
+import { SUPPORTED_LANGUAGES, RTL_LANGUAGES } from '../Languages/languages';
 
-// Export the context
+export { SUPPORTED_LANGUAGES, RTL_LANGUAGES };
+
+const translationsMap = { en, ar, da, de, es, zh, fr, sv };
+
 export const LanguageContext = createContext();
 
-// Language provider component
+function getInitialLanguage() {
+    if (typeof window === 'undefined') return 'en';
+    const saved = window.localStorage.getItem('aiot-language');
+    return translationsMap[saved] ? saved : 'en';
+}
+
 export function LanguageProvider({ children }) {
-    const [language, setLanguage] = useState('en');
-    const [translations, setTranslations] = useState(en);
+    const [language, setLanguageState] = useState(getInitialLanguage);
+
+    const setLanguage = (code) => {
+        if (!translationsMap[code]) return;
+        setLanguageState(code);
+        window.localStorage.setItem('aiot-language', code);
+    };
+
+    const translations = translationsMap[language] || en;
 
     useEffect(() => {
-        if (language === 'en') {
-            setTranslations(en);
-        } else if (language === 'ar') {
-            setTranslations(ar);
-        }
+        document.documentElement.dir = RTL_LANGUAGES.includes(language) ? 'rtl' : 'ltr';
+        document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
     }, [language]);
 
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, translations }}>
+        <LanguageContext.Provider value={{ language, setLanguage, translations, languages: SUPPORTED_LANGUAGES }}>
             {children}
         </LanguageContext.Provider>
     );

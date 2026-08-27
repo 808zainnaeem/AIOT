@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { LanguageContext } from '../Context/LanguageContext'; // Adjust path if needed
+import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext'; // Adjust path if needed
 import Banner from '../Components/Banner';
 
 const TechnologyDriven = () => {
@@ -34,8 +34,9 @@ const TechnologyDriven = () => {
           onChange={handleLanguageChange}
           className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-lg focus:outline-none"
         >
-          <option value="en">English</option>
-          <option value="ar">العربية</option>
+          {SUPPORTED_LANGUAGES.map((lang) => (
+            <option key={lang.code} value={lang.code}>{lang.name}</option>
+          ))}
         </select>
       </div>
 

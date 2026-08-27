@@ -1,0 +1,521 @@
+{
+    "navbar": {
+        "topBar": {
+            "phone": "+92 3123456778",
+            "email": "info@aiotcons.com",
+            "address": "15/1C, GECHS, Fas III, Peco Road, Lahore 54100, Punjab, Pakistan"
+        },
+        "menu": {
+            "home": "HEM",
+            "aboutUs": "OM OSS",
+            "whatWeDo": "VAD VI GÖR",
+            "solutions": "LÖSNINGAR",
+            "resources": "RESURSER",
+            "partners": "PARTNERS",
+            "marketplace": "MARKNADSPLATS"
+        },
+        "viewPlans": "SE PLANER",
+        "learnMore": "Läs mer",
+        "explore": "Utforska",
+        "bookADemo": "Boka en demo",
+        "menuLabel": "Meny",
+        "exploreArrow": "Utforska →",
+        "demoBannerTitle": "Er lösningspartner för affärsframgång"
+    },
+    "dropdown": {
+        "aboutUs": {
+            "whoWeAre": "Vilka vi är",
+            "whoWeAreDesc": "Vi förenar artificiell intelligens och sakernas internet för att driva innovation och leverera framtidssäkrade tekniklösningar.",
+            "clientWall": "Kundvägg",
+            "clientWallDesc": "Vi betjänar stolt branschledare med innovativa tekniklösningar som ger verkliga resultat.",
+            "contactUs": "Kontakt",
+            "contactUsDesc": "Kontakta AIOT IT Solutions – er väg till smarta, innovativa och transformativa tekniklösningar."
+        },
+        "whatWeDo": {
+            "technology": "Teknik",
+            "technologyDesc": "AIOT IT Solutions driver digital transformation",
+            "technologyDrivenInnovation": "Teknikdrivna innovationslösningar",
+            "nextGenTechnology": "Next-gen-tekniklösningar",
+            "enterpriseSap": "Enterprise SAP-lösningar",
+            "utilityModernization": "Modernisering av utilities",
+            "oracleNetsuite": "Oracle NetSuite-lösningar",
+            "consulting": "Rådgivning",
+            "consultingDesc": "Strategisk teknikrådgivning för att optimera verksamheten och driva tillväxt.",
+            "technologySolutionsProvider": "Leverantör av tekniklösningar",
+            "outSourcing": "Outsourcing",
+            "outSourcingDesc": "Tillförlitlig offshore-outsourcing med kostnadseffektivitet och expertkompetens.",
+            "strategicOffshore": "Strategiska offshore-lösningar"
+        },
+        "solutions": {
+            "industries": "Branscher",
+            "healthIndustry": "Hälsa",
+            "engineeringIndustry": "Ingenjörsverksamhet",
+            "constructionIndustry": "Bygg",
+            "retail": "Detaljhandel",
+            "allInOneSuit": "Allt-i-ett-svit",
+            "attendee": "Attendee",
+            "hcm": "HCM",
+            "pos": "POS",
+            "solutions": "Lösningar",
+            "connector": "Connector",
+            "hireLawyerOnline": "Anlita advokat online",
+            "sapBusinessOneUi": "SAP Business One-användargränssnitt",
+            "hrManagementSystem": "HR-hanteringssystem"
+        },
+        "resources": {
+            "news": "Nyheter",
+            "newsDesc": "Håll er uppdaterade med de senaste nyheterna och innovationerna från AIOT IT Solutions.",
+            "blogs": "Bloggar",
+            "blogsDesc": "Utforska insikter, trender och expertåsikter om teknik och innovation.",
+            "innovateWithInsights": "Innovatera med insikter",
+            "innovateWithInsightsDesc": "Upptäck strategier för att stärka er verksamhet genom nya trender och thought leadership."
+        },
+        "partners": {
+            "sapDesc": "Samarbeta med oss för att transformera hur SME:er arbetar globalt med moderna molnlösningar.",
+            "oracleNetsuiteDesc": "Upptäck fördelarna med ett partnerskap med Oracle NetSuite för heltäckande affärslösningar.",
+            "microsoftDesc": "Vårt Microsoft-partnerskap stärker affärsförmågor med moderna lösningar.",
+            "cloudiaxDesc": "Cloudiax gör det möjligt att stärka SAP-förmågor med kraftfulla molnlösningar.",
+            "cloudSolutionsDesc": "Vår expertis säkrar smidig molnmigrering och multi-cloud-integration."
+        }
+    },
+    "Hero": {
+        "demoBannerTitle": "Er lösningspartner <br> för affärsframgång",
+        "whoWeAreDesc": "Vi förenar artificiell intelligens och sakernas internet för att driva innovation och leverera framtidssäkrade tekniklösningar.",
+        "learnMore": "Läs mer"
+    },
+    "whatWeDoSection": {
+        "title": "Vad vi gör",
+        "subtitle": "Skräddarsydda lösningar för intelligent konnektivitet",
+        "consulting": "Rådgivning",
+        "consultingDesc": "Vi hjälper till att skapa en strategi som driver teknikledd affärsframgång. Vårt team tar fram planer som optimerar er tillväxtresa med hjälp av avancerade digitala verktyg och tekniker.",
+        "implementation": "Implementering",
+        "implementationDesc": "Våra experter inom centrala tekniker och affärsfunktioner levererar heltäckande affärslösningar.",
+        "managedServices": "Managed services",
+        "managedServicesDesc": "Vårt managed services-team säkrar er digitala investering med övervakning, underhåll och stöd från början till slut."
+    },
+    "philosophy": {
+        "title": "Vår filosofi",
+        "heading": "Innovation för en uppkopplad framtid",
+        "paragraph1": "Vi utvecklar och levererar tekniklösningar som möter våra kunders föränderliga behov och utmaningar. Vi prioriterar agilitet, anpassningsförmåga och lyhördhet så att vi snabbt kan ställa om efter marknaden och kundkraven.",
+        "quote": "Transformera verksamheten med smarta, molndrivna lösningar utformade för tillväxt och enkelhet.",
+        "paragraph2": "Vi skapar framåtblickande lösningar som omdefinierar hur företag arbetar och hjälper dem att ligga steget före i ett föränderligt digitalt landskap.",
+        "readMore": "Läs mer"
+    },
+    "servicesStats": {
+        "servicesTitle": "Våra tjänster",
+        "servicesHeading": "Vad vi erbjuder",
+        "servicesDescription": "Vi hjälper företag att effektivisera verksamheten, förbättra beslutsfattandet och driva digital transformation med precision.",
+        "statFeedback": "Positiv feedback",
+        "statProjects": "Projekt",
+        "statUsers": "Användare",
+        "statContributors": "Medverkande",
+        "serviceInfrastructure": "Infrastruktur",
+        "descInfrastructure": "Vi bygger skalbar infrastruktur som stöder smidig konnektivitet, säker datahantering och effektiv drift, så att er verksamhet är redo för framtida tillväxt.",
+        "serviceSecurity": "Säkerhet",
+        "descSecurity": "Vi implementerar säkerhetslösningar som skyddar era digitala tillgångar, ger omfattande skydd mot hot och upprätthåller dataintegritet.",
+        "serviceCloud": "Molntjänster",
+        "descCloud": "Vi levererar skalbara molnlösningar som ökar effektivitet och flexibilitet, så att ni snabbt kan anpassa er och arbeta smidigt i den digitala eran.",
+        "serviceApps": "Affärsapplikationer",
+        "descApps": "Vi tillhandahåller affärsapplikationer anpassade efter era processer, som ökar produktiviteten och effektiviserar verksamheten.",
+        "serviceData": "Datahantering och analys",
+        "descData": "Vi omvandlar data till handlingsbara insikter med avancerad analys och effektiviserar datahantering för bättre beslut och effektivitet.",
+        "serviceSupport": "Kundsupport",
+        "descSupport": "Vi erbjuder kundsupport dygnet runt så att era kunder får hjälp i tid, med personligt stöd som upprätthåller kundnöjdheten."
+    },
+    "techInnovation": {
+        "subtitle": "Morgondagens teknik",
+        "heading": "Stärk företag med expertis och excellens",
+        "paragraph1": "Med ett engagemang för excellens och passion för innovation specialiserar vi oss på avancerade tekniklösningar som driver framgång. Vårt team kombinerar djup branschkunskap med banbrytande teknik för att stärka företag och hjälpa dem att ligga steget före.",
+        "paragraph2": "I framkant av teknisk innovation levererar vi skräddarsydda lösningar som driver framgång och effektivitet.",
+        "readMore": "Läs mer",
+        "productsTitle": "Våra produkter"
+    },
+    "ourProducts": {
+        "sectionTitle": "Våra produkter",
+        "heading": "Avancerade lösningar för varje behov",
+        "description": "Utforska vårt utbud av produkter som är utformade för att höja prestanda, effektivisera verksamheten och driva tillväxt. Från AI-driven analys till skalbara molnlösningar möter våra erbjudanden olika affärsbehov med precision och tillförlitlighet.",
+        "items": [
+            {
+                "title": "SAP Business One-användargränssnitt",
+                "description": "Förbättra er verksamhet med vårt användarvänliga SAP Business One-gränssnitt, utformat för smidig navigering och effektiv hantering av företagets resurser."
+            },
+            {
+                "title": "Personalhantering",
+                "description": "En komplett HCM-plattform för att anställa, leda och utveckla er arbetsstyrka med lön, närvaro och talentverktyg på ett ställe."
+            },
+            {
+                "title": "Driftssvit",
+                "description": "Effektivisera den dagliga driften med kopplade arbetsflöden, automatisering och synlighet över team och processer."
+            },
+            {
+                "title": "Handelsplattform",
+                "description": "En unified commerce-plattform som kopplar samman säljkanaler, lager och kundresor så att ni kan sälja och leverera med konsekvens."
+            },
+            {
+                "title": "Anlita advokat online",
+                "description": "Kom i kontakt med erfarna jurister via vår smidiga onlineplattform och hitta rätt advokat för era behov."
+            },
+            {
+                "title": "Visuell AI",
+                "description": "Omvandla visuell data till handlingsbara insikter med AI-driven vision för övervakning, detektion och smartare beslut."
+            },
+            {
+                "title": "Patientvård",
+                "description": "En patientvårdsplattform som hjälper vårdteam att hantera journaler, tider och uppföljning för en smidigare klinisk upplevelse."
+            },
+            {
+                "title": "Affärssystem",
+                "description": "Ett integrerat ERP för att hantera ekonomi, lager och drift från en enda sanning för växande företag."
+            },
+            {
+                "title": "Anslutning",
+                "description": "Integrera och hantera era system med vår connector för kommunikation via WhatsApp, cellulära API:er och e-post, utformad för att effektivisera dataflödet."
+            }
+        ],
+        "showMore": "Visa mer"
+    },
+    "about": {
+        "heroTitle": "Vilka vi är",
+        "heroSubtitle": "Vi omdefinierar framgång i varje steg",
+        "whoWeAre": "Vilka vi är",
+        "mainHeading": "Innovate framtiden med AIOT-lösningar",
+        "desc1": "Vi är ett framåtblickande IT-företag som revolutionerar branscher med banbrytande AI- och IoT-teknik.",
+        "desc2": "I hjärtat av vårt företag finns passionen för innovation. Vårt expertteam tar vara på AIoT för att leverera smarta, skalbara och säkra lösningar.",
+        "feature1Title": "AI-driven innovation",
+        "feature1Desc": "Lås upp effektivitet och automatisering med kraftfulla AI-lösningar.",
+        "feature2Title": "Smidig IoT-integration",
+        "feature2Desc": "Koppla ihop enheter för realtidsinsikter och smartare drift.",
+        "feature3Title": "Skalbar och säkra lösningar",
+        "feature3Desc": "Väx tryggt med säkra, skalbara AIoT-lösningar.",
+        "darkSectionTitle": "Stärk morgondagen med smarta AIOT-lösningar",
+        "darkSectionDesc1": "AIOT är en leverantör av affärs-IT-lösningar som stärker företag med innovativ teknik. Vi specialiserar oss på mjukvaruutveckling, AI-integration, IoT, moln och digital transformation. Vårt uppdrag är att leverera moderna, tillförlitliga och skalbara lösningar som driver effektivitet, produktivitet och tillväxt.",
+        "darkSectionDesc2": "Vi vill leda AIOT-innovation och stärka företag med intelligenta lösningar som transformera verksamheten och driver tillväxt.",
+        "visionTitle": "Vision",
+        "visionDesc": "Att bli en ledande leverantör av transformativa tekniklösningar som hjälper organisationer att blomstra i ett snabbt föränderligt digitalt landskap. Vi vill skapa en framtid där teknik är en katalysator för innovation, tillväxt och positiv förändring.",
+        "missionTitle": "Uppdrag",
+        "missionDesc": "Vi prioriterar innovation och investerar i forskning och utveckling för att skapa nya produkter, tjänster och plattformar som möter marknadstrender och kundbehov. Vi sätter kundens behov i centrum för verksamhet och beslut.",
+        "smartSolutions": "Smarta lösningar",
+        "smartSolutionsHeading": "Ta vara på kraften i AI och IoT för att driva innovation, effektivitet och tillväxt över branscher.",
+        "transformTitle": "Transformera framtiden med AIOT",
+        "transformDesc": "Stärk företag med intelligenta, uppkopplade lösningar för ökad produktivitet. Leverera säkra, skalbara AIoT-tekniker som driver innovation och tillväxt.",
+        "transformBoxTitle": "Transformera framtiden med AIOT",
+        "list1": "Intelligent automatisering",
+        "list2": "Realtidsinsikter",
+        "list3": "Skalbar tillväxt",
+        "presenceTitle": "Vår närvaro",
+        "presenceHighlight": "Närvaro",
+        "presenceHeading": "Växa globalt, innovate lokalt",
+        "presenceDesc": "Med kontor i Asien och Europa är vi tillgängliga dygnet runt.",
+        "pakistan": "Pakistan",
+        "uk": "Storbritannien",
+        "uae": "Förenade Arabemiraten",
+        "ksa": "Saudiarabien",
+        "australia": "Australien",
+        "lahore": "Lahore",
+        "glasgow": "Glasgow",
+        "dubai": "Dubai",
+        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
+        "companyUK": "AIOT Consulting LLC",
+        "companyUAE": "A I O Information Technology Consultancy - L.L.C - S.P.C",
+        "companyGeneral": "AIOT Consulting",
+        "address": "Adress:",
+        "email": "E-post:",
+        "phone": "Telefon:",
+        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gatan, Abu Dhabi, Förenade Arabemiraten",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien"
+    },
+    "clientWall": {
+        "heroTitle": "kundvägg",
+        "heroHighlight": "kund",
+        "heroSubtitle": "Engagerade för en grönare framtid: vår kundvägg",
+        "sectionSubtitle": "AIOT IT Solutions: stärk er verksamhet med smidig IT-outsourcing",
+        "sectionTitle": "Effektivitet, innovation och expertis anpassad efter era behov",
+        "sectionDesc": "På AIOT IT Solutions specialiserar vi oss på tillförlitlig IT-outsourcing som driver operativ excellens och kostnadseffektivitet. Vårt expertteam ser till att er verksamhet drar nytta av modern teknik och innovativa lösningar, samtidigt som overhead minskas och produktiviteten ökar.",
+        "clientsTitle": "Våra kunder",
+        "clientsHighlight": "Kunder",
+        "clientsDesc": "Betrodda av ledande företag för innovativa IT-lösningar och oöverträffad expertis."
+    },
+    "contact": {
+        "heroTitle": "Kontakta oss",
+        "heroHighlight": "Kontakt",
+        "heroSubtitle": "Hör av er till vårt team",
+        "introTitle": "Låt oss mötas",
+        "introHeading": "Vi vill gärna höra från er",
+        "introDesc": "Oavsett om ni har en fråga om våra tjänster, behöver teknisk support eller vill diskutera ett projekt är vårt team redo att hjälpa. Kontakta oss via kanalerna nedan eller formuläret.",
+        "phoneTitle": "Telefon",
+        "emailTitle": "E-post",
+        "hoursTitle": "Öppettider",
+        "hours": "Mån – fre / 10:00 – 19:00",
+        "formTitle": "Skicka ett meddelande",
+        "nameLabel": "Fullständigt namn *",
+        "namePlaceholder": "Ange ert fullständiga namn",
+        "emailLabel": "E-postadress *",
+        "emailPlaceholder": "Ange er e-post",
+        "phoneLabel": "Telefonnummer",
+        "phonePlaceholder": "Ange ert telefonnummer",
+        "subjectLabel": "Ämne *",
+        "subjectPlaceholder": "Hur kan vi hjälpa?",
+        "messageLabel": "Meddelande *",
+        "messagePlaceholder": "Berätta mer om er förfrågan...",
+        "sendButton": "Skicka meddelande",
+        "officesTitle": "Våra kontor",
+        "pakistanOffice": "Kontor i Pakistan",
+        "ukOffice": "Kontor i Storbritannien",
+        "uaeOffice": "Kontor i Förenade Arabemiraten",
+        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyUAE": "A I O Information Technology",
+        "companyUK": "AIOT Consulting LLC",
+        "pakistanAddress": "15/1C, GECHS, Fas III, Peco Road, Lahore 54100, Punjab, Pakistan",
+        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien",
+        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gatan, Abu Dhabi, Förenade Arabemiraten",
+        "mapView": "Kartvy",
+        "mapCity": "Lahore, Pakistan"
+    },
+    "footer": {
+        "newsletterTitle": "FÅ UPPDATERINGAR",
+        "emailPlaceholder": "Ange er e-post...",
+        "subscribe": "Prenumerera",
+        "description": "Vi omformar er framtid.",
+        "quickLinks": "Snabblänkar",
+        "home": "Hem",
+        "about": "Om oss",
+        "contact": "Kontakt",
+        "solutions": "Lösningar",
+        "allInOneSuit": "Allt-i-ett-svit",
+        "sapUI": "SAP Business One-användargränssnitt",
+        "hrSystem": "HR-hanteringssystem",
+        "hireLawyer": "Anlita advokat online",
+        "moreSolutions": "Fler lösningar",
+        "attendee": "Attendee",
+        "pos": "POS",
+        "connector": "Connector",
+        "hcm": "HCM"
+    },
+    "banner": {
+        "upperText": "Teknik",
+        "mainText": "Lösningar för digital transformation",
+        "subText": "Innovation och effektivitet för framtidssäkra företag"
+    },
+    "section1": {
+        "title": "Forma framtidens affärer",
+        "subtitle": "Driv tillväxt genom innovation, effektivitet och agilitet",
+        "description": "Våra lösningar för digital transformation är utformade för att revolutionera hur företag arbetar på en snabbt föränderlig marknad. Med AI, moln och automatisering hjälper vi organisationer att förbättra processer, kundupplevelser och hållbar tillväxt.",
+        "imageAlt": "Visualisering av banbrytande teknik"
+    },
+    "servicesSection": {
+        "title": "Tjänster inom",
+        "serviceIconAlt": "Tjänsteikon"
+    },
+    "services": [
+        "Enterprise API-hantering",
+        "Avancerad DevSecOps",
+        "AI-drivna chatbottar",
+        "Modernisering av enterprise-arkitektur",
+        "Containerisering och autoskalning",
+        "Serverless computing",
+        "AI-drivna enterprise-lösningsdesigner",
+        "Skräddarsydd applikationsutveckling",
+        "Mognads- och styrningsramverk",
+        "Next-gen API-marknadsplats",
+        "Tekniska konsulttjänster",
+        "Process mining",
+        "Multi-cloud-hanteringssystem",
+        "Utvecklingsplattformar",
+        "Microservices-ramverkslager"
+    ],
+    "emergingTech": {
+        "bannerUpper": "Innovation",
+        "bannerMain": "Lösningar för emerging technology",
+        "bannerSub": "Driv innovation och forma framtidens affärer",
+        "sectionTitle": "Lås upp innovationens framtid",
+        "sectionSubtitle": "Ligga steget före med banbrytande lösningar som transformera er verksamhet",
+        "sectionDescription": "Emerging technologies omformar branscher, och vi hjälper er att ligga i framkant. Genom framsteg inom AI, IoT, blockchain och mer levererar vi lösningar som driver innovation, ökar effektivitet och skapar nya tillväxtmöjligheter.",
+        "servicesTitle": "Tjänster inom",
+        "servicesHighlight": "ETS",
+        "services": [
+            "IT-strategi och färdplan",
+            "Microservices-arkitektur",
+            "Implementeringsstöd från början till slut",
+            "Rådgivning om IT-standarder",
+            "DevOps",
+            "Licensupphandling och -hantering",
+            "Rådgivning om IT-organisation",
+            "Apputveckling med low-code/no-code",
+            "IT-bedömning",
+            "Data engineering och warehousing",
+            "JIRA Software-implementering",
+            "AS-IS-bedömning",
+            "Datavisualisering och storytelling",
+            "JIRA Service Management",
+            "GAP-bedömning"
+        ]
+    },
+    "sap": {
+        "bannerUpper": "Teknik",
+        "bannerMain": "SAP-lösningar för enterprise",
+        "bannerSub": "Transformera företag med banbrytande SAP-lösningar.",
+        "sectionTitle": "Driv enterprise-framgång",
+        "sectionSubtitle": "Optimera, automatisera och skala er verksamhet med AIOTs SAP-expertis.",
+        "sectionDescription": "På AIOT erbjuder vi banbrytande SAP-lösningar för att effektivisera verksamheten, öka effektiviteten och driva hållbar tillväxt. Oavsett om ni behöver ERP-integration, molntransformation eller anpassade SAP-moduler säkerställer vårt team en smidig implementering anpassad efter era behov.",
+        "servicesTitle": "Tjänster",
+        "services3": [
+            "GROW with SAP (S/4HANA Cloud Public Edition)",
+            "SAP S/4HANA (On Premise)",
+            "RISE with SAP (S/4HANA Cloud Private Edition)",
+            "SAP Ariba",
+            "SAP Success Factors",
+            "SAP OpenText",
+            "SAP Analytics Cloud",
+            "SAP BTP",
+            "SAP Industry Solutions",
+            "SAP Integration Services"
+        ]
+    },
+    "utility": {
+        "bannerUpper": "Teknik",
+        "bannerMain": "Utility-transformation",
+        "bannerSub": "Revolutionera utilities med smarta, skalbara och hållbara lösningar.",
+        "sectionTitle": "Driv en smartare framtid",
+        "sectionSubtitle": "Innovate, optimera och led med AIOTs utility-lösningar",
+        "sectionDescription": "På AIOT transformerar vi utility-sektorn med digitala lösningar som ökar effektivitet, hållbarhet och motståndskraft. Vår teknik hjälper leverantörer att optimera drift, sänka kostnader och leverera smartare energilösningar.",
+        "servicesTitle": "Tjänster",
+        "services": [
+            "Fakturering",
+            "Mätaravläsning och drift",
+            "Nätverkstillgångs- och utrustningshantering",
+            "Kundfinans",
+            "Energidatahantering"
+        ]
+    },
+    "netsuite": {
+        "bannerUpper": "Teknik",
+        "bannerMain": "Oracle NetSuite",
+        "bannerSub": "Effektivisera verksamheten för den digitala eran.",
+        "sectionTitle": "Lyft er affärsverksamhet",
+        "sectionSubtitle": "Smidig ERP-transformation med AIOT och Oracle NetSuite.",
+        "sectionDescription": "AIOT tar Oracle NetSuite till företag med en helt integrerad moln-ERP-lösning utformad för skalbarhet och effektivitet. Vår expertis inom NetSuite-implementering hjälper till att effektivisera ekonomi, automatisera arbetsflöden och optimera drift på en central plattform.",
+        "servicesTitle": "Tjänster",
+        "services": [
+            "Analys och business intelligence",
+            "Integration och interoperabilitet",
+            "Applikationsutveckling och driftsättning",
+            "Säkerhet och regelefterlevnad",
+            "Skalbarhet och flexibilitet"
+        ]
+    },
+    "consulting": {
+        "bannerMain": "Rådgivning med AIOT",
+        "bannerSub": "Frigör agilitet, omfamna innovation: AIOT, er partner i transformation",
+        "expertiseLabel": "Vår expertis",
+        "introTitle": "Rådgivning som ger resultat",
+        "introDesc": "Transformera er verksamhet med våra rådgivningstjänster. Vi kombinerar strategisk insikt, branschexpertis och innovativ teknik för hållbar tillväxt och konkurrensfördel.",
+        "learnMore": "Läs mer",
+        "services": [
+            {
+                "title": "Affärsrådgivning",
+                "heading": "Transformation och utveckling i offentlig sektor",
+                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+                "content": "Med omfattande erfarenhet av rådgivning i offentlig sektor erbjuder AIOT skräddarsydda strategier för inkluderande styrning, effektiv serviceleverans och ekonomisk tillväxt."
+            },
+            {
+                "title": "Digital transformation",
+                "heading": "Heltäckande human capital-lösningar",
+                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+                "content": "AIOT stärker medarbetarengagemang, talentutveckling och organisationskultur. Från ledarskap till succession planning främjar våra human capital-lösningar hög prestanda och långsiktig framgång."
+            },
+            {
+                "title": "Offentlig sektor",
+                "heading": "Rådgivning om hållbarhet och impact",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT Sustainability Consulting specialiserar sig på ESG-drivna tjänster och hjälper kunder att nå hållbarhetsmål i linje med de globala SDG:erna."
+            }
+        ],
+        "stats": {
+            "projects": "500+ levererade projekt",
+            "consultants": "50+ expertkonsulter",
+            "satisfaction": "98 % kundnöjdhet",
+            "industries": "25+ branscher betjänade"
+        },
+        "ctaTitle": "Redo att transformera er verksamhet?",
+        "ctaDesc": "Låt oss prata om hur vår rådgivning kan hjälpa er att nå era mål",
+        "ctaButton": "Boka en konsultation"
+    },
+    "outsourcing": {
+        "bannerMain": "Outsourcing med AIOT",
+        "bannerSub": "Frigör agilitet, omfamna innovation: AIOT, er partner i transformation",
+        "whyOutsourceLabel": "Varför outsourca?",
+        "introTitle": "Transformera er verksamhet",
+        "introDesc": "Samarbeta med AIOT för att effektivisera verksamheten, sänka kostnader och få tillgång till förstklassig expertis. Våra outsourcinglösningar låter er fokusera på det viktigaste – att växa företaget.",
+        "keyBenefitsTitle": "Viktiga fördelar",
+        "servicesTitle": "Våra outsourcingtjänster",
+        "learnMore": "Läs mer",
+        "processTitle": "Vår process",
+        "ctaTitle": "Redo att optimera verksamheten?",
+        "ctaDesc": "Låt oss prata om hur vår outsourcing kan transformera er verksamhet",
+        "ctaButton": "Begär en offert",
+        "services": [
+            {
+                "title": "Affärsprocesser",
+                "heading": "Effektiv business process outsourcing",
+                "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+                "content": "AIOT erbjuder effektiva BPO-lösningar för att optimera drift och sänka kostnader. Från kundservice till HR och ekonomi ger vi skalbart stöd med teknik och expertis.",
+                "benefits": [
+                    "Kostnadsminskning",
+                    "Support dygnet runt",
+                    "Skalbara lösningar"
+                ]
+            },
+            {
+                "title": "HR-lösningar",
+                "heading": "HR-outsourcinglösningar",
+                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+                "content": "AIOT tillhandahåller skräddarsydda HRO-lösningar för att optimera HR-funktioner, från talentförvärv till lön och regelefterlevnad.",
+                "benefits": [
+                    "Talentförvärv",
+                    "Lönehantering",
+                    "Regelefterlevnad"
+                ]
+            }
+        ],
+        "benefits": [
+            {
+                "title": "Kostnadseffektivitet",
+                "description": "Minska driftkostnader med upp till 60 % utan att kompromissa med kvaliteten"
+            },
+            {
+                "title": "Tidsbesparing",
+                "description": "Frigör värdefull tid till kärnverksamheten"
+            },
+            {
+                "title": "Skalbarhet",
+                "description": "Skala verksamheten upp eller ner efter efterfrågan"
+            },
+            {
+                "title": "Kvalitetssäkring",
+                "description": "Tillgång till expertteam med bevisad meritlista"
+            }
+        ],
+        "processSteps": [
+            {
+                "step": "01",
+                "title": "Konsultation",
+                "desc": "Förstå era behov"
+            },
+            {
+                "step": "02",
+                "title": "Strategi",
+                "desc": "Utveckla skräddarsydda lösningar"
+            },
+            {
+                "step": "03",
+                "title": "Implementering",
+                "desc": "Smidig övergång"
+            },
+            {
+                "step": "04",
+                "title": "Support",
+                "desc": "Löpande optimering"
+            }
+        ]
+    }
+}
