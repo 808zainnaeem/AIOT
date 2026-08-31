@@ -53,9 +53,6 @@ export default function FooterSection() {
         { label: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
         { label: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
         { label: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com/Plans' },
-        { label: footerTrans.contact || 'Contact Us', link: '/contact' },
-        { label: navbarTrans.bookADemo || 'Book a Demo', link: '/book-demo' },
-        { label: footerTrans.privacyPolicy || 'Privacy Policy', link: '/privacy-policy' },
     ];
 
     const whatWeDoLinks = [
@@ -244,16 +241,6 @@ export default function FooterSection() {
                                 <span className="leading-relaxed text-[13px]">{address}</span>
                             </div>
                         </div>
-
-                        <button
-                            type="button"
-                            onClick={() => handleNavClick('/book-demo')}
-                            className="w-full rounded-full py-3 text-sm font-semibold text-white hover:opacity-90 transition inline-flex items-center justify-center gap-2"
-                            style={{ backgroundColor: colors.logo }}
-                        >
-                            {navbarTrans.bookADemo || 'Book a Demo'}
-                            <ArrowRight size={15} />
-                        </button>
                     </div>
 
                     {/* Quick Links — navbar menu */}

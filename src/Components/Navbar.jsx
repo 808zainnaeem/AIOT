@@ -1,7 +1,7 @@
 // src/Components/Navbar.js (Updated with colors and language integration; design and all other things remain the same)
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Sparkles, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock } from 'lucide-react';
+import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
     Facebook,
@@ -173,29 +173,6 @@ const Navbar = () => {
                             brand: product.brand,
                             icon: [Eye, HeartPulse, Building2, Cloud][index],
                         })),
-                    },
-                    {
-                        title: navbarTrans.bookADemo || 'Book a Demo',
-                        content: (
-                            <div
-                                className="h-full min-h-[260px] rounded-2xl p-8 text-white flex flex-col items-center justify-center text-center shadow-lg"
-                                style={{ background: `linear-gradient(145deg, ${colors.logo}, #F65314)` }}
-                            >
-                                <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center mb-5">
-                                    <Sparkles size={22} />
-                                </div>
-                                <h3 className="text-xl font-bold mb-6 leading-tight">
-                                    {navbarTrans.demoBannerTitle || 'Your Solution Partner for Business Success'}
-                                </h3>
-                                <button
-                                    onClick={() => navigate('/book-demo')}
-                                    className="bg-white px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition text-sm"
-                                    style={{ color: colors.logo }}
-                                >
-                                    {navbarTrans.bookADemo || 'Book a Demo'}
-                                </button>
-                            </div>
-                        )
                     },
                 ],
                 image: null
@@ -393,7 +370,7 @@ const Navbar = () => {
                                                 isPartners
                                                     ? 'repeat(5, minmax(0, 1fr))'
                                                     : isSolutions
-                                                        ? '1.05fr 1.05fr 0.9fr'
+                                                        ? '1fr 1fr'
                                                         : 'repeat(3, 1fr) 0.95fr',
                                         }}
                                     >
@@ -615,7 +592,7 @@ const Navbar = () => {
                                                         className="w-full mt-1 rounded-full bg-white py-2.5 text-sm font-bold hover:bg-orange-50 transition inline-flex items-center justify-center gap-1.5"
                                                         style={{ color: colors.logo }}
                                                     >
-                                                        {navbarTrans.bookADemo || 'Book a Demo'}
+                                                        {footerTrans.contact || 'Contact Us'}
                                                         <ArrowRight size={14} />
                                                     </button>
                                                 </div>
@@ -724,28 +701,8 @@ const Navbar = () => {
                                         </button>
                                         {hasDropdown && isOpen && (
                                             <div className="bg-[#fffaf7] px-4 py-5 border-t border-orange-100 text-sm">
-                                                {getDropdownContent(item.id).cols.map((col, i) => (
+                                                {getDropdownContent(item.id).cols.filter((col) => !col.content).map((col, i) => (
                                                     <div key={i} className="mb-5 last:mb-0">
-                                                        {col.content ? (
-                                                            <div
-                                                                className="rounded-2xl p-5 text-white flex flex-col items-center text-center"
-                                                                style={{ background: `linear-gradient(145deg, ${colors.logo}, #F65314)` }}
-                                                            >
-                                                                <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-3">
-                                                                    <Sparkles size={18} />
-                                                                </div>
-                                                                <h3 className="text-sm font-bold mb-4 leading-tight">
-                                                                    {navbarTrans.demoBannerTitle || 'Your Solution Partner for Business Success'}
-                                                                </h3>
-                                                                <button
-                                                                    onClick={() => handleNavClick('/book-demo')}
-                                                                    className="bg-white px-5 py-2 rounded-full font-bold text-xs"
-                                                                    style={{ color: colors.logo }}
-                                                                >
-                                                                    {navbarTrans.bookADemo || 'Book a Demo'}
-                                                                </button>
-                                                            </div>
-                                                        ) : (
                                                             <>
                                                                 <h4 className="font-bold mb-3 px-1" style={{ color: colors.logo }}>{col.title || col.name}</h4>
                                                                 {col.list ? (
@@ -833,7 +790,6 @@ const Navbar = () => {
                                                                     </div>
                                                                 )}
                                                             </>
-                                                        )}
                                                     </div>
                                                 ))}
                                             </div>
