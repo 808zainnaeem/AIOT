@@ -1,12 +1,14 @@
 // src/Components/Navbar.js (Updated with colors and language integration; design and all other things remain the same)
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Sparkles, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2 } from 'lucide-react';
+import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Sparkles, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
     Facebook,
     Twitter,
     Linkedin,
+    Instagram,
+    Youtube,
 } from 'lucide-react';
 
 import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
@@ -36,9 +38,11 @@ const Navbar = () => {
     }, [language]);
 
     const socialIcons = [
-        { Icon: Facebook, url: 'https://www.facebook.com/OfficialAIoTis/', label: 'Facebook' },
+        { Icon: Facebook, url: 'https://www.facebook.com/WEAIOT/', label: 'Facebook' },
         { Icon: Twitter, url: 'https://x.com/WEAIOT', label: 'Twitter' },
         { Icon: Linkedin, url: 'https://www.linkedin.com/company/weaiot', label: 'LinkedIn' },
+        { Icon: Instagram, url: 'https://www.instagram.com/weaiot/', label: 'Instagram' },
+        { Icon: Youtube, url: 'https://www.youtube.com/@WEAIOT', label: 'YouTube' },
     ];
 
     const menuItems = [
@@ -48,7 +52,7 @@ const Navbar = () => {
         { id: 'solutions', title: navbarTrans.menu?.solutions || 'SOLUTIONS', link: '/' },
         { id: 'resources', title: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
         { id: 'partners', title: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
-        { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com/Plans' },
+        { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com' },
     ];
 
     const partners = [
@@ -108,39 +112,47 @@ const Navbar = () => {
                         icon: Phone,
                     },
                 ],
-                image: 'https://assets.entrepreneur.com/content/3x2/2000/20190109070104-shutterstock-529299211.jpeg?format=pjeg&auto=webp&crop=1:1',
-                imageLabel: 'Technology & Impact'
+                image: null,
+                customPanel: true,
+                imageLabel: dropdownTrans.aboutUs?.panelLabel || 'About AIOT',
             },
             whatWeDo: {
                 cols: [
                     {
-                        title: dropdownTrans.whatWeDo?.technology || 'Technology',
-                        desc: dropdownTrans.whatWeDo?.technologyDesc || 'AIOT IT Solutions powers digital transformation',
-                        list: [
-                            { text: dropdownTrans.whatWeDo?.technologyDrivenInnovation || 'Technology-Driven Innovation Solutions', icon: Zap, url: '/technology-driven' },
-                            { text: dropdownTrans.whatWeDo?.nextGenTechnology || 'Next-Gen Technology Solutions', icon: Layers, url: '/next-genration' },
-                            { text: dropdownTrans.whatWeDo?.enterpriseSap || 'Enterprise SAP Solutions', icon: Building, url: '/sap-solutions' },
-                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: '/utility-transformation' },
-                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: '/oracle-netsuite' },
-                        ]
-                    },
-                    {
                         title: dropdownTrans.whatWeDo?.consulting || 'Consulting',
-                        desc: dropdownTrans.whatWeDo?.consultingDesc || 'Strategic technology consulting to optimize operations and drive growth.',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.technologySolutionsProvider || 'Technology Solutions Provider', icon: Briefcase, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.itStrategy || 'IT Strategy & Advisory', icon: Compass, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.digitalTransformation || 'Digital Transformation Consulting', icon: RefreshCw, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.businessProcess || 'Business Process Consulting', icon: Workflow, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.techAssessment || 'Technology Assessment & Roadmapping', icon: ClipboardList, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.cloudEnterpriseArch || 'Cloud & Enterprise Architecture', icon: Network, url: '/consulting' },
                         ]
                     },
                     {
-                        title: dropdownTrans.whatWeDo?.outSourcing || 'Out Sourcing',
-                        desc: dropdownTrans.whatWeDo?.outSourcingDesc || 'Reliable offshore outsourcing services with cost efficiency and expert talent.',
+                        title: dropdownTrans.whatWeDo?.implementation || 'Implementation',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.strategicOffshore || 'Strategic Offshore Solutions', icon: GlobeIcon, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.enterpriseTech || 'Enterprise Technology Solutions', icon: Layers, url: '/technology-driven' },
+                            { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: '/sap-solutions' },
+                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: '/oracle-netsuite' },
+                            { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: '/next-genration' },
+                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: '/utility-transformation' },
+                            { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: '/technology-driven' },
+                        ]
+                    },
+                    {
+                        title: dropdownTrans.whatWeDo?.managedServices || 'Managed Services',
+                        list: [
+                            { text: dropdownTrans.whatWeDo?.appManagement || 'Application Management Services', icon: AppWindow, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.cloudInfra || 'Cloud & Infrastructure Management', icon: Server, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.itSupport || 'IT Support & Service Desk', icon: Headset, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.cyberMonitoring || 'Cybersecurity & Monitoring', icon: Lock, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.backupDr || 'Data, Backup & Disaster Recovery', icon: HardDrive, url: '/outsoursing' },
                         ]
                     },
                 ],
-                image: 'https://rockwellautomation.scene7.com/is/image/rockwellautomation/business-people-meeting-office-digital-transformation-SHS-2177507065.3840.jpg',
-                imageLabel: 'Digital Transformation'
+                image: null,
+                customPanel: true,
+                imageLabel: dropdownTrans.whatWeDo?.panelLabel || 'What We Deliver',
             },
             solutions: {
                 cols: [
@@ -149,6 +161,7 @@ const Navbar = () => {
                         list: getSolutionsProducts(translations).map((product, index) => ({
                             text: product.title,
                             url: product.url,
+                            brand: product.brand,
                             icon: [Database, Users, Workflow, Store, Scale][index],
                         })),
                     },
@@ -157,6 +170,7 @@ const Navbar = () => {
                         list: getMoreSolutionsProducts(translations).map((product, index) => ({
                             text: product.title,
                             url: product.url,
+                            brand: product.brand,
                             icon: [Eye, HeartPulse, Building2, Cloud][index],
                         })),
                     },
@@ -207,8 +221,9 @@ const Navbar = () => {
                         icon: Lightbulb,
                     },
                 ],
-                image: 'news.png',
-                imageLabel: 'Knowledge Hub'
+                image: null,
+                customPanel: true,
+                imageLabel: dropdownTrans.resources?.panelLabel || 'Knowledge Hub',
             },
             partners: {
                 cols: partners.map(partner => ({
@@ -363,9 +378,12 @@ const Navbar = () => {
                         <div className="max-w-7xl mx-auto px-6 py-8">
                             {(() => {
                                 const hoveredId = menuItems[hoveredItem].id;
-                                const { cols, image, imageLabel } = getDropdownContent(hoveredId);
+                                const { cols, image, imageLabel, customPanel } = getDropdownContent(hoveredId);
                                 const isPartners = hoveredId === 'partners';
                                 const isSolutions = hoveredId === 'solutions';
+                                const isWhatWeDo = hoveredId === 'whatWeDo';
+                                const isResources = hoveredId === 'resources';
+                                const isAboutUs = hoveredId === 'aboutUs';
 
                                 return (
                                     <div
@@ -373,7 +391,7 @@ const Navbar = () => {
                                         style={{
                                             gridTemplateColumns:
                                                 isPartners
-                                                    ? 'repeat(5, 1fr)'
+                                                    ? 'repeat(5, minmax(0, 1fr))'
                                                     : isSolutions
                                                         ? '1.05fr 1.05fr 0.9fr'
                                                         : 'repeat(3, 1fr) 0.95fr',
@@ -382,27 +400,36 @@ const Navbar = () => {
                                         {cols.map((col, idx) => (
                                             <div key={idx} className="min-h-0">
                                                 {isPartners ? (
-                                                    <div className="h-full rounded-2xl border border-orange-100 bg-white p-5 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                                                        <div className={`w-full mb-4 rounded-xl overflow-hidden ${col.cover ? 'h-28' : 'h-24 bg-gray-50 flex items-center justify-center px-3'}`}>
+                                                    <a
+                                                        href={col.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="group h-full rounded-2xl border bg-white p-5 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                                                        style={{ borderColor: `${colors.logo}22` }}
+                                                    >
+                                                        <div
+                                                            className="w-full h-20 mb-4 rounded-xl flex items-center justify-center px-4"
+                                                            style={{ backgroundColor: `${colors.logo}0A` }}
+                                                        >
                                                             <img
                                                                 src={col.logo || 'https://via.placeholder.com/150?text=Logo'}
                                                                 alt={col.title}
-                                                                className={col.cover ? 'w-full h-full object-cover' : 'max-h-16 max-w-full object-contain'}
+                                                                className="max-h-12 max-w-full object-contain"
                                                                 onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Logo'; }}
                                                             />
                                                         </div>
-                                                        <h3 className="text-base font-bold mb-2" style={{ color: colors.logo }}>{col.title}</h3>
-                                                        <p className="text-xs text-gray-600 leading-relaxed flex-1">{col.desc}</p>
-                                                        <a
-                                                            href={col.url}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                            className="mt-4 text-white rounded-full px-5 py-2 text-xs font-semibold hover:opacity-90 transition inline-block"
-                                                            style={{ backgroundColor: colors.logo }}
+                                                        <h3 className="text-sm font-bold mb-2 text-gray-900">{col.title}</h3>
+                                                        <p className="text-[11px] text-gray-500 leading-relaxed line-clamp-3 flex-1">
+                                                            {col.desc}
+                                                        </p>
+                                                        <span
+                                                            className="mt-4 text-xs font-semibold inline-flex items-center gap-1 opacity-80 group-hover:opacity-100 transition"
+                                                            style={{ color: colors.logo }}
                                                         >
                                                             {navbarTrans.learnMore || 'Learn More'}
-                                                        </a>
-                                                    </div>
+                                                            <ArrowRight size={12} />
+                                                        </span>
+                                                    </a>
                                                 ) : col.content ? (
                                                     col.content
                                                 ) : col.list ? (
@@ -417,16 +444,45 @@ const Navbar = () => {
                                                                     className="group flex items-center gap-3 rounded-xl px-2.5 py-2.5 text-gray-700 cursor-pointer transition hover:bg-white hover:shadow-sm"
                                                                     onClick={() => handleNavClick(item.url)}
                                                                 >
-                                                                    {item.icon && (
+                                                                    {item.brand ? (
+                                                                        <span
+                                                                            className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 overflow-hidden"
+                                                                            style={{
+                                                                                backgroundColor: item.brand.innerBg || '#fff',
+                                                                                border: `1px solid ${item.brand.color}22`,
+                                                                            }}
+                                                                        >
+                                                                            <img
+                                                                                src={item.brand.logo}
+                                                                                alt=""
+                                                                                className="w-[72%] h-[72%] object-contain"
+                                                                            />
+                                                                        </span>
+                                                                    ) : item.icon ? (
                                                                         <span
                                                                             className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
                                                                             style={{ backgroundColor: `${colors.logo}14`, color: colors.logo }}
                                                                         >
                                                                             <item.icon size={16} />
                                                                         </span>
-                                                                    )}
-                                                                    <span className="text-sm font-medium flex-1 group-hover:translate-x-0.5 transition">{item.text}</span>
-                                                                    <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition shrink-0" style={{ color: colors.logo }} />
+                                                                    ) : null}
+                                                                    <span
+                                                                        className="text-sm font-medium flex-1 group-hover:translate-x-0.5 transition leading-snug"
+                                                                        style={
+                                                                            item.brand?.gradient
+                                                                                ? {
+                                                                                    backgroundImage: item.brand.gradient,
+                                                                                    WebkitBackgroundClip: 'text',
+                                                                                    backgroundClip: 'text',
+                                                                                    color: 'transparent',
+                                                                                    WebkitTextFillColor: 'transparent',
+                                                                                }
+                                                                                : undefined
+                                                                        }
+                                                                    >
+                                                                        {item.text}
+                                                                    </span>
+                                                                    <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition shrink-0" style={{ color: item.brand?.color || colors.logo }} />
                                                                 </li>
                                                             ))}
                                                         </ul>
@@ -469,7 +525,158 @@ const Navbar = () => {
                                             </div>
                                         ))}
 
-                                        {!isPartners && !isSolutions && image && (
+                                        {isAboutUs && customPanel && (
+                                            <div
+                                                className="relative min-h-[280px] rounded-2xl overflow-hidden p-6 flex flex-col justify-between"
+                                                style={{
+                                                    background: `linear-gradient(155deg, ${colors.logo} 0%, #ff7a45 48%, #F65314 100%)`,
+                                                }}
+                                            >
+                                                <div className="absolute -top-12 -left-8 w-40 h-40 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+                                                <div className="absolute bottom-10 -right-6 w-28 h-28 rounded-full border border-white/20 pointer-events-none" />
+                                                <div className="absolute top-8 right-8 w-14 h-14 rounded-2xl rotate-12 border border-white/15 pointer-events-none" />
+
+                                                <div className="relative">
+                                                    <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-4 text-white">
+                                                        <Users size={20} />
+                                                    </div>
+                                                    <p className="text-white/70 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                        {imageLabel}
+                                                    </p>
+                                                    <h3 className="text-white text-xl font-bold leading-snug mb-3">
+                                                        {dropdownTrans.aboutUs?.panelTitle || 'Innovation with real impact'}
+                                                    </h3>
+                                                    <p className="text-white/80 text-sm leading-relaxed">
+                                                        {dropdownTrans.aboutUs?.panelDesc || 'Discover who we are, the clients we serve, and how to start a conversation with our team.'}
+                                                    </p>
+                                                </div>
+
+                                                <div className="relative space-y-2.5 mt-6">
+                                                    {[
+                                                        { label: dropdownTrans.aboutUs?.whoWeAre || 'Who We Are', url: '/about' },
+                                                        { label: dropdownTrans.aboutUs?.clientWall || 'Client wall', url: '/clientwall' },
+                                                        { label: dropdownTrans.aboutUs?.contactUs || 'Contact Us', url: '/contact' },
+                                                    ].map((item) => (
+                                                        <button
+                                                            key={item.label}
+                                                            type="button"
+                                                            onClick={() => handleNavClick(item.url)}
+                                                            className="w-full flex items-center gap-2.5 rounded-xl bg-white/12 backdrop-blur-sm px-3 py-2.5 border border-white/15 text-left hover:bg-white/20 transition"
+                                                        >
+                                                            <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                                                            <span className="text-white text-sm font-medium flex-1">{item.label}</span>
+                                                            <ArrowRight size={13} className="text-white/70" />
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {isWhatWeDo && customPanel && (
+                                            <div
+                                                className="relative min-h-[280px] rounded-2xl overflow-hidden p-6 flex flex-col justify-between"
+                                                style={{
+                                                    background: `linear-gradient(160deg, ${colors.logo} 0%, #F65314 55%, #c2410c 100%)`,
+                                                }}
+                                            >
+                                                <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+                                                <div className="absolute bottom-8 -left-8 w-32 h-32 rounded-full border border-white/20 pointer-events-none" />
+                                                <div className="absolute top-1/2 right-4 w-16 h-16 rounded-2xl rotate-12 border border-white/15 pointer-events-none" />
+
+                                                <div className="relative">
+                                                    <p className="text-white/70 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                        {imageLabel}
+                                                    </p>
+                                                    <h3 className="text-white text-xl font-bold leading-snug mb-3">
+                                                        {dropdownTrans.whatWeDo?.panelTitle || 'End-to-end digital excellence'}
+                                                    </h3>
+                                                    <p className="text-white/80 text-sm leading-relaxed">
+                                                        {dropdownTrans.whatWeDo?.panelDesc || 'From strategy to run — consulting, implementation, and managed services under one partner.'}
+                                                    </p>
+                                                </div>
+
+                                                <div className="relative space-y-3 mt-6">
+                                                    {[
+                                                        dropdownTrans.whatWeDo?.consulting || 'Consulting',
+                                                        dropdownTrans.whatWeDo?.implementation || 'Implementation',
+                                                        dropdownTrans.whatWeDo?.managedServices || 'Managed Services',
+                                                    ].map((label) => (
+                                                        <div
+                                                            key={label}
+                                                            className="flex items-center gap-2.5 rounded-xl bg-white/12 backdrop-blur-sm px-3 py-2.5 border border-white/15"
+                                                        >
+                                                            <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
+                                                            <span className="text-white text-sm font-medium">{label}</span>
+                                                        </div>
+                                                    ))}
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleNavClick('/contact')}
+                                                        className="w-full mt-1 rounded-full bg-white py-2.5 text-sm font-bold hover:bg-orange-50 transition inline-flex items-center justify-center gap-1.5"
+                                                        style={{ color: colors.logo }}
+                                                    >
+                                                        {navbarTrans.bookADemo || 'Book a Demo'}
+                                                        <ArrowRight size={14} />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {isResources && customPanel && (
+                                            <div
+                                                className="relative min-h-[280px] rounded-2xl overflow-hidden p-6 flex flex-col justify-between"
+                                                style={{
+                                                    background: `linear-gradient(165deg, #1e293b 0%, #334155 45%, ${colors.logo} 120%)`,
+                                                }}
+                                            >
+                                                <div className="absolute -top-8 -right-6 w-36 h-36 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+                                                <div className="absolute bottom-6 right-6 w-20 h-20 rounded-full border border-white/15 pointer-events-none" />
+                                                <div
+                                                    className="absolute inset-0 opacity-[0.07] pointer-events-none"
+                                                    style={{
+                                                        backgroundImage:
+                                                            'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
+                                                        backgroundSize: '28px 28px',
+                                                    }}
+                                                />
+
+                                                <div className="relative">
+                                                    <div
+                                                        className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+                                                        style={{ backgroundColor: 'rgba(255,255,255,0.12)', color: '#fff' }}
+                                                    >
+                                                        <Lightbulb size={20} />
+                                                    </div>
+                                                    <p className="text-white/65 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                        {imageLabel}
+                                                    </p>
+                                                    <h3 className="text-white text-xl font-bold leading-snug mb-3">
+                                                        {dropdownTrans.resources?.panelTitle || 'Stay informed. Stay ahead.'}
+                                                    </h3>
+                                                    <p className="text-white/75 text-sm leading-relaxed">
+                                                        {dropdownTrans.resources?.panelDesc || 'News, blogs, and insights to help you navigate technology trends and business transformation.'}
+                                                    </p>
+                                                </div>
+
+                                                <div className="relative space-y-2.5 mt-6">
+                                                    {[
+                                                        dropdownTrans.resources?.news || 'News',
+                                                        dropdownTrans.resources?.blogs || 'Blogs',
+                                                        dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
+                                                    ].map((label) => (
+                                                        <div
+                                                            key={label}
+                                                            className="flex items-center gap-2.5 rounded-xl bg-white/10 backdrop-blur-sm px-3 py-2.5 border border-white/10"
+                                                        >
+                                                            <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: colors.logo }} />
+                                                            <span className="text-white text-sm font-medium">{label}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {!isPartners && !isSolutions && !isWhatWeDo && !isResources && !isAboutUs && image && (
                                             <div className="relative min-h-[240px] rounded-2xl overflow-hidden">
                                                 <img src={image} alt={imageLabel} className="absolute inset-0 w-full h-full object-cover" />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -516,35 +723,114 @@ const Navbar = () => {
                                             )}
                                         </button>
                                         {hasDropdown && isOpen && (
-                                            <div className="bg-gray-50 px-6 py-6 border-t border-gray-200 text-sm">
+                                            <div className="bg-[#fffaf7] px-4 py-5 border-t border-orange-100 text-sm">
                                                 {getDropdownContent(item.id).cols.map((col, i) => (
-                                                    <div key={i} className="mb-6 last:mb-0">
-                                                        <h4 className="font-bold mb-3" style={{ color: colors.logo }}>{col.title || col.name}</h4>
-                                                        {col.list ? (
-                                                            <ul className="space-y-3">
-                                                                {col.list.map((li, idx) => (
-                                                                    <li
-                                                                        key={idx}
-                                                                        className="flex items-center gap-3 text-gray-600 cursor-pointer"
-                                                                        style={{ '&:hover': { color: colors.logo } }}
-                                                                        onClick={() => handleNavClick(li.url)}
-                                                                    >
-                                                                        {li.icon && <li.icon size={16} style={{ color: colors.logo }} />}
-                                                                        <span>{li.text}</span>
-                                                                    </li>
-                                                                ))}
-                                                            </ul>
+                                                    <div key={i} className="mb-5 last:mb-0">
+                                                        {col.content ? (
+                                                            <div
+                                                                className="rounded-2xl p-5 text-white flex flex-col items-center text-center"
+                                                                style={{ background: `linear-gradient(145deg, ${colors.logo}, #F65314)` }}
+                                                            >
+                                                                <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-3">
+                                                                    <Sparkles size={18} />
+                                                                </div>
+                                                                <h3 className="text-sm font-bold mb-4 leading-tight">
+                                                                    {navbarTrans.demoBannerTitle || 'Your Solution Partner for Business Success'}
+                                                                </h3>
+                                                                <button
+                                                                    onClick={() => handleNavClick('/book-demo')}
+                                                                    className="bg-white px-5 py-2 rounded-full font-bold text-xs"
+                                                                    style={{ color: colors.logo }}
+                                                                >
+                                                                    {navbarTrans.bookADemo || 'Book a Demo'}
+                                                                </button>
+                                                            </div>
                                                         ) : (
                                                             <>
-                                                                <p className="text-gray-600 text-xs leading-relaxed mb-3">{col.desc}</p>
-                                                                {col.url && (
-                                                                    <button
-                                                                        onClick={() => handleNavClick(col.url)}
-                                                                        className="text-sm font-medium hover:underline"
-                                                                        style={{ color: colors.logo }}
-                                                                    >
-                                                                        {navbarTrans.exploreArrow || 'Explore →'}
-                                                                    </button>
+                                                                <h4 className="font-bold mb-3 px-1" style={{ color: colors.logo }}>{col.title || col.name}</h4>
+                                                                {col.list ? (
+                                                                    <ul className="space-y-1">
+                                                                        {col.list.map((li, idx) => (
+                                                                            <li
+                                                                                key={idx}
+                                                                                className="group flex items-center gap-3 rounded-xl px-2.5 py-2.5 text-gray-700 cursor-pointer active:bg-white"
+                                                                                onClick={() => handleNavClick(li.url)}
+                                                                            >
+                                                                                {li.brand ? (
+                                                                                    <span
+                                                                                        className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 overflow-hidden"
+                                                                                        style={{
+                                                                                            backgroundColor: li.brand.innerBg || '#fff',
+                                                                                            border: `1px solid ${li.brand.color}22`,
+                                                                                        }}
+                                                                                    >
+                                                                                        <img
+                                                                                            src={li.brand.logo}
+                                                                                            alt=""
+                                                                                            className="w-[72%] h-[72%] object-contain"
+                                                                                        />
+                                                                                    </span>
+                                                                                ) : li.icon ? (
+                                                                                    <span
+                                                                                        className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                                                                                        style={{ backgroundColor: `${colors.logo}14`, color: colors.logo }}
+                                                                                    >
+                                                                                        <li.icon size={16} />
+                                                                                    </span>
+                                                                                ) : null}
+                                                                                <span
+                                                                                    className="text-sm font-medium flex-1 leading-snug"
+                                                                                    style={
+                                                                                        li.brand?.gradient
+                                                                                            ? {
+                                                                                                backgroundImage: li.brand.gradient,
+                                                                                                WebkitBackgroundClip: 'text',
+                                                                                                backgroundClip: 'text',
+                                                                                                color: 'transparent',
+                                                                                                WebkitTextFillColor: 'transparent',
+                                                                                            }
+                                                                                            : undefined
+                                                                                    }
+                                                                                >
+                                                                                    {li.text}
+                                                                                </span>
+                                                                                <ArrowRight size={14} className="shrink-0 opacity-40" style={{ color: li.brand?.color || colors.logo }} />
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                ) : (
+                                                                    <div className="rounded-xl border border-orange-100 bg-white px-3 py-3">
+                                                                        {col.logo && (
+                                                                            <div
+                                                                                className="w-full h-14 mb-3 rounded-lg flex items-center justify-center px-3"
+                                                                                style={{ backgroundColor: `${colors.logo}0A` }}
+                                                                            >
+                                                                                <img
+                                                                                    src={col.logo}
+                                                                                    alt={col.title}
+                                                                                    className="max-h-10 max-w-full object-contain"
+                                                                                />
+                                                                            </div>
+                                                                        )}
+                                                                        {col.icon && (
+                                                                            <div
+                                                                                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                                                                                style={{ backgroundColor: `${colors.logo}14`, color: colors.logo }}
+                                                                            >
+                                                                                <col.icon size={18} />
+                                                                            </div>
+                                                                        )}
+                                                                        <p className="text-gray-600 text-xs leading-relaxed mb-3">{col.desc}</p>
+                                                                        {col.url && (
+                                                                            <button
+                                                                                onClick={() => handleNavClick(col.url)}
+                                                                                className="text-sm font-semibold inline-flex items-center gap-1"
+                                                                                style={{ color: colors.logo }}
+                                                                            >
+                                                                                {navbarTrans.exploreArrow || 'Explore →'}
+                                                                            </button>
+                                                                        )}
+                                                                    </div>
                                                                 )}
                                                             </>
                                                         )}

@@ -1,8 +1,8 @@
 export const PRODUCT_URLS = [
     null,
     'https://peoplehub.nizam365.com/',
-    null,
-    null,
+    'https://processhub.nizam365.com/',
+    'https://commercehub.nizam365.com/',
     null,
     null,
     null,
@@ -11,8 +11,30 @@ export const PRODUCT_URLS = [
 ];
 
 export const PRODUCT_BRANDS = {
-    0: { color: '#1976D2', logo: '/products/usi-logo.png', innerBg: '#ffffff' },
-    1: { color: '#683898', logo: '/products/peoplehub-hcm.png', innerBg: '#ffffff' },
+    0: {
+        color: '#1976D2',
+        gradient: 'linear-gradient(135deg, #0D47A1 0%, #1976D2 45%, #42A5F5 100%)',
+        logo: '/products/usi-logo.png',
+        innerBg: '#ffffff',
+    },
+    1: {
+        color: '#7536dd',
+        gradient: 'linear-gradient(135deg, #4C1D95 0%, #7536dd 45%, #A78BFA 100%)',
+        logo: '/products/peoplehub-hcm.png',
+        innerBg: '#ffffff',
+    },
+    2: {
+        color: '#0D9488',
+        gradient: 'linear-gradient(135deg, #0F766E 0%, #0D9488 45%, #2DD4BF 100%)',
+        logo: '/products/processhub.png',
+        innerBg: '#ffffff',
+    },
+    3: {
+        color: '#0583FC',
+        gradient: 'linear-gradient(135deg, #0369D9 0%, #0583FC 50%, #4DA8FF 100%)',
+        logo: '/products/commercehub.png',
+        innerBg: '#ffffff',
+    },
 };
 
 export const FALLBACK_PRODUCTS = [

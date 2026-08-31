@@ -1,5 +1,19 @@
 import React, { useContext, useEffect, useRef } from 'react';
-import { Shield, Cloud, FileText, Database, Lock, Server, ThumbsUp, FolderKanban, Users, Handshake } from 'lucide-react';
+import {
+    AppWindow,
+    Cloud,
+    Shield,
+    Smartphone,
+    Brain,
+    BarChart3,
+    Palette,
+    Workflow,
+    Link2,
+    ThumbsUp,
+    FolderKanban,
+    Users,
+    Handshake,
+} from 'lucide-react';
 import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
 import { motion, useInView, animate } from 'framer-motion';
@@ -42,12 +56,15 @@ export default function ServicesStats() {
     ];
 
     const services = [
-        { icon: Lock, title: t.serviceInfrastructure || 'Infrastructure', description: t.descInfrastructure || 'Building robust, scalable infrastructures...' },
-        { icon: Shield, title: t.serviceSecurity || 'Security', description: t.descSecurity || 'Deploying cutting-edge security solutions...' },
-        { icon: Cloud, title: t.serviceCloud || 'Cloud Services', description: t.descCloud || 'Delivering scalable cloud solutions...' },
-        { icon: FileText, title: t.serviceApps || 'Business Applications', description: t.descApps || 'Developing customized business applications...' },
-        { icon: Database, title: t.serviceData || 'Data Management & Analytics', description: t.descData || 'Transforming data into actionable insights...' },
-        { icon: Server, title: t.serviceSupport || 'Customer Support', description: t.descSupport || 'Providing 24/7 customer support services...' },
+        { icon: AppWindow, title: t.serviceWebEnterprise || 'Web & Enterprise Applications', description: t.descWebEnterprise || 'Custom web and enterprise applications built for performance, scalability, and seamless business workflows.' },
+        { icon: Cloud, title: t.serviceCloudDevOps || 'Cloud & DevOps', description: t.descCloudDevOps || 'Cloud architecture, CI/CD pipelines, and DevOps practices that accelerate delivery and improve reliability.' },
+        { icon: Shield, title: t.serviceCybersecurity || 'Cybersecurity', description: t.descCybersecurity || 'End-to-end security strategies that protect systems, data, and users against evolving digital threats.' },
+        { icon: Smartphone, title: t.serviceMobileApps || 'Mobile Apps', description: t.descMobileApps || 'Native and cross-platform mobile experiences designed for engagement, speed, and usability.' },
+        { icon: Brain, title: t.serviceAI || 'AI & Machine Learning', description: t.descAI || 'Intelligent models and automation that turn data into predictions, insights, and smarter decisions.' },
+        { icon: BarChart3, title: t.serviceBigData || 'Big Data & Analytics', description: t.descBigData || 'Advanced analytics and data platforms that uncover trends and power data-driven growth.' },
+        { icon: Palette, title: t.serviceUIUX || 'UI/UX Design', description: t.descUIUX || 'Human-centered interface and experience design that makes digital products clear, intuitive, and delightful.' },
+        { icon: Workflow, title: t.serviceERP || 'ERP & Business Automation', description: t.descERP || 'ERP systems and process automation that connect finance, operations, and teams in one flow.' },
+        { icon: Link2, title: t.serviceBlockchain || 'Blockchain Solutions', description: t.descBlockchain || 'Secure, transparent blockchain solutions for trust, traceability, and next-generation digital transactions.' },
     ];
 
     const headerVariants = {
@@ -61,7 +78,7 @@ export default function ServicesStats() {
     };
 
     return (
-        <section dir={isRTL ? 'rtl' : 'ltr'} style={{ backgroundColor: colors.background }}>
+        <section key={language} dir={isRTL ? 'rtl' : 'ltr'} style={{ backgroundColor: colors.background }}>
             <div className="relative overflow-hidden py-14 px-6 md:px-8" style={{ backgroundColor: `${colors.logo}0F` }}>
                 <div
                     className="pointer-events-none absolute -top-16 left-1/2 h-56 w-[36rem] -translate-x-1/2 rounded-full blur-3xl"

@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { Scale, Cloud, Store, Workflow, Eye, HeartPulse, Building2, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
+import { Database, Users, Scale, Cloud, Store, Workflow, Eye, HeartPulse, Building2, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
 import { getProductCatalog } from '../../Utils/productCatalog';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 const GAP = 28;
+const MEDIA_SIZE = 64;
 
-const ICONS = [null, null, Workflow, Store, Scale, Eye, HeartPulse, Building2, Cloud];
+const ICONS = [Database, Users, Workflow, Store, Scale, Eye, HeartPulse, Building2, Cloud];
 
 function getVisibleCount() {
     if (typeof window === 'undefined') return 3;
@@ -27,7 +28,9 @@ export default function OurProducts() {
         Icon: ICONS[index],
     }));
 
+    const sectionRef = useRef(null);
     const viewportRef = useRef(null);
+    const inView = useInView(sectionRef, { amount: 0.35 });
     const [visible, setVisible] = useState(3);
     const [index, setIndex] = useState(0);
     const [step, setStep] = useState(0);
@@ -54,12 +57,12 @@ export default function OurProducts() {
     }, [products.length]);
 
     useEffect(() => {
-        if (maxIndex === 0 || paused) return undefined;
+        if (!inView || maxIndex === 0 || paused) return undefined;
         const timer = setInterval(() => {
             setIndex((current) => (current >= maxIndex ? 0 : current + 1));
         }, 5000);
         return () => clearInterval(timer);
-    }, [maxIndex, paused]);
+    }, [inView, maxIndex, paused]);
 
     const goTo = (next) => {
         setIndex(Math.min(Math.max(next, 0), maxIndex));
@@ -74,6 +77,7 @@ export default function OurProducts() {
 
     return (
         <section
+            ref={sectionRef}
             key={language}
             className="relative overflow-hidden py-20 px-6 md:px-8 md:py-24"
             style={{ backgroundColor: colors.background }}
@@ -176,6 +180,7 @@ export default function OurProducts() {
                                     : {};
                                 const Icon = product.Icon;
                                 const brandColor = accent(product);
+                                const hasLogo = Boolean(product.brand?.logo);
 
                                 return (
                                     <CardTag
@@ -184,8 +189,8 @@ export default function OurProducts() {
                                         className={`group relative shrink-0 rounded-2xl bg-white p-7 text-center overflow-hidden transition-all duration-300 hover:-translate-y-2 ${product.url ? 'cursor-pointer' : ''}`}
                                         style={{
                                             width: step ? `${step - GAP}px` : `calc((100% - ${(visible - 1) * GAP}px) / ${visible})`,
-                                            minHeight: '360px',
-                                            border: `1px solid ${brandColor}33`,
+                                            minHeight: '440px',
+                                            border: `1px solid ${brandColor}28`,
                                             boxShadow: '0 12px 32px rgba(15, 23, 42, 0.06)',
                                             textDecoration: 'none',
                                             color: 'inherit',
@@ -198,49 +203,60 @@ export default function OurProducts() {
                                             style={{ backgroundColor: brandColor }}
                                         />
 
-                                        <div className="flex justify-center mb-6">
-                                            {product.brand ? (
-                                                <div
-                                                    className="w-24 h-24 rounded-2xl flex items-center justify-center p-2.5 transition-transform duration-300 group-hover:scale-105"
-                                                    style={{ backgroundColor: product.brand.color }}
-                                                >
-                                                    <div
-                                                        className="w-full h-full rounded-xl flex items-center justify-center overflow-hidden"
-                                                        style={{ backgroundColor: product.brand.innerBg }}
-                                                    >
-                                                        <img
-                                                            src={product.brand.logo}
-                                                            alt={product.title}
-                                                            className="w-[86%] h-[86%] object-contain"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            ) : (
-                                                <div
-                                                    className="w-20 h-20 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
-                                                    style={{ backgroundColor: `${colors.logo}12`, color: colors.logo }}
-                                                >
-                                                    {Icon && <Icon className="w-9 h-9" />}
-                                                </div>
-                                            )}
+                                        <div className="flex justify-center mb-5 shrink-0">
+                                            <div
+                                                className="rounded-2xl flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                                                style={{
+                                                    width: MEDIA_SIZE,
+                                                    height: MEDIA_SIZE,
+                                                    backgroundColor: hasLogo
+                                                        ? (product.brand.innerBg || '#fff')
+                                                        : `${brandColor}14`,
+                                                    color: brandColor,
+                                                    border: `1px solid ${brandColor}22`,
+                                                    boxShadow: '0 6px 16px rgba(15, 23, 42, 0.06)',
+                                                }}
+                                            >
+                                                {hasLogo ? (
+                                                    <img
+                                                        src={product.brand.logo}
+                                                        alt=""
+                                                        className="w-[72%] h-[72%] object-contain"
+                                                    />
+                                                ) : (
+                                                    Icon && <Icon className="w-8 h-8" />
+                                                )}
+                                            </div>
                                         </div>
 
-                                        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug">
+                                        <h3
+                                            className="text-xl font-bold mb-3 leading-snug shrink-0"
+                                            style={
+                                                product.brand?.gradient
+                                                    ? {
+                                                        backgroundImage: product.brand.gradient,
+                                                        WebkitBackgroundClip: 'text',
+                                                        backgroundClip: 'text',
+                                                        color: 'transparent',
+                                                        WebkitTextFillColor: 'transparent',
+                                                    }
+                                                    : { color: '#111827' }
+                                            }
+                                        >
                                             {product.title}
                                         </h3>
-                                        <p className="text-gray-600 leading-relaxed text-[15px] flex-1">
+                                        <p className="text-gray-600 leading-relaxed text-[15px] flex-1 min-h-0 line-clamp-4">
                                             {product.description}
                                         </p>
 
-                                        {product.url && (
-                                            <span
-                                                className="mt-5 inline-flex items-center justify-center gap-1 text-sm font-semibold"
-                                                style={{ color: brandColor }}
-                                            >
-                                                {t.showMore || 'Learn more'}
-                                                <ArrowUpRight size={16} />
-                                            </span>
-                                        )}
+                                        <span
+                                            className="mt-5 inline-flex items-center justify-center gap-1 text-sm font-semibold shrink-0"
+                                            style={{ color: product.url ? brandColor : 'transparent' }}
+                                            aria-hidden={!product.url}
+                                        >
+                                            {t.showMore || 'Show more'}
+                                            <ArrowUpRight size={16} />
+                                        </span>
                                     </CardTag>
                                 );
                             })}

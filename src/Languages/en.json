@@ -29,11 +29,16 @@
             "clientWall": "Client wall",
             "clientWallDesc": "Proudly serving industry leaders with innovative technology solutions that deliver real results.",
             "contactUs": "Contact Us",
-            "contactUsDesc": "Get in touch with AIOT IT Solutions your gateway to smart, innovative, and transformative tech solutions."
+            "contactUsDesc": "Get in touch with AIOT IT Solutions your gateway to smart, innovative, and transformative tech solutions.",
+            "panelLabel": "About AIOT",
+            "panelTitle": "Innovation with real impact",
+            "panelDesc": "Discover who we are, the clients we serve, and how to start a conversation with our team."
         },
         "whatWeDo": {
-            "technology": "Technology",
+            "technology": "Implementation",
             "technologyDesc": "AIOT IT Solutions powers digital transformation",
+            "implementation": "Implementation",
+            "implementationDesc": "AIOT IT Solutions powers digital transformation",
             "technologyDrivenInnovation": "Technology-Driven Innovation Solutions",
             "nextGenTechnology": "Next-Gen Technology Solutions",
             "enterpriseSap": "Enterprise SAP Solutions",
@@ -42,9 +47,28 @@
             "consulting": "Consulting",
             "consultingDesc": "Strategic technology consulting to optimize operations and drive growth.",
             "technologySolutionsProvider": "Technology Solutions Provider",
-            "outSourcing": "Out Sourcing",
-            "outSourcingDesc": "Reliable offshore outsourcing services with cost efficiency and expert talent.",
-            "strategicOffshore": "Strategic Offshore Solutions"
+            "outSourcing": "Managed Services",
+            "outSourcingDesc": "Reliable managed services with monitoring, maintenance, and end-to-end support.",
+            "managedServices": "Managed Services",
+            "managedServicesDesc": "Reliable managed services with monitoring, maintenance, and end-to-end support.",
+            "strategicOffshore": "Strategic Offshore Solutions",
+            "itStrategy": "IT Strategy & Advisory",
+            "digitalTransformation": "Digital Transformation Consulting",
+            "businessProcess": "Business Process Consulting",
+            "techAssessment": "Technology Assessment & Roadmapping",
+            "cloudEnterpriseArch": "Cloud & Enterprise Architecture",
+            "enterpriseTech": "Enterprise Technology Solutions",
+            "sapHana": "SAP & HANA Solutions",
+            "microsoftProduct": "Microsoft & Product Solutions",
+            "dataSecurity": "Data & Security Solutions",
+            "appManagement": "Application Management Services",
+            "cloudInfra": "Cloud & Infrastructure Management",
+            "itSupport": "IT Support & Service Desk",
+            "cyberMonitoring": "Cybersecurity & Monitoring",
+            "backupDr": "Data, Backup & Disaster Recovery",
+            "panelLabel": "What We Deliver",
+            "panelTitle": "End-to-end digital excellence",
+            "panelDesc": "From strategy to run — consulting, implementation, and managed services under one partner."
         },
         "solutions": {
             "industries": "Industries",
@@ -68,7 +92,10 @@
             "blogs": "Blogs",
             "blogsDesc": "Explore insights, trends, and expert opinions on technology and innovation.",
             "innovateWithInsights": "Innovate with Insights",
-            "innovateWithInsightsDesc": "Discover strategies to enhance your business through emerging trends and thought leadership."
+            "innovateWithInsightsDesc": "Discover strategies to enhance your business through emerging trends and thought leadership.",
+            "panelLabel": "Knowledge Hub",
+            "panelTitle": "Stay informed. Stay ahead.",
+            "panelDesc": "News, blogs, and insights to help you navigate technology trends and business transformation."
         },
         "partners": {
             "sapDesc": "Partner with us to transform how SMEs operate globally using cutting-edge, cloud-based solutions.",
@@ -81,7 +108,25 @@
     "Hero": {
         "demoBannerTitle": "Your Solution Partner <br> for Business Success",
         "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.",
-        "learnMore": "Learn More"
+        "learnMore": "Learn More",
+        "slides": [
+            {
+                "title": "Your Solution Partner <br> for Business Success",
+                "description": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions."
+            },
+            {
+                "title": "Connected Systems. <br> Smarter Decisions.",
+                "description": "Unify data, cloud, and enterprise platforms so your teams move faster with clarity and confidence."
+            },
+            {
+                "title": "Build. Secure. <br> Scale with Confidence.",
+                "description": "From cybersecurity to modern infrastructure, we protect and power the technology that runs your business."
+            },
+            {
+                "title": "Enterprise Excellence, <br> Delivered End to End.",
+                "description": "Consulting, implementation, and managed services designed to transform operations and accelerate growth."
+            }
+        ]
     },
     "whatWeDoSection": {
         "title": "What We Do",
@@ -109,18 +154,24 @@
         "statProjects": "Projects",
         "statUsers": "Users",
         "statContributors": "Contributors",
-        "serviceInfrastructure": "Infrastructure",
-        "descInfrastructure": "We build scalable infrastructure that supports seamless connectivity, secure data management, and efficient operations, ensuring your business is ready for future growth.",
-        "serviceSecurity": "Security",
-        "descSecurity": "We deploy security solutions to safeguard your digital assets, ensuring comprehensive protection against threats and maintaining data integrity.",
-        "serviceCloud": "Cloud Services",
-        "descCloud": "We deliver scalable cloud solutions that enhance efficiency and flexibility, empowering your business to adapt quickly and operate seamlessly in the digital age.",
-        "serviceApps": "Business Applications",
-        "descApps": "We provide business applications tailored to your processes, boosting productivity and streamlining operations for optimal performance.",
-        "serviceData": "Data Management & Analytics",
-        "descData": "We transform data into actionable insights with advanced analytics, streamlining data management for better decision-making and efficiency.",
-        "serviceSupport": "Customer Support",
-        "descSupport": "We provide 24/7 customer support services to ensure your clients receive timely assistance, offering personalised support to maintain customer satisfaction."
+        "serviceWebEnterprise": "Web & Enterprise Applications",
+        "descWebEnterprise": "Custom web and enterprise applications built for performance, scalability, and seamless business workflows.",
+        "serviceCloudDevOps": "Cloud & DevOps",
+        "descCloudDevOps": "Cloud architecture, CI/CD pipelines, and DevOps practices that accelerate delivery and improve reliability.",
+        "serviceCybersecurity": "Cybersecurity",
+        "descCybersecurity": "End-to-end security strategies that protect systems, data, and users against evolving digital threats.",
+        "serviceMobileApps": "Mobile Apps",
+        "descMobileApps": "Native and cross-platform mobile experiences designed for engagement, speed, and usability.",
+        "serviceAI": "AI & Machine Learning",
+        "descAI": "Intelligent models and automation that turn data into predictions, insights, and smarter decisions.",
+        "serviceBigData": "Big Data & Analytics",
+        "descBigData": "Advanced analytics and data platforms that uncover trends and power data-driven growth.",
+        "serviceUIUX": "UI/UX Design",
+        "descUIUX": "Human-centered interface and experience design that makes digital products clear, intuitive, and delightful.",
+        "serviceERP": "ERP & Business Automation",
+        "descERP": "ERP systems and process automation that connect finance, operations, and teams in one flow.",
+        "serviceBlockchain": "Blockchain Solutions",
+        "descBlockchain": "Secure, transparent blockchain solutions for trust, traceability, and next-generation digital transactions."
     },
     "techInnovation": {
         "subtitle": "Innovating Tomorrow's Tech",
@@ -216,7 +267,7 @@
         "dubai": "Dubai",
         "companyPakistan": "AIOT Consulting (Pvt) Ltd",
         "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O Information Technology Consultancy - L.L.C - S.P.C",
+        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "Address:",
         "email": "Email:",
@@ -273,9 +324,11 @@
     },
     "footer": {
         "newsletterTitle": "GET UPDATES",
+        "newsletterHeading": "Stay ahead with AIOT insights",
+        "newsletterDesc": "Product updates, digital transformation tips, and partnership news — straight to your inbox.",
         "emailPlaceholder": "Enter your email...",
         "subscribe": "Subscribe",
-        "description": "Reshaping your future.",
+        "description": "Reshaping your future with AI, IoT, and enterprise technology solutions that drive real business outcomes.",
         "quickLinks": "Quick Links",
         "home": "Home",
         "about": "About",
@@ -289,7 +342,33 @@
         "attendee": "Attendee",
         "pos": "POS",
         "connector": "Connector",
-        "hcm": "HCM"
+        "hcm": "HCM",
+        "language": "Language",
+        "rights": "All rights reserved.",
+        "letsTalk": "Let's talk",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "privacyPolicy": {
+        "eyebrow": "Legal",
+        "title": "Privacy Policy",
+        "subtitle": "How AIOT collects, uses, and protects your information.",
+        "lastUpdatedLabel": "Last updated",
+        "lastUpdated": "August 28, 2026",
+        "intro": "AIOT Consulting (\"AIOT\", \"we\", \"us\", or \"our\") respects your privacy. This Privacy Policy explains how we collect, use, store, and protect information when you visit our website, contact us, or use our services.",
+        "collectTitle": "Information We Collect",
+        "collectDesc": "We may collect personal information you provide directly, such as your name, email address, phone number, company details, and message content when you contact us, book a demo, or subscribe to updates. We may also collect limited technical data such as browser type, device information, and pages visited to improve site performance and security.",
+        "useTitle": "How We Use Your Information",
+        "useDesc": "We use collected information to respond to inquiries, deliver requested services, improve our website and products, send relevant updates when you opt in, and protect against misuse or unauthorized access. We do not sell your personal information.",
+        "sharingTitle": "Sharing & Disclosure",
+        "sharingDesc": "We may share information with trusted service providers who help us operate our website and business, only as needed to perform their services. We may also disclose information when required by law or to protect the rights, safety, and security of AIOT, our users, or others.",
+        "securityTitle": "Data Security",
+        "securityDesc": "We apply reasonable administrative, technical, and organizational measures to protect personal information against unauthorized access, loss, misuse, or alteration. No method of transmission over the internet is fully secure, so we encourage you to use strong practices when sharing data online.",
+        "rightsTitle": "Your Rights",
+        "rightsDesc": "Depending on your location, you may have the right to access, correct, update, or request deletion of your personal information. You may also opt out of marketing communications at any time. To exercise these rights, contact us using the details below.",
+        "contactTitle": "Contact Us",
+        "contactDesc": "If you have questions about this Privacy Policy or how we handle your data, please reach out to us.",
+        "contactCta": "Go to Contact page",
+        "changes": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Continued use of our website after changes means you accept the revised policy."
     },
     "banner": {
         "upperText": "Technology",

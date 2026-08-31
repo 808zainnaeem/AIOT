@@ -17,8 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #050505;
-  background-image: radial-gradient(ellipse at center, #1c100c 0%, #080808 55%, #000 100%);
+  background-color: #ffffff;
+  background-image: radial-gradient(ellipse at center, #fff5f0 0%, #ffffff 55%, #ffffff 100%);
   overflow: hidden;
 }
 
@@ -27,7 +27,7 @@
   width: 520px;
   height: 520px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 98, 57, 0.38) 0%, rgba(237, 98, 57, 0.1) 38%, transparent 68%);
+  background: radial-gradient(circle, rgba(237, 98, 57, 0.18) 0%, rgba(237, 98, 57, 0.06) 38%, transparent 68%);
   animation: aiot-pulse-glow 2.6s ease-in-out infinite;
   pointer-events: none;
 }
@@ -35,7 +35,7 @@
 .aiot-loader__glow--soft {
   width: 280px;
   height: 280px;
-  background: radial-gradient(circle, rgba(255, 176, 120, 0.28) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 176, 120, 0.2) 0%, transparent 70%);
   animation-duration: 1.8s;
 }
 
@@ -43,8 +43,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(237, 98, 57, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(237, 98, 57, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(237, 98, 57, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 98, 57, 0.06) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: radial-gradient(circle at center, black 12%, transparent 68%);
   pointer-events: none;

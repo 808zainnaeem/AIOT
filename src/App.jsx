@@ -17,6 +17,7 @@ import UtilityTransformation from './Pages/UtilityTransformation';
 import OracleNetsuite from './Pages/OracleNetsuite';
 import Consulting from './Pages/Consulting';
 import Outsourcing from './Pages/Outsourcing';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 function App() {
   const { language, setLanguage, translations } = useContext(LanguageContext);
   const color = Colors[language] || Colors.en; // Get color settings based on selected language
@@ -73,6 +74,7 @@ function App() {
         <Route exact path="/oracle-netsuite" element={<OracleNetsuite />} />
         <Route exact path="/consulting" element={<Consulting />} />
         <Route exact path="/outsoursing" element={<Outsourcing />} />
+        <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <FooterSection />
     </Router>

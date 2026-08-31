@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useMemo } from 'react';
 import en from '../Languages/en.json';
 import ar from '../Languages/ar.json';
 import da from '../Languages/da.json';
@@ -15,6 +15,34 @@ const translationsMap = { en, ar, da, de, es, zh, fr, sv };
 
 export const LanguageContext = createContext();
 
+function deepMerge(base, override) {
+    if (!override || typeof override !== 'object' || Array.isArray(override)) {
+        return override === undefined ? base : override;
+    }
+
+    const result = Array.isArray(base) ? [...base] : { ...base };
+
+    Object.keys(override).forEach((key) => {
+        const baseValue = base?.[key];
+        const nextValue = override[key];
+
+        if (
+            nextValue &&
+            typeof nextValue === 'object' &&
+            !Array.isArray(nextValue) &&
+            baseValue &&
+            typeof baseValue === 'object' &&
+            !Array.isArray(baseValue)
+        ) {
+            result[key] = deepMerge(baseValue, nextValue);
+        } else if (nextValue !== undefined) {
+            result[key] = nextValue;
+        }
+    });
+
+    return result;
+}
+
 function getInitialLanguage() {
     if (typeof window === 'undefined') return 'en';
     const saved = window.localStorage.getItem('aiot-language');
@@ -30,7 +58,10 @@ export function LanguageProvider({ children }) {
         window.localStorage.setItem('aiot-language', code);
     };
 
-    const translations = translationsMap[language] || en;
+    const translations = useMemo(() => {
+        const selected = translationsMap[language] || en;
+        return language === 'en' ? en : deepMerge(en, selected);
+    }, [language]);
 
     useEffect(() => {
         document.documentElement.dir = RTL_LANGUAGES.includes(language) ? 'rtl' : 'ltr';

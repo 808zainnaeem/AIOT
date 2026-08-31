@@ -31,9 +31,9 @@ export default function OurPhilosophy() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        <div className="bg-orange-50 rounded-3xl p-10 md:p-16 flex items-center justify-center shadow-xl">
+                        <div className="bg-orange-50 rounded-3xl flex items-center justify-center shadow-xl">
                             <img
-                                src="/Philosophy.png"
+                                src="https://i.postimg.cc/2SZtznGR/Chat-GPT-Image-Aug-28-2026-05-10-54-PM.png"
                                 alt="Team collaboration illustration"
                                 className="w-full h-auto"
                             />
