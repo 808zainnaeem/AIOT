@@ -4,13 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/NewLogo.png" />
+  <link rel="preload" href="/NewLogo.png" as="image" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AIOT Consulting Pvt Ltd</title>
+  <style>
+    @keyframes aiot-logo-fill {
+      0% { clip-path: inset(100% 0 0 0); }
+      72% { clip-path: inset(0 0 0 0); }
+      100% { clip-path: inset(0 0 0 0); }
+    }
+
+    #aiot-splash {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(18px) saturate(1.15);
+      -webkit-backdrop-filter: blur(18px) saturate(1.15);
+    }
+
+    #aiot-splash .aiot-loader__logo {
+      position: relative;
+      width: min(200px, 52vw);
+    }
+
+    #aiot-splash .aiot-loader__logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #aiot-splash .aiot-loader__logo-base {
+      filter: grayscale(1) brightness(0.72);
+      opacity: 0.28;
+    }
+
+    #aiot-splash .aiot-loader__logo-fill {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      clip-path: inset(100% 0 0 0);
+      animation: aiot-logo-fill 1.35s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="aiot-splash" style="position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#ffffff;">
-    <img src="/logo-icon.png" alt="AIOT" width="176" style="width:176px;height:auto;display:block;filter:drop-shadow(0 12px 32px rgba(237,98,57,.25));" />
+  <div id="aiot-splash">
+    <div class="aiot-loader__logo">
+      <img src="/NewLogo.png" alt="" class="aiot-loader__logo-base" />
+      <div class="aiot-loader__logo-fill">
+        <img src="/NewLogo.png" alt="AIOT" />
+      </div>
+    </div>
   </div>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>

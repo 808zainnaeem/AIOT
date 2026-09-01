@@ -1,25 +1,26 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Colors } from '../../Utils/Colors';
 import { LanguageContext } from '../../Context/LanguageContext';
 
-const SLIDE_IMAGES = [
+const SLIDE_MEDIA = [
     {
-        image: 'https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2021/12/03/bb23c468-aea0-408d-9863-f7675d247eff_89cfba09.jpg',
+        // First slide — background video
+        type: 'video',
+        video: 'https://aiotwebsites.s3.eu-north-1.amazonaws.com/Animate_futuristic_AI_digital_un%E2%80%A6_202609010927.mp4',
+        poster: 'https://i.postimg.cc/MGZbX9JK/Chat-GPT-Image-Sep-1-2026-09-21-40-AM.png',
         alt: 'AIOT digital solutions',
     },
     {
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80',
+        type: 'image',
+        image: 'https://aiotwebsites.s3.eu-north-1.amazonaws.com/ChatGPT+Image+Sep+1%2C+2026%2C+09_31_37+AM.png',
         alt: 'Technology network',
     },
     {
-        image: 'https://scalegrid.io/wp-content/uploads/best-mysql-gui-tools-scalegrid.jpg',
+        type: 'image',
+        image: 'https://i.postimg.cc/jdFCbCgP/Chat-GPT-Image-Sep-1-2026-09-13-55-AM.png',
         alt: 'Circuit innovation',
-    },
-    {
-        image: 'https://www.solarwinds.com/wp-content/uploads/2018/06/iStock-507965390.jpg',
-        alt: 'Data center excellence',
     },
 ];
 
@@ -46,19 +47,67 @@ const FALLBACK_SLIDES = [
     },
 ];
 
-const SLIDE_MS = 5500;
+// At least 5 seconds per slide (including the video)
+const SLIDE_MS = 5000;
+
+const SlideMedia = ({ slide, sliderActive }) => {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video || slide.type !== 'video') return undefined;
+
+        if (sliderActive) {
+            const playPromise = video.play();
+            if (playPromise) playPromise.catch(() => {});
+        } else {
+            video.pause();
+        }
+
+        return undefined;
+    }, [sliderActive, slide.type, slide.video]);
+
+    if (slide.type === 'video') {
+        return (
+            <motion.video
+                ref={videoRef}
+                key={slide.video}
+                src={slide.video}
+                poster={slide.poster}
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                animate={{ scale: sliderActive ? 1.12 : 1.04 }}
+                transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }}
+            />
+        );
+    }
+
+    return (
+        <motion.img
+            src={slide.image}
+            alt={slide.alt}
+            className="absolute inset-0 w-full h-full object-cover"
+            animate={{ scale: sliderActive ? 1.12 : 1.04 }}
+            transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }}
+        />
+    );
+};
 
 const HomePage = () => {
     const { background } = Colors.en;
     const { translations, language } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
+    const sectionRef = useRef(null);
+    const inView = useInView(sectionRef, { amount: 0.35, once: false });
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [direction, setDirection] = useState(1);
 
     const slides = useMemo(() => {
         const translated = translations?.Hero?.slides;
-        return SLIDE_IMAGES.map((media, i) => {
+        return SLIDE_MEDIA.map((media, i) => {
             const copy = translated?.[i] || FALLBACK_SLIDES[i];
             return {
                 ...media,
@@ -75,13 +124,13 @@ const HomePage = () => {
     }, [translations]);
 
     useEffect(() => {
-        if (paused) return undefined;
+        if (!inView || paused) return undefined;
         const timer = setInterval(() => {
             setDirection(1);
             setIndex((current) => (current + 1) % slides.length);
         }, SLIDE_MS);
         return () => clearInterval(timer);
-    }, [paused, slides.length]);
+    }, [inView, paused, slides.length]);
 
     const goPrev = () => {
         setDirection(-1);
@@ -100,7 +149,7 @@ const HomePage = () => {
 
     const active = slides[index] || slides[0];
 
-    const imageVariants = {
+    const mediaVariants = {
         enter: (dir) => ({
             opacity: 0,
             scale: 1.06,
@@ -139,39 +188,36 @@ const HomePage = () => {
         }),
     };
 
+    const sliderActive = inView && !paused;
+
     return (
         <section
+            ref={sectionRef}
             style={{ backgroundColor: background }}
             className="relative h-[calc(100svh-11.5rem)] sm:h-[calc(100svh-10.5rem)] lg:h-[calc(100svh-9.5rem)] flex flex-col overflow-hidden"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
-            {/* Full-bleed slides */}
+            {/* Full-bleed media slides */}
             <div className="absolute inset-0 z-0">
                 <AnimatePresence mode="wait" custom={direction}>
                     <motion.div
-                        key={`image-${index}`}
+                        key={`media-${index}`}
                         className="absolute inset-0"
                         custom={direction}
-                        variants={imageVariants}
+                        variants={mediaVariants}
                         initial="enter"
                         animate="center"
                         exit="exit"
                         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                     >
-                        <motion.img
-                            src={active.image}
-                            alt={active.alt}
-                            className="absolute inset-0 w-full h-full object-cover"
-                            animate={{ scale: paused ? 1.04 : 1.12 }}
-                            transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }}
-                        />
+                        <SlideMedia slide={active} sliderActive={sliderActive} />
                     </motion.div>
                 </AnimatePresence>
 
                 {/* Cinematic brand overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/90 via-[#0c0a09]/45 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/75 via-[#0c0a09]/25 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/50 via-[#0c0a09]/45 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/35 via-[#0c0a09]/25 to-transparent" />
                 <div
                     className="absolute inset-0 opacity-40 mix-blend-soft-light pointer-events-none"
                     style={{
@@ -271,7 +317,7 @@ const HomePage = () => {
                                                         initial={{ width: '0%' }}
                                                         animate={{ width: '100%' }}
                                                         transition={{
-                                                            duration: paused ? 0 : SLIDE_MS / 1000,
+                                                            duration: sliderActive ? SLIDE_MS / 1000 : 0,
                                                             ease: 'linear',
                                                         }}
                                                     />
