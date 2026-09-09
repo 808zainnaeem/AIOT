@@ -203,6 +203,10 @@
                 "description": "A unified commerce platform that connects sales channels, inventory, and customer journeys so you can sell and fulfil with consistency."
             },
             {
+                "title": "BusinessHub ERP",
+                "description": "An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses."
+            },
+            {
                 "title": "Hire Lawyer Online",
                 "description": "Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs."
             },
@@ -213,10 +217,6 @@
             {
                 "title": "HealthHub Patient Care",
                 "description": "A patient-care platform that helps healthcare teams manage records, appointments, and follow-ups with a smoother clinical experience."
-            },
-            {
-                "title": "BusinessHub ERP",
-                "description": "An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses."
             },
             {
                 "title": "Connector",

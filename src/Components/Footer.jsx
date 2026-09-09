@@ -1,9 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-    Facebook,
-    Twitter,
-    Linkedin,
     Globe,
     Mail,
     Phone,
@@ -17,6 +14,7 @@ import {
 import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/productCatalog';
+import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 export default function FooterSection() {
     const { language, setLanguage, translations } = useContext(LanguageContext);
@@ -39,11 +37,7 @@ export default function FooterSection() {
     const emailAddress = navbarTrans.topBar?.email || 'info@aiotcons.com';
     const address = navbarTrans.topBar?.address || '15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN';
 
-    const socialIcons = [
-        { Icon: Facebook, url: 'https://www.facebook.com/WEAIOT/', label: 'Facebook' },
-        { Icon: Twitter, url: 'https://x.com/WEAIOT', label: 'Twitter' },
-        { Icon: Linkedin, url: 'https://www.linkedin.com/company/weaiot', label: 'LinkedIn' },
-    ];
+    const socialIcons = AIOT_SOCIAL_LINKS;
 
     const quickLinks = [
         { label: navbarTrans.menu?.home || 'HOME', link: '/' },

@@ -158,6 +158,10 @@
                 "description": "Une plateforme de commerce unifié qui relie canaux de vente, stocks et parcours client pour vendre et livrer avec constance."
             },
             {
+                "title": "Progiciel de gestion",
+                "description": "Un ERP intégré pour gérer finance, stocks et opérations à partir d'une source unique de vérité, pour les entreprises en croissance."
+            },
+            {
                 "title": "Engager un avocat en ligne",
                 "description": "Connectez-vous à des professionnels du droit expérimentés via notre plateforme en ligne, pour trouver et engager l'avocat adapté à vos besoins."
             },
@@ -168,10 +172,6 @@
             {
                 "title": "Soins aux patients",
                 "description": "Une plateforme de soins patients qui aide les équipes de santé à gérer dossiers, rendez-vous et suivis pour une expérience clinique plus fluide."
-            },
-            {
-                "title": "Progiciel de gestion",
-                "description": "Un ERP intégré pour gérer finance, stocks et opérations à partir d'une source unique de vérité, pour les entreprises en croissance."
             },
             {
                 "title": "Connecteur",

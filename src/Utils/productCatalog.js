@@ -1,9 +1,9 @@
 export const PRODUCT_URLS = [
-    null,
+    'https://ui.nizam365.com/',
     'https://peoplehub.nizam365.com/',
     'https://processhub.nizam365.com/',
     'https://commercehub.nizam365.com/',
-    null,
+    'https://businesshub.nizam365.com/',
     null,
     null,
     null,
@@ -35,6 +35,12 @@ export const PRODUCT_BRANDS = {
         logo: '/products/commercehub.png',
         innerBg: '#ffffff',
     },
+    4: {
+        color: '#1E6FD9',
+        gradient: 'linear-gradient(135deg, #0B4A9E 0%, #1E6FD9 45%, #5BA8FF 100%)',
+        logo: '/products/businesshub.png',
+        innerBg: '#ffffff',
+    },
 };
 
 export const FALLBACK_PRODUCTS = [
@@ -42,10 +48,10 @@ export const FALLBACK_PRODUCTS = [
     { title: 'PeopleHub HCM', description: 'A complete human capital management platform to hire, manage, and grow your workforce with payroll, attendance, and talent tools in one place.' },
     { title: 'ProcessHub Operations Suite', description: 'Streamline day-to-day operations with connected workflows, automation, and visibility across teams and processes.' },
     { title: 'CommerceHub UCP', description: 'A unified commerce platform that connects sales channels, inventory, and customer journeys so you can sell and fulfil with consistency.' },
+    { title: 'BusinessHub ERP', description: 'An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses.' },
     { title: 'Hire Lawyer Online', description: 'Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs.' },
     { title: 'InsightHub Vision AI', description: 'Turn visual data into actionable insight with AI-powered vision that supports monitoring, detection, and smarter decisions.' },
     { title: 'HealthHub Patient Care', description: 'A patient-care platform that helps healthcare teams manage records, appointments, and follow-ups with a smoother clinical experience.' },
-    { title: 'BusinessHub ERP', description: 'An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses.' },
     { title: 'Connector', description: 'Effortlessly integrate and manage your systems with our connector for communication through WhatsApp, cellular APIs, and email exchanges, designed to streamline data flow.' },
 ];
 

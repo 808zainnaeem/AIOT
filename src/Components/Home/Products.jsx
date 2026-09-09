@@ -8,7 +8,7 @@ import { motion, useInView } from 'framer-motion';
 const GAP = 28;
 const MEDIA_SIZE = 64;
 
-const ICONS = [Database, Users, Workflow, Store, Scale, Eye, HeartPulse, Building2, Cloud];
+const ICONS = [Database, Users, Workflow, Store, Building2, Scale, Eye, HeartPulse, Cloud];
 
 function getVisibleCount() {
     if (typeof window === 'undefined') return 3;

@@ -158,6 +158,10 @@
                 "description": "Una plataforma de comercio unificado que conecta canales de venta, inventario y el recorrido del cliente para vender y cumplir con consistencia."
             },
             {
+                "title": "Planificación de recursos",
+                "description": "Un ERP integrado para gestionar finanzas, inventario y operaciones desde una única fuente de verdad para empresas en crecimiento."
+            },
+            {
                 "title": "Contratar abogado en línea",
                 "description": "Conecte con profesionales legales experimentados a través de nuestra plataforma en línea, para encontrar y contratar al abogado adecuado."
             },
@@ -168,10 +172,6 @@
             {
                 "title": "Atención al paciente",
                 "description": "Una plataforma de atención al paciente que ayuda a los equipos sanitarios a gestionar historiales, citas y seguimientos con una experiencia clínica más fluida."
-            },
-            {
-                "title": "Planificación de recursos",
-                "description": "Un ERP integrado para gestionar finanzas, inventario y operaciones desde una única fuente de verdad para empresas en crecimiento."
             },
             {
                 "title": "Conector",

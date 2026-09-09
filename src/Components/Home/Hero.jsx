@@ -14,7 +14,7 @@ const SLIDE_MEDIA = [
     },
     {
         type: 'image',
-        image: 'https://aiotwebsites.s3.eu-north-1.amazonaws.com/ChatGPT+Image+Sep+1%2C+2026%2C+09_31_37+AM.png',
+        image: 'https://i.postimg.cc/SKtFj4Gm/Chat-GPT-Image-Sep-2-2026-11-19-42-AM.png',
         alt: 'Technology network',
     },
     {
@@ -31,9 +31,9 @@ const FALLBACK_SLIDES = [
             'We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.',
     },
     {
-        title: 'Connected Systems. <br> Smarter Decisions.',
+        title: 'Accelerate. <br> Innovate. <br> Grow Without Limits.',
         description:
-            'Unify data, cloud, and enterprise platforms so your teams move faster with clarity and confidence.',
+            'We build intelligent technology and secure digital solutions that help businesses move faster, scale smarter, and turn bold ideas into lasting growth.',
     },
     {
         title: 'Build. Secure. <br> Scale with Confidence.',
@@ -49,15 +49,16 @@ const FALLBACK_SLIDES = [
 
 // At least 5 seconds per slide (including the video)
 const SLIDE_MS = 5000;
-
-const SlideMedia = ({ slide, sliderActive }) => {
+const SlideMedia = ({ slide, sliderActive, inView }) => {
     const videoRef = useRef(null);
 
     useEffect(() => {
         const video = videoRef.current;
         if (!video || slide.type !== 'video') return undefined;
 
-        if (sliderActive) {
+        // Keep video playing on hover (first slide).
+        // Only pause when the section is out of view.
+        if (inView) {
             const playPromise = video.play();
             if (playPromise) playPromise.catch(() => {});
         } else {
@@ -65,7 +66,7 @@ const SlideMedia = ({ slide, sliderActive }) => {
         }
 
         return undefined;
-    }, [sliderActive, slide.type, slide.video]);
+    }, [inView, slide.type, slide.video]);
 
     if (slide.type === 'video') {
         return (
@@ -211,7 +212,7 @@ const HomePage = () => {
                         exit="exit"
                         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                     >
-                        <SlideMedia slide={active} sliderActive={sliderActive} />
+                       <SlideMedia slide={active} sliderActive={sliderActive} inView={inView} />
                     </motion.div>
                 </AnimatePresence>
 

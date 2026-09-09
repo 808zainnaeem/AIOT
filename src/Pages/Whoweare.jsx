@@ -1,308 +1,426 @@
-import React, { useEffect } from 'react';
-import { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
-import { Brain, Network, Shield, Lightbulb, Gauge, TrendingUp, Play } from 'lucide-react';
+import { Brain, Network, Shield, Lightbulb, Gauge, Play, Check, MapPin, Mail, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     const { translations, language } = useContext(LanguageContext);
-    const t = translations.about; // Shortcut
+    const t = translations.about;
     const colors = Colors[language] || Colors.en;
+    const isRTL = language === 'ar';
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 24 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
+
+    const stagger = {
+        visible: { transition: { staggerChildren: 0.12 } },
+    };
+
+    const features = [
+        { Icon: Brain, title: t.feature1Title, desc: t.feature1Desc },
+        { Icon: Network, title: t.feature2Title, desc: t.feature2Desc },
+        { Icon: Shield, title: t.feature3Title, desc: t.feature3Desc },
+    ];
+
+    const transformItems = [t.list1, t.list2, t.list3];
+
+    const offices = [
+        {
+            region: t.pakistan,
+            company: t.companyPakistan,
+            city: t.lahore,
+            address: t.pakistanAddress || translations.navbar?.topBar?.address,
+            email: 'info@aiotcons.com',
+            phone: '+923 12 345 6778',
+        },
+        {
+            region: t.uae,
+            company: t.companyUAE,
+            city: t.dubai,
+            address: t.uaeAddress,
+            email: 'info@aiotcons.com',
+            phone: '+971 50 731 2970',
+        },
+        {
+            region: t.uk,
+            company: t.companyUK,
+            city: t.glasgow,
+            address: t.ukAddress,
+            email: 'info@aiotcons.uk',
+            phone: '+44-7428-417535',
+        },
+    ];
+
+    const headingParts = (t.mainHeading || '').split('<br />');
 
     return (
-        <div className="bg-white">
+        <div className="bg-white" dir={isRTL ? 'rtl' : 'ltr'}>
             {/* Hero Section */}
             <div
-                className="relative h-96 bg-cover bg-center"
+                className="relative h-80 md:h-96 bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=800&fit=crop)',
+                        'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(https://i.postimg.cc/wjn57QkV/Gemini-Generated-Image-616xj1616xj1616x.jpg)',
                 }}
             >
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-                    <h1 className="text-5xl font-bold mb-4">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
                         <span style={{ color: colors.logo }}>{t.heroTitle.split(' ')[0]}</span>{' '}
                         {t.heroTitle.split(' ').slice(1).join(' ')}
                     </h1>
-                    <p className="text-xl">{t.heroSubtitle}</p>
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl">{t.heroSubtitle}</p>
                 </div>
             </div>
 
             {/* Who We Are Section */}
-            <div className="max-w-6xl mx-auto py-16 px-8">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-xl text-gray-700 font-normal mb-8">{t.whoWeAre}</h2>
-                    <div className="w-20 h-0.5 bg-[#F65314] mb-12" style={{ backgroundColor: colors.accent }}></div>
+            <section className="relative overflow-hidden py-16 md:py-20 px-6 md:px-8">
+                <div
+                    className="pointer-events-none absolute -top-24 left-1/2 h-64 w-[36rem] -translate-x-1/2 rounded-full opacity-40 blur-3xl"
+                    style={{ background: `${colors.logo}18` }}
+                />
+                <div className="relative max-w-7xl mx-auto">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        variants={stagger}
+                    >
+                        <motion.p
+                            className="text-sm font-semibold tracking-[0.2em] uppercase mb-3"
+                            style={{ color: colors.logo }}
+                            variants={fadeUp}
+                        >
+                            {t.whoWeAre}
+                        </motion.p>
+                        <motion.div
+                            className={`w-14 h-1 mb-10 rounded-full ${isRTL ? 'ml-auto' : ''}`}
+                            style={{ backgroundColor: colors.logo }}
+                            variants={{
+                                hidden: { scaleX: 0 },
+                                visible: { scaleX: 1, transition: { duration: 0.6 } },
+                            }}
+                        />
 
-                    <div className="flex flex-col lg:flex-row mb-12 gap-8">
-                        <div style={{ width: '300px' }}>
-                            <h3 className="w-[300px] text-4xl font-bold mb-4 text-gray-800">
-                                {t.mainHeading.split('<br />')[0]} <br />
-                                <span style={{ color: colors.logo }}>{t.mainHeading.split('<br />')[1]}</span>
-                            </h3>
-                        </div>
+                        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 mb-14">
+                            <motion.h2
+                                className="lg:w-[320px] shrink-0 text-3xl md:text-4xl font-bold leading-tight text-gray-900"
+                                variants={fadeUp}
+                            >
+                                {headingParts[0]}
+                                {headingParts[1] && (
+                                    <>
+                                        <br />
+                                        <span style={{ color: colors.logo }}>{headingParts[1]}</span>
+                                    </>
+                                )}
+                            </motion.h2>
 
-                        <div className="flex flex-col space-y-6 gap-">
-                            <p className="text-gray-700 leading-relaxed text-lg">{t.desc1}</p>
-                            <p className="text-gray-700 leading-relaxed text-lg">{t.desc2}</p>
+                            <motion.div className="flex flex-col gap-5 flex-1" variants={fadeUp}>
+                                <p className="text-gray-600 leading-relaxed text-base md:text-lg">{t.desc1}</p>
+                                <p className="text-gray-600 leading-relaxed text-base md:text-lg">{t.desc2}</p>
+                            </motion.div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    {/* Features Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-sm">
-                            <div className="flex items-start mb-4">
-                                <Brain className="w-12 h-12 mr-4" style={{ color: colors.logo }} />
-                                <h4 className="text-xl font-bold text-gray-900">{t.feature1Title}</h4>
-                            </div>
-                            <p className="text-gray-600 text-sm">{t.feature1Desc}</p>
-                        </div>
-
-                        <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-sm">
-                            <div className="flex items-start mb-4">
-                                <Network className="w-12 h-12 mr-4" style={{ color: colors.logo }} />
-                                <h4 className="text-xl font-bold text-gray-900">{t.feature2Title}</h4>
-                            </div>
-                            <p className="text-gray-600 text-sm">{t.feature2Desc}</p>
-                        </div>
-
-                        <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-sm">
-                            <div className="flex items-start mb-4">
-                                <Shield className="w-12 h-12 mr-4" style={{ color: colors.logo }} />
-                                <h4 className="text-xl font-bold text-gray-900">{t.feature3Title}</h4>
-                            </div>
-                            <p className="text-gray-600 text-sm">{t.feature3Desc}</p>
-                        </div>
-                    </div>
+                    <motion.div
+                        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.25 }}
+                        variants={stagger}
+                    >
+                        {features.map(({ Icon, title, desc }) => (
+                            <motion.div
+                                key={title}
+                                className="group bg-white border border-gray-100 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1"
+                                style={{ boxShadow: '0 8px 28px rgba(15, 23, 42, 0.06)' }}
+                                variants={fadeUp}
+                            >
+                                <div
+                                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-105"
+                                    style={{ backgroundColor: `${colors.logo}14` }}
+                                >
+                                    <Icon className="w-7 h-7" style={{ color: colors.logo }} />
+                                </div>
+                                <h4 className="text-lg font-bold text-gray-900 mb-2">{title}</h4>
+                                <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+                            </motion.div>
+                        ))}
+                    </motion.div>
                 </div>
-            </div>
+            </section>
 
             {/* Dark Section - Vision & Mission */}
-            <div className="relative bg-black text-white py-20 px-8">
+            <section className="relative bg-[#0b0b0b] text-white py-20 md:py-24 px-6 md:px-8 overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-center opacity-20"
+                    className="absolute inset-0 bg-cover bg-center opacity-25"
                     style={{
-                        backgroundImage: 'url(https://julienflorkin.com/wp-content/uploads/2023/11/Management-Consulting-2-1568x896.webp)',
+                        backgroundImage:
+                            'url(https://i.postimg.cc/7PC2T2f1/Gemini-Generated-Image-h6ndm1h6ndm1h6nd.jpg)',
                     }}
-                ></div>
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
 
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                        <div>
-                            <h2 className="text-4xl font-bold mb-8">{t.darkSectionTitle}</h2>
-                            <p className="text-gray-300 leading-relaxed mb-6">{t.darkSectionDesc1}</p>
-                            <p className="text-gray-300 leading-relaxed">{t.darkSectionDesc2}</p>
-                        </div>
-
-                        <div className="space-y-8">
-                            <div className="flex">
-                                <div
-                                    className="w-12 h-12 rounded flex items-center justify-center flex-shrink-0 mr-6 mt-1 text-black"
-                                    style={{ backgroundColor: colors.logo }}
-                                >
-                                    <Lightbulb className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-3">{t.visionTitle}</h3>
-                                    <p className="text-gray-300 leading-relaxed">{t.visionDesc}</p>
-                                </div>
-                            </div>
-
-                            <div className="flex">
-                                <div
-                                    className="w-12 h-12 rounded flex items-center justify-center flex-shrink-0 mr-6 mt-1 text-black"
-                                    style={{ backgroundColor: colors.logo }}
-                                >
-                                    <Gauge className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-3">{t.missionTitle}</h3>
-                                    <p className="text-gray-300 leading-relaxed">{t.missionDesc}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Smart Solutions Section */}
-            <div className="py-20 px-8 bg-gray-50">
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col lg:flex-row gap-16 items-center mb-20">
-                        <div className="flex-1">
-                            <img
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
-                                alt="Team collaboration"
-                                className="rounded-lg shadow-lg w-full object-cover"
-                            />
-                        </div>
-                        <div className="flex-1">
-                            <h2 className="text-xl font-semibold mb-6" style={{ color: colors.accent }}>
-                                {t.smartSolutions}
+                    <motion.div
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.25 }}
+                        variants={stagger}
+                    >
+                        <motion.div variants={fadeUp}>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug">
+                                {t.darkSectionTitle}
                             </h2>
-                            <h3 className="text-3xl font-semibold text-gray-900 mb-6">
+                            <p className="text-gray-300 leading-relaxed mb-5">{t.darkSectionDesc1}</p>
+                            <p className="text-gray-400 leading-relaxed">{t.darkSectionDesc2}</p>
+                        </motion.div>
+
+                        <motion.div className="space-y-5" variants={stagger}>
+                            {[
+                                { Icon: Lightbulb, title: t.visionTitle, desc: t.visionDesc },
+                                { Icon: Gauge, title: t.missionTitle, desc: t.missionDesc },
+                            ].map(({ Icon, title, desc }) => (
+                                <motion.div
+                                    key={title}
+                                    className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                                    variants={fadeUp}
+                                >
+                                    <div
+                                        className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-black"
+                                        style={{ backgroundColor: colors.logo }}
+                                    >
+                                        <Icon className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl md:text-2xl font-bold mb-2">{title}</h3>
+                                        <p className="text-gray-300 leading-relaxed text-sm md:text-base">{desc}</p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* Smart Solutions + Transform Section */}
+            <section className="py-16 md:py-20 px-6 md:px-8 bg-gray-50">
+                <div className="max-w-7xl mx-auto">
+                    <motion.div
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-16 md:mb-20"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        variants={stagger}
+                    >
+                        <motion.div
+                            className="overflow-hidden rounded-2xl"
+                            style={{ boxShadow: '0 16px 40px rgba(15, 23, 42, 0.1)' }}
+                            variants={fadeUp}
+                        >
+                            <img
+                                src="https://i.postimg.cc/nLtyqBFP/Gemini-Generated-Image-zhdf89zhdf89zhdf.jpg"
+                                alt="Team collaboration"
+                                className="w-full h-64 md:h-80 object-cover"
+                            />
+                        </motion.div>
+                        <motion.div variants={fadeUp}>
+                            <p
+                                className="text-sm font-semibold tracking-[0.2em] uppercase mb-3"
+                                style={{ color: colors.accent }}
+                            >
+                                {t.smartSolutions}
+                            </p>
+                            <div
+                                className={`w-14 h-1 mb-6 rounded-full ${isRTL ? 'ml-auto' : ''}`}
+                                style={{ backgroundColor: colors.logo }}
+                            />
+                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
                                 {t.smartSolutionsHeading}
                             </h3>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <h3 className="text-xl font-semibold mb-4" style={{ color: colors.accent }}>
-                                {t.transformTitle}
+                    <motion.div
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.25 }}
+                        variants={stagger}
+                    >
+                        <motion.div variants={fadeUp}>
+                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-900">
+                                <span style={{ color: colors.accent }}>{t.transformTitle}</span>
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-8">{t.transformDesc}</p>
 
-                            <div className="p-8 rounded-lg text-white" style={{ backgroundColor: colors.accent }}>
-                                <h4 className="text-2xl font-bold mb-6">{t.transformBoxTitle}</h4>
+                            <div
+                                className="p-7 md:p-8 rounded-2xl text-white"
+                                style={{ backgroundColor: colors.accent }}
+                            >
+                                <h4 className="text-xl md:text-2xl font-bold mb-6">{t.transformBoxTitle}</h4>
                                 <div className="space-y-4">
-                                    <div className="flex items-center">
-                                        <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                        <span className="text-lg">{t.list1}</span>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                        <span className="text-lg">{t.list2}</span>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                        <span className="text-lg">{t.list3}</span>
-                                    </div>
+                                    {transformItems.map((item) => (
+                                        <div key={item} className="flex items-center gap-3">
+                                            <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+                                                <Check className="w-4 h-4" strokeWidth={3} />
+                                            </span>
+                                            <span className="text-base md:text-lg font-medium">{item}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="relative">
-                            <img
-                                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop"
-                                alt="Business meeting"
-                                className="rounded-lg shadow-lg w-full"
-                            />
+                        <motion.div className="relative group" variants={fadeUp}>
+                            <div
+                                className="overflow-hidden rounded-2xl"
+                                style={{ boxShadow: '0 16px 40px rgba(15, 23, 42, 0.12)' }}
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=520&fit=crop"
+                                    alt="Business meeting"
+                                    className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                                />
+                            </div>
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div
-                                    className="rounded-full p-6 cursor-pointer transition-colors"
-                                    style={{ backgroundColor: colors.accent }}
+                                <button
+                                    type="button"
+                                    aria-label="Play video"
+                                    className="rounded-full p-5 cursor-pointer transition-transform duration-300 hover:scale-110"
+                                    style={{
+                                        backgroundColor: colors.accent,
+                                        boxShadow: '0 10px 30px rgba(246, 83, 20, 0.45)',
+                                    }}
                                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.hover)}
                                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
                                 >
-                                    <Play className="w-8 h-8 text-white" fill="white" />
-                                </div>
+                                    <Play className="w-7 h-7 text-white" fill="white" />
+                                </button>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
-            </div>
+            </section>
 
             {/* Our Presence Section */}
-            <div className="py-20 px-8 bg-white">
+            <section className="py-16 md:py-20 px-6 md:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-2">
+                    <motion.div
+                        className="text-center mb-12 md:mb-14"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.4 }}
+                        variants={stagger}
+                    >
+                        <motion.h2
+                            className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+                            variants={fadeUp}
+                        >
                             {t.presenceTitle.split(' ')[0]}{' '}
                             <span style={{ color: colors.accent }}>{t.presenceHighlight}</span>
-                        </h2>
-                        <div className="w-24 h-0.5 mx-auto mb-6" style={{ backgroundColor: colors.accent }}></div>
-                        <h3 className="text-3xl font-semibold text-gray-800">{t.presenceHeading}</h3>
-                    </div>
+                        </motion.h2>
+                        <motion.div
+                            className="w-16 h-1 mx-auto mb-5 rounded-full"
+                            style={{ backgroundColor: colors.accent }}
+                            variants={{
+                                hidden: { scaleX: 0 },
+                                visible: { scaleX: 1, transition: { duration: 0.6 } },
+                            }}
+                        />
+                        <motion.h3
+                            className="text-xl md:text-2xl font-semibold text-gray-700"
+                            variants={fadeUp}
+                        >
+                            {t.presenceHeading}
+                        </motion.h3>
+                        <motion.p
+                            className="mt-4 text-gray-500 max-w-xl mx-auto"
+                            variants={fadeUp}
+                        >
+                            {t.presenceDesc}
+                        </motion.p>
+                    </motion.div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        <div className="lg:col-span-1 space-y-8">
-                            <div className="border-l-4 pl-6" style={{ borderColor: colors.accent }}>
-                                <p className="text-lg mb-4" style={{ color: colors.accent }}>
-                                    {t.presenceDesc}
-                                </p>
-                            </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+                        <motion.div
+                            className="lg:col-span-1 space-y-5"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                            variants={stagger}
+                        >
+                            {offices.map((office) => (
+                                <motion.div
+                                    key={office.region}
+                                    className={`rounded-2xl border border-gray-100 bg-gray-50/80 p-5 transition-shadow duration-300 hover:shadow-md ${
+                                        isRTL ? 'border-r-4 border-r-transparent' : 'border-l-4'
+                                    }`}
+                                    style={{
+                                        [isRTL ? 'borderRightColor' : 'borderLeftColor']: colors.accent,
+                                    }}
+                                    variants={fadeUp}
+                                >
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <MapPin className="w-4 h-4" style={{ color: colors.accent }} />
+                                        <h4 className="text-lg font-bold" style={{ color: colors.accent }}>
+                                            {office.region}
+                                        </h4>
+                                    </div>
+                                    <h5 className="text-gray-900 font-semibold mb-1">{office.company}</h5>
+                                    <p className="text-sm font-medium mb-3" style={{ color: colors.accent }}>
+                                        {office.city}
+                                    </p>
+                                    <p className="text-gray-600 text-sm mb-2 leading-relaxed">
+                                        <span className="font-semibold text-gray-800">{t.address}</span>{' '}
+                                        {office.address}
+                                    </p>
+                                    <p className="text-gray-600 text-sm mb-1.5 flex items-start gap-2">
+                                        <Mail className="w-3.5 h-3.5 mt-0.5 shrink-0" style={{ color: colors.logo }} />
+                                        <span>
+                                            <span className="font-semibold text-gray-800">{t.email}</span>{' '}
+                                            {office.email}
+                                        </span>
+                                    </p>
+                                    <p className="text-gray-600 text-sm flex items-start gap-2">
+                                        <Phone className="w-3.5 h-3.5 mt-0.5 shrink-0" style={{ color: colors.logo }} />
+                                        <span>
+                                            <span className="font-semibold text-gray-800">{t.phone}</span>{' '}
+                                            {office.phone}
+                                        </span>
+                                    </p>
+                                </motion.div>
+                            ))}
+                        </motion.div>
 
-                            <div>
-                                <h4 className="text-xl font-bold mb-3" style={{ color: colors.accent }}>{t.pakistan}</h4>
-                                <h5 className="text-gray-900 font-bold mb-2">{t.companyPakistan}</h5>
-                                <p className="mb-3" style={{ color: colors.accent }}>{t.lahore}</p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> {t.pakistanAddress || translations.navbar?.topBar?.address}
-                                </p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.email}</span> info@aiotcons.com
-                                </p>
-                                <p className="text-gray-700 text-sm">
-                                    <span className="font-semibold">{t.phone}</span> +923 12 345 6778
-                                </p>
-                            </div>
-
-                           
-
-                            <div>
-                                <h4 className="text-xl font-bold mb-3" style={{ color: colors.accent }}>{t.uae}</h4>
-                                <h5 className="text-gray-900 font-bold mb-2">{t.companyUAE}</h5>
-                                <p className="mb-3" style={{ color: colors.accent }}>{t.dubai}</p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> {t.uaeAddress}
-                                </p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.email}</span> info@aiotcons.com
-                                </p>
-                                <p className="text-gray-700 text-sm">
-                                    <span className="font-semibold">{t.phone}</span> +971 50 731 2970
-                                </p>
-                            </div>
-                            <div>
-                                <h4 className="text-xl font-bold mb-3" style={{ color: colors.accent }}>{t.uk}</h4>
-                                <h5 className="text-gray-900 font-bold mb-2">{t.companyUK}</h5>
-                                <p className="mb-3" style={{ color: colors.accent }}>{t.glasgow}</p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.address}</span> {t.ukAddress}
-                                </p>
-                                <p className="text-gray-700 text-sm mb-2">
-                                    <span className="font-semibold">{t.email}</span> info@aiotcons.uk
-                                </p>
-                                <p className="text-gray-700 text-sm">
-                                    <span className="font-semibold">{t.phone}</span> +44-7428-417535
-                                </p>
-                            </div>
-
-                            {/* <div>
-                                <h4 className="text-xl font-bold mb-3" style={{ color: colors.accent }}>{t.ksa}</h4>
-                                <h5 className="text-gray-900 font-bold mb-2">{t.companyGeneral}</h5>
-                            </div>
-
-                            <div>
-                                <h4 className="text-xl font-bold mb-3" style={{ color: colors.accent }}>{t.australia}</h4>
-                                <h5 className="text-gray-900 font-bold mb-2">{t.companyGeneral}</h5>
-                            </div> */}
-                        </div>
-
-                        <div className="lg:col-span-2">
-                            <div className="bg-gray-100 rounded-lg p-8 sticky top-0">
+                        <motion.div
+                            className="lg:col-span-2"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            transition={{ duration: 0.55 }}
+                        >
+                            <div
+                                className="bg-gray-50 rounded-2xl p-4 md:p-6 lg:sticky lg:top-24 overflow-hidden border border-gray-100"
+                                style={{ boxShadow: '0 12px 36px rgba(15, 23, 42, 0.06)' }}
+                            >
                                 <img
                                     src="/map.jpg"
                                     alt="World Map"
-                                    className="w-full"
+                                    className="w-full rounded-xl object-cover"
                                 />
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

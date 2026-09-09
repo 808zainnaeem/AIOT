@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
-import { motion } from 'framer-motion'; // <-- Added
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 export default function OurPhilosophy() {
@@ -18,22 +18,22 @@ export default function OurPhilosophy() {
 
     return (
         <div
-            className="min-h-screen py-16 px-8 md:py-24"
+            className="py-14 px-6 md:py-20 md:px-8"
             style={{ backgroundColor: colors.background }}
         >
-            <div className="max-w-7xl mx-auto">
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center ${flexDir}`}>
+            <div className="max-w-6xl mx-auto">
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${flexDir}`}>
                     {/* Left side - Illustration */}
                     <motion.div
-                        className={`order-2 lg:order-none ${isRTL ? 'lg:ml-12' : 'lg:mr-12'}`}
-                        initial={{ opacity: 0, x: isRTL ? 100 : -100 }} // Slide from right in RTL, left in LTR
+                        className={`order-2 lg:order-none ${isRTL ? 'lg:ml-8' : 'lg:mr-8'}`}
+                        initial={{ opacity: 0, x: isRTL ? 60 : -60 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        <div className="bg-orange-50 rounded-3xl flex items-center justify-center shadow-xl">
+                        <div className="bg-orange-50 rounded-2xl flex items-center justify-center overflow-hidden">
                             <img
-                                src="https://i.postimg.cc/2SZtznGR/Chat-GPT-Image-Aug-28-2026-05-10-54-PM.png"
+                                src="https://i.postimg.cc/13wrfrcw/Untitled-design.png"
                                 alt="Team collaboration illustration"
                                 className="w-full h-auto"
                             />
@@ -43,52 +43,49 @@ export default function OurPhilosophy() {
                     {/* Right side - Content */}
                     <motion.div
                         className={textAlign}
-                        initial={{ opacity: 0, x: isRTL ? -100 : 100 }} // Opposite direction for balance
+                        initial={{ opacity: 0, x: isRTL ? -60 : 60 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }} // Slight delay for stagger
+                        transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        <h2
-                            className="text-3xl md:text-4xl font-semibold mb-2"
-                            style={{ color: colors.text }}
+                        <p
+                            className="text-sm font-medium tracking-wide mb-2"
+                            style={{ color: colors.logo }}
                         >
                             {t.title}
-                        </h2>
-
-                        {/* Brand Accent Bar */}
-                        <div
-                            className="w-24 h-1.5 rounded-full mb-8"
-                            style={{ backgroundColor: colors.logo }}
-                        ></div>
+                        </p>
 
                         <h3
-                            className="text-3xl md:text-3xl font-bold mb-8 leading-tight"
+                            className="text-2xl md:text-3xl font-bold mb-5 leading-snug"
                             style={{ color: colors.text }}
                         >
                             {t.heading}
                         </h3>
 
-                        <p className="text-lg leading-relaxed mb-8 text-gray-600">
+                        <p className="text-base leading-relaxed mb-6 text-gray-600">
                             {t.paragraph1}
                         </p>
 
                         {/* Quote Block */}
-                        <div className={`border-l-4 md:border-l-8 pl-6 md:pl-8 mb-10 ${isRTL ? 'border-r-8 pr-8 border-l-0' : ''}`}>
+                        <div
+                            className={`border-l-2 pl-5 mb-6 ${isRTL ? 'border-r-2 pr-5 border-l-0' : ''}`}
+                            style={{ borderColor: colors.accent || '#F65314' }}
+                        >
                             <p
-                                className="text-1xl md:text-1xl font-bold italic"
+                                className="text-base md:text-lg font-medium italic"
                                 style={{ color: colors.accent || '#F65314' }}
                             >
-                                "{t.quote}"
+                                {t.quote}
                             </p>
                         </div>
 
-                        <p className="text-lg leading-relaxed mb-10 text-gray-600">
+                        <p className="text-base leading-relaxed mb-8 text-gray-600">
                             {t.paragraph2}
                         </p>
 
-                        {/* Call to Action Button - Brand Gold */}
+                        {/* Call to Action Button */}
                         <button
-                            className="px-10 py-4 text-lg font-semibold text-white rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
+                            className="px-6 py-2.5 text-sm font-semibold text-white rounded-lg transition-colors duration-200"
                             style={{
                                 backgroundColor: colors.logo,
                             }}
@@ -96,7 +93,7 @@ export default function OurPhilosophy() {
                             onMouseEnter={(e) => (e.target.style.backgroundColor = colors.hover)}
                             onMouseLeave={(e) => (e.target.style.backgroundColor = colors.logo)}
                         >
-                            Read More
+                            Read more
                         </button>
                     </motion.div>
                 </div>

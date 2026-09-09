@@ -3,17 +3,10 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import {
-    Facebook,
-    Twitter,
-    Linkedin,
-    Instagram,
-    Youtube,
-} from 'lucide-react';
-
 import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/productCatalog';
+import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 const Navbar = () => {
     const { language, setLanguage, translations } = useContext(LanguageContext);
@@ -37,13 +30,7 @@ const Navbar = () => {
         setLanguageDropdownOpen(false);
     }, [language]);
 
-    const socialIcons = [
-        { Icon: Facebook, url: 'https://www.facebook.com/WEAIOT/', label: 'Facebook' },
-        { Icon: Twitter, url: 'https://x.com/WEAIOT', label: 'Twitter' },
-        { Icon: Linkedin, url: 'https://www.linkedin.com/company/weaiot', label: 'LinkedIn' },
-        { Icon: Instagram, url: 'https://www.instagram.com/weaiot/', label: 'Instagram' },
-        { Icon: Youtube, url: 'https://www.youtube.com/@WEAIOT', label: 'YouTube' },
-    ];
+    const socialIcons = AIOT_SOCIAL_LINKS;
 
     const menuItems = [
         { id: 'home', title: navbarTrans.menu?.home || 'HOME', link: '/' },
@@ -162,7 +149,7 @@ const Navbar = () => {
                             text: product.title,
                             url: product.url,
                             brand: product.brand,
-                            icon: [Database, Users, Workflow, Store, Scale][index],
+                            icon: [Database, Users, Workflow, Store, Building2][index],
                         })),
                     },
                     {
@@ -171,7 +158,7 @@ const Navbar = () => {
                             text: product.title,
                             url: product.url,
                             brand: product.brand,
-                            icon: [Eye, HeartPulse, Building2, Cloud][index],
+                            icon: [Scale, Eye, HeartPulse, Cloud][index],
                         })),
                     },
                 ],
