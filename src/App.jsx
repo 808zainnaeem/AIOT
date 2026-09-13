@@ -24,23 +24,18 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const splash = document.getElementById('aiot-splash');
+    if (splash) splash.remove();
+
     const started = Date.now();
-    const minMs = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 5600;
+    const minMs = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 2400;
     let done = false;
 
     const finish = () => {
       if (done) return;
       done = true;
       const remaining = Math.max(0, minMs - (Date.now() - started));
-      window.setTimeout(() => {
-        setLoading(false);
-        const splash = document.getElementById('aiot-splash');
-        if (splash) {
-          splash.style.transition = 'opacity 0.4s ease';
-          splash.style.opacity = '0';
-          window.setTimeout(() => splash.remove(), 420);
-        }
-      }, remaining);
+      window.setTimeout(() => setLoading(false), remaining);
     };
 
     if (document.readyState === 'complete') {

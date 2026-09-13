@@ -7,7 +7,12 @@ import es from '../Languages/es.json';
 import zh from '../Languages/zh.json';
 import fr from '../Languages/fr.json';
 import sv from '../Languages/sv.json';
-import { SUPPORTED_LANGUAGES, RTL_LANGUAGES } from '../Languages/languages';
+import {
+    SUPPORTED_LANGUAGES,
+    RTL_LANGUAGES,
+    detectLanguageFromLocation,
+    languageFromBrowserLocale,
+} from '../Languages/languages';
 
 export { SUPPORTED_LANGUAGES, RTL_LANGUAGES };
 
@@ -43,10 +48,14 @@ function deepMerge(base, override) {
     return result;
 }
 
-function getInitialLanguage() {
-    if (typeof window === 'undefined') return 'en';
+function getSavedLanguage() {
+    if (typeof window === 'undefined') return null;
     const saved = window.localStorage.getItem('aiot-language');
-    return translationsMap[saved] ? saved : 'en';
+    return translationsMap[saved] ? saved : null;
+}
+
+function getInitialLanguage() {
+    return getSavedLanguage() || languageFromBrowserLocale();
 }
 
 export function LanguageProvider({ children }) {
@@ -67,6 +76,22 @@ export function LanguageProvider({ children }) {
         document.documentElement.dir = RTL_LANGUAGES.includes(language) ? 'rtl' : 'ltr';
         document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
     }, [language]);
+
+    useEffect(() => {
+        if (getSavedLanguage()) return;
+
+        let cancelled = false;
+
+        detectLanguageFromLocation().then((code) => {
+            if (cancelled || !translationsMap[code]) return;
+            if (getSavedLanguage()) return;
+            setLanguageState(code);
+        });
+
+        return () => {
+            cancelled = true;
+        };
+    }, []);
 
     return (
         <LanguageContext.Provider value={{ language, setLanguage, translations, languages: SUPPORTED_LANGUAGES }}>
