@@ -6,15 +6,15 @@
             "address": "15/1C, GECHS, Phase III, Peco-Straße, Lahore 54100, Punjab, Pakistan"
         },
         "menu": {
-            "home": "STARTSEITE",
-            "aboutUs": "ÜBER UNS",
-            "whatWeDo": "WAS WIR TUN",
-            "solutions": "LÖSUNGEN",
-            "resources": "RESSOURCEN",
-            "partners": "PARTNER",
-            "marketplace": "MARKTPLATZ"
+            "home": "Startseite",
+            "aboutUs": "Über uns",
+            "whatWeDo": "Was wir tun",
+            "solutions": "Lösungen",
+            "resources": "Ressourcen",
+            "partners": "Partner",
+            "marketplace": "Marktplatz"
         },
-        "viewPlans": "PLÄNE ANSEHEN",
+        "viewPlans": "Pläne ansehen",
         "learnMore": "Mehr erfahren",
         "explore": "Entdecken",
         "bookADemo": "Demo buchen",
@@ -142,6 +142,10 @@
         "description": "Entdecken Sie unsere Produkte zur Leistungssteigerung, Prozessoptimierung und zum Wachstum. Von KI-gestützter Analytik bis zu skalierbaren Cloud-Lösungen decken unsere Angebote vielfältige Geschäftsanforderungen präzise und zuverlässig ab.",
         "items": [
             {
+                "title": "Unternehmenssoftware",
+                "description": "Ein integriertes ERP zur Verwaltung von Finanzen, Bestand und Betrieb aus einer einzigen Quelle der Wahrheit für wachsende Unternehmen."
+            },
+            {
                 "title": "SAP Business One Benutzeroberfläche",
                 "description": "Optimieren Sie Ihre Geschäftsabläufe mit unserer benutzerfreundlichen SAP-Business-One-Oberfläche für nahtlose Navigation und effizientes Management Ihrer Unternehmensressourcen."
             },
@@ -150,16 +154,17 @@
                 "description": "Eine vollständige HCM-Plattform, um Ihre Belegschaft einzustellen, zu führen und zu entwickeln – mit Payroll, Anwesenheit und Talent-Tools an einem Ort."
             },
             {
-                "title": "Operations-Suite",
-                "description": "Vereinfachen Sie den Tagesbetrieb mit verbundenen Workflows, Automatisierung und Transparenz über Teams und Prozesse hinweg."
-            },
-            {
                 "title": "Handelsplattform",
                 "description": "Eine Unified-Commerce-Plattform, die Vertriebskanäle, Bestand und Customer Journeys verbindet, damit Sie konsistent verkaufen und erfüllen können."
             },
             {
-                "title": "Unternehmenssoftware",
-                "description": "Ein integriertes ERP zur Verwaltung von Finanzen, Bestand und Betrieb aus einer einzigen Quelle der Wahrheit für wachsende Unternehmen."
+                "title": "Operations-Suite",
+                "description": "Vereinfachen Sie den Tagesbetrieb mit verbundenen Workflows, Automatisierung und Transparenz über Teams und Prozesse hinweg."
+            },
+            {
+                "title": "PortedForm",
+                "description": "Bearbeiten, annotieren und verwalten Sie PDFs online mit einem kostenlosen, schnellen und einfachen Editor für den täglichen Dokumentenworkflow.",
+                "free": true
             },
             {
                 "title": "Anwalt online beauftragen",
@@ -219,10 +224,10 @@
         "australia": "Australien",
         "lahore": "Lahore",
         "glasgow": "Glasgow",
-        "dubai": "Dubai",
-        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
-        "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
+        "dubai": "Abu Dhabi, UAE",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
+        "companyUK": "AIOT Consulting L.L.C",
+        "companyUAE": "A I O Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "Adresse:",
         "email": "E-Mail:",
@@ -268,9 +273,9 @@
         "pakistanOffice": "Büro Pakistan",
         "ukOffice": "Büro UK",
         "uaeOffice": "Büro VAE",
-        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC",
+        "companyUK": "AIOT Consulting L.L.C",
         "pakistanAddress": "15/1C, GECHS, Phase III, Peco-Straße, Lahore 54100, Punjab, Pakistan",
         "ukAddress": "3 Hoy Avenue, Glasgow, Vereinigtes Königreich",
         "uaeAddress": "Büro M23, Madinat Office, Al-Najda-Straße, Abu Dhabi, VAE",

@@ -1,7 +1,7 @@
 // src/Components/Navbar.js (Updated with colors and language integration; design and all other things remain the same)
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock } from 'lucide-react';
+import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock, FileText } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
@@ -22,7 +22,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const languages = SUPPORTED_LANGUAGES;
+    const languages = SUPPORTED_LANGUAGES; // English labels only — never localize option names
     useEffect(() => {
         document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
         document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
@@ -33,13 +33,13 @@ const Navbar = () => {
     const socialIcons = AIOT_SOCIAL_LINKS;
 
     const menuItems = [
-        { id: 'home', title: navbarTrans.menu?.home || 'HOME', link: '/' },
-        { id: 'aboutUs', title: navbarTrans.menu?.aboutUs || 'ABOUT US', link: '/About' },
-        { id: 'whatWeDo', title: navbarTrans.menu?.whatWeDo || 'WHAT WE DO', link: '/' },
-        { id: 'solutions', title: navbarTrans.menu?.solutions || 'SOLUTIONS', link: '/' },
-        { id: 'resources', title: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
-        { id: 'partners', title: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
-        { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com' },
+        { id: 'home', title: navbarTrans.menu?.home || 'Home', link: '/' },
+        { id: 'aboutUs', title: navbarTrans.menu?.aboutUs || 'About Us', link: '/About' },
+        { id: 'whatWeDo', title: navbarTrans.menu?.whatWeDo || 'What We Do', link: '/' },
+        { id: 'solutions', title: navbarTrans.menu?.solutions || 'Solutions', link: '/' },
+        { id: 'resources', title: navbarTrans.menu?.resources || 'Resources', link: '/' },
+        { id: 'partners', title: navbarTrans.menu?.partners || 'Partners', link: '/' },
+        { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'Marketplace', link: 'https://www.nizam365.com' },
     ];
 
     const partners = [
@@ -94,7 +94,7 @@ const Navbar = () => {
                     },
                     {
                         title: dropdownTrans.aboutUs?.contactUs || 'Contact Us',
-                        desc: dropdownTrans.aboutUs?.contactUsDesc || 'Get in touch with AIOT IT Solutions your gateway to smart, innovative, and transformative tech solutions.',
+                        desc: dropdownTrans.aboutUs?.contactUsDesc || 'Get in touch with our IT Solutions your gateway to smart, innovative, and transformative tech solutions.',
                         url: '/contact',
                         icon: Phone,
                     },
@@ -149,7 +149,7 @@ const Navbar = () => {
                             text: product.title,
                             url: product.url,
                             brand: product.brand,
-                            icon: [Database, Users, Workflow, Store, Building2][index],
+                            icon: [Building2, Database, Users, Store, Workflow, FileText][index],
                         })),
                     },
                     {
@@ -169,19 +169,19 @@ const Navbar = () => {
                     {
                         title: dropdownTrans.resources?.news || 'News',
                         desc: dropdownTrans.resources?.newsDesc || 'Stay updated with the latest news and innovations from AIOT IT Solutions.',
-                        url: '',
+                        url: '/news',
                         icon: Newspaper,
                     },
                     {
                         title: dropdownTrans.resources?.blogs || 'Blogs',
                         desc: dropdownTrans.resources?.blogsDesc || 'Explore insights, trends, and expert opinions on technology and innovation.',
-                        url: '',
+                        url: '/blogs',
                         icon: BookOpen,
                     },
                     {
                         title: dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
                         desc: dropdownTrans.resources?.innovateWithInsightsDesc || 'Discover strategies to enhance your business through emerging trends and thought leadership.',
-                        url: null,
+                        url: '/innovate-with-insights',
                         icon: Lightbulb,
                     },
                 ],
@@ -226,12 +226,12 @@ const Navbar = () => {
                     <div className="py-3 flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
                         <div className="flex flex-col gap-2 text-xs font-bold ">
                             <div className="flex items-center gap-5 font-[500]">
-                                <span>{navbarTrans.topBar?.phone || '+92 3123456778'}</span>
+                                {/* <span>{navbarTrans.topBar?.phone || '+92 3123456778'}</span> */}
                                 <span>{navbarTrans.topBar?.email || 'info@aiotcons.com'}</span>
                             </div>
-                            <span className="hidden lg:block text-xs font-[500]">
-                                {navbarTrans.topBar?.address || '15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN'}
-                            </span>
+                            {/* <span className="hidden lg:block text-xs font-[500]">
+                                {navbarTrans.topBar?.address || '15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan'}
+                            </span> */}
                         </div>
                         <div className="flex items-center gap-6 justify-center">
                             <div className="flex gap-4">
@@ -270,7 +270,7 @@ const Navbar = () => {
                                         key={item.id}
                                         onClick={() => handleNavClick(item.link)}
                                         onMouseEnter={() => hasDropdown && setHoveredItem(index)}
-                                        className="relative h-full text-sm tracking-wider font-[500] transition-colors duration-200"
+                                        className="relative h-full text-sm tracking-wide font-[500] transition-colors duration-200"
                                         style={{ color: isOpen ? colors.logo : '#111111' }}
                                     >
                                         {item.title}
@@ -291,7 +291,7 @@ const Navbar = () => {
                                     style={{ color: '#000000ff' }}
                                 >
                                     <GlobeIcon size={18} />
-                                    {language.toUpperCase()}
+                                    {(languages.find((lang) => lang.code === language)?.displayCode || language).toUpperCase()}
                                     <svg className={`w-4 h-4 transition-transform ${languageDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
@@ -504,7 +504,7 @@ const Navbar = () => {
                                                     <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-4 text-white">
                                                         <Users size={20} />
                                                     </div>
-                                                    <p className="text-white/70 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                    <p className="text-white/70 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
@@ -548,14 +548,14 @@ const Navbar = () => {
                                                 <div className="absolute top-1/2 right-4 w-16 h-16 rounded-2xl rotate-12 border border-white/15 pointer-events-none" />
 
                                                 <div className="relative">
-                                                    <p className="text-white/70 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                    <p className="text-white/70 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
                                                         {dropdownTrans.whatWeDo?.panelTitle || 'End-to-end digital excellence'}
                                                     </h3>
                                                     <p className="text-white/80 text-sm leading-relaxed">
-                                                        {dropdownTrans.whatWeDo?.panelDesc || 'From strategy to run — consulting, implementation, and managed services under one partner.'}
+                                                        {dropdownTrans.whatWeDo?.panelDesc || 'From strategy to run: consulting, implementation, and managed services under one partner.'}
                                                     </p>
                                                 </div>
 
@@ -611,7 +611,7 @@ const Navbar = () => {
                                                     >
                                                         <Lightbulb size={20} />
                                                     </div>
-                                                    <p className="text-white/65 text-[11px] font-semibold tracking-[0.2em] uppercase mb-2">
+                                                    <p className="text-white/65 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
@@ -624,17 +624,28 @@ const Navbar = () => {
 
                                                 <div className="relative space-y-2.5 mt-6">
                                                     {[
-                                                        dropdownTrans.resources?.news || 'News',
-                                                        dropdownTrans.resources?.blogs || 'Blogs',
-                                                        dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
-                                                    ].map((label) => (
-                                                        <div
-                                                            key={label}
-                                                            className="flex items-center gap-2.5 rounded-xl bg-white/10 backdrop-blur-sm px-3 py-2.5 border border-white/10"
+                                                        {
+                                                            label: dropdownTrans.resources?.news || 'News',
+                                                            url: '/news',
+                                                        },
+                                                        {
+                                                            label: dropdownTrans.resources?.blogs || 'Blogs',
+                                                            url: '/blogs',
+                                                        },
+                                                        {
+                                                            label: dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
+                                                            url: '/innovate-with-insights',
+                                                        },
+                                                    ].map((item) => (
+                                                        <button
+                                                            type="button"
+                                                            key={item.label}
+                                                            onClick={() => handleNavClick(item.url)}
+                                                            className="w-full flex items-center gap-2.5 rounded-xl bg-white/10 backdrop-blur-sm px-3 py-2.5 border border-white/10 text-left transition hover:bg-white/15"
                                                         >
                                                             <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: colors.logo }} />
-                                                            <span className="text-white text-sm font-medium">{label}</span>
-                                                        </div>
+                                                            <span className="text-white text-sm font-medium">{item.label}</span>
+                                                        </button>
                                                     ))}
                                                 </div>
                                             </div>
@@ -791,7 +802,7 @@ const Navbar = () => {
                                 className="w-full text-white px-6 py-4 font-bold mt-4 block text-center"
                                 style={{ backgroundColor: colors.logo }}
                             >
-                                {navbarTrans.viewPlans || 'VIEW PLANS'}
+                                {navbarTrans.viewPlans || 'View Plans'}
                             </a> */}
                             {/* Language Selector for Mobile */}
                             <div className="px-6 py-4 border-t border-gray-200">

@@ -6,15 +6,15 @@
             "address": "15/1C, GECHS, Fas III, Peco Road, Lahore 54100, Punjab, Pakistan"
         },
         "menu": {
-            "home": "HEM",
-            "aboutUs": "OM OSS",
-            "whatWeDo": "VAD VI GÖR",
-            "solutions": "LÖSNINGAR",
-            "resources": "RESURSER",
-            "partners": "PARTNERS",
-            "marketplace": "MARKNADSPLATS"
+            "home": "Hem",
+            "aboutUs": "Om oss",
+            "whatWeDo": "Vad vi gör",
+            "solutions": "Lösningar",
+            "resources": "Resurser",
+            "partners": "Partners",
+            "marketplace": "Marknadsplats"
         },
-        "viewPlans": "SE PLANER",
+        "viewPlans": "Se planer",
         "learnMore": "Läs mer",
         "explore": "Utforska",
         "bookADemo": "Boka en demo",
@@ -142,6 +142,10 @@
         "description": "Utforska vårt utbud av produkter som är utformade för att höja prestanda, effektivisera verksamheten och driva tillväxt. Från AI-driven analys till skalbara molnlösningar möter våra erbjudanden olika affärsbehov med precision och tillförlitlighet.",
         "items": [
             {
+                "title": "Affärssystem",
+                "description": "Ett integrerat ERP för att hantera ekonomi, lager och drift från en enda sanning för växande företag."
+            },
+            {
                 "title": "SAP Business One-användargränssnitt",
                 "description": "Förbättra er verksamhet med vårt användarvänliga SAP Business One-gränssnitt, utformat för smidig navigering och effektiv hantering av företagets resurser."
             },
@@ -150,16 +154,17 @@
                 "description": "En komplett HCM-plattform för att anställa, leda och utveckla er arbetsstyrka med lön, närvaro och talentverktyg på ett ställe."
             },
             {
-                "title": "Driftssvit",
-                "description": "Effektivisera den dagliga driften med kopplade arbetsflöden, automatisering och synlighet över team och processer."
-            },
-            {
                 "title": "Handelsplattform",
                 "description": "En unified commerce-plattform som kopplar samman säljkanaler, lager och kundresor så att ni kan sälja och leverera med konsekvens."
             },
             {
-                "title": "Affärssystem",
-                "description": "Ett integrerat ERP för att hantera ekonomi, lager och drift från en enda sanning för växande företag."
+                "title": "Driftssvit",
+                "description": "Effektivisera den dagliga driften med kopplade arbetsflöden, automatisering och synlighet över team och processer."
+            },
+            {
+                "title": "PortedForm",
+                "description": "Redigera, annotera och hantera PDF:er online med en gratis, snabb och enkel editor för vardagens dokumentflöden.",
+                "free": true
             },
             {
                 "title": "Anlita advokat online",
@@ -219,10 +224,10 @@
         "australia": "Australien",
         "lahore": "Lahore",
         "glasgow": "Glasgow",
-        "dubai": "Dubai",
-        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
-        "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
+        "dubai": "Abu Dhabi, UAE",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
+        "companyUK": "AIOT Consulting L.L.C",
+        "companyUAE": "A I O Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "Adress:",
         "email": "E-post:",
@@ -268,9 +273,9 @@
         "pakistanOffice": "Kontor i Pakistan",
         "ukOffice": "Kontor i Storbritannien",
         "uaeOffice": "Kontor i Förenade Arabemiraten",
-        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC",
+        "companyUK": "AIOT Consulting L.L.C",
         "pakistanAddress": "15/1C, GECHS, Fas III, Peco Road, Lahore 54100, Punjab, Pakistan",
         "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien",
         "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gatan, Abu Dhabi, Förenade Arabemiraten",

@@ -12,7 +12,8 @@ export default function AboutPage() {
     const t = translations.about;
     const colors = Colors[language] || Colors.en;
     const isRTL = language === 'ar';
-
+    const [expandedVision, setExpandedVision] = React.useState(false);
+    const [expandedMission, setExpandedMission] = React.useState(false);
     const fadeUp = {
         hidden: { opacity: 0, y: 24 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
@@ -35,7 +36,7 @@ export default function AboutPage() {
             region: t.pakistan,
             company: t.companyPakistan,
             city: t.lahore,
-            address: t.pakistanAddress || translations.navbar?.topBar?.address,
+            address: t.pakistanAddress || translations.navbar?.topBar?.address || '15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan',
             email: 'info@aiotcons.com',
             phone: '+923 12 345 6778',
         },
@@ -52,8 +53,8 @@ export default function AboutPage() {
             company: t.companyUK,
             city: t.glasgow,
             address: t.ukAddress,
-            email: 'info@aiotcons.uk',
-            phone: '+44-7428-417535',
+            email: 'info@aiotcons.com',
+            phone: '+447 42 841 7535',
         },
     ];
 
@@ -92,7 +93,7 @@ export default function AboutPage() {
                         variants={stagger}
                     >
                         <motion.p
-                            className="text-sm font-semibold tracking-[0.2em] uppercase mb-3"
+                            className="text-sm font-semibold tracking-wide mb-3"
                             style={{ color: colors.logo }}
                             variants={fadeUp}
                         >
@@ -176,6 +177,14 @@ export default function AboutPage() {
                         variants={stagger}
                     >
                         <motion.div variants={fadeUp}>
+                            {t.aboutUs && (
+                                <p
+                                    className="text-sm font-semibold tracking-wide mb-3"
+                                    style={{ color: colors.logo }}
+                                >
+                                    {t.aboutUs}
+                                </p>
+                            )}
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug">
                                 {t.darkSectionTitle}
                             </h2>
@@ -184,131 +193,255 @@ export default function AboutPage() {
                         </motion.div>
 
                         <motion.div className="space-y-5" variants={stagger}>
-                            {[
-                                { Icon: Lightbulb, title: t.visionTitle, desc: t.visionDesc },
-                                { Icon: Gauge, title: t.missionTitle, desc: t.missionDesc },
-                            ].map(({ Icon, title, desc }) => (
-                                <motion.div
-                                    key={title}
-                                    className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
-                                    variants={fadeUp}
-                                >
-                                    <div
-                                        className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-black"
-                                        style={{ backgroundColor: colors.logo }}
-                                    >
-                                        <Icon className="w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl md:text-2xl font-bold mb-2">{title}</h3>
-                                        <p className="text-gray-300 leading-relaxed text-sm md:text-base">{desc}</p>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </motion.div>
+    {[
+        {
+            Icon: Lightbulb,
+            title: t.visionTitle,
+            desc: t.visionDesc,
+            expanded: expandedVision,
+            setExpanded: setExpandedVision,
+        },
+        {
+            Icon: Gauge,
+            title: t.missionTitle,
+            desc: t.missionDesc,
+            desc2: t.missionDesc2,
+            expanded: expandedMission,
+            setExpanded: setExpandedMission,
+        },
+    ].map(({ Icon, title, desc, desc2, expanded, setExpanded }) => {
+        // How many characters to show before "Read more"
+        const previewLength = 120;
+        const fullText = desc + (desc2 ? ' ' + desc2 : '');
+        const isLong = fullText.length > previewLength;
+        const displayText = expanded || !isLong
+            ? fullText
+            : fullText.slice(0, previewLength) + '...';
+
+        return (
+            <motion.div
+                key={title}
+                className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                variants={fadeUp}
+            >
+                <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-black"
+                    style={{ backgroundColor: colors.logo }}
+                >
+                    <Icon className="w-6 h-6" />
+                </div>
+                <div>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">{title}</h3>
+                    <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                        {displayText}
+                    </p>
+
+                    {isLong && (
+                        <button
+                            type="button"
+                            onClick={() => setExpanded(!expanded)}
+                            className="mt-3 text-sm font-semibold underline underline-offset-2 transition-opacity hover:opacity-80"
+                            style={{ color: colors.logo }}
+                        >
+                            {expanded
+                                ? (language === 'ar' ? 'اقرأ أقل' : 'Read less')
+                                : (language === 'ar' ? 'اقرأ المزيد' : 'Read more')}
+                        </button>
+                    )}
+                </div>
+            </motion.div>
+        );
+    })}
+</motion.div>
                     </motion.div>
                 </div>
             </section>
 
             {/* Smart Solutions + Transform Section */}
-            <section className="py-16 md:py-20 px-6 md:px-8 bg-gray-50">
-                <div className="max-w-7xl mx-auto">
-                    <motion.div
-                        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-16 md:mb-20"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        variants={stagger}
-                    >
-                        <motion.div
-                            className="overflow-hidden rounded-2xl"
-                            style={{ boxShadow: '0 16px 40px rgba(15, 23, 42, 0.1)' }}
-                            variants={fadeUp}
+          {/* Smart Solutions + Transform — Unified Section */}
+<section className="relative py-20 md:py-28 px-6 md:px-8 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
+    {/* soft background glow */}
+    <div
+        className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full opacity-30 blur-3xl"
+        style={{ background: `${colors.accent}18` }}
+    />
+
+    <div className="relative max-w-7xl mx-auto">
+        {/* Header */}
+        <motion.div
+            className="text-center max-w-3xl mx-auto mb-14 md:mb-16"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={stagger}
+        >
+            <motion.p
+                className="text-sm font-semibold tracking-wide mb-3"
+                style={{ color: colors.accent }}
+                variants={fadeUp}
+            >
+                {t.smartSolutions}
+            </motion.p>
+            <motion.div
+                className="w-16 h-1 mx-auto mb-6 rounded-full"
+                style={{ backgroundColor: colors.logo }}
+                variants={{
+                    hidden: { scaleX: 0 },
+                    visible: { scaleX: 1, transition: { duration: 0.6 } },
+                }}
+            />
+            <motion.h2
+                className="text-1xl md:text-1xl lg:text-2xl  text-gray-900 leading-tight"
+                variants={fadeUp}
+            >
+                {t.smartSolutionsHeading}
+            </motion.h2>
+        </motion.div>
+
+        {/* Main content grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+            {/* Left side — Image + Play button */}
+            <motion.div
+                className="lg:col-span-5 relative group"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={fadeUp}
+            >
+                <div
+                    className="relative h-full min-h-[340px] md:min-h-[420px] overflow-hidden rounded-3xl"
+                    style={{ boxShadow: '0 20px 50px rgba(15, 23, 42, 0.12)' }}
+                >
+                    <img
+                        src="https://i.postimg.cc/pV4ZqKZB/Gemini-Generated-Image-6twac06twac06twa.jpg"
+                        alt="Business meeting"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    {/* dark overlay for better contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <button
+                            type="button"
+                            aria-label="Play video"
+                            className="rounded-full p-5 md:p-6 cursor-pointer transition-all duration-300 hover:scale-110 active:scale-95"
+                            style={{
+                                backgroundColor: colors.accent,
+                                boxShadow: `0 12px 40px ${colors.accent}66`,
+                            }}
+                            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.hover)}
+                            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
                         >
-                            <img
-                                src="https://i.postimg.cc/nLtyqBFP/Gemini-Generated-Image-zhdf89zhdf89zhdf.jpg"
-                                alt="Team collaboration"
-                                className="w-full h-64 md:h-80 object-cover"
-                            />
-                        </motion.div>
-                        <motion.div variants={fadeUp}>
-                            <p
-                                className="text-sm font-semibold tracking-[0.2em] uppercase mb-3"
-                                style={{ color: colors.accent }}
-                            >
-                                {t.smartSolutions}
-                            </p>
-                            <div
-                                className={`w-14 h-1 mb-6 rounded-full ${isRTL ? 'ml-auto' : ''}`}
-                                style={{ backgroundColor: colors.logo }}
-                            />
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
-                                {t.smartSolutionsHeading}
-                            </h3>
-                        </motion.div>
-                    </motion.div>
-
-                    <motion.div
-                        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.25 }}
-                        variants={stagger}
-                    >
-                        <motion.div variants={fadeUp}>
-                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-900">
-                                <span style={{ color: colors.accent }}>{t.transformTitle}</span>
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed mb-8">{t.transformDesc}</p>
-
-                            <div
-                                className="p-7 md:p-8 rounded-2xl text-white"
-                                style={{ backgroundColor: colors.accent }}
-                            >
-                                <h4 className="text-xl md:text-2xl font-bold mb-6">{t.transformBoxTitle}</h4>
-                                <div className="space-y-4">
-                                    {transformItems.map((item) => (
-                                        <div key={item} className="flex items-center gap-3">
-                                            <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-                                                <Check className="w-4 h-4" strokeWidth={3} />
-                                            </span>
-                                            <span className="text-base md:text-lg font-medium">{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </motion.div>
-
-                        <motion.div className="relative group" variants={fadeUp}>
-                            <div
-                                className="overflow-hidden rounded-2xl"
-                                style={{ boxShadow: '0 16px 40px rgba(15, 23, 42, 0.12)' }}
-                            >
-                                <img
-                                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=520&fit=crop"
-                                    alt="Business meeting"
-                                    className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                                />
-                            </div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <button
-                                    type="button"
-                                    aria-label="Play video"
-                                    className="rounded-full p-5 cursor-pointer transition-transform duration-300 hover:scale-110"
-                                    style={{
-                                        backgroundColor: colors.accent,
-                                        boxShadow: '0 10px 30px rgba(246, 83, 20, 0.45)',
-                                    }}
-                                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.hover)}
-                                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
-                                >
-                                    <Play className="w-7 h-7 text-white" fill="white" />
-                                </button>
-                            </div>
-                        </motion.div>
-                    </motion.div>
+                            <Play className="w-7 h-7 md:w-8 md:h-8 text-white" fill="white" />
+                        </button>
+                    </div>
                 </div>
-            </section>
+            </motion.div>
+
+            {/* Right side — Content + Feature box */}
+            <motion.div
+                className="lg:col-span-7 flex flex-col justify-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={stagger}
+            >
+                <motion.div variants={fadeUp}>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-snug">
+                        <span style={{ color: colors.accent }}>{t.transformTitle}</span>
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed text-base md:text-lg mb-8 max-w-xl">
+                        {t.transformDesc}
+                    </p>
+                </motion.div>
+
+                {/* Feature card */}
+                <motion.div
+                    className="relative overflow-hidden rounded-3xl p-7 md:p-9 text-white"
+                    style={{
+                        background: `linear-gradient(135deg, ${colors.accent} 0%, ${colors.hover || colors.accent} 100%)`,
+                        boxShadow: `0 20px 50px ${colors.accent}40`,
+                    }}
+                    variants={fadeUp}
+                >
+                    {/* subtle pattern */}
+                    <div className="absolute inset-0 opacity-10 pointer-events-none"
+                        style={{
+                            backgroundImage: `radial-gradient(circle at 20% 30%, white 1px, transparent 1px)`,
+                            backgroundSize: '24px 24px',
+                        }}
+                    />
+
+                    <h4 className="relative text-xl md:text-2xl font-bold mb-6">
+                        {t.transformBoxTitle}
+                    </h4>
+
+                    <div className="relative space-y-4">
+                        {transformItems.map((item, index) => (
+                            <div
+                                key={item}
+                                className="flex items-center gap-4 group/item"
+                            >
+                                <span className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover/item:scale-110">
+                                    <Check className="w-4.5 h-4.5" strokeWidth={3} />
+                                </span>
+                                <span className="text-base md:text-lg font-medium leading-snug">
+                                    {item}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                </motion.div>
+            </motion.div>
+        </div>
+
+      
+    </div>
+</section>
+
+            {/* Core Values */}
+            {Array.isArray(t.coreValues) && t.coreValues.length > 0 && (
+                <section className="py-14 md:py-16 px-6 md:px-8 bg-white border-y border-gray-100">
+                    <div className="max-w-7xl mx-auto text-center">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.4 }}
+                            variants={stagger}
+                        >
+                            <motion.h2
+                                className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
+                                variants={fadeUp}
+                            >
+                                {t.coreValuesTitle}
+                            </motion.h2>
+                            <motion.div
+                                className="w-14 h-1 mx-auto mb-8 rounded-full"
+                                style={{ backgroundColor: colors.logo }}
+                                variants={{
+                                    hidden: { scaleX: 0 },
+                                    visible: { scaleX: 1, transition: { duration: 0.6 } },
+                                }}
+                            />
+                            <motion.div
+                                className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
+                                variants={stagger}
+                            >
+                                {t.coreValues.map((value) => (
+                                    <motion.span
+                                        key={value}
+                                        className="px-4 py-2 text-sm md:text-base font-medium text-gray-800 rounded-full border border-gray-200 bg-gray-50"
+                                        variants={fadeUp}
+                                    >
+                                        {value}
+                                    </motion.span>
+                                ))}
+                            </motion.div>
+                        </motion.div>
+                    </div>
+                </section>
+            )}
 
             {/* Our Presence Section */}
             <section className="py-16 md:py-20 px-6 md:px-8 bg-white">

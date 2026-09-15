@@ -142,6 +142,10 @@
         "description": "探索我们的产品系列，旨在提升性能、精简运营并推动增长。从人工智能分析到可扩展云解决方案，我们的产品以精准可靠满足多样化业务需求。",
         "items": [
             {
+                "title": "企业资源计划",
+                "description": "一体化 ERP，从单一可信数据源管理财务、库存与运营，助力成长型企业。"
+            },
+            {
                 "title": "SAP Business One 用户界面",
                 "description": "通过我们易用的 SAP Business One 界面提升业务运营，实现顺畅导航与高效的企业资源管理。"
             },
@@ -150,16 +154,17 @@
                 "description": "完整的人力资本管理平台，帮助招聘、管理并发展团队，薪资、考勤与人才工具集于一体。"
             },
             {
-                "title": "运营套件",
-                "description": "通过互联工作流、自动化以及跨团队与流程的可见性，精简日常运营。"
-            },
-            {
                 "title": "统一商务平台",
                 "description": "统一商务平台，连接销售渠道、库存与客户旅程，实现一致的销售与履约。"
             },
             {
-                "title": "企业资源计划",
-                "description": "一体化 ERP，从单一可信数据源管理财务、库存与运营，助力成长型企业。"
+                "title": "运营套件",
+                "description": "通过互联工作流、自动化以及跨团队与流程的可见性，精简日常运营。"
+            },
+            {
+                "title": "PortedForm",
+                "description": "使用免费、快速、易用的在线编辑器编辑、批注和管理 PDF，适合日常文档工作流。",
+                "free": true
             },
             {
                 "title": "在线聘请律师",
@@ -219,10 +224,10 @@
         "australia": "澳大利亚",
         "lahore": "拉合尔",
         "glasgow": "格拉斯哥",
-        "dubai": "迪拜",
-        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
-        "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
+        "dubai": "阿布扎比",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
+        "companyUK": "AIOT Consulting L.L.C",
+        "companyUAE": "A I O Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "地址：",
         "email": "邮箱：",
@@ -268,9 +273,9 @@
         "pakistanOffice": "巴基斯坦办公室",
         "ukOffice": "英国办公室",
         "uaeOffice": "阿联酋办公室",
-        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC",
+        "companyUK": "AIOT Consulting L.L.C",
         "pakistanAddress": "巴基斯坦旁遮普省拉合尔54100，PECO路，GECHS第三期，15/1C",
         "ukAddress": "3 Hoy Avenue，格拉斯哥，英国",
         "uaeAddress": "M23办公室，Madinat Office，纳达街，阿布扎比，阿联酋",

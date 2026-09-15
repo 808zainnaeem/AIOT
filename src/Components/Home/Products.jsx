@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { Database, Users, Scale, Cloud, Store, Workflow, Eye, HeartPulse, Building2, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
+import { Database, Users, Scale, Cloud, Store, Workflow, Eye, HeartPulse, Building2, FileText, ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
 import { getProductCatalog } from '../../Utils/productCatalog';
@@ -8,7 +8,7 @@ import { motion, useInView } from 'framer-motion';
 const GAP = 28;
 const MEDIA_SIZE = 64;
 
-const ICONS = [Database, Users, Workflow, Store, Building2, Scale, Eye, HeartPulse, Cloud];
+const ICONS = [Building2, Database, Users, Store, Workflow, FileText, Scale, Eye, HeartPulse, Cloud];
 
 function getVisibleCount() {
     if (typeof window === 'undefined') return 3;
@@ -202,6 +202,15 @@ export default function OurProducts() {
                                             className="absolute inset-x-0 top-0 h-1 rounded-t-2xl origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
                                             style={{ backgroundColor: brandColor }}
                                         />
+
+                                        {product.isFree && (
+                                            <span
+                                                className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide text-white"
+                                                style={{ backgroundColor: brandColor }}
+                                            >
+                                                {t.freeLabel || 'Free'}
+                                            </span>
+                                        )}
 
                                         <div className="flex justify-center mb-5 shrink-0">
                                             <div

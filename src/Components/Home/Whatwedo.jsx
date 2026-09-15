@@ -4,10 +4,6 @@ import { Colors } from '../../Utils/Colors';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 
-import consultingImg from '/consulting.png';
-import implementationImg from '/implement.png';
-import managedServicesImg from '/consulting.png';
-
 export default function WhatWeDo() {
     const { translations, language } = useContext(LanguageContext);
     const t = translations;
@@ -28,23 +24,23 @@ export default function WhatWeDo() {
     const services = [
         {
             step: '01',
-            image: consultingImg,
+            image: '/whatwedo-consulting.jpg',
             title: t.whatWeDoSection?.consulting || fallback.consulting,
             desc: t.whatWeDoSection?.consultingDesc || fallback.consultingDesc,
         },
         {
             step: '02',
-            image: implementationImg,
+            image: '/whatwedo-implementation.jpg',
             title: t.whatWeDoSection?.implementation || fallback.implementation,
             desc: t.whatWeDoSection?.implementationDesc || fallback.implementationDesc,
         },
         {
             step: '03',
-            image: managedServicesImg,
+            image: '/whatwedo-managed.jpg',
             title: t.whatWeDoSection?.managedServices || fallback.managedServices,
             desc: t.whatWeDoSection?.managedServicesDesc || fallback.managedServicesDesc,
         },
-    ];
+    ]; 
 
     const headerVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -120,33 +116,66 @@ export default function WhatWeDo() {
                     {services.map((service, index) => (
                         <motion.article
                             key={service.step}
-                            className="group relative h-full rounded-2xl bg-white p-8 lg:p-10 text-center flex flex-col"
-                            style={{
-                                border: `1px solid ${colors.logo}33`,
-                                boxShadow: '0 12px 32px rgba(15, 23, 42, 0.06)',
-                            }}
+                            className="group relative h-[420px] cursor-pointer outline-none"
+                            tabIndex={0}
                             variants={cardVariants}
                             whileHover={{ y: -10 }}
                             transition={{ type: 'spring', stiffness: 280, damping: 22 }}
                         >
-                            <span
-                                className="absolute inset-x-0 top-0 h-1 rounded-t-2xl origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-                                style={{ backgroundColor: colors.logo }}
-                            />
-
-                            <span
-                                className="absolute top-5 text-5xl font-black leading-none select-none"
+                            <div
+                                className="absolute inset-0 overflow-hidden rounded-2xl bg-white"
                                 style={{
-                                    color: `${colors.logo}14`,
-                                    [isRTL ? 'left' : 'right']: '1.25rem',
+                                    border: `1px solid ${colors.logo}33`,
+                                    boxShadow: '0 12px 32px rgba(15, 23, 42, 0.06)',
                                 }}
                             >
-                                {service.step}
-                            </span>
+                                <img
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+
+                                <span
+                                    className="absolute inset-x-0 top-0 z-20 h-1 rounded-t-2xl origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 group-focus-within:scale-x-100"
+                                    style={{ backgroundColor: colors.logo }}
+                                />
+
+                                <span
+                                    className="absolute top-5 z-20 text-5xl font-black leading-none select-none text-white/80 drop-shadow"
+                                    style={{
+                                        [isRTL ? 'left' : 'right']: '1.25rem',
+                                    }}
+                                >
+                                    {service.step}
+                                </span>
+
+                                <div className="absolute inset-x-0 bottom-0 z-10 p-6 bg-gradient-to-t from-black/75 via-black/35 to-transparent transition-opacity duration-300 md:group-hover:opacity-0 md:group-focus-within:opacity-0 max-md:hidden">
+                                    <h3 className="text-xl font-bold text-white drop-shadow">
+                                        {service.title}
+                                    </h3>
+                                </div>
+
+                                <div className="absolute inset-0 z-10 flex flex-col justify-end p-8 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100 transition-opacity duration-300">
+                                    <div
+                                        className="absolute inset-0"
+                                        style={{
+                                            background: `linear-gradient(180deg, rgba(15,23,42,0.15) 0%, rgba(15,23,42,0.72) 45%, ${colors.logo}ee 100%)`,
+                                        }}
+                                    />
+                                    <div className="relative">
+                                        <h3 className="text-2xl font-bold text-white mb-3">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-white/95 leading-relaxed text-[15px]">
+                                            {service.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                             {index < services.length - 1 && (
                                 <div
-                                    className="hidden md:flex absolute top-24 z-10 items-center justify-center w-9 h-9 rounded-full bg-white border shadow-sm"
+                                    className="hidden md:flex absolute top-1/2 z-30 items-center justify-center w-9 h-9 rounded-full bg-white border shadow-sm -translate-y-1/2"
                                     style={{
                                         borderColor: `${colors.logo}55`,
                                         color: colors.logo,
@@ -156,26 +185,6 @@ export default function WhatWeDo() {
                                     {isRTL ? <ArrowLeft size={16} /> : <ArrowRight size={16} />}
                                 </div>
                             )}
-
-                            <div className="flex justify-center mb-7">
-                                <div
-                                    className="w-24 h-24 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
-                                    style={{ backgroundColor: `${colors.logo}12` }}
-                                >
-                                    <img
-                                        src={service.image}
-                                        alt={service.title}
-                                        className="w-14 h-14 object-contain"
-                                    />
-                                </div>
-                            </div>
-
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">
-                                {service.title}
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed text-[15px] flex-1">
-                                {service.desc}
-                            </p>
                         </motion.article>
                     ))}
                 </motion.div>

@@ -6,15 +6,15 @@
             "address": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punyab, Pakistán"
         },
         "menu": {
-            "home": "INICIO",
-            "aboutUs": "NOSOTROS",
-            "whatWeDo": "QUÉ HACEMOS",
-            "solutions": "SOLUCIONES",
-            "resources": "RECURSOS",
-            "partners": "SOCIOS",
-            "marketplace": "MARKETPLACE"
+            "home": "Inicio",
+            "aboutUs": "Nosotros",
+            "whatWeDo": "Qué hacemos",
+            "solutions": "Soluciones",
+            "resources": "Recursos",
+            "partners": "Socios",
+            "marketplace": "Marketplace"
         },
-        "viewPlans": "VER PLANES",
+        "viewPlans": "Ver planes",
         "learnMore": "Más información",
         "explore": "Explorar",
         "bookADemo": "Reservar una demo",
@@ -142,6 +142,10 @@
         "description": "Explore nuestra gama de productos diseñados para mejorar el rendimiento, agilizar operaciones e impulsar el crecimiento. Desde analítica impulsada por IA hasta soluciones cloud escalables, nuestras ofertas cubren necesidades empresariales diversas con precisión y fiabilidad.",
         "items": [
             {
+                "title": "Planificación de recursos",
+                "description": "Un ERP integrado para gestionar finanzas, inventario y operaciones desde una única fuente de verdad para empresas en crecimiento."
+            },
+            {
                 "title": "Interfaz de SAP Business One",
                 "description": "Mejore sus operaciones con nuestra interfaz SAP Business One, diseñada para una navegación fluida y una gestión eficiente de los recursos empresariales."
             },
@@ -150,16 +154,17 @@
                 "description": "Una plataforma HCM completa para contratar, gestionar y hacer crecer su plantilla, con nómina, asistencia y herramientas de talento en un solo lugar."
             },
             {
-                "title": "Suite de operaciones",
-                "description": "Agilice las operaciones diarias con flujos de trabajo conectados, automatización y visibilidad en equipos y procesos."
-            },
-            {
                 "title": "Comercio unificado",
                 "description": "Una plataforma de comercio unificado que conecta canales de venta, inventario y el recorrido del cliente para vender y cumplir con consistencia."
             },
             {
-                "title": "Planificación de recursos",
-                "description": "Un ERP integrado para gestionar finanzas, inventario y operaciones desde una única fuente de verdad para empresas en crecimiento."
+                "title": "Suite de operaciones",
+                "description": "Agilice las operaciones diarias con flujos de trabajo conectados, automatización y visibilidad en equipos y procesos."
+            },
+            {
+                "title": "PortedForm",
+                "description": "Edite, anote y gestione PDFs en línea con un editor gratuito, rápido y fácil de usar para el flujo documental diario.",
+                "free": true
             },
             {
                 "title": "Contratar abogado en línea",
@@ -219,10 +224,10 @@
         "australia": "Australia",
         "lahore": "Lahore",
         "glasgow": "Glasgow",
-        "dubai": "Dubái",
-        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
-        "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
+        "dubai": "Abu Dabi",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
+        "companyUK": "AIOT Consulting L.L.C",
+        "companyUAE": "A I O Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "Dirección:",
         "email": "Correo:",
@@ -268,9 +273,9 @@
         "pakistanOffice": "Oficina de Pakistán",
         "ukOffice": "Oficina del Reino Unido",
         "uaeOffice": "Oficina de EAU",
-        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC",
+        "companyUK": "AIOT Consulting L.L.C",
         "pakistanAddress": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punyab, Pakistán",
         "ukAddress": "3 Hoy Avenue, Glasgow, Reino Unido",
         "uaeAddress": "Oficina M23, Madinat Office, calle Al Najda, Abu Dabi, EAU",

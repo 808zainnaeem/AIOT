@@ -93,7 +93,7 @@ export default function OurPhilosophy() {
                             onMouseEnter={(e) => (e.target.style.backgroundColor = colors.hover)}
                             onMouseLeave={(e) => (e.target.style.backgroundColor = colors.logo)}
                         >
-                            Read more
+                            {t.readMore || 'Read more'}
                         </button>
                     </motion.div>
                 </div>

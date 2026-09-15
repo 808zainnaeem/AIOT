@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useInView } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Colors } from '../../Utils/Colors';
 import { LanguageContext } from '../../Context/LanguageContext';
+import HeroProductScene from './HeroProductScene';
 
 const SLIDE_MEDIA = [
     {
@@ -21,6 +22,11 @@ const SLIDE_MEDIA = [
         type: 'image',
         image: 'https://i.postimg.cc/jdFCbCgP/Chat-GPT-Image-Sep-1-2026-09-13-55-AM.png',
         alt: 'Circuit innovation',
+    },
+    {
+        type: 'products',
+        alt: 'AIOT product ecosystem',
+        duration: 8000,
     },
 ];
 
@@ -41,9 +47,9 @@ const FALLBACK_SLIDES = [
             'From cybersecurity to modern infrastructure, we protect and power the technology that runs your business.',
     },
     {
-        title: 'Enterprise Excellence, <br> Delivered End to End.',
+        title: 'Products That <br> Power Your Business.',
         description:
-            'Consulting, implementation, and managed services designed to transform operations and accelerate growth.',
+            'PeopleHub, ProcessHub, CommerceHub, and our full suite — built to hire, operate, sell, and scale in one connected ecosystem.',
     },
 ];
 
@@ -67,6 +73,10 @@ const SlideMedia = ({ slide, sliderActive, inView }) => {
 
         return undefined;
     }, [inView, slide.type, slide.video]);
+
+    if (slide.type === 'products') {
+        return <HeroProductScene />;
+    }
 
     if (slide.type === 'video') {
         return (
@@ -126,12 +136,13 @@ const HomePage = () => {
 
     useEffect(() => {
         if (!inView || paused) return undefined;
-        const timer = setInterval(() => {
+        const ms = slides[index]?.duration || SLIDE_MS;
+        const timer = window.setTimeout(() => {
             setDirection(1);
             setIndex((current) => (current + 1) % slides.length);
-        }, SLIDE_MS);
-        return () => clearInterval(timer);
-    }, [inView, paused, slides.length]);
+        }, ms);
+        return () => window.clearTimeout(timer);
+    }, [inView, paused, index, slides]);
 
     const goPrev = () => {
         setDirection(-1);
@@ -217,8 +228,17 @@ const HomePage = () => {
                 </AnimatePresence>
 
                 {/* Cinematic brand overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/50 via-[#0c0a09]/45 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/35 via-[#0c0a09]/25 to-transparent" />
+                {active.type === 'products' ? (
+                    <>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/80 via-[#0c0a09]/25 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/75 via-[#0c0a09]/20 to-transparent" />
+                    </>
+                ) : (
+                    <>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/50 via-[#0c0a09]/45 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/35 via-[#0c0a09]/25 to-transparent" />
+                    </>
+                )}
                 <div
                     className="absolute inset-0 opacity-40 mix-blend-soft-light pointer-events-none"
                     style={{
@@ -264,16 +284,7 @@ const HomePage = () => {
                                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                                 >
                                     <div className="flex items-center gap-3 mb-3 md:mb-4">
-                                        <span
-                                            className="h-px w-10 rounded-full"
-                                            style={{ backgroundColor: colors.logo }}
-                                        />
-                                        <span
-                                            className="text-[11px] sm:text-xs font-semibold tracking-[0.28em] uppercase"
-                                            style={{ color: colors.logo }}
-                                        >
-                                            AIOT
-                                        </span>
+                                        
                                         <span className="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-white/45">
                                             {String(index + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
                                         </span>
@@ -318,7 +329,7 @@ const HomePage = () => {
                                                         initial={{ width: '0%' }}
                                                         animate={{ width: '100%' }}
                                                         transition={{
-                                                            duration: sliderActive ? SLIDE_MS / 1000 : 0,
+                                                            duration: sliderActive ? (active.duration || SLIDE_MS) / 1000 : 0,
                                                             ease: 'linear',
                                                         }}
                                                     />

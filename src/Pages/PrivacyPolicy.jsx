@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
                                                     <span className="font-semibold">{navbarTrans.topBar?.email || 'info@aiotcons.com'}</span>
                                                 </p>
                                                 <p>{navbarTrans.topBar?.phone || '+92 3123456778'}</p>
-                                                <p className="text-gray-500">{navbarTrans.topBar?.address || '15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN'}</p>
+                                                <p className="text-gray-500">{navbarTrans.topBar?.address || '15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan'}</p>
                                                 <Link
                                                     to="/contact"
                                                     className="inline-flex items-center gap-1 mt-3 font-semibold hover:opacity-80 transition"

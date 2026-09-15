@@ -18,29 +18,28 @@ import OracleNetsuite from './Pages/OracleNetsuite';
 import Consulting from './Pages/Consulting';
 import Outsourcing from './Pages/Outsourcing';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsOfService from './Pages/TermsOfService';
+import News from './Pages/News';
+import Blogs from './Pages/Blogs';
+import InnovateWithInsights from './Pages/InnovateWithInsights';
 function App() {
   const { language, setLanguage, translations } = useContext(LanguageContext);
   const color = Colors[language] || Colors.en; // Get color settings based on selected language
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const splash = document.getElementById('aiot-splash');
+    if (splash) splash.remove();
+
     const started = Date.now();
-    const minMs = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 5600;
+    const minMs = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 2400;
     let done = false;
 
     const finish = () => {
       if (done) return;
       done = true;
       const remaining = Math.max(0, minMs - (Date.now() - started));
-      window.setTimeout(() => {
-        setLoading(false);
-        const splash = document.getElementById('aiot-splash');
-        if (splash) {
-          splash.style.transition = 'opacity 0.4s ease';
-          splash.style.opacity = '0';
-          window.setTimeout(() => splash.remove(), 420);
-        }
-      }, remaining);
+      window.setTimeout(() => setLoading(false), remaining);
     };
 
     if (document.readyState === 'complete') {
@@ -80,6 +79,13 @@ function App() {
         <Route exact path="/consulting" element={<Consulting />} />
         <Route exact path="/outsoursing" element={<Outsourcing />} />
         <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route exact path="/terms-and-conditions" element={<TermsOfService />} />
+        <Route exact path="/terms-conditions" element={<TermsOfService />} />
+        <Route exact path="/Terms-Conditions" element={<TermsOfService />} />
+        <Route exact path="/terms-of-service" element={<TermsOfService />} />
+        <Route exact path="/news" element={<News />} />
+        <Route exact path="/blogs" element={<Blogs />} />
+        <Route exact path="/innovate-with-insights" element={<InnovateWithInsights />} />
       </Routes>
       <FooterSection />
     </Router>

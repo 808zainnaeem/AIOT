@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { FaThreads } from "react-icons/fa6";
+
+
 function SocialSvg({ size, color, children }) {
     return (
         <svg
@@ -48,9 +51,8 @@ export function InstagramIcon({ size = 18, color = 'currentColor' }) {
 
 export function ThreadsIcon({ size = 18, color = 'currentColor' }) {
     return (
-        <SocialSvg size={size} color={color}>
-            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.11.66c-.855-3.25-2.733-4.868-6.225-4.887-2.577 0-4.564.934-5.903 2.777-1.203 1.654-1.806 3.945-1.806 6.83 0 2.885.603 5.176 1.806 6.83 1.339 1.843 3.326 2.777 5.903 2.777 2.412 0 4.132-.856 5.158-2.574.92-1.528 1.447-3.66 1.563-6.258h-7.078v-3.02h9.72c.092 2.12-.228 4.74-1.277 6.856-1.41 2.87-3.92 4.324-7.455 4.324z" />
-        </SocialSvg>
+        <FaThreads size={size} color={color} />
+
     );
 }
 
@@ -63,10 +65,10 @@ export function YoutubeIcon({ size = 18, color = 'currentColor' }) {
 }
 
 export const AIOT_SOCIAL_LINKS = [
-    { Icon: FacebookIcon, url: 'https://www.facebook.com/WEAIOT/', label: 'Facebook' },
-    { Icon: XIcon, url: 'https://x.com/WEAIOT', label: 'X' },
-    { Icon: LinkedinIcon, url: 'https://www.linkedin.com/company/weaiot', label: 'LinkedIn' },
-    { Icon: InstagramIcon, url: 'https://www.instagram.com/weaiot/', label: 'Instagram' },
-    { Icon: ThreadsIcon, url: 'https://www.threads.net/@weaiot', label: 'Threads' },
-    { Icon: YoutubeIcon, url: 'https://www.youtube.com/@WEAIOT', label: 'YouTube' },
+    { Icon: FacebookIcon, url: 'https://www.facebook.com/AIOTCons/', label: 'Facebook' },
+    { Icon: XIcon, url: 'https://x.com/AIOTCons', label: 'X' },
+    { Icon: LinkedinIcon, url: 'https://www.linkedin.com/company/AIOTCons', label: 'LinkedIn' },
+    { Icon: InstagramIcon, url: 'https://www.instagram.com/AIOTCons/', label: 'Instagram' },
+    { Icon: ThreadsIcon, url: 'https://www.threads.net/@AIOTCons', label: 'Threads' },
+    { Icon: YoutubeIcon, url: 'https://www.youtube.com/@AIOTCons', label: 'YouTube' },
 ];

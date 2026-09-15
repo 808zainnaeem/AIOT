@@ -42,7 +42,7 @@ export default function ContactUs() {
                 className="relative h-80 bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&h=600&fit=crop)',
+                        'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://i.postimg.cc/JndqwXCd/Chat-GPT-Image-Sep-14-2026-10-34-41-AM.png)',
                 }}
             >
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -76,8 +76,10 @@ export default function ContactUs() {
                                 </div>
                             </div>
                             <h4 className="text-xl font-bold text-gray-900 mb-3">{t.phoneTitle}</h4>
-                            <p className="text-gray-600 mb-2">+92 316 7676911</p>
-                            <p className="text-gray-600">+44 7429 417535</p>
+                            <p className="text-gray-600 mb-2">+923 12 345 6778</p>
+                            <p className="text-gray-600 mb-2"> +971 50 731 2970</p>
+                            <p className="text-gray-600 mb-2"> +447 42 841 7535</p>
+
                         </div>
 
                         <div className="bg-orange-50 p-8 rounded-lg text-center">
@@ -87,7 +89,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                             <h4 className="text-xl font-bold text-gray-900 mb-3">{t.emailTitle}</h4>
-                            <p className="text-gray-600 mb-2">zahid@aiotcons.com</p>
+                            <p className="text-gray-600 mb-2">info@aiotcons.com</p>
                             <p className="text-gray-600">bd@aiotcons.com</p>
                         </div>
 
@@ -103,7 +105,7 @@ export default function ContactUs() {
                     </div>
 
                     {/* Contact Form and Offices Section */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:items-start">
                         {/* Contact Form */}
                         <div>
                             <h3 className="text-3xl font-bold text-gray-900 mb-6">{t.formTitle}</h3>
@@ -195,62 +197,90 @@ export default function ContactUs() {
                             </div>
                         </div>
 
-                        {/* Office Locations */}
-                        <div>
+                        {/* Office Locations Collage */}
+                        <div className="lg:sticky lg:top-24 lg:self-start">
                             <h3 className="text-3xl font-bold text-gray-900 mb-6">{t.officesTitle}</h3>
-                            <div className="space-y-6">
-                                <div className="bg-gray-50 p-6 rounded-lg">
-                                    <div className="flex items-start mb-4">
-                                        <MapPin className="w-6 h-6 mr-3 mt-1 flex-shrink-0" style={{ color: colors.accent }} />
-                                        <div>
-                                            <h4 className="text-xl font-bold text-gray-900 mb-2">{t.pakistanOffice}</h4>
-                                            <p className="text-gray-600 mb-2">
-                                                <span className="font-semibold">{t.companyPakistan}</span>
-                                            </p>
-                                            <p className="text-gray-600">
-                                                {t.pakistanAddress || translations.navbar?.topBar?.address}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="bg-gray-50 p-6 rounded-lg">
-                                    <div className="flex items-start mb-4">
-                                        <MapPin className="w-6 h-6 mr-3 mt-1 flex-shrink-0" style={{ color: colors.accent }} />
-                                        <div>
-                                            <h4 className="text-xl font-bold text-gray-900 mb-2">{t.ukOffice}</h4>
-                                            <p className="text-gray-600 mb-2">
-                                                <span className="font-semibold">{t.companyUK}</span>
-                                            </p>
-                                            <p className="text-gray-600">
-                                                {t.ukAddress}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                                {/* Map / collage backdrop */}
+                                <div
+                                    className="absolute inset-0 bg-cover bg-center"
+                                    style={{
+                                        backgroundImage:
+                                            'linear-gradient(rgba(15,23,42,0.58), rgba(15,23,42,0.72)), url(/map.jpg)',
+                                    }}
+                                />
 
-                                <div className="bg-gray-50 p-6 rounded-lg">
-                                    <div className="flex items-start mb-4">
-                                        <MapPin className="w-6 h-6 mr-3 mt-1 flex-shrink-0" style={{ color: colors.accent }} />
-                                        <div>
-                                            <h4 className="text-xl font-bold text-gray-900 mb-2">{t.uaeOffice}</h4>
-                                            <p className="text-gray-600 mb-2">
-                                                <span className="font-semibold">{t.companyUAE}</span>
-                                            </p>
-                                            <p className="text-gray-600">
-                                                {t.uaeAddress}
-                                            </p>
-                                        </div>
+                                <div className="relative z-10 p-4 sm:p-5">
+                                    <div className="flex items-center gap-2 mb-4 text-white">
+                                        <MapPin className="w-5 h-5" style={{ color: colors.accent }} />
+                                        <p className="text-sm font-semibold tracking-wide uppercase opacity-90">
+                                            {t.mapView || 'Map View'} · {t.officesTitle}
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
 
-                            {/* Map Placeholder */}
-                            <div className="mt-8 bg-gray-200 rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                                <div className="text-center p-8">
-                                    <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                                    <p className="text-gray-500">{t.mapView || 'Map View'}</p>
-                                    <p className="text-sm text-gray-400">{t.mapCity || 'Lahore, Pakistan'}</p>
+                                    {/* Collage: 1 large + 2 stacked */}
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                                        {[
+                                            {
+                                                title: t.pakistanOffice,
+                                                company: t.companyPakistan,
+                                                address: t.pakistanAddress || translations.navbar?.topBar?.address,
+                                                city: 'Lahore, Pakistan',
+                                                image:
+                                                    'https://pakgeography.com/wp-content/uploads/2025/12/Pakistan.webp',
+                                                featured: true,
+                                            },
+                                            {
+                                                title: t.ukOffice,
+                                                company: t.companyUK,
+                                                address: t.ukAddress,
+                                                city: 'Glasgow, UK',
+                                                image:
+                                                    'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=700&h=500&fit=crop',
+                                            },
+                                            {
+                                                title: t.uaeOffice,
+                                                company: t.companyUAE,
+                                                address: t.uaeAddress,
+                                                city: 'Abu Dhabi, UAE',
+                                                image:
+                                                    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700&h=500&fit=crop',
+                                            },
+                                        ].map((office) => (
+                                            <div
+                                                key={office.title}
+                                                className={`group relative overflow-hidden rounded-xl bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 ${
+                                                    office.featured ? 'md:row-span-2 min-h-[280px]' : 'min-h-[170px]'
+                                                }`}
+                                            >
+                                                <img
+                                                    src={office.image}
+                                                    alt={office.title}
+                                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
+                                                <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+                                                    <div className="flex items-center gap-1.5 mb-1">
+                                                        <MapPin
+                                                            className="w-4 h-4 shrink-0"
+                                                            style={{ color: colors.accent }}
+                                                        />
+                                                        <h4 className="text-sm font-bold leading-tight">
+                                                            {office.title}
+                                                        </h4>
+                                                    </div>
+                                                    <p className="text-xs font-medium text-white/90 mb-1">
+                                                        {office.company}
+                                                    </p>
+                                                    <p className="text-[11px] text-white/70 mb-1.5">{office.city}</p>
+                                                    <p className="text-xs text-white/80 leading-relaxed line-clamp-2">
+                                                        {office.address}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>

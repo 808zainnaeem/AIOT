@@ -2,9 +2,6 @@ import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Globe,
-    Mail,
-    Phone,
-    MapPin,
     ArrowRight,
     ArrowUpRight,
     Briefcase,
@@ -25,7 +22,6 @@ export default function FooterSection() {
     const whatWeDoTrans = translations.whatWeDoSection || {};
 
     const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
-    const [email, setEmail] = useState('');
 
     const navigate = useNavigate();
 
@@ -33,20 +29,16 @@ export default function FooterSection() {
     const solutionsProducts = getSolutionsProducts(translations);
     const moreSolutionsProducts = getMoreSolutionsProducts(translations);
 
-    const phone = navbarTrans.topBar?.phone || '+92 3123456778';
-    const emailAddress = navbarTrans.topBar?.email || 'info@aiotcons.com';
-    const address = navbarTrans.topBar?.address || '15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN';
-
     const socialIcons = AIOT_SOCIAL_LINKS;
 
     const quickLinks = [
-        { label: navbarTrans.menu?.home || 'HOME', link: '/' },
-        { label: navbarTrans.menu?.aboutUs || 'ABOUT US', link: '/About' },
-        { label: navbarTrans.menu?.whatWeDo || 'WHAT WE DO', link: '/' },
-        { label: navbarTrans.menu?.solutions || 'SOLUTIONS', link: '/' },
-        { label: navbarTrans.menu?.resources || 'RESOURCES', link: '/' },
-        { label: navbarTrans.menu?.partners || 'PARTNERS', link: '/' },
-        { label: navbarTrans.menu?.marketplace || 'MARKETPLACE', link: 'https://www.nizam365.com/Plans' },
+        { label: navbarTrans.menu?.home || 'Home', link: '/' },
+        { label: navbarTrans.menu?.aboutUs || 'About Us', link: '/About' },
+        { label: navbarTrans.menu?.whatWeDo || 'What We Do', link: '/' },
+        { label: navbarTrans.menu?.solutions || 'Solutions', link: '/' },
+        { label: navbarTrans.menu?.resources || 'Resources', link: '/' },
+        { label: navbarTrans.menu?.partners || 'Partners', link: '/' },
+        { label: navbarTrans.menu?.marketplace || 'Marketplace', link: 'https://www.nizam365.com/Plans' },
     ];
 
     const whatWeDoLinks = [
@@ -76,11 +68,6 @@ export default function FooterSection() {
         }
     };
 
-    const handleSubscribe = (e) => {
-        e.preventDefault();
-        setEmail('');
-    };
-
     const LinkItem = ({ label, link, external }) => (
         <li>
             <button
@@ -102,7 +89,7 @@ export default function FooterSection() {
 
     const ColumnTitle = ({ children }) => (
         <div className="mb-5">
-            <h4 className="font-bold text-[15px] text-gray-900 tracking-wide uppercase">
+            <h4 className="font-bold text-[15px] text-gray-900 tracking-wide">
                 {children}
             </h4>
             <div className="mt-3 h-0.5 w-10 rounded-full" style={{ backgroundColor: colors.logo }} />
@@ -122,117 +109,37 @@ export default function FooterSection() {
                 }}
             />
 
-            {/* Top contact strip — from navbar */}
-            {/* <div className="relative" style={{ backgroundColor: colors.logo }}>
-                <div className="max-w-7xl mx-auto px-6 py-3.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-white text-xs md:text-sm">
-                    <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-                        <a href={`tel:${phone.replace(/\s/g, '')}`} className="inline-flex items-center gap-2 hover:opacity-90 transition">
-                            <Phone size={14} />
-                            {phone}
-                        </a>
-                        <a href={`mailto:${emailAddress}`} className="inline-flex items-center gap-2 hover:opacity-90 transition">
-                            <Mail size={14} />
-                            {emailAddress}
-                        </a>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        {socialIcons.map(({ Icon, url, label }) => (
-                            <a
-                                key={label}
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={label}
-                                className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/25 transition"
-                            >
-                                <Icon size={14} />
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            </div> */}
-
-            {/* Newsletter */}
-            {/* <div className="relative border-b" style={{ borderColor: `${colors.logo}18` }}>
-                <div className="max-w-7xl mx-auto px-6 py-10 md:py-12">
-                    <div
-                        className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 rounded-3xl px-6 py-8 md:px-10 md:py-9 bg-white"
-                        style={{
-                            border: `1px solid ${colors.logo}22`,
-                            boxShadow: '0 18px 44px rgba(15, 23, 42, 0.06)',
-                        }}
-                    >
-                        <div className="max-w-xl">
-                            <p className="text-sm font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: colors.logo }}>
-                                {footerTrans.newsletterTitle || 'GET UPDATES'}
-                            </p>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                                {footerTrans.newsletterHeading || 'Stay ahead with AIOT insights'}
-                            </h3>
-                            <p className="text-gray-500 text-sm mt-2 leading-relaxed">
-                                {footerTrans.newsletterDesc || 'Product updates, digital transformation tips, and partnership news — straight to your inbox.'}
-                            </p>
-                        </div>
-                        <form onSubmit={handleSubscribe} className="w-full max-w-md flex flex-col sm:flex-row gap-2">
-                            <div className="relative flex-1">
-                                <Mail size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                                <input
-                                    type="email"
-                                    required
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder={footerTrans.emailPlaceholder || 'Enter your email...'}
-                                    className="w-full rounded-full bg-[#fffaf7] border text-gray-800 placeholder:text-gray-400 pl-11 pr-4 py-3.5 text-sm outline-none transition focus:shadow-sm"
-                                    style={{ borderColor: `${colors.logo}33` }}
-                                />
-                            </div>
-                            <button
-                                type="submit"
-                                className="shrink-0 rounded-full px-6 py-3.5 text-sm font-semibold text-white hover:opacity-90 transition inline-flex items-center justify-center gap-2"
-                                style={{ backgroundColor: colors.logo }}
-                            >
-                                {footerTrans.subscribe || 'Subscribe'}
-                                <ArrowRight size={16} />
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div> */}
-
             {/* Main grid */}
             <div className="relative px-6 py-14 md:py-16">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
-                    {/* Brand + contact */}
+                    {/* Brand + social */}
                     <div className="lg:col-span-3 space-y-5">
-                        <img src="/NewLogo.png" alt="AIOT Logo" className="h-auto w-24" />
-                        {/* <p className="text-gray-600 text-sm leading-relaxed">
-                            {footerTrans.description || 'Reshaping your future with AI, IoT, and enterprise technology solutions that drive real business outcomes.'}
-                        </p> */}
+                        <img src="/NewLogo.png" alt="AIOT Logo" className="h-auto w-20" />
 
                         <div
-                            className="rounded-2xl p-4 space-y-3"
+                            className="rounded-2xl p-4"
                             style={{
                                 backgroundColor: `${colors.logo}0A`,
                                 border: `1px solid ${colors.logo}18`,
                             }}
                         >
-                            <a href={`tel:${phone.replace(/\s/g, '')}`} className="flex items-center gap-3 text-sm text-gray-700 hover:text-gray-900 transition">
-                                <span className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#fff', color: colors.logo }}>
-                                    <Phone size={15} />
-                                </span>
-                                {phone}
-                            </a>
-                            <a href={`mailto:${emailAddress}`} className="flex items-center gap-3 text-sm text-gray-700 hover:text-gray-900 transition">
-                                <span className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#fff', color: colors.logo }}>
-                                    <Mail size={15} />
-                                </span>
-                                {emailAddress}
-                            </a>
-                            <div className="flex items-start gap-3 text-sm text-gray-700">
-                                <span className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: '#fff', color: colors.logo }}>
-                                    <MapPin size={15} />
-                                </span>
-                                <span className="leading-relaxed text-[13px]">{address}</span>
+                            <p className="text-sm font-semibold text-gray-800 mb-3 tracking-wide">
+                                {footerTrans.followUs || 'Follow Us'}
+                            </p>
+                            <div className="flex flex-wrap items-center gap-2.5">
+                                {socialIcons.map(({ Icon, url, label }) => (
+                                    <a
+                                        key={label}
+                                        href={url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={label}
+                                        className="w-10 h-10 rounded-xl bg-white flex items-center justify-center transition hover:scale-105 hover:shadow-sm"
+                                        style={{ color: colors.logo, border: `1px solid ${colors.logo}22` }}
+                                    >
+                                        <Icon size={16} />
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -254,7 +161,7 @@ export default function FooterSection() {
 
                     {/* What We Do — from navbar */}
                     <div className="lg:col-span-2">
-                        <ColumnTitle>{navbarTrans.menu?.whatWeDo || 'WHAT WE DO'}</ColumnTitle>
+                        <ColumnTitle>{navbarTrans.menu?.whatWeDo || 'What We Do'}</ColumnTitle>
                         <ul className="space-y-3.5 mb-6">
                             {whatWeDoLinks.map(({ label, link, icon: Icon }) => (
                                 <li key={label}>
@@ -287,7 +194,7 @@ export default function FooterSection() {
                         </ul>
 
                         <div className="relative">
-                            <p className="text-xs uppercase tracking-[0.16em] text-gray-400 mb-2.5">
+                            <p className="text-xs tracking-wide text-gray-400 mb-2.5">
                                 {footerTrans.language || 'Language'}
                             </p>
                             <button
@@ -373,6 +280,15 @@ export default function FooterSection() {
                         >
                             {footerTrans.privacyPolicy || 'Privacy Policy'}
                         </button>
+                       
+                        <span className="text-gray-300">|</span>
+                        <button
+                            type="button"
+                            onClick={() => handleNavClick('/terms-and-conditions')}
+                            className="text-gray-500 hover:text-gray-800 transition"
+                        >
+                            {footerTrans.termsAndConditions || 'Terms and Conditions'}
+                        </button>
                         <span className="text-gray-300">|</span>
                         <button
                             type="button"
@@ -382,14 +298,6 @@ export default function FooterSection() {
                         >
                             {footerTrans.contact || 'Contact Us'}
                             <ArrowRight size={14} />
-                        </button>
-                        <span className="text-gray-300">|</span>
-                        <button
-                            type="button"
-                            onClick={() => handleNavClick('/clientwall')}
-                            className="text-gray-500 hover:text-gray-800 transition"
-                        >
-                            {dropdownTrans.aboutUs?.clientWall || 'Client wall'}
                         </button>
                     </div>
                 </div>

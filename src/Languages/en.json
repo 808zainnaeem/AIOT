@@ -3,18 +3,18 @@
         "topBar": {
             "phone": "+92 3123456778",
             "email": "info@aiotcons.com",
-            "address": "15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN"
+            "address": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan"
         },
         "menu": {
-            "home": "HOME",
-            "aboutUs": "ABOUT US",
-            "whatWeDo": "WHAT WE DO",
-            "solutions": "SOLUTIONS",
-            "resources": "RESOURCES",
-            "partners": "PARTNERS",
-            "marketplace": "MARKETPLACE"
+            "home": "Home",
+            "aboutUs": "About Us",
+            "whatWeDo": "What We Do",
+            "solutions": "Solutions",
+            "resources": "Resources",
+            "partners": "Partners",
+            "marketplace": "Marketplace"
         },
-        "viewPlans": "VIEW PLANS",
+        "viewPlans": "View Plans",
         "learnMore": "Learn More",
         "explore": "Explore",
         "bookADemo": "Book a Demo",
@@ -29,7 +29,7 @@
             "clientWall": "Client wall",
             "clientWallDesc": "Proudly serving industry leaders with innovative technology solutions that deliver real results.",
             "contactUs": "Contact Us",
-            "contactUsDesc": "Get in touch with AIOT IT Solutions your gateway to smart, innovative, and transformative tech solutions.",
+            "contactUsDesc": "Get in touch with our IT Solutions your gateway to smart, innovative, and transformative tech solutions.",
             "panelLabel": "About AIOT",
             "panelTitle": "Innovation with real impact",
             "panelDesc": "Discover who we are, the clients we serve, and how to start a conversation with our team."
@@ -68,7 +68,7 @@
             "backupDr": "Data, Backup & Disaster Recovery",
             "panelLabel": "What We Deliver",
             "panelTitle": "End-to-end digital excellence",
-            "panelDesc": "From strategy to run — consulting, implementation, and managed services under one partner."
+            "panelDesc": "From strategy to run: consulting, implementation, and managed services under one partner."
         },
         "solutions": {
             "industries": "Industries",
@@ -83,7 +83,7 @@
             "solutions": "Solutions",
             "connector": "Connector",
             "hireLawyerOnline": "Hire Lawyer Online",
-            "sapBusinessOneUi": "SAP Business One User Interface",
+            "sapBusinessOneUi": "BridgeHub User Interface",
             "hrManagementSystem": "HR Management System"
         },
         "resources": {
@@ -123,8 +123,8 @@
                 "description": "From cybersecurity to modern infrastructure, we protect and power the technology that runs your business."
             },
             {
-                "title": "Enterprise Excellence, <br> Delivered End to End.",
-                "description": "Consulting, implementation, and managed services designed to transform operations and accelerate growth."
+                "title": "Products That <br> Power Your Business.",
+                "description": "PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform, and our comprehensive business suite help organisations hire, operate, sell, and scale within one connected ecosystem."
             }
         ]
     },
@@ -141,9 +141,9 @@
     "philosophy": {
         "title": "Our Philosophy",
         "heading": "Innovating for a Connected Future",
-        "paragraph1": "We focus on developing and delivering technology solutions that address our customers' evolving needs and challenges. We prioritise agility, adaptability, and responsiveness, enabling us to pivot quickly to changing market conditions and customer requirements.",
+        "paragraph1": "We build technology solutions that meet our customers' changing needs and challenges. We prioritise agility, adaptability, and responsiveness so we can respond quickly to changing market conditions and customer needs.",
         "quote": "Transform operations with smart, cloud-driven solutions designed for growth and simplicity.",
-        "paragraph2": "We create forward-thinking solutions that redefine how businesses operate, ensuring they stay ahead in an evolving digital landscape.",
+        "paragraph2": "We create forward-thinking solutions that help businesses operate more effectively and stay ahead in a changing digital world.",
         "readMore": "Read More"
     },
     "servicesStats": {
@@ -187,7 +187,11 @@
         "description": "Explore our range of products designed to enhance performance, streamline operations, and drive growth. From AI-driven analytics to scalable cloud solutions, our offerings cater to diverse business needs with precision and reliability.",
         "items": [
             {
-                "title": "SAP Business One User Interface",
+                "title": "BusinessHub ERP",
+                "description": "An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses."
+            },
+            {
+                "title": "BridgeHub User Interface",
                 "description": "Enhance your business operations with our user-friendly SAP Business One interface, designed for seamless navigation and efficient management of your enterprise resources."
             },
             {
@@ -195,16 +199,17 @@
                 "description": "A complete human capital management platform to hire, manage, and grow your workforce with payroll, attendance, and talent tools in one place."
             },
             {
-                "title": "ProcessHub Operations Suite",
-                "description": "Streamline day-to-day operations with connected workflows, automation, and visibility across teams and processes."
-            },
-            {
                 "title": "CommerceHub UCP",
                 "description": "A unified commerce platform that connects sales channels, inventory, and customer journeys so you can sell and fulfil with consistency."
             },
             {
-                "title": "BusinessHub ERP",
-                "description": "An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses."
+                "title": "ProcessHub Operations Suite",
+                "description": "Streamline day-to-day operations with connected workflows, automation, and visibility across teams and processes."
+            },
+            {
+                "title": "PortedForm",
+                "description": "Edit, annotate, and manage PDFs online with a free, fast, and easy-to-use editor built for everyday document workflows.",
+                "free": true
             },
             {
                 "title": "Hire Lawyer Online",
@@ -223,36 +228,48 @@
                 "description": "Effortlessly integrate and manage your systems with our connector for communication through WhatsApp, cellular APIs, and email exchanges, designed to streamline data flow."
             }
         ],
-        "showMore": "Show more"
+        "showMore": "Show more",
+        "freeLabel": "Free"
     },
     "about": {
         "heroTitle": "Who we are",
-        "heroSubtitle": "Redefining Achievement at Every Turn",
+        "heroSubtitle": "Empowering Businesses Through Technology",
         "whoWeAre": "Who we are",
-        "mainHeading": "Innovating the Future with AIOT Solutions",
-        "desc1": "We are a forward-thinking IT company dedicated to revolutionizing industries through cutting-edge AI and IoT technologies.",
-        "desc2": "At the heart of our company lies a passion for innovation. Our expert team harnesses the power of AIoT to deliver smart, scalable, and secure solutions.",
-        "feature1Title": "AI-Driven Innovation",
-        "feature1Desc": "Unlock efficiency and automation through powerful AI solutions.",
-        "feature2Title": "Seamless IoT Integration",
-        "feature2Desc": "Connect devices for real-time insights and smarter operations.",
-        "feature3Title": "Scalable and Secure Solutions",
-        "feature3Desc": "Grow confidently with secure, scalable AIoT solutions.",
-        "darkSectionTitle": "Empowering Tomorrow with Smart AIOT Solutions",
-        "darkSectionDesc1": "AIOT is a business IT solutions provider dedicated to empowering businesses with innovative technology. We specialize in software development, AI integration, IoT solutions, cloud computing, and digital transformation services. Our mission is to deliver cutting-edge, reliable, and scalable solutions that drive efficiency, productivity, and growth for organizations worldwide.",
-        "darkSectionDesc2": "We aim to lead the way in AIOT innovation, empowering businesses with intelligent solutions that transform operations and drive growth.",
+        "mainHeading": "Empowering Businesses<br />Through Technology",
+        "desc1": "We are a forward-thinking technology consulting company that helps organisations navigate change, embrace innovation, and create lasting business value.",
+        "desc2": "We focus on practical, scalable, and secure solutions to help businesses transform their operations and prepare for a connected digital future.",
+        "feature1Title": "Innovation & Transformation",
+        "feature1Desc": "Turning business challenges into opportunities through technology.",
+        "feature2Title": "Connected & Intelligent Solutions",
+        "feature2Desc": "Connecting people, processes, data, and technology to enable smarter operations.",
+        "feature3Title": "Scalable & Secure Technology",
+        "feature3Desc": "Building reliable technology foundations to support growth and long-term success.",
+        "aboutUs": "About Us",
+        "darkSectionTitle": "Empowering Businesses Through Technology",
+        "darkSectionDesc1": "We help organisations navigate digital change and achieve sustainable growth with innovative, scalable, and secure technology solutions.",
+        "darkSectionDesc2": "We combine business expertise, technological capabilities, and industry insight to help organisations modernise operations, improve efficiency, connect people and processes, and create lasting business value.",
         "visionTitle": "Vision",
-        "visionDesc": "To become a leading provider of transformative technology solutions that help businesses and organizations navigate and thrive in a rapidly changing digital landscape. We aim to create a future where technology is a catalyst for innovation, growth, and positive change.",
+        "visionDesc": "To be a trusted technology partner for organisations seeking to transform, innovate, and thrive in a rapidly evolving digital world, where technology enables sustainable growth, operational excellence, and meaningful business outcomes.",
         "missionTitle": "Mission",
-        "missionDesc": "We prioritize innovation, investing in research and development to create new products, services, and platforms that address emerging market trends and customer needs. We also prioritize customer-centricity, putting the needs and preferences of customers at the center of its operations and decision-making.",
+        "missionDesc": "Deliver practical, innovative, and customer-focused technology solutions that address evolving business needs. We combine continuous innovation, technical expertise, and a deep understanding of our customers' challenges to deliver solutions that improve efficiency, enable growth, and create long-term value.",
+        "missionDesc2": "We prioritise innovation, investing in research and development to create new products, services, and platforms that address emerging market trends and customer needs. We also prioritise customers, putting their needs and preferences at the centre of our operations and decisions.",
         "smartSolutions": "Smart Solutions",
-        "smartSolutionsHeading": "Harnessing the Power of AI and IoT to Drive Innovation, Efficiency, and Growth Across Industries.",
-        "transformTitle": "Transforming the Future with AIOT",
-        "transformDesc": "Empowering businesses with intelligent, connected solutions for enhanced productivity. Delivering secure, scalable AIoT technologies that drive innovation and growth.",
-        "transformBoxTitle": "Transforming the Future with AIOT",
+        "smartSolutionsHeading": "Harnessing the power of intelligent technologies to drive innovation, efficiency, and sustainable growth across industries.",
+        "transformTitle": "Transforming the Future with Intelligent Technology",
+        "transformDesc": "Empowering businesses with intelligent, connected solutions that boost productivity and enable smarter operations. We deliver secure, scalable technologies that help you innovate, improve efficiency, and grow sustainably.",
+        "transformBoxTitle": "Transforming the Future with Intelligent Technology",
         "list1": "Intelligent Automation",
         "list2": "Real-Time Insights",
         "list3": "Scalable Growth",
+        "coreValuesTitle": "Core Values",
+        "coreValues": [
+            "Innovation",
+            "Customer Centricity",
+            "Excellence",
+            "Agility",
+            "Integrity & Trust",
+            "Collaboration"
+        ],
         "presenceTitle": "Our Presence",
         "presenceHighlight": "Presence",
         "presenceHeading": "Expanding Globally, Innovating Locally",
@@ -264,24 +281,26 @@
         "australia": "Australia",
         "lahore": "Lahore",
         "glasgow": "Glasgow",
-        "dubai": "Dubai",
-        "companyPakistan": "AIOT Consulting (Pvt) Ltd",
-        "companyUK": "AIOT Consulting LLC",
-        "companyUAE": "A I O T Information Technology Consultancy - L.L.C ",
+        "dubai": "Abu Dhabi, UAE",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
+        "companyUK": "AIOT Consulting L.L.C",
+        "companyUAE": "A I O Technology Consultancy - L.L.C ",
         "companyGeneral": "AIOT Consulting",
         "address": "Address:",
         "email": "Email:",
-        "phone": "Phone no:",
+        "phone": "Phone No:",
+        "pakistanAddress": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan",
         "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
         "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom"
     },
     "clientWall": {
-        "heroTitle": "client wall",
-        "heroHighlight": "client",
+        "heroTitle": "Client Wall",
+        "heroHighlight": "Client",
         "heroSubtitle": "Committed to a Greener Future: Our Client wall",
-        "sectionSubtitle": "AIOT IT Solutions: Empowering Your Business with Seamless IT Outsourcing",
-        "sectionTitle": "Efficiency, Innovation, and Expertise Tailored to Your Needs",
-        "sectionDesc": "At AIOT IT Solutions, we specialize in providing reliable IT outsourcing services that drive operational excellence and cost-efficiency. Our team of experts ensures your business benefits from cutting-edge technologies and innovative solutions, all while reducing overhead and enhancing productivity. From cloud integration to cybersecurity, we bring specialized knowledge to help you navigate the digital landscape, so you can focus on what matters most your growth and success.",
+        "sectionSubtitle": "Empowering Your Business Through Technology",
+        "sectionTitle": "Expertise, Innovation, and Technology Tailored to Your Needs",
+        "sectionDesc": "We help organisations solve complex business challenges with practical, innovative, and scalable technology solutions. We specialise in technology consulting, digital transformation, enterprise solutions, cloud, cybersecurity, data, AI, and managed services, helping businesses improve efficiency, strengthen operations, and achieve sustainable growth.",
+        "sectionDesc2": "From strategy and implementation to ongoing technology management, we work closely with our customers to deliver secure, reliable, and business-focused solutions. Our goal is simple: to help organisations operate smarter, adapt faster, and stay ahead in an evolving digital world.",
         "clientsTitle": "Our Clients",
         "clientsHighlight": "Clients",
         "clientsDesc": "Trusted by Leading Businesses for Innovative IT Solutions and Unmatched Expertise."
@@ -291,12 +310,12 @@
         "heroHighlight": "Contact",
         "heroSubtitle": "Get in Touch with Our Team",
         "introTitle": "Let's Connect",
-        "introHeading": "We'd Love to Hear From You",
-        "introDesc": "Whether you have a question about our services, need technical support, or want to discuss a potential project, our team is ready to assist you. Reach out to us through any of the channels below or fill out the contact form.",
+        "introHeading": "We'd Love to Hear from You",
+        "introDesc": "Whether you have a question about our services, need technology guidance, need support, or want to discuss a potential project, our team is ready to help. Reach out to us via any of the channels below or fill in the contact form, and we'll be happy to explore how we can support your business.",
         "phoneTitle": "Phone",
         "emailTitle": "Email",
         "hoursTitle": "Business Hours",
-        "hours": "Mon – Fri / 10:00 AM – 7:00 PM",
+        "hours": "Mon – Fri / 09:00 AM – 6:00 PM",
         "formTitle": "Send Us a Message",
         "nameLabel": "Full Name *",
         "namePlaceholder": "Enter your full name",
@@ -313,14 +332,155 @@
         "pakistanOffice": "Pakistan Office",
         "ukOffice": "UK Office",
         "uaeOffice": "UAE Office",
-        "companyPakistan": "AIOT Consulting (Private) Limited",
+        "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUAE": "A I O Information Technology",
-        "companyUK": "AIOT Consulting LLC",
-        "pakistanAddress": "15/1C, GECHS, PHASE III, PECO ROAD, LAHORE 54100, PUNJAB, PAKISTAN",
+        "companyUK": "AIOT Consulting L.L.C",
+        "pakistanAddress": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan",
         "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom",
         "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
         "mapView": "Map View",
         "mapCity": "Lahore, Pakistan"
+    },
+    "newsPage": {
+        "eyebrow": "Resources",
+        "title": "News",
+        "subtitle": "Company updates, product releases, and milestones shaping the future of AIOT.",
+        "sectionLabel": "Latest Updates",
+        "sectionTitle": "Stay informed with AIOT news",
+        "sectionDesc": "Follow announcements, launches, and partnership stories that reflect how we help organisations innovate with confidence.",
+        "cta": "Talk to our team",
+        "items": [
+            {
+                "tag": "Announcement",
+                "date": "Sep 2026",
+                "title": "AIOT expands regional presence across Asia and Europe",
+                "excerpt": "New delivery hubs and partner programmes strengthen how we support clients through digital transformation.",
+                "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
+                "featured": true
+            },
+            {
+                "tag": "Product",
+                "date": "Aug 2026",
+                "title": "Intelligent automation updates across our enterprise suite",
+                "excerpt": "Fresh capabilities that help teams streamline operations and act on real-time insights.",
+                "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Partnership",
+                "date": "Jul 2026",
+                "title": "Strategic partnerships accelerate cloud and ERP delivery",
+                "excerpt": "Deeper collaboration with leading platforms to bring scalable solutions to market faster.",
+                "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Company",
+                "date": "Jun 2026",
+                "title": "AIOT recognised for customer-focused technology consulting",
+                "excerpt": "A milestone that reflects our commitment to practical innovation and lasting business value.",
+                "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
+            }
+        ]
+    },
+    "blogsPage": {
+        "eyebrow": "Resources",
+        "title": "Blogs",
+        "subtitle": "Insights, trends, and expert perspectives on technology and business innovation.",
+        "sectionLabel": "From the Blog",
+        "sectionTitle": "Ideas that help you move forward",
+        "sectionDesc": "Explore practical articles on digital transformation, intelligent technology, and building resilient, growth-ready organisations.",
+        "readMore": "Read article",
+        "ctaTitle": "Want tailored guidance for your business?",
+        "ctaDesc": "Our consultants help you turn ideas into secure, scalable technology programmes that deliver measurable outcomes.",
+        "cta": "Get in touch",
+        "posts": [
+            {
+                "category": "Digital Transformation",
+                "readTime": "6 min read",
+                "title": "How intelligent systems turn complexity into clarity",
+                "excerpt": "Practical ways to connect people, processes, and platforms so decisions move faster across the business.",
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cloud & ERP",
+                "readTime": "5 min read",
+                "title": "Building scalable foundations for growth",
+                "excerpt": "Why secure, adaptable technology architecture is the difference between short-term fixes and long-term value.",
+                "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "AI & Automation",
+                "readTime": "7 min read",
+                "title": "From insight to action with smarter operations",
+                "excerpt": "Explore how automation and analytics help teams improve efficiency without losing the human context.",
+                "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cybersecurity",
+                "readTime": "4 min read",
+                "title": "Security that supports innovation, not slows it",
+                "excerpt": "A customer-first view of protecting systems while keeping delivery agile and business outcomes clear.",
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Leadership",
+                "readTime": "5 min read",
+                "title": "Leading change in a connected digital world",
+                "excerpt": "Guidance for organisations navigating transformation with confidence, clarity, and measurable progress.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Industry Trends",
+                "readTime": "6 min read",
+                "title": "What emerging technology means for tomorrow’s enterprises",
+                "excerpt": "Trends worth watching — and how to adopt them with a practical, outcome-driven roadmap.",
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
+            }
+        ]
+    },
+    "insightsPage": {
+        "eyebrow": "Resources",
+        "title": "Innovate with Insights",
+        "subtitle": "Thought leadership and practical strategies to help your organisation transform, innovate, and thrive.",
+        "introLabel": "Thought Leadership",
+        "introTitle": "Turn emerging trends into lasting advantage",
+        "introDesc1": "Innovate with Insights brings together strategy, industry perspective, and technology expertise to help leaders navigate change with clarity.",
+        "introDesc2": "From digital transformation and intelligent automation to secure, scalable platforms — we share frameworks that move organisations from ambition to execution.",
+        "quote": "Technology creates the most value when it is practical, secure, and designed around real customer needs.",
+        "cta": "Discuss your roadmap",
+        "pillar1Title": "Strategy with clarity",
+        "pillar1Desc": "Define where technology creates the most value and build a roadmap your teams can execute with confidence.",
+        "pillar2Title": "Connected capabilities",
+        "pillar2Desc": "Align people, processes, data, and platforms so operations become smarter, faster, and more resilient.",
+        "pillar3Title": "Measurable outcomes",
+        "pillar3Desc": "Focus on efficiency, growth, and customer impact — not technology for its own sake.",
+        "frameworkLabel": "Insight Framework",
+        "frameworkTitle": "A practical path from idea to impact",
+        "frameworkDesc": "Use this simple lens to prioritise initiatives, reduce risk, and keep transformation focused on sustainable growth.",
+        "insights": [
+            {
+                "step": "01",
+                "title": "Start with the business challenge",
+                "desc": "Frame transformation around outcomes — productivity, experience, resilience — then select the right technology path."
+            },
+            {
+                "step": "02",
+                "title": "Design for scale and security",
+                "desc": "Build foundations that support growth, protect critical systems, and adapt as markets and customer needs evolve."
+            },
+            {
+                "step": "03",
+                "title": "Activate insight across the organisation",
+                "desc": "Turn data and intelligent automation into everyday decision support for leaders and frontline teams."
+            },
+            {
+                "step": "04",
+                "title": "Sustain momentum with partners",
+                "desc": "Combine continuous innovation with customer-centric delivery so progress compounds over time."
+            }
+        ],
+        "bannerTitle": "Ready to innovate with purpose?",
+        "bannerDesc": "Partner with AIOT to translate insights into secure, scalable solutions that improve efficiency and create long-term value.",
+        "bannerCta": "Start a conversation"
     },
     "footer": {
         "newsletterTitle": "GET UPDATES",
@@ -335,7 +495,7 @@
         "contact": "Contact Us",
         "solutions": "Solutions",
         "allInOneSuit": "All In One Suit",
-        "sapUI": "SAP Business One User Interface",
+        "sapUI": "BridgeHub User Interface",
         "hrSystem": "HR Management System",
         "hireLawyer": "Hire Lawyer Online",
         "moreSolutions": "More Solutions",
@@ -344,9 +504,12 @@
         "connector": "Connector",
         "hcm": "HCM",
         "language": "Language",
+        "followUs": "Follow Us",
         "rights": "All rights reserved.",
         "letsTalk": "Let's talk",
-        "privacyPolicy": "Privacy Policy"
+        "privacyPolicy": "Privacy Policy",
+        "termsAndConditions": "Terms and Conditions",
+        "termsOfService": "Terms of Service"
     },
     "privacyPolicy": {
         "eyebrow": "Legal",
