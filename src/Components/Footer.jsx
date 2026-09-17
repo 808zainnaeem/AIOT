@@ -14,12 +14,12 @@ import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/product
 import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 export default function FooterSection() {
-    const { language, setLanguage, translations } = useContext(LanguageContext);
+    const { language, setLanguage, translations, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
-    const footerTrans = translations.footer || {};
-    const navbarTrans = translations.navbar || {};
-    const dropdownTrans = translations.dropdown || {};
-    const whatWeDoTrans = translations.whatWeDoSection || {};
+    const footerTrans = localePack?.footer || translations.footer || {};
+    const navbarTrans = localePack?.navbar || translations.navbar || {};
+    const dropdownTrans = localePack?.dropdown || translations.dropdown || {};
+    const whatWeDoTrans = localePack?.whatWeDoSection || translations.whatWeDoSection || {};
 
     const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
@@ -49,12 +49,12 @@ export default function FooterSection() {
         },
         {
             label: dropdownTrans.whatWeDo?.implementation || whatWeDoTrans.implementation || 'Implementation',
-            link: '/technology-driven',
+            link: '/implementation',
             icon: Layers,
         },
         {
             label: dropdownTrans.whatWeDo?.managedServices || whatWeDoTrans.managedServices || 'Managed Services',
-            link: '/outsoursing',
+            link: '/managed-services',
             icon: Headset,
         },
     ];
@@ -144,7 +144,7 @@ export default function FooterSection() {
                         </div>
                     </div>
 
-                    {/* Quick Links — navbar menu */}
+                    {/* Quick Links navbar menu */}
                     <div className="lg:col-span-2">
                         <ColumnTitle>{footerTrans.quickLinks || 'Quick Links'}</ColumnTitle>
                         <ul className="space-y-3">
@@ -159,7 +159,7 @@ export default function FooterSection() {
                         </ul>
                     </div>
 
-                    {/* What We Do — from navbar */}
+                    {/* What We Do from navbar */}
                     <div className="lg:col-span-2">
                         <ColumnTitle>{navbarTrans.menu?.whatWeDo || 'What We Do'}</ColumnTitle>
                         <ul className="space-y-3.5 mb-6">
@@ -268,19 +268,22 @@ export default function FooterSection() {
             {/* Bottom bar */}
             <div className="relative border-t" style={{ borderColor: `${colors.logo}18` }}>
                 <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-sm text-gray-500 text-center md:text-left">
-                        Copyright © {new Date().getFullYear()}{' '}
-                        <span className="font-semibold text-gray-800">AIOT</span>. {footerTrans.rights || 'All rights reserved.'}
+                    <p className="text-sm text-gray-500 text-center md:text-start order-2 md:order-1" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+                        {(footerTrans.copyright || `Copyright © {year} AIOT. ${footerTrans.rights || 'All rights reserved.'}`).replace(
+                            '{year}',
+                            String(new Date().getFullYear())
+                        )}
                     </p>
-                    <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+                    <div className="flex flex-wrap items-center justify-center gap-4 text-sm order-1 md:order-2">
                         <button
                             type="button"
-                            onClick={() => handleNavClick('/privacy-policy')}
-                            className="text-gray-500 hover:text-gray-800 transition"
+                            onClick={() => handleNavClick('/contact')}
+                            className="font-medium inline-flex items-center gap-1.5 transition hover:opacity-80"
+                            style={{ color: colors.logo }}
                         >
-                            {footerTrans.privacyPolicy || 'Privacy Policy'}
+                            {footerTrans.contact || 'Contact Us'}
+                            <ArrowRight size={14} className={language === 'ar' ? 'rotate-180' : ''} />
                         </button>
-                       
                         <span className="text-gray-300">|</span>
                         <button
                             type="button"
@@ -292,12 +295,10 @@ export default function FooterSection() {
                         <span className="text-gray-300">|</span>
                         <button
                             type="button"
-                            onClick={() => handleNavClick('/contact')}
-                            className="font-medium inline-flex items-center gap-1.5 transition hover:opacity-80"
-                            style={{ color: colors.logo }}
+                            onClick={() => handleNavClick('/privacy-policy')}
+                            className="text-gray-500 hover:text-gray-800 transition"
                         >
-                            {footerTrans.contact || 'Contact Us'}
-                            <ArrowRight size={14} />
+                            {footerTrans.privacyPolicy || 'Privacy Policy'}
                         </button>
                     </div>
                 </div>

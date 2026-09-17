@@ -14,7 +14,7 @@ import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 
 export default function InnovateWithInsights() {
-    const { translations, language } = useContext(LanguageContext);
+    const { translations, language, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
     const t = translations.insightsPage || {};
     const isRTL = language === 'ar';
@@ -53,32 +53,36 @@ export default function InnovateWithInsights() {
             title: t.pillar3Title || 'Measurable outcomes',
             desc:
                 t.pillar3Desc ||
-                'Focus on efficiency, growth, and customer impact — not technology for its own sake.',
+                'Focus on efficiency, growth, and customer impact not technology for its own sake.',
         },
     ];
 
-    const insights = t.insights || [
-        {
-            step: '01',
-            title: 'Start with the business challenge',
-            desc: 'Frame transformation around outcomes — productivity, experience, resilience — then select the right technology path.',
-        },
-        {
-            step: '02',
-            title: 'Design for scale and security',
-            desc: 'Build foundations that support growth, protect critical systems, and adapt as markets and customer needs evolve.',
-        },
-        {
-            step: '03',
-            title: 'Activate insight across the organisation',
-            desc: 'Turn data and intelligent automation into everyday decision support for leaders and frontline teams.',
-        },
-        {
-            step: '04',
-            title: 'Sustain momentum with partners',
-            desc: 'Combine continuous innovation with customer-centric delivery so progress compounds over time.',
-        },
-    ];
+    const localInsights = localePack?.insightsPage?.insights;
+    const insights =
+        Array.isArray(localInsights) && localInsights.length > 0
+            ? localInsights
+            : t.insights || [
+                  {
+                      step: '01',
+                      title: 'Start with the business challenge',
+                      desc: 'Frame transformation around outcomes productivity, experience, resilience then select the right technology path.',
+                  },
+                  {
+                      step: '02',
+                      title: 'Design for scale and security',
+                      desc: 'Build foundations that support growth, protect critical systems, and adapt as markets and customer needs evolve.',
+                  },
+                  {
+                      step: '03',
+                      title: 'Activate insight across the organisation',
+                      desc: 'Turn data and intelligent automation into everyday decision support for leaders and frontline teams.',
+                  },
+                  {
+                      step: '04',
+                      title: 'Sustain momentum with partners',
+                      desc: 'Combine continuous innovation with customer-centric delivery so progress compounds over time.',
+                  },
+              ];
 
     return (
         <div className="bg-white" dir={isRTL ? 'rtl' : 'ltr'} key={language}>
@@ -94,10 +98,19 @@ export default function InnovateWithInsights() {
                         {t.eyebrow || 'Resources'}
                     </p>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 max-w-4xl leading-tight">
-                        <span style={{ color: colors.logo }}>
-                            {(t.title || 'Innovate with Insights').split(' ')[0]}
-                        </span>{' '}
-                        {(t.title || 'Innovate with Insights').split(' ').slice(1).join(' ')}
+                        {(() => {
+                            const full = t.title || 'Innovate with Insights';
+                            if (isRTL || !full.includes(' ')) {
+                                return <span style={{ color: colors.logo }}>{full}</span>;
+                            }
+                            const [first, ...rest] = full.split(' ');
+                            return (
+                                <>
+                                    <span style={{ color: colors.logo }}>{first}</span>
+                                    {rest.length ? ` ${rest.join(' ')}` : ''}
+                                </>
+                            );
+                        })()}
                     </h1>
                     <p className="text-lg text-white/85 max-w-2xl">
                         {t.subtitle ||
@@ -140,7 +153,7 @@ export default function InnovateWithInsights() {
                             </p>
                             <p className="text-gray-600 leading-relaxed mb-8">
                                 {t.introDesc2 ||
-                                    'From digital transformation and intelligent automation to secure, scalable platforms — we share frameworks that move organisations from ambition to execution.'}
+                                    'From digital transformation and intelligent automation to secure, scalable platforms we share frameworks that move organisations from ambition to execution.'}
                             </p>
                             <button
                                 type="button"

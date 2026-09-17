@@ -1,4 +1,4 @@
-/** Static Terms of Service content — A I O Technology Consultancy LLC */
+/** Static Terms of Service content A I O Technology Consultancy LLC */
 
 export const TERMS_META = {
   title: 'Terms of Service',

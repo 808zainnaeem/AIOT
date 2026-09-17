@@ -31,7 +31,7 @@ const UtilityTransformation = () => {
   const iconUrl = 'https://avatars.mds.yandex.net/i?id=ff295868b12482c6484cee594ba962101b530bfe-5226853-images-thumbs&n=13';
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: colors.background, color: colors.text }}>
+    <div className="min-h-screen" style={{ backgroundColor: colors.background, color: colors.text }} key={language}>
       {/* Banner */}
       <Banner
         upperText={t.bannerUpper}

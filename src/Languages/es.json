@@ -34,6 +34,8 @@
         "whatWeDo": {
             "technology": "Implementación",
             "technologyDesc": "AIOT IT Solutions impulsa la transformación digital",
+            "implementation": "Implementación",
+            "implementationDesc": "AIOT IT Solutions impulsa la transformación digital",
             "technologyDrivenInnovation": "Soluciones de innovación impulsadas por la tecnología",
             "nextGenTechnology": "Soluciones tecnológicas de nueva generación",
             "enterpriseSap": "Soluciones SAP empresariales",
@@ -43,8 +45,27 @@
             "consultingDesc": "Consultoría tecnológica estratégica para optimizar operaciones e impulsar el crecimiento.",
             "technologySolutionsProvider": "Proveedor de soluciones tecnológicas",
             "outSourcing": "Servicios gestionados",
-            "outSourcingDesc": "Outsourcing offshore fiable, con eficiencia de costes y talento experto.",
-            "strategicOffshore": "Soluciones offshore estratégicas"
+            "outSourcingDesc": "Servicios gestionados fiables con monitorización, mantenimiento y soporte integral.",
+            "managedServices": "Servicios gestionados",
+            "managedServicesDesc": "Servicios gestionados fiables con monitorización, mantenimiento y soporte integral.",
+            "strategicOffshore": "Soluciones offshore estratégicas",
+            "itStrategy": "Estrategia de TI y asesoría",
+            "digitalTransformation": "Consultoría de transformación digital",
+            "businessProcess": "Consultoría de procesos de negocio",
+            "techAssessment": "Evaluación tecnológica y roadmapping",
+            "cloudEnterpriseArch": "Arquitectura cloud y empresarial",
+            "enterpriseTech": "Soluciones tecnológicas empresariales",
+            "sapHana": "Soluciones SAP y HANA",
+            "microsoftProduct": "Soluciones Microsoft y de producto",
+            "dataSecurity": "Soluciones de datos y seguridad",
+            "appManagement": "Servicios de gestión de aplicaciones",
+            "cloudInfra": "Gestión de cloud e infraestructura",
+            "itSupport": "Soporte TI y service desk",
+            "cyberMonitoring": "Ciberseguridad y monitorización",
+            "backupDr": "Datos, backup y recuperación ante desastres",
+            "panelLabel": "Lo que entregamos",
+            "panelTitle": "Excelencia digital de extremo a extremo",
+            "panelDesc": "De la estrategia a la operación: consultoría, implementación y servicios gestionados con un solo partner."
         },
         "solutions": {
             "industries": "Sectores",
@@ -68,7 +89,10 @@
             "blogs": "Blogs",
             "blogsDesc": "Explore ideas, tendencias y opiniones expertas sobre tecnología e innovación.",
             "innovateWithInsights": "Innovar con insights",
-            "innovateWithInsightsDesc": "Descubra estrategias para potenciar su negocio con tendencias emergentes y liderazgo de pensamiento."
+            "innovateWithInsightsDesc": "Descubra estrategias para potenciar su negocio con tendencias emergentes y liderazgo de pensamiento.",
+            "panelLabel": "Centro de conocimiento",
+            "panelTitle": "Manténgase informado. Manténgase a la vanguardia.",
+            "panelDesc": "Noticias, blogs e insights para ayudarle a navegar las tendencias tecnológicas y la transformación empresarial."
         },
         "partners": {
             "sapDesc": "Colabore con nosotros para transformar cómo operan las pymes en el mundo con soluciones cloud de vanguardia.",
@@ -81,7 +105,25 @@
     "Hero": {
         "demoBannerTitle": "Su socio de soluciones <br> para el éxito empresarial",
         "whoWeAreDesc": "Combinamos la inteligencia artificial y el Internet de las cosas para impulsar la innovación y ofrecer soluciones tecnológicas preparadas para el futuro.",
-        "learnMore": "Más información"
+        "learnMore": "Más información",
+        "slides": [
+            {
+                "title": "Su socio de soluciones <br> para el éxito empresarial",
+                "description": "Combinamos la inteligencia artificial y el Internet de las cosas para impulsar la innovación y ofrecer soluciones tecnológicas preparadas para el futuro."
+            },
+            {
+                "title": "Sistemas conectados. <br> Decisiones más inteligentes.",
+                "description": "Unifique datos, nube y plataformas empresariales para que sus equipos avancen más rápido con claridad y confianza."
+            },
+            {
+                "title": "Construya. Proteja. <br> Escale con confianza.",
+                "description": "Desde la ciberseguridad hasta la infraestructura moderna, protegemos y potenciamos la tecnología que hace funcionar su negocio."
+            },
+            {
+                "title": "Productos que <br> impulsan su negocio.",
+                "description": "PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform y nuestra suite empresarial integral ayudan a las organizaciones a contratar, operar, vender y escalar dentro de un ecosistema conectado."
+            }
+        ]
     },
     "whatWeDoSection": {
         "title": "Qué hacemos",
@@ -300,7 +342,152 @@
         "attendee": "Attendee",
         "pos": "POS",
         "connector": "Connector",
-        "hcm": "HCM"
+        "hcm": "HCM",
+        "rights": "Todos los derechos reservados.",
+        "copyright": "Copyright © {year} AIOT. Todos los derechos reservados.",
+        "privacyPolicy": "Política de privacidad",
+        "termsAndConditions": "Términos y condiciones"
+    },
+    "newsPage": {
+        "eyebrow": "Recursos",
+        "title": "Noticias",
+        "subtitle": "Actualizaciones de la empresa, lanzamientos de producto e hitos que dan forma al futuro de AIOT.",
+        "sectionLabel": "Últimas novedades",
+        "sectionTitle": "Manténgase informado con las noticias de AIOT",
+        "sectionDesc": "Siga anuncios, lanzamientos e historias de partnership que reflejan cómo ayudamos a las organizaciones a innovar con confianza.",
+        "cta": "Habla con nuestro equipo",
+        "items": [
+            {
+                "tag": "Anuncio",
+                "date": "Sep 2026",
+                "title": "AIOT expande su presencia regional en Asia y Europa",
+                "excerpt": "Nuevos hubs de entrega y programas para partners refuerzan cómo apoyamos a los clientes en la transformación digital.",
+                "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
+                "featured": true
+            },
+            {
+                "tag": "Producto",
+                "date": "Ago 2026",
+                "title": "Actualizaciones de automatización inteligente en nuestra suite empresarial",
+                "excerpt": "Nuevas capacidades que ayudan a los equipos a simplificar operaciones y actuar con insights en tiempo real.",
+                "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Alianza",
+                "date": "Jul 2026",
+                "title": "Alianzas estratégicas aceleran la entrega cloud y ERP",
+                "excerpt": "Colaboración más profunda con plataformas líderes para llevar soluciones escalables al mercado más rápido.",
+                "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Empresa",
+                "date": "Jun 2026",
+                "title": "AIOT reconocida por consultoría tecnológica centrada en el cliente",
+                "excerpt": "Un hito que refleja nuestro compromiso con la innovación práctica y el valor empresarial duradero.",
+                "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
+            }
+        ]
+    },
+    "blogsPage": {
+        "eyebrow": "Recursos",
+        "title": "Blogs",
+        "subtitle": "Ideas, tendencias y perspectivas expertas sobre tecnología e innovación empresarial.",
+        "sectionLabel": "Del blog",
+        "sectionTitle": "Ideas que te ayudan a avanzar",
+        "sectionDesc": "Explore artículos prácticos sobre transformación digital, tecnología inteligente y organizaciones preparadas para crecer.",
+        "readMore": "Leer artículo",
+        "ctaTitle": "¿Quiere orientación a medida para su negocio?",
+        "ctaDesc": "Nuestros consultores le ayudan a convertir ideas en programas tecnológicos seguros y escalables con resultados medibles.",
+        "cta": "Contactar",
+        "posts": [
+            {
+                "category": "Transformación digital",
+                "readTime": "6 min de lectura",
+                "title": "Cómo los sistemas inteligentes convierten la complejidad en claridad",
+                "excerpt": "Formas prácticas de conectar personas, procesos y plataformas para que las decisiones avancen más rápido en toda la empresa.",
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cloud y ERP",
+                "readTime": "5 min de lectura",
+                "title": "Construir bases escalables para el crecimiento",
+                "excerpt": "Por qué una arquitectura tecnológica segura y adaptable marca la diferencia entre parches a corto plazo y valor a largo plazo.",
+                "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "IA y automatización",
+                "readTime": "7 min de lectura",
+                "title": "Del insight a la acción con operaciones más inteligentes",
+                "excerpt": "Explore cómo la automatización y el análisis ayudan a los equipos a mejorar la eficiencia sin perder el contexto humano.",
+                "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Ciberseguridad",
+                "readTime": "4 min de lectura",
+                "title": "Seguridad que impulsa la innovación, no la frena",
+                "excerpt": "Una visión centrada en el cliente para proteger sistemas manteniendo la entrega ágil y resultados de negocio claros.",
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Liderazgo",
+                "readTime": "5 min de lectura",
+                "title": "Liderar el cambio en un mundo digital conectado",
+                "excerpt": "Orientación para organizaciones que navegan la transformación con confianza, claridad y progreso medible.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Tendencias del sector",
+                "readTime": "6 min de lectura",
+                "title": "Qué significa la tecnología emergente para las empresas del mañana",
+                "excerpt": "Tendencias que vale la pena seguir y cómo adoptarlas con una hoja de ruta práctica orientada a resultados.",
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
+            }
+        ]
+    },
+    "insightsPage": {
+        "eyebrow": "Recursos",
+        "title": "Innovar con insights",
+        "subtitle": "Liderazgo de pensamiento y estrategias prácticas para transformar, innovar y prosperar.",
+        "introLabel": "Liderazgo de pensamiento",
+        "introTitle": "Convierta las tendencias emergentes en ventaja duradera",
+        "introDesc1": "Innovar con insights reúne estrategia, perspectiva sectorial y experiencia tecnológica para navegar el cambio con claridad.",
+        "introDesc2": "Desde la transformación digital y la automatización inteligente hasta plataformas seguras y escalables compartimos marcos que pasan de la ambición a la ejecución.",
+        "quote": "La tecnología crea más valor cuando es práctica, segura y diseñada en torno a necesidades reales del cliente.",
+        "cta": "Comente su hoja de ruta",
+        "pillar1Title": "Estrategia con claridad",
+        "pillar1Desc": "Defina dónde la tecnología aporta más valor y construya una hoja de ruta que sus equipos puedan ejecutar con confianza.",
+        "pillar2Title": "Capacidades conectadas",
+        "pillar2Desc": "Alinee personas, procesos, datos y plataformas para operaciones más inteligentes, rápidas y resilientes.",
+        "pillar3Title": "Resultados medibles",
+        "pillar3Desc": "Céntrese en eficiencia, crecimiento e impacto en el cliente no en tecnología por sí misma.",
+        "frameworkLabel": "Marco de insights",
+        "frameworkTitle": "Un camino práctico de la idea al impacto",
+        "frameworkDesc": "Use esta lente sencilla para priorizar iniciativas, reducir riesgo y mantener la transformación centrada en el crecimiento sostenible.",
+        "insights": [
+            {
+                "step": "01",
+                "title": "Empiece por el reto de negocio",
+                "desc": "Enmarque la transformación en torno a resultados productividad, experiencia, resiliencia y elija la vía tecnológica adecuada."
+            },
+            {
+                "step": "02",
+                "title": "Diseñe para escala y seguridad",
+                "desc": "Construya bases que soporten el crecimiento, protejan sistemas críticos y se adapten a mercados y necesidades de clientes en evolución."
+            },
+            {
+                "step": "03",
+                "title": "Active el insight en toda la organización",
+                "desc": "Convierta datos y automatización inteligente en apoyo diario a la decisión para líderes y equipos de primera línea."
+            },
+            {
+                "step": "04",
+                "title": "Mantenga el impulso con partners",
+                "desc": "Combine innovación continua con entrega centrada en el cliente para que el progreso se acumule con el tiempo."
+            }
+        ],
+        "bannerTitle": "¿Listo para innovar con propósito?",
+        "bannerDesc": "Colabore con AIOT para traducir insights en soluciones seguras y escalables que mejoran la eficiencia y crean valor a largo plazo.",
+        "bannerCta": "Iniciar una conversación"
     },
     "banner": {
         "upperText": "Tecnología",
@@ -415,41 +602,255 @@
         ]
     },
     "consulting": {
-        "bannerMain": "Consultoría con AIOT",
-        "bannerSub": "Libere agilidad, abrace la innovación: AIOT, su socio en la transformación",
+        "heroHighlight": "Consultoría",
+        "heroSubtitle": "Libere agilidad, abrace la innovación: AIOT, su socio en la transformación",
+        "eyebrow": "Consultoría",
+        "heroTitle": "Estrategia que convierte la tecnología en ventaja",
+        "heroDesc": "AIOT ayuda a los líderes a definir el rumbo, modernizar operaciones y diseñar plataformas escalables desde la asesoría hasta la ejecución.",
+        "heroCta": "Hablar con un asesor",
+        "heroSecondary": "Explorar capacidades",
         "expertiseLabel": "Nuestra experiencia",
-        "introTitle": "Consultoría que genera resultados",
-        "introDesc": "Transforme su negocio con nuestras soluciones de consultoría. Combinamos visión estratégica, experiencia sectorial y tecnología innovadora para un crecimiento sostenible y ventaja competitiva.",
-        "learnMore": "Más información",
+        "introTitle": "Consultoría orientada a resultados medibles",
+        "introDesc": "Combinamos visión estratégica, profundidad sectorial y experiencia tecnológica práctica para ayudarle a avanzar más rápido, reducir riesgos y crear ventaja competitiva duradera.",
+        "capabilitiesLabel": "Capacidades",
+        "approachLabel": "Cómo trabajamos",
+        "approachTitle": "Un camino claro del insight al impacto",
+        "approachDesc": "Cada proyecto sigue un método disciplinado para que la estrategia se convierta en entrega, no en una presentación.",
+        "learnMore": "Hablar de este servicio",
+        "ctaTitle": "¿Listo para dar forma a su próximo paso?",
+        "ctaDesc": "Reserve una consulta y salga con claridad sobre prioridades, arquitectura y una hoja de ruta práctica.",
+        "ctaButton": "Agendar una consulta",
         "services": [
             {
-                "title": "Consultoría de negocio",
-                "heading": "Transformación y desarrollo del sector público",
-                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-                "content": "Con amplia experiencia en consultoría del sector público, AIOT ofrece estrategias a medida para una gobernanza inclusiva, una prestación de servicios eficiente y el crecimiento económico."
+                "title": "Estrategia TI y asesoría",
+                "shortTitle": "Estrategia TI y asesoría",
+                "heading": "Alinee la tecnología con la ambición del negocio",
+                "content": "Ayudamos a los ejecutivos a definir una agenda tecnológica clara prioridades de inversión, modelos operativos y gobernanza para que TI sea un motor de crecimiento y no un centro de costes.",
+                "points": [
+                    "Visión TI empresarial y modelo operativo",
+                    "Priorización de inversiones y casos de valor",
+                    "Gobernanza, riesgo y estrategia de proveedores"
+                ]
             },
             {
-                "title": "Transformación digital",
-                "heading": "Soluciones integrales de capital humano",
-                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
-                "content": "AIOT impulsa el compromiso de los empleados, el desarrollo del talento y la cultura organizacional. Desde liderazgo hasta planes de sucesión, nuestras soluciones de capital humano fomentan el alto rendimiento y el éxito a largo plazo."
+                "title": "Consultoría de transformación digital",
+                "shortTitle": "Transformación digital",
+                "heading": "Reinvente cómo trabaja su organización",
+                "content": "Desde los recorridos del cliente hasta las plataformas de back-office, diseñamos programas de transformación que conectan personas, procesos y tecnología con adopción desde el primer día.",
+                "points": [
+                    "Hoja de ruta de transformación y diseño del cambio",
+                    "Rediseño de la experiencia de clientes y empleados",
+                    "Gobernanza del programa y seguimiento del valor"
+                ]
             },
             {
-                "title": "Sector público",
-                "heading": "Consultoría de sostenibilidad e impacto",
-                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
-                "content": "AIOT Sustainability Consulting se especializa en servicios ESG y ayuda a los clientes a alcanzar sus objetivos de sostenibilidad alineados con los ODS globales."
+                "title": "Consultoría de procesos de negocio",
+                "shortTitle": "Procesos de negocio",
+                "heading": "Simplifique flujos. Libere rendimiento.",
+                "content": "Diagnosticamos fricción en procesos críticos, rediseñamos flujos de extremo a extremo e introducimos automatización donde crea capacidad real no complejidad.",
+                "points": [
+                    "Descubrimiento de procesos y evaluación de madurez",
+                    "Diseño del modelo operativo objetivo",
+                    "Automatización y mejora continua"
+                ]
+            },
+            {
+                "title": "Evaluación tecnológica y hoja de ruta",
+                "shortTitle": "Evaluación tecnológica",
+                "heading": "Sepa dónde está. Planifique hacia dónde va.",
+                "content": "Evaluamos aplicaciones, infraestructura, datos y postura de seguridad, y traducimos los hallazgos en una hoja de ruta secuenciada que sus equipos pueden ejecutar con confianza.",
+                "points": [
+                    "Revisiones de salud de aplicaciones e infraestructura",
+                    "Análisis de brechas frente a referencias del sector",
+                    "Hoja de ruta por fases con visión de coste y riesgo"
+                ]
+            },
+            {
+                "title": "Cloud y arquitectura empresarial",
+                "shortTitle": "Cloud y arquitectura",
+                "heading": "Arquitecte para escala, resiliencia y velocidad",
+                "content": "Diseñamos arquitecturas cloud y empresariales seguras por defecto, conscientes del coste y preparadas para IA, integraciones y crecimiento multicloud.",
+                "points": [
+                    "Arquitecturas de referencia y landing zones",
+                    "Planos de integración, datos y plataforma",
+                    "Patrones de seguridad, FinOps y fiabilidad"
+                ]
             }
         ],
-        "stats": {
-            "projects": "Más de 500 proyectos entregados",
-            "consultants": "Más de 50 consultores expertos",
-            "satisfaction": "98% de satisfacción del cliente",
-            "industries": "Más de 25 sectores atendidos"
-        },
-        "ctaTitle": "¿Listo para transformar su negocio?",
-        "ctaDesc": "Hablemos de cómo nuestra consultoría puede ayudarle a alcanzar sus objetivos",
-        "ctaButton": "Programar una consulta"
+        "processSteps": [
+            { "title": "Descubrir", "desc": "Comprender objetivos, restricciones y estado actual" },
+            { "title": "Definir", "desc": "Formar estrategia, prioridades y métricas de éxito" },
+            { "title": "Diseñar", "desc": "Arquitectar soluciones y una hoja de ruta por fases" },
+            { "title": "Entregar", "desc": "Guiar la ejecución y medir resultados" }
+        ],
+        "statsList": [
+            { "value": "500", "suffix": "+", "label": "Proyectos entregados" },
+            { "value": "50", "suffix": "+", "label": "Consultores expertos" },
+            { "value": "98", "suffix": "%", "label": "Satisfacción del cliente" },
+            { "value": "25", "suffix": "+", "label": "Sectores atendidos" }
+        ]
+    },
+    "implementation": {
+        "heroHighlight": "Implementación",
+        "heroSubtitle": "Del blueprint al go-live soluciones empresariales entregadas con precisión",
+        "expertiseLabel": "Qué implementamos",
+        "introTitle": "Implementación que convierte la estrategia en sistemas en funcionamiento",
+        "introDesc": "AIOT diseña, configura y despliega plataformas empresariales adaptadas a cómo opera su negocio con plazos claros, gobernanza sólida y adopción en cada release.",
+        "capabilitiesLabel": "Capacidades",
+        "approachLabel": "Cómo entregamos",
+        "approachTitle": "Un camino probado del diseño al go-live",
+        "approachDesc": "Combinamos profunda experiencia en producto con entrega disciplinada para que cada implementación llegue a tiempo, en alcance y lista para los usuarios.",
+        "learnMore": "Explorar esta solución",
+        "services": [
+            {
+                "title": "Soluciones de tecnología empresarial",
+                "shortTitle": "Tecnología empresarial",
+                "heading": "Construya la columna vertebral digital de su negocio",
+                "content": "Implementamos plataformas empresariales clave ERP, CRM, colaboración y aplicaciones a medida que conectan equipos, datos y procesos en un sistema operativo fiable.",
+                "points": [
+                    "Diseño de solución y talleres fit-gap",
+                    "Configuración, integración y migración de datos",
+                    "Habilitación de usuarios y soporte hypercare"
+                ]
+            },
+            {
+                "title": "Soluciones SAP y HANA",
+                "shortTitle": "SAP y HANA",
+                "heading": "Modernice finanzas y operaciones en SAP",
+                "content": "Desde S/4HANA y analítica HANA hasta despliegues modulares, le ayudamos a implementar SAP con procesos limpios, controles sólidos y una hoja de ruta que protege su inversión.",
+                "points": [
+                    "Implementaciones S/4HANA y SAP clásico",
+                    "Bases de analítica e informes HANA",
+                    "Rediseño de procesos alineado con mejores prácticas SAP"
+                ]
+            },
+            {
+                "title": "Soluciones Oracle NetSuite",
+                "shortTitle": "Oracle NetSuite",
+                "heading": "Gestione su negocio en un ERP cloud único",
+                "content": "Implementamos NetSuite para finanzas, inventario, CRM y operaciones adaptado a su sector con SuiteScripts, flujos de trabajo e integraciones que escalan con su crecimiento.",
+                "points": [
+                    "Configuración de NetSuite ERP, CRM y e-commerce",
+                    "Flujos personalizados, SuiteScripts y dashboards",
+                    "Preparación multi-subsidiaria y multimoneda"
+                ]
+            },
+            {
+                "title": "Soluciones Microsoft y productos",
+                "shortTitle": "Microsoft y productos",
+                "heading": "Impulse la productividad con Microsoft y productos AIOT",
+                "content": "Entregamos Microsoft 365, Dynamics, Azure, Power Platform y suites de productos AIOT para que sus equipos colaboren, automaticen e innoven en un stack de confianza.",
+                "points": [
+                    "Microsoft 365, Dynamics y Power Platform",
+                    "Bases de Azure cloud e identidad",
+                    "Despliegue e integración de productos AIOT"
+                ]
+            },
+            {
+                "title": "Modernización de utilities",
+                "shortTitle": "Modernización de utilities",
+                "heading": "Sistemas modernos para utilities modernas",
+                "content": "Ayudamos a utilities a modernizar facturación, experiencia de cliente, operaciones de campo y plataformas de red con implementaciones seguras y conformes para entornos regulados.",
+                "points": [
+                    "Plataformas CIS, facturación y experiencia de cliente",
+                    "Modernización de servicio de campo y operaciones",
+                    "Integraciones y flujos de datos listos para cumplimiento"
+                ]
+            },
+            {
+                "title": "Soluciones de datos y seguridad",
+                "shortTitle": "Datos y seguridad",
+                "heading": "Proteja los datos. Libere el insight.",
+                "content": "Implementamos plataformas de datos, analítica y controles de seguridad que mantienen la información fiable, accesible y protegida desde lakehouse hasta identidad y acceso.",
+                "points": [
+                    "Plataformas de datos, pipelines y analítica",
+                    "Bases de identidad, acceso y seguridad",
+                    "Controles de gobernanza, retención y cumplimiento"
+                ]
+            }
+        ],
+        "processSteps": [
+            { "title": "Evaluar", "desc": "Definir alcance, requisitos, riesgos y criterios de éxito" },
+            { "title": "Diseñar", "desc": "Blueprint de procesos, arquitectura e integraciones" },
+            { "title": "Construir", "desc": "Configurar, migrar, integrar y probar a fondo" },
+            { "title": "Lanzar", "desc": "Go-live con formación, hypercare y traspaso" }
+        ]
+    },
+    "managedServices": {
+        "heroHighlight": "Servicios",
+        "heroRest": "gestionados",
+        "heroSubtitle": "Operaciones, monitorización y soporte continuos que mantienen saludable su entorno digital",
+        "expertiseLabel": "Qué operamos",
+        "introTitle": "Servicios gestionados que protegen el rendimiento y liberan a sus equipos",
+        "introDesc": "AIOT asume las operaciones tecnológicas del día a día aplicaciones, cloud, seguridad y soporte para que su gente se centre en el crecimiento mientras mantenemos sistemas fiables, seguros y listos.",
+        "capabilitiesLabel": "Capacidades",
+        "approachLabel": "Cómo operamos",
+        "approachTitle": "Un modelo de operación basado en claridad y uptime",
+        "approachDesc": "SLA claros, monitorización proactiva y mejora continua para que los servicios gestionados se sientan una extensión de su equipo, no una caja negra.",
+        "learnMore": "Hablar de este servicio",
+        "services": [
+            {
+                "title": "Servicios de gestión de aplicaciones",
+                "shortTitle": "Gestión de aplicaciones",
+                "heading": "Mantenga aplicaciones estables, actuales y en mejora",
+                "content": "Gestionamos mejoras, incidentes, releases y rendimiento de sus aplicaciones críticas con control de cambios disciplinado y niveles de servicio medibles.",
+                "points": [
+                    "Soporte y mejoras de aplicaciones L2/L3",
+                    "Gestión de releases y control de cambios",
+                    "Ajuste de rendimiento y mejora continua"
+                ]
+            },
+            {
+                "title": "Gestión de cloud e infraestructura",
+                "shortTitle": "Cloud e infraestructura",
+                "heading": "Opere cloud e infraestructura con confianza",
+                "content": "Desde landing zones hasta operaciones del día 2, monitorizamos, parcheamos, optimizamos y gobernamos su cloud e infraestructura en coste, resiliencia y escala.",
+                "points": [
+                    "Monitorización e respuesta a incidentes 24×7",
+                    "Parches, capacidad y optimización de costes",
+                    "Operaciones multicloud e híbridas"
+                ]
+            },
+            {
+                "title": "Soporte TI y service desk",
+                "shortTitle": "Soporte TI y desk",
+                "heading": "Soporte ágil en el que sus usuarios pueden confiar",
+                "content": "Nuestro service desk resuelve tickets con rapidez, comunica con claridad y escala con contexto ofreciendo una experiencia coherente en canales y zonas horarias.",
+                "points": [
+                    "Service desk multicanal y SLA",
+                    "Soporte de endpoints, identidad y acceso",
+                    "Base de conocimiento y autoservicio"
+                ]
+            },
+            {
+                "title": "Ciberseguridad y monitorización",
+                "shortTitle": "Ciberseguridad",
+                "heading": "Detecte amenazas. Reduzca riesgo. Manténgase adelante.",
+                "content": "Monitorizamos continuamente la postura de seguridad, respondemos a alertas y endurecemos entornos para detectar vulnerabilidades pronto y contener incidentes rápido.",
+                "points": [
+                    "Monitorización tipo SOC y triaje de alertas",
+                    "Gestión de vulnerabilidades y endurecimiento",
+                    "Operaciones de seguridad de identidad, endpoints y cloud"
+                ]
+            },
+            {
+                "title": "Datos, backup y recuperación ante desastres",
+                "shortTitle": "Backup y DR",
+                "heading": "Proteja lo importante. Recupere cuando importa.",
+                "content": "Diseñamos y operamos programas de backup y DR con rutas de restauración probadas, objetivos RPO/RTO claros e informes en los que su dirección puede confiar.",
+                "points": [
+                    "Diseño de políticas de backup y validación continua",
+                    "Runbooks de DR y simulacros",
+                    "Informes RPO/RTO y evidencia de cumplimiento"
+                ]
+            }
+        ],
+        "processSteps": [
+            { "title": "Onboarding", "desc": "Mapear sistemas, SLA y líneas base operativas" },
+            { "title": "Estabilizar", "desc": "Reducir ruido, cerrar brechas y fijar métricas de salud" },
+            { "title": "Operar", "desc": "Monitorizar, soportar y mejorar cada día" },
+            { "title": "Optimizar", "desc": "Reducir riesgo, coste y carga operativa con el tiempo" }
+        ]
     },
     "outsourcing": {
         "bannerMain": "Outsourcing con AIOT",

@@ -432,7 +432,7 @@
                 "category": "Industry Trends",
                 "readTime": "6 min read",
                 "title": "What emerging technology means for tomorrow’s enterprises",
-                "excerpt": "Trends worth watching — and how to adopt them with a practical, outcome-driven roadmap.",
+                "excerpt": "Trends worth watching and how to adopt them with a practical, outcome-driven roadmap.",
                 "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
             }
         ]
@@ -444,7 +444,7 @@
         "introLabel": "Thought Leadership",
         "introTitle": "Turn emerging trends into lasting advantage",
         "introDesc1": "Innovate with Insights brings together strategy, industry perspective, and technology expertise to help leaders navigate change with clarity.",
-        "introDesc2": "From digital transformation and intelligent automation to secure, scalable platforms — we share frameworks that move organisations from ambition to execution.",
+        "introDesc2": "From digital transformation and intelligent automation to secure, scalable platforms we share frameworks that move organisations from ambition to execution.",
         "quote": "Technology creates the most value when it is practical, secure, and designed around real customer needs.",
         "cta": "Discuss your roadmap",
         "pillar1Title": "Strategy with clarity",
@@ -452,7 +452,7 @@
         "pillar2Title": "Connected capabilities",
         "pillar2Desc": "Align people, processes, data, and platforms so operations become smarter, faster, and more resilient.",
         "pillar3Title": "Measurable outcomes",
-        "pillar3Desc": "Focus on efficiency, growth, and customer impact — not technology for its own sake.",
+        "pillar3Desc": "Focus on efficiency, growth, and customer impact not technology for its own sake.",
         "frameworkLabel": "Insight Framework",
         "frameworkTitle": "A practical path from idea to impact",
         "frameworkDesc": "Use this simple lens to prioritise initiatives, reduce risk, and keep transformation focused on sustainable growth.",
@@ -460,7 +460,7 @@
             {
                 "step": "01",
                 "title": "Start with the business challenge",
-                "desc": "Frame transformation around outcomes — productivity, experience, resilience — then select the right technology path."
+                "desc": "Frame transformation around outcomes productivity, experience, resilience then select the right technology path."
             },
             {
                 "step": "02",
@@ -485,7 +485,7 @@
     "footer": {
         "newsletterTitle": "GET UPDATES",
         "newsletterHeading": "Stay ahead with AIOT insights",
-        "newsletterDesc": "Product updates, digital transformation tips, and partnership news — straight to your inbox.",
+        "newsletterDesc": "Product updates, digital transformation tips, and partnership news straight to your inbox.",
         "emailPlaceholder": "Enter your email...",
         "subscribe": "Subscribe",
         "description": "Reshaping your future with AI, IoT, and enterprise technology solutions that drive real business outcomes.",
@@ -506,6 +506,7 @@
         "language": "Language",
         "followUs": "Follow Us",
         "rights": "All rights reserved.",
+        "copyright": "Copyright © {year} AIOT. All rights reserved.",
         "letsTalk": "Let's talk",
         "privacyPolicy": "Privacy Policy",
         "termsAndConditions": "Terms and Conditions",
@@ -646,41 +647,255 @@
         ]
     },
     "consulting": {
-        "bannerMain": "Consulting with AIOT",
-        "bannerSub": "Unlock Agility, Embrace Innovation: AIOT, Your Partner in Transformation",
+        "heroHighlight": "Consulting",
+        "heroSubtitle": "Unlock Agility, Embrace Innovation: AIOT, Your Partner in Transformation",
+        "eyebrow": "Consulting",
+        "heroTitle": "Strategy that turns technology into advantage",
+        "heroDesc": "AIOT helps leaders define direction, modernize operations, and architect platforms that scale from advisory through execution.",
+        "heroCta": "Talk to an advisor",
+        "heroSecondary": "Explore capabilities",
         "expertiseLabel": "Our Expertise",
-        "introTitle": "Consulting Services That Drive Results",
-        "introDesc": "Transform your business with our comprehensive consulting solutions. We combine strategic insight, industry expertise, and innovative technology to help you achieve sustainable growth and competitive advantage.",
-        "learnMore": "Learn More",
+        "introTitle": "Consulting built for measurable outcomes",
+        "introDesc": "We combine strategic insight, industry depth, and practical technology expertise to help you move faster, reduce risk, and create lasting competitive advantage.",
+        "capabilitiesLabel": "Capabilities",
+        "approachLabel": "How We Work",
+        "approachTitle": "A clear path from insight to impact",
+        "approachDesc": "Every engagement follows a disciplined method so strategy becomes delivery, not a slide deck.",
+        "learnMore": "Discuss this service",
+        "ctaTitle": "Ready to shape your next move?",
+        "ctaDesc": "Book a consultation and leave with clarity on priorities, architecture, and a practical roadmap.",
+        "ctaButton": "Schedule a Consultation",
         "services": [
             {
-                "title": "Business Consulting",
-                "heading": "Public Sector Transformation and Development",
-                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-                "content": "With extensive experience in public sector consulting, AIOT offers customized strategies to promote inclusive governance, efficient service delivery, and economic growth. Together, let's create a future of sustainable progress."
+                "title": "IT Strategy & Advisory",
+                "shortTitle": "IT Strategy & Advisory",
+                "heading": "Align technology with business ambition",
+                "content": "We help executives set a clear technology agenda investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost center.",
+                "points": [
+                    "Enterprise IT vision & operating model",
+                    "Investment prioritization & value cases",
+                    "Governance, risk & vendor strategy"
+                ]
             },
             {
-                "title": "Digital Transformation",
-                "heading": "Comprehensive Human Capital Solutions",
-                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
-                "content": "AIOT specializes in boosting employee engagement, talent development, and organizational culture. From leadership development to succession planning, our Human Capital Solutions foster high performance and ensure long-term success."
+                "title": "Digital Transformation Consulting",
+                "shortTitle": "Digital Transformation",
+                "heading": "Reinvent how your organization works",
+                "content": "From customer journeys to back-office platforms, we design transformation programs that connect people, process, and technology with adoption built in from day one.",
+                "points": [
+                    "Transformation roadmap & change design",
+                    "Customer & employee experience redesign",
+                    "Program governance & value tracking"
+                ]
             },
             {
-                "title": "Public Sector",
-                "heading": "Sustainability and Impact Consulting",
-                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
-                "content": "AIOT Sustainability Consulting specializes in ESG-driven services, helping clients achieve their sustainability goals in alignment with global SDGs. Our solutions are designed to support clients in reaching their sustainability ambitions effectively."
+                "title": "Business Process Consulting",
+                "shortTitle": "Business Process",
+                "heading": "Simplify flows. Unlock performance.",
+                "content": "We diagnose friction across critical processes, redesign end-to-end workflows, and introduce automation where it creates real capacity not complexity.",
+                "points": [
+                    "Process discovery & maturity assessment",
+                    "Target operating model design",
+                    "Automation & continuous improvement"
+                ]
+            },
+            {
+                "title": "Technology Assessment & Roadmapping",
+                "shortTitle": "Tech Assessment",
+                "heading": "Know where you stand. Plan where you go.",
+                "content": "We evaluate applications, infrastructure, data, and security posture, then translate findings into a sequenced roadmap your teams can execute with confidence.",
+                "points": [
+                    "Application & infrastructure health checks",
+                    "Gap analysis vs. industry benchmarks",
+                    "Phased roadmap with cost & risk view"
+                ]
+            },
+            {
+                "title": "Cloud & Enterprise Architecture",
+                "shortTitle": "Cloud & Architecture",
+                "heading": "Architect for scale, resilience, and speed",
+                "content": "We design cloud and enterprise architectures that are secure by default, cost-aware, and ready for AI, integrations, and multi-cloud growth.",
+                "points": [
+                    "Reference architectures & landing zones",
+                    "Integration, data & platform blueprints",
+                    "Security, FinOps & reliability patterns"
+                ]
             }
         ],
-        "stats": {
-            "projects": "500+ Projects Delivered",
-            "consultants": "50+ Expert Consultants",
-            "satisfaction": "98% Client Satisfaction",
-            "industries": "25+ Industries Served"
-        },
-        "ctaTitle": "Ready to Transform Your Business?",
-        "ctaDesc": "Let's discuss how our consulting services can help you achieve your goals",
-        "ctaButton": "Schedule a Consultation"
+        "processSteps": [
+            { "title": "Discover", "desc": "Understand goals, constraints, and current state" },
+            { "title": "Define", "desc": "Shape strategy, priorities, and success metrics" },
+            { "title": "Design", "desc": "Architect solutions and a phased roadmap" },
+            { "title": "Deliver", "desc": "Guide execution and measure outcomes" }
+        ],
+        "statsList": [
+            { "value": "500", "suffix": "+", "label": "Projects delivered" },
+            { "value": "50", "suffix": "+", "label": "Expert consultants" },
+            { "value": "98", "suffix": "%", "label": "Client satisfaction" },
+            { "value": "25", "suffix": "+", "label": "Industries served" }
+        ]
+    },
+    "implementation": {
+        "heroHighlight": "Implementation",
+        "heroSubtitle": "From blueprint to go-live enterprise solutions delivered with precision",
+        "expertiseLabel": "What We Implement",
+        "introTitle": "Implementation that turns strategy into working systems",
+        "introDesc": "AIOT designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.",
+        "capabilitiesLabel": "Capabilities",
+        "approachLabel": "How We Deliver",
+        "approachTitle": "A proven path from design to go-live",
+        "approachDesc": "We combine deep product expertise with disciplined delivery so every implementation lands on time, on scope, and ready for users.",
+        "learnMore": "Explore this solution",
+        "services": [
+            {
+                "title": "Enterprise Technology Solutions",
+                "shortTitle": "Enterprise Tech",
+                "heading": "Build the digital backbone of your business",
+                "content": "We implement core enterprise platforms ERP, CRM, collaboration, and custom applications that connect teams, data, and processes into one reliable operating system.",
+                "points": [
+                    "Solution design & fit-gap workshops",
+                    "Configuration, integration & data migration",
+                    "User enablement & hypercare support"
+                ]
+            },
+            {
+                "title": "SAP & HANA Solutions",
+                "shortTitle": "SAP & HANA",
+                "heading": "Modernize finance and operations on SAP",
+                "content": "From S/4HANA and HANA analytics to module rollouts, we help you implement SAP with clean processes, strong controls, and a roadmap that protects your investment.",
+                "points": [
+                    "S/4HANA & classic SAP implementations",
+                    "HANA analytics & reporting foundations",
+                    "Process redesign aligned to SAP best practice"
+                ]
+            },
+            {
+                "title": "Oracle NetSuite Solutions",
+                "shortTitle": "Oracle NetSuite",
+                "heading": "Run your business on one cloud ERP",
+                "content": "We implement NetSuite for finance, inventory, CRM, and operations tailored to your industry with SuiteScripts, workflows, and integrations that scale as you grow.",
+                "points": [
+                    "NetSuite ERP, CRM & e-commerce setup",
+                    "Custom workflows, SuiteScripts & dashboards",
+                    "Multi-subsidiary & multi-currency readiness"
+                ]
+            },
+            {
+                "title": "Microsoft & Product Solutions",
+                "shortTitle": "Microsoft & Products",
+                "heading": "Power productivity with Microsoft and AIOT products",
+                "content": "We deliver Microsoft 365, Dynamics, Azure, Power Platform, and AIOT product suites so your teams collaborate, automate, and innovate on a trusted stack.",
+                "points": [
+                    "Microsoft 365, Dynamics & Power Platform",
+                    "Azure cloud & identity foundations",
+                    "AIOT product rollout & integration"
+                ]
+            },
+            {
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
+                "heading": "Modern systems for modern utilities",
+                "content": "We help utilities modernize billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.",
+                "points": [
+                    "CIS, billing & customer experience platforms",
+                    "Field service & operations modernization",
+                    "Compliance-ready integrations & data flows"
+                ]
+            },
+            {
+                "title": "Data & Security Solutions",
+                "shortTitle": "Data & Security",
+                "heading": "Protect data. Unlock insight.",
+                "content": "We implement data platforms, analytics, and security controls that keep information trustworthy, accessible, and protected from lakehouse foundations to identity and access.",
+                "points": [
+                    "Data platforms, pipelines & analytics",
+                    "Identity, access & security baselines",
+                    "Governance, retention & compliance controls"
+                ]
+            }
+        ],
+        "processSteps": [
+            { "title": "Assess", "desc": "Scope requirements, risks, and success criteria" },
+            { "title": "Design", "desc": "Blueprint processes, architecture, and integrations" },
+            { "title": "Build", "desc": "Configure, migrate, integrate, and test thoroughly" },
+            { "title": "Launch", "desc": "Go-live with training, hypercare, and handover" }
+        ]
+    },
+    "managedServices": {
+        "heroHighlight": "Managed",
+        "heroRest": "Services",
+        "heroSubtitle": "Always-on operations, monitoring, and support that keep your digital estate healthy",
+        "expertiseLabel": "What We Run",
+        "introTitle": "Managed services that protect performance and free your teams",
+        "introDesc": "AIOT takes ownership of day-to-day technology operations applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.",
+        "capabilitiesLabel": "Capabilities",
+        "approachLabel": "How We Operate",
+        "approachTitle": "A run model built for clarity and uptime",
+        "approachDesc": "Clear SLAs, proactive monitoring, and continuous improvement so managed services feel like an extension of your team, not a black box.",
+        "learnMore": "Discuss this service",
+        "services": [
+            {
+                "title": "Application Management Services",
+                "shortTitle": "Application Management",
+                "heading": "Keep applications stable, current, and improving",
+                "content": "We manage enhancements, incidents, releases, and performance for your business-critical applications with disciplined change control and measurable service levels.",
+                "points": [
+                    "L2/L3 application support & enhancements",
+                    "Release management & change control",
+                    "Performance tuning & continuous improvement"
+                ]
+            },
+            {
+                "title": "Cloud & Infrastructure Management",
+                "shortTitle": "Cloud & Infrastructure",
+                "heading": "Operate cloud and infrastructure with confidence",
+                "content": "From landing zones to day-2 operations, we monitor, patch, optimize, and govern your cloud and infrastructure estate for cost, resilience, and scale.",
+                "points": [
+                    "24×7 monitoring & incident response",
+                    "Patching, capacity & cost optimization",
+                    "Multi-cloud & hybrid operations"
+                ]
+            },
+            {
+                "title": "IT Support & Service Desk",
+                "shortTitle": "IT Support & Desk",
+                "heading": "Responsive support your users can trust",
+                "content": "Our service desk resolves tickets fast, communicates clearly, and escalates with context delivering a consistent experience across channels and time zones.",
+                "points": [
+                    "Multi-channel service desk & SLAs",
+                    "Endpoint, identity & access support",
+                    "Knowledge base & self-service enablement"
+                ]
+            },
+            {
+                "title": "Cybersecurity & Monitoring",
+                "shortTitle": "Cybersecurity",
+                "heading": "Detect threats. Reduce risk. Stay ahead.",
+                "content": "We continuously monitor security posture, respond to alerts, and harden environments so vulnerabilities are found early and incidents are contained quickly.",
+                "points": [
+                    "SOC-style monitoring & alert triage",
+                    "Vulnerability management & hardening",
+                    "Identity, endpoint & cloud security ops"
+                ]
+            },
+            {
+                "title": "Data, Backup & Disaster Recovery",
+                "shortTitle": "Backup & DR",
+                "heading": "Protect what matters. Recover when it counts.",
+                "content": "We design and run backup and disaster recovery programs with tested restore paths, clear RPO/RTO targets, and reporting your leadership can rely on.",
+                "points": [
+                    "Backup policy design & continuous validation",
+                    "Disaster recovery runbooks & drills",
+                    "RPO/RTO reporting & compliance evidence"
+                ]
+            }
+        ],
+        "processSteps": [
+            { "title": "Onboard", "desc": "Map systems, SLAs, and operating baselines" },
+            { "title": "Stabilize", "desc": "Fix noise, close gaps, and set health metrics" },
+            { "title": "Operate", "desc": "Monitor, support, and improve every day" },
+            { "title": "Optimize", "desc": "Reduce risk, cost, and toil over time" }
+        ]
     },
     "outsourcing": {
         "bannerMain": "Outsourcing with AIOT",

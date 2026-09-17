@@ -34,6 +34,8 @@
         "whatWeDo": {
             "technology": "Implementation",
             "technologyDesc": "AIOT IT Solutions driver digital transformation",
+            "implementation": "Implementation",
+            "implementationDesc": "AIOT IT Solutions driver digital transformation",
             "technologyDrivenInnovation": "Teknikdrivna innovationslösningar",
             "nextGenTechnology": "Next-gen-tekniklösningar",
             "enterpriseSap": "Enterprise SAP-lösningar",
@@ -43,8 +45,27 @@
             "consultingDesc": "Strategisk teknikrådgivning för att optimera verksamheten och driva tillväxt.",
             "technologySolutionsProvider": "Leverantör av tekniklösningar",
             "outSourcing": "Managed Services",
-            "outSourcingDesc": "Tillförlitlig offshore-outsourcing med kostnadseffektivitet och expertkompetens.",
-            "strategicOffshore": "Strategiska offshore-lösningar"
+            "outSourcingDesc": "Tillförlitliga managed services med övervakning, underhåll och end-to-end-stöd.",
+            "managedServices": "Managed Services",
+            "managedServicesDesc": "Tillförlitliga managed services med övervakning, underhåll och end-to-end-stöd.",
+            "strategicOffshore": "Strategiska offshore-lösningar",
+            "itStrategy": "IT-strategi och rådgivning",
+            "digitalTransformation": "Digital transformationsrådgivning",
+            "businessProcess": "Affärsprocessrådgivning",
+            "techAssessment": "Teknikbedömning och roadmapping",
+            "cloudEnterpriseArch": "Moln- och företagsarkitektur",
+            "enterpriseTech": "Enterprise-tekniklösningar",
+            "sapHana": "SAP- och HANA-lösningar",
+            "microsoftProduct": "Microsoft- och produktlösningar",
+            "dataSecurity": "Data- och säkerhetslösningar",
+            "appManagement": "Applikationshanteringstjänster",
+            "cloudInfra": "Moln- och infrastrukturhantering",
+            "itSupport": "IT-support och service desk",
+            "cyberMonitoring": "Cybersäkerhet och övervakning",
+            "backupDr": "Data, backup och disaster recovery",
+            "panelLabel": "Vad vi levererar",
+            "panelTitle": "Digital excellence från ände till ände",
+            "panelDesc": "Från strategi till drift: rådgivning, implementation och managed services under en partner."
         },
         "solutions": {
             "industries": "Branscher",
@@ -68,7 +89,10 @@
             "blogs": "Bloggar",
             "blogsDesc": "Utforska insikter, trender och expertåsikter om teknik och innovation.",
             "innovateWithInsights": "Innovatera med insikter",
-            "innovateWithInsightsDesc": "Upptäck strategier för att stärka er verksamhet genom nya trender och thought leadership."
+            "innovateWithInsightsDesc": "Upptäck strategier för att stärka er verksamhet genom nya trender och thought leadership.",
+            "panelLabel": "Kunskapscenter",
+            "panelTitle": "Håll dig informerad. Håll dig före.",
+            "panelDesc": "Nyheter, bloggar och insikter som hjälper dig navigera tekniktrender och affärstransformation."
         },
         "partners": {
             "sapDesc": "Samarbeta med oss för att transformera hur SME:er arbetar globalt med moderna molnlösningar.",
@@ -81,7 +105,25 @@
     "Hero": {
         "demoBannerTitle": "Er lösningspartner <br> för affärsframgång",
         "whoWeAreDesc": "Vi förenar artificiell intelligens och sakernas internet för att driva innovation och leverera framtidssäkrade tekniklösningar.",
-        "learnMore": "Läs mer"
+        "learnMore": "Läs mer",
+        "slides": [
+            {
+                "title": "Er lösningspartner <br> för affärsframgång",
+                "description": "Vi förenar artificiell intelligens och sakernas internet för att driva innovation och leverera framtidssäkrade tekniklösningar."
+            },
+            {
+                "title": "Uppkopplade system. <br> Smartare beslut.",
+                "description": "Förenkla data, moln och företagsplattformar så att era team kan röra sig snabbare med tydlighet och trygghet."
+            },
+            {
+                "title": "Bygg. Säkra. <br> Skala med självförtroende.",
+                "description": "Från cybersäkerhet till modern infrastruktur skyddar och driver vi tekniken som får er verksamhet att fungera."
+            },
+            {
+                "title": "Produkter som <br> driver er verksamhet.",
+                "description": "PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform och vår kompletta affärssvit hjälper organisationer att rekrytera, driva, sälja och skala inom ett sammanhängande ekosystem."
+            }
+        ]
     },
     "whatWeDoSection": {
         "title": "Vad vi gör",
@@ -300,7 +342,152 @@
         "attendee": "Attendee",
         "pos": "POS",
         "connector": "Connector",
-        "hcm": "HCM"
+        "hcm": "HCM",
+        "rights": "Alla rättigheter förbehållna.",
+        "copyright": "Copyright © {year} AIOT. Alla rättigheter förbehållna.",
+        "privacyPolicy": "Integritetspolicy",
+        "termsAndConditions": "Villkor"
+    },
+    "newsPage": {
+        "eyebrow": "Resurser",
+        "title": "Nyheter",
+        "subtitle": "Företagsuppdateringar, produktreleaser och milstolpar som formar AIOT:s framtid.",
+        "sectionLabel": "Senaste uppdateringar",
+        "sectionTitle": "Håll dig informerad med AIOT-nyheter",
+        "sectionDesc": "Följ tillkännagivanden, lanseringar och partnerskap som speglar hur vi hjälper organisationer att innovativa med trygghet.",
+        "cta": "Prata med vårt team",
+        "items": [
+            {
+                "tag": "Meddelande",
+                "date": "Sep 2026",
+                "title": "AIOT utökar regional närvaro i Asien och Europa",
+                "excerpt": "Nya leveransnav och partnerprogram stärker hur vi stödjer kunder genom digital transformation.",
+                "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
+                "featured": true
+            },
+            {
+                "tag": "Produkt",
+                "date": "Aug 2026",
+                "title": "Uppdateringar av intelligent automation i vår enterprise-svit",
+                "excerpt": "Nya funktioner hjälper team att effektivisera drift och agera på realtidsinsikter.",
+                "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Partnerskap",
+                "date": "Jul 2026",
+                "title": "Strategiska partnerskap accelererar moln- och ERP-leverans",
+                "excerpt": "Djupare samarbete med ledande plattformar för att snabbare få skalbara lösningar till marknaden.",
+                "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Företag",
+                "date": "Jun 2026",
+                "title": "AIOT erkänd för kundfokuserad teknikkonsultation",
+                "excerpt": "En milstolpe som speglar vårt engagemang för praktisk innovation och långsiktigt affärsvärde.",
+                "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
+            }
+        ]
+    },
+    "blogsPage": {
+        "eyebrow": "Resurser",
+        "title": "Bloggar",
+        "subtitle": "Insikter, trender och expertperspektiv om teknik och affärsinnovation.",
+        "sectionLabel": "Från bloggen",
+        "sectionTitle": "Idéer som hjälper dig framåt",
+        "sectionDesc": "Utforska praktiska artiklar om digital transformation, intelligent teknik och organisationer redo för tillväxt.",
+        "readMore": "Läs artikel",
+        "ctaTitle": "Vill du ha skräddarsydd vägledning för er verksamhet?",
+        "ctaDesc": "Våra konsulter hjälper er att omsätta idéer till säkra, skalbara teknikprogram med mätbara resultat.",
+        "cta": "Kontakta oss",
+        "posts": [
+            {
+                "category": "Digital transformation",
+                "readTime": "6 min läsning",
+                "title": "Hur intelligenta system gör komplexitet till tydlighet",
+                "excerpt": "Praktiska sätt att koppla människor, processer och plattformar så beslut går snabbare.",
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Moln & ERP",
+                "readTime": "5 min läsning",
+                "title": "Bygg skalbara grunder för tillväxt",
+                "excerpt": "Varför säker, anpassningsbar arkitektur skiljer kortsiktiga fixar från långsiktigt värde.",
+                "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "AI & automation",
+                "readTime": "7 min läsning",
+                "title": "Från insikt till handling med smartare drift",
+                "excerpt": "Hur automation och analys förbättrar effektiviteten utan att tappa det mänskliga sammanhanget.",
+                "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cybersäkerhet",
+                "readTime": "4 min läsning",
+                "title": "Säkerhet som stödjer innovation",
+                "excerpt": "Ett kundfokuserat perspektiv på att skydda system med agil leverans och tydliga affärsresultat.",
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Ledarskap",
+                "readTime": "5 min läsning",
+                "title": "Leda förändring i en uppkopplad digital värld",
+                "excerpt": "Vägledning för organisationer som navigerar transformation med trygghet, tydlighet och mätbara framsteg.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Branschtrender",
+                "readTime": "6 min läsning",
+                "title": "Vad framväxande teknik betyder för morgondagens företag",
+                "excerpt": "Trender att följa och hur du adopterar dem med en praktisk, resultatorienterad roadmap.",
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
+            }
+        ]
+    },
+    "insightsPage": {
+        "eyebrow": "Resurser",
+        "title": "Innovate with Insights",
+        "subtitle": "Thought leadership och praktiska strategier som hjälper er organisation att transformera, innovativa och växa.",
+        "introLabel": "Thought leadership",
+        "introTitle": "Gör nya trender till varaktig fördel",
+        "introDesc1": "Innovate with Insights samlar strategi, branschperspektiv och teknikexpertis så ledare kan navigera förändring med tydlighet.",
+        "introDesc2": "Från digital transformation och intelligent automation till säkra, skalbara plattformar vi delar ramverk som går från ambition till genomförande.",
+        "quote": "Teknik skapar mest värde när den är praktisk, säker och utformad kring verkliga kundbehov.",
+        "cta": "Diskutera er roadmap",
+        "pillar1Title": "Strategi med tydlighet",
+        "pillar1Desc": "Definiera var teknik skapar mest värde och bygg en roadmap era team kan genomföra med trygghet.",
+        "pillar2Title": "Kopplade förmågor",
+        "pillar2Desc": "Anpassa människor, processer, data och plattformar så verksamheten blir smartare, snabbare och mer resilient.",
+        "pillar3Title": "Mätbara resultat",
+        "pillar3Desc": "Fokusera på effektivitet, tillväxt och kundpåverkan inte teknik för teknikens skull.",
+        "frameworkLabel": "Insiktsramverk",
+        "frameworkTitle": "En praktisk väg från idé till effekt",
+        "frameworkDesc": "Använd denna enkla lins för att prioritera initiativ, minska risk och hålla transformation fokuserad på hållbar tillväxt.",
+        "insights": [
+            {
+                "step": "01",
+                "title": "Börja med affärsutmaningen",
+                "desc": "Ramverka transformation kring resultat produktivitet, upplevelse, motståndskraft och välj rätt teknikväg."
+            },
+            {
+                "step": "02",
+                "title": "Designa för skala och säkerhet",
+                "desc": "Bygg grunder som stödjer tillväxt, skyddar kritiska system och anpassas till marknaden."
+            },
+            {
+                "step": "03",
+                "title": "Aktivera insikt i hela organisationen",
+                "desc": "Gör data och intelligent automation till dagligt beslutsstöd för ledare och frontlinjteam."
+            },
+            {
+                "step": "04",
+                "title": "Upprätthåll momentum med partners",
+                "desc": "Kombinera kontinuerlig innovation med kundcentrerad leverans så framsteg byggs över tid."
+            }
+        ],
+        "bannerTitle": "Redo att innovativa med syfte?",
+        "bannerDesc": "Samarbeta med AIOT för att omsätta insikter till säkra, skalbara lösningar som förbättrar effektivitet och skapar långsiktigt värde.",
+        "bannerCta": "Starta en konversation"
     },
     "banner": {
         "upperText": "Teknik",
@@ -415,41 +602,121 @@
         ]
     },
     "consulting": {
-        "bannerMain": "Rådgivning med AIOT",
-        "bannerSub": "Frigör agilitet, omfamna innovation: AIOT, er partner i transformation",
+        "heroHighlight": "Konsultation",
+        "heroSubtitle": "Frigör agility, omfamna innovation: AIOT, er partner i transformation",
+        "eyebrow": "Konsultation",
+        "heroTitle": "Strategi som gör teknik till fördel",
+        "heroDesc": "AIOT hjälper ledare att definiera riktning, modernisera verksamhet och forma skalbara plattformar från rådgivning till genomförande.",
+        "heroCta": "Prata med en rådgivare",
+        "heroSecondary": "Utforska kapabiliteter",
         "expertiseLabel": "Vår expertis",
-        "introTitle": "Rådgivning som ger resultat",
-        "introDesc": "Transformera er verksamhet med våra rådgivningstjänster. Vi kombinerar strategisk insikt, branschexpertis och innovativ teknik för hållbar tillväxt och konkurrensfördel.",
-        "learnMore": "Läs mer",
+        "introTitle": "Konsultation byggd för mätbara resultat",
+        "introDesc": "Vi kombinerar strategisk insikt, branschdjup och praktisk teknikexpertis för att hjälpa er röra er snabbare, minska risk och skapa bestående konkurrensfördel.",
+        "capabilitiesLabel": "Kapabiliteter",
+        "approachLabel": "Så arbetar vi",
+        "approachTitle": "En tydlig väg från insikt till impact",
+        "approachDesc": "Varje uppdrag följer en disciplinerad metod så strategi blir leverans, inte en presentation.",
+        "learnMore": "Diskutera denna tjänst",
+        "ctaTitle": "Redo att forma ert nästa steg?",
+        "ctaDesc": "Boka en konsultation och gå därifrån med klarhet kring prioriteringar, arkitektur och en praktisk roadmap.",
+        "ctaButton": "Boka en konsultation",
         "services": [
             {
-                "title": "Affärsrådgivning",
-                "heading": "Transformation och utveckling i offentlig sektor",
-                "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-                "content": "Med omfattande erfarenhet av rådgivning i offentlig sektor erbjuder AIOT skräddarsydda strategier för inkluderande styrning, effektiv serviceleverans och ekonomisk tillväxt."
+                "title": "IT-strategi och rådgivning",
+                "shortTitle": "IT-strategi och rådgivning",
+                "heading": "Aligna teknik med affärsambitioner",
+                "content": "Vi hjälper ledningen att sätta en tydlig teknikagenda investeringsprioriteringar, driftsmodeller och governance så IT blir en tillväxtmotor snarare än en kostnadsenhet.",
+                "points": [
+                    "Enterprise IT-vision och driftsmodell",
+                    "Investeringsprioritering och affärsfall",
+                    "Governance, risk och leverantörsstrategi"
+                ]
             },
             {
-                "title": "Digital transformation",
-                "heading": "Heltäckande human capital-lösningar",
-                "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
-                "content": "AIOT stärker medarbetarengagemang, talentutveckling och organisationskultur. Från ledarskap till succession planning främjar våra human capital-lösningar hög prestanda och långsiktig framgång."
+                "title": "Konsultation för digital transformation",
+                "shortTitle": "Digital transformation",
+                "heading": "Uppfinn hur er organisation arbetar",
+                "content": "Från kundresor till backoffice-plattformar designar vi transformationsprogram som kopplar människor, processer och teknik med adoption från dag ett.",
+                "points": [
+                    "Transformations-roadmap och förändringsdesign",
+                    "Omdesign av kund- och medarbetarupplevelse",
+                    "Program governance och värdespårning"
+                ]
             },
             {
-                "title": "Offentlig sektor",
-                "heading": "Rådgivning om hållbarhet och impact",
-                "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
-                "content": "AIOT Sustainability Consulting specialiserar sig på ESG-drivna tjänster och hjälper kunder att nå hållbarhetsmål i linje med de globala SDG:erna."
+                "title": "Affärsprocesskonsultation",
+                "shortTitle": "Affärsprocesser",
+                "heading": "Förenkla flöden. Frigör prestanda.",
+                "content": "Vi diagnostiserar friktion i kritiska processer, designar om end-to-end-arbetsflöden och inför automatisering där det skapar verklig kapacitet inte komplexitet.",
+                "points": [
+                    "Process discovery och mognadsbedömning",
+                    "Design av mål-driftsmodell",
+                    "Automatisering och kontinuerlig förbättring"
+                ]
+            },
+            {
+                "title": "Teknikbedömning och roadmap",
+                "shortTitle": "Teknikbedömning",
+                "heading": "Vet var ni står. Planera vart ni ska.",
+                "content": "Vi utvärderar applikationer, infrastruktur, data och säkerhetsläge och översätter fynd till en sekventerad roadmap som era team kan genomföra med trygghet.",
+                "points": [
+                    "Applikations- och infrastruktur-health checks",
+                    "Gap-analys mot branschbenchmarks",
+                    "Fasad roadmap med kostnads- och riskbild"
+                ]
+            },
+            {
+                "title": "Cloud och enterprise-arkitektur",
+                "shortTitle": "Cloud och arkitektur",
+                "heading": "Arkitektur för skala, resiliens och hastighet",
+                "content": "Vi designar cloud- och enterprise-arkitekturer som är säkra by default, kostnadsmedvetna och redo för AI, integrationer och multi-cloud-tillväxt.",
+                "points": [
+                    "Referensarkitekturer och landing zones",
+                    "Integrations-, data- och plattformsritningar",
+                    "Security-, FinOps- och reliability-mönster"
+                ]
             }
         ],
-        "stats": {
-            "projects": "500+ levererade projekt",
-            "consultants": "50+ expertkonsulter",
-            "satisfaction": "98 % kundnöjdhet",
-            "industries": "25+ branscher betjänade"
-        },
-        "ctaTitle": "Redo att transformera er verksamhet?",
-        "ctaDesc": "Låt oss prata om hur vår rådgivning kan hjälpa er att nå era mål",
-        "ctaButton": "Boka en konsultation"
+        "processSteps": [
+            {
+                "title": "Discover",
+                "desc": "Förstå mål, begränsningar och nuläge"
+            },
+            {
+                "title": "Define",
+                "desc": "Forma strategi, prioriteringar och framgångsmått"
+            },
+            {
+                "title": "Design",
+                "desc": "Arkitekturera lösningar och en fasad roadmap"
+            },
+            {
+                "title": "Deliver",
+                "desc": "Vägled genomförande och mät resultat"
+            }
+        ],
+        "statsList": [
+            {
+                "value": "500",
+                "suffix": "+",
+                "label": "Levererade projekt"
+            },
+            {
+                "value": "50",
+                "suffix": "+",
+                "label": "Expertkonsulter"
+            },
+            {
+                "value": "98",
+                "suffix": "%",
+                "label": "Kundnöjdhet"
+            },
+            {
+                "value": "25",
+                "suffix": "+",
+                "label": "Branscher betjänade"
+            }
+        ]
     },
     "outsourcing": {
         "bannerMain": "Outsourcing med AIOT",
@@ -526,6 +793,192 @@
                 "step": "04",
                 "title": "Support",
                 "desc": "Löpande optimering"
+            }
+        ]
+    },
+    "implementation": {
+        "heroHighlight": "Implementering",
+        "heroSubtitle": "Från blueprint till go-live enterprise-lösningar levererade med precision",
+        "expertiseLabel": "Vad vi implementerar",
+        "introTitle": "Implementering som gör strategi till fungerande system",
+        "introDesc": "AIOT designar, konfigurerar och driftsätter enterprise-plattformar som passar er verksamhet med tydliga tidsplaner, stark governance och adoption i varje release.",
+        "capabilitiesLabel": "Kapabiliteter",
+        "approachLabel": "Så levererar vi",
+        "approachTitle": "En beprövad väg från design till go-live",
+        "approachDesc": "Vi kombinerar djup produktexpertis med disciplinerad delivery så varje implementering landar i tid, inom scope och redo för användare.",
+        "learnMore": "Utforska denna lösning",
+        "services": [
+            {
+                "title": "Enterprise-teknologilösningar",
+                "shortTitle": "Enterprise Tech",
+                "heading": "Bygg den digitala ryggraden i er verksamhet",
+                "content": "Vi implementerar centrala enterprise-plattformar ERP, CRM, samarbete och skräddarsydda applikationer som kopplar team, data och processer till ett pålitligt operativsystem.",
+                "points": [
+                    "Solution design och fit-gap-workshops",
+                    "Konfiguration, integration och datamigration",
+                    "User enablement och hypercare-support"
+                ]
+            },
+            {
+                "title": "SAP- och HANA-lösningar",
+                "shortTitle": "SAP och HANA",
+                "heading": "Modernisera finance och drift på SAP",
+                "content": "Från S/4HANA och HANA analytics till modulutrullningar hjälper vi er implementera SAP med rena processer, starka kontroller och en roadmap som skyddar er investering.",
+                "points": [
+                    "S/4HANA- och klassiska SAP-implementeringar",
+                    "HANA analytics- och rapporteringsfundament",
+                    "Process redesign i linje med SAP best practice"
+                ]
+            },
+            {
+                "title": "Oracle NetSuite-lösningar",
+                "shortTitle": "Oracle NetSuite",
+                "heading": "Driv verksamheten på ett cloud-ERP",
+                "content": "Vi implementerar NetSuite för finance, inventory, CRM och drift anpassat till er bransch med SuiteScripts, workflows och integrationer som skalar med er tillväxt.",
+                "points": [
+                    "NetSuite ERP, CRM och e-handelsuppsättning",
+                    "Anpassade workflows, SuiteScripts och dashboards",
+                    "Multi-subsidiary och multi-currency readiness"
+                ]
+            },
+            {
+                "title": "Microsoft- och produktlösningar",
+                "shortTitle": "Microsoft och produkter",
+                "heading": "Stärk produktiviteten med Microsoft och AIOT-produkter",
+                "content": "Vi levererar Microsoft 365, Dynamics, Azure, Power Platform och AIOT-produktpaket så era team samarbetar, automatiserar och innoverar på en betrodd stack.",
+                "points": [
+                    "Microsoft 365, Dynamics och Power Platform",
+                    "Azure cloud- och identity-fundament",
+                    "AIOT-produktutrullning och integration"
+                ]
+            },
+            {
+                "title": "Utility-modernisering",
+                "shortTitle": "Utility-modernisering",
+                "heading": "Moderna system för moderna utilities",
+                "content": "Vi hjälper utilities modernisera billing, kundupplevelse, fältverksamhet och nätrelaterade plattformar med säkra, compliant implementeringar för reglerade miljöer.",
+                "points": [
+                    "CIS-, billing- och kundupplevelseplattformar",
+                    "Field service- och operations-modernisering",
+                    "Compliance-ready integrationer och dataflöden"
+                ]
+            },
+            {
+                "title": "Data- och säkerhetslösningar",
+                "shortTitle": "Data och säkerhet",
+                "heading": "Skydda data. Frigör insikt.",
+                "content": "Vi implementerar dataplattformar, analytics och säkerhetskontroller som håller information tillförlitlig, tillgänglig och skyddad från lakehouse till identity and access.",
+                "points": [
+                    "Dataplattformar, pipelines och analytics",
+                    "Identity-, access- och security-baselines",
+                    "Governance-, retention- och compliance-kontroller"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "Assess",
+                "desc": "Scope krav, risker och framgångskriterier"
+            },
+            {
+                "title": "Design",
+                "desc": "Blueprint processer, arkitektur och integrationer"
+            },
+            {
+                "title": "Build",
+                "desc": "Konfigurera, migrera, integrera och testa noggrant"
+            },
+            {
+                "title": "Launch",
+                "desc": "Go-live med utbildning, hypercare och överlämning"
+            }
+        ]
+    },
+    "managedServices": {
+        "heroHighlight": "Managed",
+        "heroRest": "Services",
+        "heroSubtitle": "Alltid-på drift, övervakning och support som håller er digitala miljö hälsosam",
+        "expertiseLabel": "Vad vi driver",
+        "introTitle": "Managed services som skyddar prestanda och frigör era team",
+        "introDesc": "AIOT tar ansvar för den dagliga teknikdriften applikationer, cloud, säkerhet och support så ert folk kan fokusera på tillväxt medan vi håller system pålitliga, säkra och redo.",
+        "capabilitiesLabel": "Kapabiliteter",
+        "approachLabel": "Så opererar vi",
+        "approachTitle": "En run-modell byggd för tydlighet och uptime",
+        "approachDesc": "Tydliga SLA:er, proaktiv övervakning och kontinuerlig förbättring så managed services känns som en förlängning av ert team, inte en black box.",
+        "learnMore": "Diskutera denna tjänst",
+        "services": [
+            {
+                "title": "Application Management Services",
+                "shortTitle": "Application Management",
+                "heading": "Håll applikationer stabila, aktuella och i utveckling",
+                "content": "Vi hanterar enhancements, incidenter, releases och prestanda för era affärskritiska applikationer med disciplinerad change control och mätbara service levels.",
+                "points": [
+                    "L2/L3 application support och enhancements",
+                    "Release management och change control",
+                    "Performance tuning och kontinuerlig förbättring"
+                ]
+            },
+            {
+                "title": "Cloud- och infrastrukturhantering",
+                "shortTitle": "Cloud och infrastruktur",
+                "heading": "Drift cloud och infrastruktur med trygghet",
+                "content": "Från landing zones till day-2 operations övervakar, patchar, optimerar och styr vi er cloud- och infrastrukturmiljö för kostnad, resiliens och skala.",
+                "points": [
+                    "24×7 övervakning och incident response",
+                    "Patchning, kapacitet och kostnadsoptimering",
+                    "Multi-cloud och hybrid operations"
+                ]
+            },
+            {
+                "title": "IT-support och service desk",
+                "shortTitle": "IT-support och desk",
+                "heading": "Responsiv support era användare kan lita på",
+                "content": "Vår service desk löser ärenden snabbt, kommunicerar tydligt och eskalerar med kontext en konsekvent upplevelse över kanaler och tidszoner.",
+                "points": [
+                    "Multikanal service desk och SLA:er",
+                    "Endpoint-, identity- och access-support",
+                    "Knowledge base och self-service enablement"
+                ]
+            },
+            {
+                "title": "Cybersäkerhet och övervakning",
+                "shortTitle": "Cybersäkerhet",
+                "heading": "Upptäck hot. Minska risk. Ligg steget före.",
+                "content": "Vi övervakar kontinuerligt säkerhetsläget, svarar på alerts och hardenar miljöer så sårbarheter hittas tidigt och incidenter begränsas snabbt.",
+                "points": [
+                    "SOC-style monitoring och alert triage",
+                    "Vulnerability management och hardening",
+                    "Identity-, endpoint- och cloud security ops"
+                ]
+            },
+            {
+                "title": "Data, backup och disaster recovery",
+                "shortTitle": "Backup och DR",
+                "heading": "Skydda det som betyder något. Återställ när det räknas.",
+                "content": "Vi designar och driver backup- och DR-program med testade återställningsvägar, tydliga RPO/RTO-mål och rapportering ledningen kan lita på.",
+                "points": [
+                    "Backup policy design och kontinuerlig validering",
+                    "Disaster recovery runbooks och övningar",
+                    "RPO/RTO-rapportering och compliance-evidens"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "Onboard",
+                "desc": "Kartlägg system, SLA:er och operativa baslines"
+            },
+            {
+                "title": "Stabilize",
+                "desc": "Minska brus, stäng gaps och sätt health metrics"
+            },
+            {
+                "title": "Operate",
+                "desc": "Övervaka, supporta och förbättra varje dag"
+            },
+            {
+                "title": "Optimize",
+                "desc": "Minska risk, kostnad och toil över tid"
             }
         ]
     }

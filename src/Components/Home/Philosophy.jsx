@@ -18,6 +18,7 @@ export default function OurPhilosophy() {
 
     return (
         <div
+            key={language}
             className="py-14 px-6 md:py-20 md:px-8"
             style={{ backgroundColor: colors.background }}
         >

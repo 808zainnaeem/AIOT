@@ -3,7 +3,7 @@ import { LanguageContext } from './Context/LanguageContext';
 import { Colors } from './Utils/Colors';
 import Navbar from './Components/Navbar';
 import PageLoader from './Components/PageLoader';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './Pages/Home'; // Import the Home component
 import About from './Pages/Whoweare'; // Import the About component
 import Clientwall from './Pages/Clientwall'; // Import the Clientwall component
@@ -16,12 +16,26 @@ import SapSolutions from './Pages/SapSolutions';
 import UtilityTransformation from './Pages/UtilityTransformation';
 import OracleNetsuite from './Pages/OracleNetsuite';
 import Consulting from './Pages/Consulting';
-import Outsourcing from './Pages/Outsourcing';
+import Implementation from './Pages/Implementation';
+import ManagedServices from './Pages/ManagedServices';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService';
 import News from './Pages/News';
 import Blogs from './Pages/Blogs';
 import InnovateWithInsights from './Pages/InnovateWithInsights';
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    // Keep hash deep-links (e.g. /consulting#it-strategy) for page-level scroll handlers
+    if (hash) return;
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
+
 function App() {
   const { language, setLanguage, translations } = useContext(LanguageContext);
   const color = Colors[language] || Colors.en; // Get color settings based on selected language
@@ -64,9 +78,10 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <PageLoader visible={loading} />
       <Navbar />
-      <Routes>
+      <Routes key={language}>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/clientwall" element={<Clientwall />} />
@@ -77,7 +92,10 @@ function App() {
         <Route exact path="/utility-transformation" element={<UtilityTransformation />} />
         <Route exact path="/oracle-netsuite" element={<OracleNetsuite />} />
         <Route exact path="/consulting" element={<Consulting />} />
-        <Route exact path="/outsoursing" element={<Outsourcing />} />
+        <Route exact path="/implementation" element={<Implementation />} />
+        <Route exact path="/managed-services" element={<ManagedServices />} />
+        <Route exact path="/outsoursing" element={<ManagedServices />} />
+        <Route exact path="/outsourcing" element={<ManagedServices />} />
         <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route exact path="/terms-and-conditions" element={<TermsOfService />} />
         <Route exact path="/terms-conditions" element={<TermsOfService />} />

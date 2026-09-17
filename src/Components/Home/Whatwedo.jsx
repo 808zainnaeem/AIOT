@@ -3,10 +3,12 @@ import { LanguageContext } from '../../Context/LanguageContext';
 import { Colors } from '../../Utils/Colors';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function WhatWeDo() {
-    const { translations, language } = useContext(LanguageContext);
-    const t = translations;
+    const navigate = useNavigate();
+    const { translations, language, localePack } = useContext(LanguageContext);
+    const t = { ...translations, whatWeDoSection: localePack?.whatWeDoSection || translations.whatWeDoSection };
     const isRTL = language === 'ar';
     const colors = Colors[language] || Colors.en;
 
@@ -27,18 +29,21 @@ export default function WhatWeDo() {
             image: '/whatwedo-consulting.jpg',
             title: t.whatWeDoSection?.consulting || fallback.consulting,
             desc: t.whatWeDoSection?.consultingDesc || fallback.consultingDesc,
+            link: '/consulting',
         },
         {
             step: '02',
             image: '/whatwedo-implementation.jpg',
             title: t.whatWeDoSection?.implementation || fallback.implementation,
             desc: t.whatWeDoSection?.implementationDesc || fallback.implementationDesc,
+            link: '/implementation',
         },
         {
             step: '03',
             image: '/whatwedo-managed.jpg',
             title: t.whatWeDoSection?.managedServices || fallback.managedServices,
             desc: t.whatWeDoSection?.managedServicesDesc || fallback.managedServicesDesc,
+            link: '/managed-services',
         },
     ]; 
 
@@ -66,6 +71,7 @@ export default function WhatWeDo() {
 
     return (
         <section
+            key={language}
             dir={isRTL ? 'rtl' : 'ltr'}
             className="relative overflow-hidden py-20 px-6 md:py-24"
             style={{ backgroundColor: colors.background, color: colors.text }}
@@ -121,6 +127,13 @@ export default function WhatWeDo() {
                             variants={cardVariants}
                             whileHover={{ y: -10 }}
                             transition={{ type: 'spring', stiffness: 280, damping: 22 }}
+                            onClick={() => service.link && navigate(service.link)}
+                            onKeyDown={(e) => {
+                                if ((e.key === 'Enter' || e.key === ' ') && service.link) {
+                                    e.preventDefault();
+                                    navigate(service.link);
+                                }
+                            }}
                         >
                             <div
                                 className="absolute inset-0 overflow-hidden rounded-2xl bg-white"

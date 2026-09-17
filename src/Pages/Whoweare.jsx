@@ -9,7 +9,7 @@ export default function AboutPage() {
         window.scrollTo(0, 0);
     }, []);
     const { translations, language } = useContext(LanguageContext);
-    const t = translations.about;
+    const t = translations.about || {};
     const colors = Colors[language] || Colors.en;
     const isRTL = language === 'ar';
     const [expandedVision, setExpandedVision] = React.useState(false);
@@ -61,7 +61,7 @@ export default function AboutPage() {
     const headingParts = (t.mainHeading || '').split('<br />');
 
     return (
-        <div className="bg-white" dir={isRTL ? 'rtl' : 'ltr'}>
+        <div className="bg-white" dir={isRTL ? 'rtl' : 'ltr'} key={language}>
             {/* Hero Section */}
             <div
                 className="relative h-80 md:h-96 bg-cover bg-center"
@@ -72,8 +72,10 @@ export default function AboutPage() {
             >
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span style={{ color: colors.logo }}>{t.heroTitle.split(' ')[0]}</span>{' '}
-                        {t.heroTitle.split(' ').slice(1).join(' ')}
+                        <span style={{ color: colors.logo }}>
+                            {(t.heroTitle || '').split(' ')[0]}
+                        </span>{' '}
+                        {(t.heroTitle || '').split(' ').slice(1).join(' ')}
                     </h1>
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl">{t.heroSubtitle}</p>
                 </div>
@@ -244,8 +246,8 @@ export default function AboutPage() {
                             style={{ color: colors.logo }}
                         >
                             {expanded
-                                ? (language === 'ar' ? 'اقرأ أقل' : 'Read less')
-                                : (language === 'ar' ? 'اقرأ المزيد' : 'Read more')}
+                                ? (t.readLess || (language === 'ar' ? 'اقرأ أقل' : 'Read less'))
+                                : (t.readMore || (language === 'ar' ? 'اقرأ المزيد' : 'Read more'))}
                         </button>
                     )}
                 </div>
@@ -258,7 +260,7 @@ export default function AboutPage() {
             </section>
 
             {/* Smart Solutions + Transform Section */}
-          {/* Smart Solutions + Transform — Unified Section */}
+          {/* Smart Solutions + Transform Unified Section */}
 <section className="relative py-20 md:py-28 px-6 md:px-8 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
     {/* soft background glow */}
     <div
@@ -300,7 +302,7 @@ export default function AboutPage() {
 
         {/* Main content grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
-            {/* Left side — Image + Play button */}
+            {/* Left side Image + Play button */}
             <motion.div
                 className="lg:col-span-5 relative group"
                 initial="hidden"
@@ -339,7 +341,7 @@ export default function AboutPage() {
                 </div>
             </motion.div>
 
-            {/* Right side — Content + Feature box */}
+            {/* Right side Content + Feature box */}
             <motion.div
                 className="lg:col-span-7 flex flex-col justify-center"
                 initial="hidden"
@@ -457,7 +459,7 @@ export default function AboutPage() {
                             className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
                             variants={fadeUp}
                         >
-                            {t.presenceTitle.split(' ')[0]}{' '}
+                            {(t.presenceTitle || '').split(' ')[0]}{' '}
                             <span style={{ color: colors.accent }}>{t.presenceHighlight}</span>
                         </motion.h2>
                         <motion.div

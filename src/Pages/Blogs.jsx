@@ -6,7 +6,7 @@ import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 
 export default function Blogs() {
-    const { translations, language } = useContext(LanguageContext);
+    const { translations, language, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
     const t = translations.blogsPage || {};
     const isRTL = language === 'ar';
@@ -25,7 +25,11 @@ export default function Blogs() {
         visible: { transition: { staggerChildren: 0.12 } },
     };
 
-    const posts = t.posts || [
+    const localPosts = localePack?.blogsPage?.posts;
+    const posts =
+        Array.isArray(localPosts) && localPosts.length > 0
+            ? localPosts
+            : t.posts || [
         {
             category: 'Digital Transformation',
             readTime: '6 min read',
@@ -65,7 +69,7 @@ export default function Blogs() {
             category: 'Industry Trends',
             readTime: '6 min read',
             title: 'What emerging technology means for tomorrow’s enterprises',
-            excerpt: 'Trends worth watching — and how to adopt them with a practical, outcome-driven roadmap.',
+            excerpt: 'Trends worth watching and how to adopt them with a practical, outcome-driven roadmap.',
             image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop',
         },
     ];

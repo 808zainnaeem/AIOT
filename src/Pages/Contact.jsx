@@ -5,8 +5,9 @@ import { Colors } from '../Utils/Colors';
 
 export default function ContactUs() {
     const { translations, language } = useContext(LanguageContext);
-    const t = translations.contact;
+    const t = translations.contact || {};
     const colors = Colors[language] || Colors.en;
+    const isRTL = language === 'ar';
 
     const [formData, setFormData] = useState({
         name: '',
@@ -36,7 +37,7 @@ export default function ContactUs() {
     };
 
     return (
-        <div className="bg-white">
+        <div className="bg-white" dir={isRTL ? 'rtl' : 'ltr'} key={language}>
             {/* Hero Section */}
             <div
                 className="relative h-80 bg-cover bg-center"

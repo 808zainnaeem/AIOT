@@ -6,7 +6,7 @@ import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 
 export default function News() {
-    const { translations, language } = useContext(LanguageContext);
+    const { translations, language, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
     const t = translations.newsPage || {};
     const isRTL = language === 'ar';
@@ -25,7 +25,7 @@ export default function News() {
         visible: { transition: { staggerChildren: 0.12 } },
     };
 
-    const items = t.items || [
+    const fallbackItems = [
         {
             tag: 'Announcement',
             date: 'Sep 2026',
@@ -56,6 +56,12 @@ export default function News() {
             image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop',
         },
     ];
+
+    const localItems = localePack?.newsPage?.items;
+    const items =
+        Array.isArray(localItems) && localItems.length > 0
+            ? localItems
+            : t.items || fallbackItems;
 
     const featured = items.find((item) => item.featured) || items[0];
     const rest = items.filter((item) => item !== featured);

@@ -7,7 +7,7 @@ import HeroProductScene from './HeroProductScene';
 
 const SLIDE_MEDIA = [
     {
-        // First slide — background video
+        // First slide background video
         type: 'video',
         video: 'https://aiotwebsites.s3.eu-north-1.amazonaws.com/Animate_futuristic_AI_digital_un%E2%80%A6_202609010927.mp4',
         poster: 'https://i.postimg.cc/MGZbX9JK/Chat-GPT-Image-Sep-1-2026-09-21-40-AM.png',
@@ -49,7 +49,7 @@ const FALLBACK_SLIDES = [
     {
         title: 'Products That <br> Power Your Business.',
         description:
-            'PeopleHub, ProcessHub, CommerceHub, and our full suite — built to hire, operate, sell, and scale in one connected ecosystem.',
+            'PeopleHub, ProcessHub, CommerceHub, and our full suite built to hire, operate, sell, and scale in one connected ecosystem.',
     },
 ];
 
@@ -108,7 +108,7 @@ const SlideMedia = ({ slide, sliderActive, inView }) => {
 
 const HomePage = () => {
     const { background } = Colors.en;
-    const { translations, language } = useContext(LanguageContext);
+    const { translations, language, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
     const sectionRef = useRef(null);
     const inView = useInView(sectionRef, { amount: 0.35, once: false });
@@ -117,22 +117,39 @@ const HomePage = () => {
     const [direction, setDirection] = useState(1);
 
     const slides = useMemo(() => {
-        const translated = translations?.Hero?.slides;
+        // Use the active locale's Hero.slides when present.
+        // Do not use deep-merged English slides for other languages that omit
+        // `slides` — that would keep English copy after a language switch.
+        const localSlides = localePack?.Hero?.slides;
+        const hasLocalSlides = Array.isArray(localSlides) && localSlides.length > 0;
+        const slideCopy = hasLocalSlides
+            ? localSlides
+            : language === 'en'
+              ? translations?.Hero?.slides
+              : null;
+
         return SLIDE_MEDIA.map((media, i) => {
-            const copy = translated?.[i] || FALLBACK_SLIDES[i];
+            const copy = slideCopy?.[i];
+            const hero = localePack?.Hero || translations?.Hero;
+
             return {
                 ...media,
                 title:
                     copy?.title ||
-                    (i === 0 ? translations?.Hero?.demoBannerTitle : FALLBACK_SLIDES[i].title) ||
+                    (i === 0 ? hero?.demoBannerTitle : null) ||
                     FALLBACK_SLIDES[i].title,
                 description:
                     copy?.description ||
-                    (i === 0 ? translations?.Hero?.whoWeAreDesc : FALLBACK_SLIDES[i].description) ||
+                    (i === 0 ? hero?.whoWeAreDesc : null) ||
                     FALLBACK_SLIDES[i].description,
             };
         });
-    }, [translations]);
+    }, [translations, language, localePack]);
+
+    useEffect(() => {
+        setIndex(0);
+        setDirection(1);
+    }, [language]);
 
     useEffect(() => {
         if (!inView || paused) return undefined;
@@ -268,7 +285,7 @@ const HomePage = () => {
                 </button>
             </div>
 
-            {/* Content — bottom left */}
+            {/* Content bottom left */}
             <div className="relative z-10 flex-grow flex flex-col justify-end min-h-0">
                 <div className="max-w-7xl w-full mx-auto px-6 sm:px-10 md:px-14 lg:px-16 pb-8 md:pb-10 pt-6">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-end">
@@ -307,7 +324,7 @@ const HomePage = () => {
                             </AnimatePresence>
                         </div>
 
-                        {/* Progress cluster — bottom right on desktop */}
+                        {/* Progress cluster bottom right on desktop */}
                         <div className="lg:col-span-4 flex lg:justify-end">
                             <div className="w-full max-w-xs">
                                 <div className="flex items-center gap-2.5">

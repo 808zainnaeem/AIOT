@@ -67,6 +67,8 @@ export function LanguageProvider({ children }) {
         window.localStorage.setItem('aiot-language', code);
     };
 
+    const localePack = useMemo(() => translationsMap[language] || en, [language]);
+
     const translations = useMemo(() => {
         const selected = translationsMap[language] || en;
         return language === 'en' ? en : deepMerge(en, selected);
@@ -96,8 +98,19 @@ export function LanguageProvider({ children }) {
         };
     }, []);
 
+    const value = useMemo(
+        () => ({
+            language,
+            setLanguage,
+            translations,
+            localePack,
+            languages: SUPPORTED_LANGUAGES,
+        }),
+        [language, translations, localePack]
+    );
+
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, translations, languages: SUPPORTED_LANGUAGES }}>
+        <LanguageContext.Provider value={value}>
             {children}
         </LanguageContext.Provider>
     );

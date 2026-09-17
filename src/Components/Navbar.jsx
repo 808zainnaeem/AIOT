@@ -9,11 +9,11 @@ import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/product
 import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 const Navbar = () => {
-    const { language, setLanguage, translations } = useContext(LanguageContext);
+    const { language, setLanguage, translations, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
-    const navbarTrans = translations.navbar || {};
-    const dropdownTrans = translations.dropdown || {};
-    const footerTrans = translations.footer || {};
+    const navbarTrans = localePack?.navbar || translations.navbar || {};
+    const dropdownTrans = localePack?.dropdown || translations.dropdown || {};
+    const footerTrans = localePack?.footer || translations.footer || {};
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [hoveredItem, setHoveredItem] = useState(null);
@@ -22,7 +22,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const languages = SUPPORTED_LANGUAGES; // English labels only — never localize option names
+    const languages = SUPPORTED_LANGUAGES; // English labels only never localize option names
     useEffect(() => {
         document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
         document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
@@ -108,32 +108,32 @@ const Navbar = () => {
                     {
                         title: dropdownTrans.whatWeDo?.consulting || 'Consulting',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.itStrategy || 'IT Strategy & Advisory', icon: Compass, url: '/consulting' },
-                            { text: dropdownTrans.whatWeDo?.digitalTransformation || 'Digital Transformation Consulting', icon: RefreshCw, url: '/consulting' },
-                            { text: dropdownTrans.whatWeDo?.businessProcess || 'Business Process Consulting', icon: Workflow, url: '/consulting' },
-                            { text: dropdownTrans.whatWeDo?.techAssessment || 'Technology Assessment & Roadmapping', icon: ClipboardList, url: '/consulting' },
-                            { text: dropdownTrans.whatWeDo?.cloudEnterpriseArch || 'Cloud & Enterprise Architecture', icon: Network, url: '/consulting' },
+                            { text: dropdownTrans.whatWeDo?.itStrategy || 'IT Strategy & Advisory', icon: Compass, url: '/consulting#it-strategy' },
+                            { text: dropdownTrans.whatWeDo?.digitalTransformation || 'Digital Transformation Consulting', icon: RefreshCw, url: '/consulting#digital-transformation' },
+                            { text: dropdownTrans.whatWeDo?.businessProcess || 'Business Process Consulting', icon: Workflow, url: '/consulting#business-process' },
+                            { text: dropdownTrans.whatWeDo?.techAssessment || 'Technology Assessment & Roadmapping', icon: ClipboardList, url: '/consulting#tech-assessment' },
+                            { text: dropdownTrans.whatWeDo?.cloudEnterpriseArch || 'Cloud & Enterprise Architecture', icon: Network, url: '/consulting#cloud-architecture' },
                         ]
                     },
                     {
                         title: dropdownTrans.whatWeDo?.implementation || 'Implementation',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.enterpriseTech || 'Enterprise Technology Solutions', icon: Layers, url: '/technology-driven' },
-                            { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: '/sap-solutions' },
-                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: '/oracle-netsuite' },
-                            { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: '/next-genration' },
-                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: '/utility-transformation' },
-                            { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: '/technology-driven' },
+                            { text: dropdownTrans.whatWeDo?.enterpriseTech || 'Enterprise Technology Solutions', icon: Layers, url: '/implementation#enterprise-tech' },
+                            { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: '/implementation#sap-hana' },
+                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: '/implementation#oracle-netsuite' },
+                            { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: '/implementation#microsoft-product' },
+                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: '/implementation#utility-modernization' },
+                            { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: '/implementation#data-security' },
                         ]
                     },
                     {
                         title: dropdownTrans.whatWeDo?.managedServices || 'Managed Services',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.appManagement || 'Application Management Services', icon: AppWindow, url: '/outsoursing' },
-                            { text: dropdownTrans.whatWeDo?.cloudInfra || 'Cloud & Infrastructure Management', icon: Server, url: '/outsoursing' },
-                            { text: dropdownTrans.whatWeDo?.itSupport || 'IT Support & Service Desk', icon: Headset, url: '/outsoursing' },
-                            { text: dropdownTrans.whatWeDo?.cyberMonitoring || 'Cybersecurity & Monitoring', icon: Lock, url: '/outsoursing' },
-                            { text: dropdownTrans.whatWeDo?.backupDr || 'Data, Backup & Disaster Recovery', icon: HardDrive, url: '/outsoursing' },
+                            { text: dropdownTrans.whatWeDo?.appManagement || 'Application Management Services', icon: AppWindow, url: '/managed-services#app-management' },
+                            { text: dropdownTrans.whatWeDo?.cloudInfra || 'Cloud & Infrastructure Management', icon: Server, url: '/managed-services#cloud-infra' },
+                            { text: dropdownTrans.whatWeDo?.itSupport || 'IT Support & Service Desk', icon: Headset, url: '/managed-services#it-support' },
+                            { text: dropdownTrans.whatWeDo?.cyberMonitoring || 'Cybersecurity & Monitoring', icon: Lock, url: '/managed-services#cyber-monitoring' },
+                            { text: dropdownTrans.whatWeDo?.backupDr || 'Data, Backup & Disaster Recovery', icon: HardDrive, url: '/managed-services#backup-dr' },
                         ]
                     },
                 ],
@@ -257,7 +257,7 @@ const Navbar = () => {
                         <div className='flex items-center gap-40'>
 
                         <div onClick={() => handleNavClick('/')} className="cursor-pointer">
-                            <img src="/NewLogo.png" alt="AIOT Logo" className="h-auto w-13" />
+                            <img src="/NewLogo.png" alt="AIOT Logo" className="h-15 w-auto" />
                         </div>
 
                         {/* Desktop Menu */}
@@ -561,17 +561,29 @@ const Navbar = () => {
 
                                                 <div className="relative space-y-3 mt-6">
                                                     {[
-                                                        dropdownTrans.whatWeDo?.consulting || 'Consulting',
-                                                        dropdownTrans.whatWeDo?.implementation || 'Implementation',
-                                                        dropdownTrans.whatWeDo?.managedServices || 'Managed Services',
-                                                    ].map((label) => (
-                                                        <div
-                                                            key={label}
-                                                            className="flex items-center gap-2.5 rounded-xl bg-white/12 backdrop-blur-sm px-3 py-2.5 border border-white/15"
+                                                        {
+                                                            label: dropdownTrans.whatWeDo?.consulting || 'Consulting',
+                                                            url: '/consulting',
+                                                        },
+                                                        {
+                                                            label: dropdownTrans.whatWeDo?.implementation || dropdownTrans.whatWeDo?.technology || 'Implementation',
+                                                            url: '/implementation',
+                                                        },
+                                                        {
+                                                            label: dropdownTrans.whatWeDo?.managedServices || dropdownTrans.whatWeDo?.outSourcing || 'Managed Services',
+                                                            url: '/managed-services',
+                                                        },
+                                                    ].map(({ label, url }) => (
+                                                        <button
+                                                            type="button"
+                                                            key={url}
+                                                            onClick={() => handleNavClick(url)}
+                                                            className="w-full flex items-center gap-2.5 rounded-xl bg-white/12 backdrop-blur-sm px-3 py-2.5 border border-white/15 text-left hover:bg-white/20 transition"
                                                         >
                                                             <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
-                                                            <span className="text-white text-sm font-medium">{label}</span>
-                                                        </div>
+                                                            <span className="text-white text-sm font-medium flex-1">{label}</span>
+                                                            <ArrowRight size={13} className="text-white/70" />
+                                                        </button>
                                                     ))}
                                                     <button
                                                         type="button"

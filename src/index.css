@@ -1,2 +1,17 @@
 /* Import statements should be at the top */
 @import "tailwindcss";
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 4px;
+  }
+  
