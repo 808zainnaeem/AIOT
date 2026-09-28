@@ -98,7 +98,7 @@ export const SEO_BY_PATH = {
   },
   [ROUTES.utilityTransformation]: {
     title: `Utility Transformation | ${BRAND}`,
-    description: 'Utility modernization solutions from AIOT that transform operations and customer experience.',
+    description: 'Utility Modernisation solutions from AIOT that transform operations and customer experience.',
   },
   [ROUTES.oracleNetsuite]: {
     title: `Oracle NetSuite | ${BRAND}`,

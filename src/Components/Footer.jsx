@@ -15,12 +15,12 @@ import { ROUTES } from '../Utils/routes';
 import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 export default function FooterSection() {
-    const { language, setLanguage, translations, localePack } = useContext(LanguageContext);
+    const { language, setLanguage, translations } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
-    const footerTrans = localePack?.footer || translations.footer || {};
-    const navbarTrans = localePack?.navbar || translations.navbar || {};
-    const dropdownTrans = localePack?.dropdown || translations.dropdown || {};
-    const whatWeDoTrans = localePack?.whatWeDoSection || translations.whatWeDoSection || {};
+    const footerTrans = translations.footer || {};
+    const navbarTrans = translations.navbar || {};
+    const dropdownTrans = translations.dropdown || {};
+    const whatWeDoTrans = translations.whatWeDoSection || {};
 
     const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 

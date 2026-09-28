@@ -53,15 +53,15 @@ export const PRODUCT_BRANDS = {
 
 export const FALLBACK_PRODUCTS = [
     { title: 'BusinessHub ERP', description: 'An integrated ERP to manage finance, inventory, and operations from a single source of truth for growing businesses.' },
-    { title: 'BridgeHub User Interface', description: 'Enhance your business operations with our user-friendly SAP Business One interface, designed for seamless navigation and efficient management of your enterprise resources.' },
+    { title: 'BridgeHub User Interface', description: 'Improve your business operations by using the SAP Business One interface, designed for uninterrupted navigation and efficient management of your enterprise resources.' },
     { title: 'PeopleHub HCM', description: 'A complete human capital management platform to hire, manage, and grow your workforce with payroll, attendance, and talent tools in one place.' },
     { title: 'CommerceHub UCP', description: 'A unified commerce platform that connects sales channels, inventory, and customer journeys so you can sell and fulfil with consistency.' },
     { title: 'ProcessHub Operations Suite', description: 'Streamline day-to-day operations with connected workflows, automation, and visibility across teams and processes.' },
     { title: 'PortedForm', description: 'Edit, annotate, and manage PDFs online with a free, fast, and easy-to-use editor built for everyday document workflows.', free: true },
-    { title: 'Hire Lawyer Online', description: 'Connect with experienced legal professionals through our streamlined online platform, making it easy to find and hire the right lawyer for your needs.' },
-    { title: 'InsightHub Vision AI', description: 'Turn visual data into actionable insight with AI-powered vision that supports monitoring, detection, and smarter decisions.' },
-    { title: 'HealthHub Patient Care', description: 'A patient-care platform that helps healthcare teams manage records, appointments, and follow-ups with a smoother clinical experience.' },
-    { title: 'Connector', description: 'Effortlessly integrate and manage your systems with our connector for communication through WhatsApp, cellular APIs, and email exchanges, designed to streamline data flow.' },
+    { title: 'Hire Lawyer Online', description: 'Connect with experienced legal professionals through our simplified online platform, making it easy to find and hire the right lawyer for your needs.' },
+    { title: 'InsightHub Vision AI', description: 'Turn visual data into applicable insight with AI-powered vision that supports monitoring, detection, and smarter decisions.' },
+    { title: 'HealthHub Patient Care', description: 'A patient-care platform that helps healthcare teams manage records, appointments, and follow-ups for a smoother clinical experience.' },
+    { title: 'Connector', description: 'Effortlessly integrate and manage your systems with our connector for communication via WhatsApp, cellular APIs, and email, built to improve flow.' },
 ];
 
 export function getProductCatalog(translations) {

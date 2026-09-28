@@ -85,13 +85,16 @@ export default function WhatWeDo() {
 
     const fallback = {
         title: 'What We Do',
-        subtitle: 'Tailored Solutions for Intelligent Connectivity',
+        subtitle: 'Solutions for Intelligent Connectivity',
         consulting: 'Consulting',
-        consultingDesc: 'We assist in creating a digital strategy that leads to technology-driven business success...',
+        consultingDesc:
+            'We help create a strategy that drives technology-led business success. Our team develops plans that optimise your path to growth by applying advanced digital tools and technologies.',
         implementation: 'Implementation',
-        implementationDesc: 'Our experts in all major technologies and business functions, empower us to deliver comprehensive business solutions.',
+        implementationDesc:
+            'Our consultants, across major technologies and business functions, deliver comprehensive business solutions.',
         managedServices: 'Managed Services',
-        managedServicesDesc: 'Our Global Managed Services team secures your digital investment with monitoring, maintenance, and end-to-end 24×7 support.',
+        managedServicesDesc:
+            'Our team secures your digital investment with monitoring, maintenance, and end-to-end support.',
     };
 
     const services = [

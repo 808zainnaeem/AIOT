@@ -46,22 +46,22 @@ const FALLBACK_SLIDES = [
     {
         title: 'Your Solution Partner <br> for Business Success',
         description:
-            'We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.',
+            'We are a technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.',
     },
     {
-        title: 'Accelerate. <br> Innovate. <br> Grow Without Limits.',
+        title: 'Connected Systems. <br> Smarter Decisions.',
         description:
-            'We build intelligent technology and secure digital solutions that help businesses move faster, scale smarter, and turn bold ideas into lasting growth.',
+            'Unify data, cloud, and enterprise platforms so your teams move faster with focus and trust.',
     },
     {
         title: 'Build. Secure. <br> Scale with Confidence.',
         description:
-            'From cybersecurity to modern infrastructure, we protect and power the technology that runs your business.',
+            'From cybersecurity to network infrastructure, we protect and power the technology that runs your business.',
     },
     {
         title: 'Products That <br> Power Your Business.',
         description:
-            'PeopleHub, ProcessHub, CommerceHub, and our full suite built to hire, operate, sell, and scale in one connected ecosystem.',
+            'PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform, and our comprehensive business suite help organisations hire, operate, sell, and scale within one connected ecosystem.',
     },
 ];
 

@@ -28,7 +28,7 @@ AIOT (AIOTCons / AIOT Consulting) delivers AI, IoT, consulting, implementation, 
 - [Oracle NetSuite](https://aiotcons.com/oracle-netsuite): Cloud ERP solutions
 - [Technology Driven](https://aiotcons.com/technology-driven): Enterprise technology solutions
 - [Next Generation](https://aiotcons.com/next-generation): Microsoft and next-gen products
-- [Utility Transformation](https://aiotcons.com/utility-transformation): Utility modernization
+- [Utility Transformation](https://aiotcons.com/utility-transformation): Utility Modernisation
 - [Client Wall](https://aiotcons.com/client-wall): Trusted clients
 - [News](https://aiotcons.com/news): Company news
 - [Blogs](https://aiotcons.com/blogs): Insights and articles

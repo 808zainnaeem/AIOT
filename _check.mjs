@@ -1,0 +1,13 @@
+import fs from 'fs';
+const es = JSON.parse(fs.readFileSync('src/Languages/es.json','utf8'));
+const de = JSON.parse(fs.readFileSync('src/Languages/de.json','utf8'));
+const fr = JSON.parse(fs.readFileSync('src/Languages/fr.json','utf8'));
+console.log('--- ES dropdown.solutions ---');
+console.log(JSON.stringify(es.dropdown.solutions, null, 2));
+console.log('--- DE dropdown.solutions ---');
+console.log(JSON.stringify(de.dropdown.solutions, null, 2));
+console.log('--- ES footer ---');
+console.log(JSON.stringify(es.footer, null, 2));
+console.log('--- ES privacyPolicy exists ---', !!es.privacyPolicy);
+console.log('--- DE privacyPolicy exists ---', !!de.privacyPolicy);
+console.log('--- FR privacyPolicy exists ---', !!fr.privacyPolicy);

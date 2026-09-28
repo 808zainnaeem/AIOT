@@ -3,7 +3,7 @@
         "topBar": {
             "phone": "+92 3123456778",
             "email": "info@aiotcons.com",
-            "address": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punjab, Pakistan"
+            "address": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan"
         },
         "menu": {
             "home": "Hjem",
@@ -18,24 +18,27 @@
         "learnMore": "Læs mere",
         "explore": "Udforsk",
         "bookADemo": "Book en demo",
-        "menuLabel": "Menu",
+        "menuLabel": "Meny",
         "exploreArrow": "Udforsk →",
-        "demoBannerTitle": "Din løsningspartner til forretningssucces"
+        "demoBannerTitle": "Din løsningspartner for forretningssucces"
     },
     "dropdown": {
         "aboutUs": {
             "whoWeAre": "Hvem vi er",
-            "whoWeAreDesc": "Vi forener kunstig intelligens og Internet of Things for at drive innovation og levere fremtidssikrede teknologiløsninger.",
+            "whoWeAreDesc": "Vi er en fremadskuende teknologirådgivningsvirksomhed, der leverer praktiske, skalerbare og sikre løsninger udviklet til sektorer som fremstilling, finans og sundhedspleje, og som hjælper virksomheder med at omfavne innovation og forberede sig på en forbundet digital fremtid.",
             "clientWall": "Kundevæg",
-            "clientWallDesc": "Vi betjener stolt branchens ledere med innovative teknologiløsninger, der skaber reelle resultater.",
+            "clientWallDesc": "Vi er stolte af at betjene branchens førende virksomheder med innovative teknologiløsninger, der giver reelle resultater.",
             "contactUs": "Kontakt",
-            "contactUsDesc": "Kontakt AIOT IT Solutions – din indgang til smarte, innovative og transformative teknologiløsninger."
+            "contactUsDesc": "Kom i kontakt med vores IT-løsningsteam for at få adgang til smarte, innovative og teknologiske løsninger.",
+            "panelLabel": "Om os",
+            "panelTitle": "Innovation med reel effekt",
+            "panelDesc": "Oplev, hvem vi er, hvilke kunder vi betjener, og hvordan du starter en samtale med vores team."
         },
         "whatWeDo": {
             "technology": "Implementering",
-            "technologyDesc": "AIOT IT Solutions driver digital transformation",
+            "technologyDesc": "AIOT IT-løsninger driver digital transformation",
             "implementation": "Implementering",
-            "implementationDesc": "AIOT IT Solutions driver digital transformation",
+            "implementationDesc": "AIOT IT-løsninger driver digital transformation",
             "technologyDrivenInnovation": "Teknologidrevne innovationsløsninger",
             "nextGenTechnology": "Next-gen teknologiløsninger",
             "enterpriseSap": "Enterprise SAP-løsninger",
@@ -44,10 +47,10 @@
             "consulting": "Rådgivning",
             "consultingDesc": "Strategisk teknologirådgivning til at optimere drift og drive vækst.",
             "technologySolutionsProvider": "Leverandør af teknologiløsninger",
-            "outSourcing": "Managed Services",
-            "outSourcingDesc": "Pålidelig managed services med overvågning, vedligeholdelse og end-to-end support.",
-            "managedServices": "Managed Services",
-            "managedServicesDesc": "Pålidelig managed services med overvågning, vedligeholdelse og end-to-end support.",
+            "outSourcing": "Administrerede services",
+            "outSourcingDesc": "Pålidelige administrerede services med overvågning, vedligeholdelse og end-to-end support.",
+            "managedServices": "Administrerede services",
+            "managedServicesDesc": "Pålidelige administrerede services med overvågning, vedligeholdelse og end-to-end support.",
             "strategicOffshore": "Strategiske offshore-løsninger",
             "itStrategy": "IT-strategi og rådgivning",
             "digitalTransformation": "Digital transformationsrådgivning",
@@ -64,8 +67,8 @@
             "cyberMonitoring": "Cybersikkerhed og overvågning",
             "backupDr": "Data, backup og disaster recovery",
             "panelLabel": "Det vi leverer",
-            "panelTitle": "End-to-end digital excellence",
-            "panelDesc": "Fra strategi til drift: rådgivning, implementering og managed services under én partner."
+            "panelTitle": "Digital ekspertise fra A til Z",
+            "panelDesc": "Fra strategi til drift: rådgivning, implementering og administrerede services hos én partner."
         },
         "solutions": {
             "industries": "Brancher",
@@ -85,90 +88,90 @@
         },
         "resources": {
             "news": "Nyheder",
-            "newsDesc": "Hold dig opdateret med de seneste nyheder og innovationer fra AIOT IT Solutions.",
+            "newsDesc": "Virksomhedsopdateringer, produktlanceringer og milepæle, der former din fremtid.",
             "blogs": "Blogs",
-            "blogsDesc": "Udforsk indsigter, trends og ekspertvurderinger om teknologi og innovation.",
-            "innovateWithInsights": "Innover med indsigter",
-            "innovateWithInsightsDesc": "Opdag strategier til at styrke din forretning gennem nye trends og thought leadership.",
-            "panelLabel": "Videnshub",
-            "panelTitle": "Hold dig informeret. Hold dig foran.",
-            "panelDesc": "Nyheder, blogs og indsigter, der hjælper dig med at navigere teknologitrends og forretningstransformation."
+            "blogsDesc": "Udforsk indsigt, trends og eksperters synspunkter om teknologi og innovation.",
+            "innovateWithInsights": "Innovation gennem indsigt",
+            "innovateWithInsightsDesc": "Oplev metoder til at styrke din virksomhed gennem nye trends og thought leadership.",
+            "panelLabel": "Videnscenter",
+            "panelTitle": "Vær informeret. Vær foran.",
+            "panelDesc": "Nyheder, blogs og analyser, der hjælper dig med at navigere i teknologitrends og forretningstransformation."
         },
         "partners": {
-            "sapDesc": "Samarbejd med os om at transformere, hvordan SMV’er arbejder globalt med moderne cloudløsninger.",
-            "oracleNetsuiteDesc": "Opdag fordelene ved et partnerskab med Oracle NetSuite til omfattende forretningsløsninger.",
-            "microsoftDesc": "Vores Microsoft-partnerskab styrker virksomheders kapaciteter med moderne løsninger.",
+            "sapDesc": "Bliv partner med os for at forbedre, hvordan SMV'er opererer globalt med avancerede, cloudbaserede løsninger.",
+            "oracleNetsuiteDesc": "Oplev fordelene ved at samarbejde med Oracle NetSuite om komplette forretningsløsninger.",
+            "microsoftDesc": "Vores Microsoft-partnerskab styrker forretningsmuligheder med avancerede løsninger.",
             "cloudiaxDesc": "Cloudiax gør det muligt at styrke SAP-kapaciteter med kraftfulde cloudløsninger.",
-            "cloudSolutionsDesc": "Vores ekspertise sikrer gnidningsfri cloudmigration og multi-cloud-integration."
+            "cloudSolutionsDesc": "Vores ekspertise sikrer en gnidningsfri cloudmigrering og multi-cloud-integration."
         }
     },
     "Hero": {
-        "demoBannerTitle": "Din løsningspartner <br> til forretningssucces",
-        "whoWeAreDesc": "Vi forener kunstig intelligens og Internet of Things for at drive innovation og levere fremtidssikrede teknologiløsninger.",
+        "demoBannerTitle": "Din løsningspartner <br> for forretningssucces",
+        "whoWeAreDesc": "Vi er en teknologirådgivningsvirksomhed, der leverer praktiske, skalerbare og sikre løsninger, som hjælper virksomheder med at omfavne innovation og forberede sig på en forbundet digital fremtid.",
         "learnMore": "Læs mere",
         "slides": [
             {
-                "title": "Din løsningspartner <br> til forretningssucces",
-                "description": "Vi forener kunstig intelligens og Internet of Things for at drive innovation og levere fremtidssikrede teknologiløsninger."
+                "title": "Din løsningspartner <br> for forretningssucces",
+                "description": "Vi er en teknologirådgivningsvirksomhed, der leverer praktiske, skalerbare og sikre løsninger, som hjælper virksomheder med at omfavne innovation og forberede sig på en forbundet digital fremtid."
             },
             {
-                "title": "Forbundne systemer. <br> Klogere beslutninger.",
-                "description": "Forén data, cloud og virksomhedsplatforme, så dine teams kan arbejde hurtigere med klarhed og tryghed."
+                "title": "Forbundne systemer. <br> Smartere beslutninger.",
+                "description": "Forén data, cloud og enterprise-platforme, så dine teams kan handle hurtigere med fokus og tillid."
             },
             {
-                "title": "Byg. Sikr. <br> Skaler med tillid.",
-                "description": "Fra cybersikkerhed til moderne infrastruktur beskytter og driver vi den teknologi, der holder din virksomhed kørende."
+                "title": "Byg. Sikr. <br> Skalér med tillid.",
+                "description": "Fra cybersikkerhed til netværksinfrastruktur beskytter og driver vi den teknologi, der får din forretning til at køre."
             },
             {
-                "title": "Produkter der <br> driver din forretning.",
-                "description": "PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform og vores komplette forretningssuite hjælper organisationer med at ansætte, drive, sælge og skalere i ét forbundet økosystem."
+                "title": "Produkter, der <br> driver din forretning.",
+                "description": "PeopleHub HCM, ProcessHub Operations Suite, CommerceHub Unified Commerce Platform og vores samlede forretningssuite hjælper organisationer med at ansætte, drive, sælge og skalere inden for ét forbundet økosystem."
             }
         ]
     },
     "whatWeDoSection": {
         "title": "Hvad vi gør",
-        "subtitle": "Skræddersyede løsninger til intelligent konnektivitet",
+        "subtitle": "Løsninger til intelligent forbindelse",
         "consulting": "Rådgivning",
-        "consultingDesc": "Vi hjælper med at skabe en strategi, der driver teknologiledet forretningssucces. Vores team udvikler planer, der optimerer din vækstvej ved hjælp af avancerede digitale værktøjer og teknologier.",
+        "consultingDesc": "Vi hjælper med at skabe en strategi, der driver teknologidrevet forretningssucces. Vores team udvikler planer, der optimerer din vej til vækst ved at anvende avancerede digitale værktøjer og teknologier.",
         "implementation": "Implementering",
-        "implementationDesc": "Vores eksperter på tværs af centrale teknologier og forretningsfunktioner leverer omfattende forretningsløsninger.",
-        "managedServices": "Managed services",
-        "managedServicesDesc": "Vores managed services-team sikrer din digitale investering med overvågning, vedligeholdelse og support fra ende til anden."
+        "implementationDesc": "Vores konsulenter leverer omfattende forretningsløsninger inden for store teknologier og forretningsfunktioner.",
+        "managedServices": "Administrerede services",
+        "managedServicesDesc": "Vores team sikrer din digitale investering med overvågning, vedligeholdelse og end-to-end support."
     },
     "philosophy": {
         "title": "Vores filosofi",
-        "heading": "Innovation til en forbundet fremtid",
-        "paragraph1": "Vi fokuserer på at udvikle og levere teknologiløsninger, der imødekommer vores kunders skiftende behov og udfordringer. Vi prioriterer agilitet, tilpasningsevne og respons, så vi hurtigt kan skifte kurs i takt med markedet og kundernes krav.",
-        "quote": "Transformér driften med smarte, clouddrevne løsninger designet til vækst og enkelhed.",
-        "paragraph2": "Vi skaber fremadskuende løsninger, der redefinerer, hvordan virksomheder arbejder, og sikrer, at de holder sig foran i et digitalt landskab i forandring.",
+        "heading": "Skaber til en integreret fremtid",
+        "paragraph1": "Vi bygger teknologiløsninger, der opfylder vores kunders skiftende behov og udfordringer. Vi prioriterer agilitet, tilpasningsevne og lydhørhed, så vi hurtigt kan reagere på nye kundebehov.",
+        "quote": "Transformér drift med smarte, cloud-drevne løsninger designet til vækst og enkelhed.",
+        "paragraph2": "Vi skaber løsninger, der hjælper virksomheder med at operere mere effektivt og forblive foran i en foranderlig digital verden.",
         "readMore": "Læs mere"
     },
     "servicesStats": {
         "servicesTitle": "Vores services",
         "servicesHeading": "Hvad vi tilbyder",
-        "servicesDescription": "Vi hjælper virksomheder med at strømline drift, styrke beslutninger og drive digital transformation med præcision.",
+        "servicesDescription": "Vi hjælper virksomheder med at forenkle drift og forretningsbeslutninger og driver digital transformation med præcision.",
         "statFeedback": "Positiv feedback",
         "statProjects": "Projekter",
         "statUsers": "Brugere",
-        "statContributors": "Bidragsydere",
-        "serviceWebEnterprise": "Web- og virksomhedsapplikationer",
-        "descWebEnterprise": "Skræddersyede web- og enterprise-applikationer til ydeevne, skalerbarhed og smidige workflows.",
-        "serviceCloudDevOps": "Cloud & DevOps",
-        "descCloudDevOps": "Cloud-arkitektur, CI/CD-pipelines og DevOps-praksis der accelererer levering og øger pålidelighed.",
+        "statContributors": "Bidragydere",
+        "serviceWebEnterprise": "Web- og enterprise-applikationer",
+        "descWebEnterprise": "Skræddersyede web- og enterprise-applikationer bygget til ydeevne, skalerbarhed og gnidningsfri forretningsworkflows.",
+        "serviceCloudDevOps": "Cloud og DevOps",
+        "descCloudDevOps": "Cloud-arkitektur, CI/CD-pipelines og DevOps-praksisser, der accelererer levering og forbedrer stabiliteten.",
         "serviceCybersecurity": "Cybersikkerhed",
-        "descCybersecurity": "End-to-end sikkerhedsstrategier der beskytter systemer, data og brugere mod digitale trusler.",
+        "descCybersecurity": "End-to-end sikkerhedsstrategier, der beskytter systemer, data og brugere mod skiftende digitale trusler.",
         "serviceMobileApps": "Mobilapps",
         "descMobileApps": "Native og cross-platform mobiloplevelser designet til engagement, hastighed og brugervenlighed.",
-        "serviceAI": "AI & Machine Learning",
-        "descAI": "Intelligente modeller og automatisering der omsætter data til forudsigelser, indsigter og bedre beslutninger.",
-        "serviceBigData": "Big Data & Analyse",
-        "descBigData": "Avanceret analyse og dataplatforme der afdækker trends og driver datadrevet vækst.",
+        "serviceAI": "AI og machine learning",
+        "descAI": "Intelligente modeller og automatisering, der omdanner data til forudsigelser, indsigt og smartere beslutninger.",
+        "serviceBigData": "Big data og analyse",
+        "descBigData": "Avanceret analyse og dataplatforme, der afdækker trends og driver datadrevet vækst.",
         "serviceUIUX": "UI/UX-design",
-        "descUIUX": "Menneskecentreret interface- og oplevelsesdesign for klare, intuitive digitale produkter.",
-        "serviceERP": "ERP & Forretningsautomatisering",
-        "descERP": "ERP-systemer og procesautomatisering der forbinder økonomi, drift og teams i ét flow.",
+        "descUIUX": "Menneskecentreret interface- og oplevelsesdesign, der gør digitale produkter klare, intuitive og en fornøjelse at bruge.",
+        "serviceERP": "ERP og forretningsautomatisering",
+        "descERP": "ERP-systemer og procesautomatisering, der forbinder økonomi, drift og teams i ét flow.",
         "serviceBlockchain": "Blockchain-løsninger",
-        "descBlockchain": "Sikre, transparente blockchain-løsninger til tillid, sporbarhed og digitale transaktioner."
+        "descBlockchain": "Sikre, transparente blockchain-løsninger til tillid, sporbarhed og næste generations onlinetransaktioner."
     },
     "techInnovation": {
         "subtitle": "Morgendagens teknologi",
@@ -181,124 +184,138 @@
     "ourProducts": {
         "sectionTitle": "Vores produkter",
         "heading": "Avancerede løsninger til ethvert behov",
-        "description": "Udforsk vores produkter designet til at øge performance, strømline drift og drive vækst. Fra AI-drevet analytics til skalerbare cloudløsninger dækker vores udbud forskellige forretningsbehov med præcision og pålidelighed.",
+        "description": "Vores produktsortiment øger ydeevnen, forenkler driften og driver vækst. Fra analyse til cloudløsninger opfylder vores løsninger forskellige forretningsbehov med omtanke og pålidelighed.",
         "items": [
             {
-                "title": "Forretningssystem",
-                "description": "Et integreret ERP til at styre økonomi, lager og drift fra én sandhedskilde for voksende virksomheder."
+                "title": "BusinessHub ERP",
+                "description": "Et integreret ERP-system til at styre økonomi, lager og drift fra én samlet sandhedskilde for virksomheder i vækst."
             },
             {
-                "title": "SAP Business One-brugerflade",
-                "description": "Styrk din forretningsdrift med vores brugervenlige SAP Business One-interface, designet til gnidningsfri navigation og effektiv styring af virksomhedens ressourcer."
+                "title": "BridgeHub User Interface",
+                "description": "Forbedr dine forretningsprocesser ved at bruge SAP Business One-brugerfladen, designet til uafbrudt navigation og effektiv styring af dine enterprise-ressourcer."
             },
             {
-                "title": "Personaleadministration",
-                "description": "En komplet HCM-platform til at ansætte, lede og udvikle din arbejdsstyrke med løn, fremmøde og talentværktøjer samlet ét sted."
+                "title": "PeopleHub HCM",
+                "description": "En komplet human capital management-platform til at ansætte, styre og udvikle din arbejdsstyrke med løn, fremmøde og talentværktøjer på ét sted."
             },
             {
-                "title": "Handelsplatform",
-                "description": "En unified commerce-platform, der forbinder salgskanaler, lager og kunderejser, så du kan sælge og levere med konsistens."
+                "title": "CommerceHub UCP",
+                "description": "En samlet commerce-platform, der forbinder salgskanaler, lager og kunderejser, så du kan sælge og levere med konsistens."
             },
             {
-                "title": "Driftssuite",
-                "description": "Strømlin den daglige drift med forbundne workflows, automatisering og synlighed på tværs af teams og processer."
+                "title": "ProcessHub Operations Suite",
+                "description": "Strømlin den daglige drift med forbundne workflows, automatisering og synlighed tværs teams og processer."
             },
             {
                 "title": "PortedForm",
-                "description": "Rediger, annoter og administrer PDF’er online med en gratis, hurtig og nem editor til hverdagens dokumentworkflows.",
+                "description": "Rediger, kommentér og administrer PDF-filer online med en gratis, hurtig og brugervenlig editor bygget til daglige dokumentworkflows.",
                 "free": true
             },
             {
-                "title": "Ansæt advokat online",
-                "description": "Kom i kontakt med erfarne juridiske fagfolk via vores strømlinede onlineplatform, så det er nemt at finde og ansætte den rette advokat."
+                "title": "Hire Lawyer Online",
+                "description": "Kom i kontakt med erfarne juridiske eksperter via vores forenklede onlineplatform, der gør det nemt at finde og ansætte den rette advokat til dine behov."
             },
             {
-                "title": "Visuel AI",
-                "description": "Omdan visuelle data til handlingsrettet indsigt med AI-drevet vision til overvågning, detektion og klogere beslutninger."
+                "title": "InsightHub Vision AI",
+                "description": "Omdan visuelle data til brugbar indsigt med AI-drevet vision, der understøtter overvågning, detektion og smartere beslutninger."
             },
             {
-                "title": "Patientpleje",
-                "description": "En patientplejeplatform, der hjælper sundhedsteams med journaler, aftaler og opfølgning for en mere gnidningsfri klinisk oplevelse."
+                "title": "HealthHub Patient Care",
+                "description": "En patientplejeplatform, der hjælper sundhedsteams med at administrere journaler, aftaler og opfølgninger for en mere gnidningsfri klinisk oplevelse."
             },
             {
-                "title": "Forbinder",
-                "description": "Integrer og administrer dine systemer med vores connector til kommunikation via WhatsApp, cellulære API’er og e-mail, designet til at strømline dataflow."
+                "title": "Connector",
+                "description": "Integrer og administrer dine systemer ubesværet med vores connector til kommunikation via WhatsApp, mobil-API'er og e-mail, bygget til at forbedre flowet."
             }
         ],
-        "showMore": "Vis mere"
+        "showMore": "Vis mere",
+        "freeLabel": "Gratis"
     },
     "about": {
         "heroTitle": "Hvem vi er",
-        "heroSubtitle": "Vi redefinerer resultater ved hvert skridt",
+        "heroSubtitle": "Styrker virksomheder gennem teknologi",
         "whoWeAre": "Hvem vi er",
-        "mainHeading": "Innover fremtiden med AIOT-løsninger",
-        "desc1": "Vi er en fremadskuende IT-virksomhed, der revolutionerer brancher med banebrydende AI- og IoT-teknologier.",
-        "desc2": "I hjertet af vores virksomhed ligger passion for innovation. Vores ekspertteam udnytter AIoT til at levere smarte, skalerbare og sikre løsninger.",
-        "feature1Title": "AI-drevet innovation",
-        "feature1Desc": "Frigør effektivitet og automatisering med kraftfulde AI-løsninger.",
-        "feature2Title": "Gnidningsfri IoT-integration",
-        "feature2Desc": "Forbind enheder for realtidsindsigt og smartere drift.",
-        "feature3Title": "Skalerbare og sikre løsninger",
-        "feature3Desc": "Voks trygt med sikre, skalerbare AIoT-løsninger.",
-        "darkSectionTitle": "Styrk morgendagen med smarte AIOT-løsninger",
-        "darkSectionDesc1": "AIOT er en leverandør af forretnings-IT-løsninger, der styrker virksomheder med innovativ teknologi. Vi specialiserer os i softwareudvikling, AI-integration, IoT, cloud og digital transformation. Vores mission er at levere moderne, pålidelige og skalerbare løsninger, der driver effektivitet, produktivitet og vækst.",
-        "darkSectionDesc2": "Vi vil lede vejen inden for AIOT-innovation og styrke virksomheder med intelligente løsninger, der transformerer drift og skaber vækst.",
+        "mainHeading": "Styrker virksomheder<br />gennem teknologi",
+        "desc1": "Vi er en fremadskuende teknologirådgivningsvirksomhed, der hjælper organisationer med at navigere forandring, omfavne innovation og skabe varig forretningsværdi.",
+        "desc2": "Vi fokuserer på sikre løsninger, der transformerer drift, leverer målbart ROI, reducerer risiko og opnår compliance, og hjælper virksomheder med at forberede sig på en forbundet digital fremtid.",
+        "feature1Title": "Innovation og transformation",
+        "feature1Desc": "At vende forretningsproblemer til muligheder gennem teknologi hjælper vores kunder med at føle sig optimistiske og motiverede omkring deres fremtidige vækst.",
+        "feature2Title": "Forbundne og intelligente løsninger",
+        "feature2Desc": "Forbinder mennesker, processer, data og teknologi for at muliggøre smartere drift.",
+        "feature3Title": "Skalerbar og sikker teknologi",
+        "feature3Desc": "Opbygger pålidelige teknologiske fundamenter for at understøtte vækst og langsigtet succes.",
+        "aboutUs": "Om os",
+        "darkSectionTitle": "Styrker virksomheder gennem teknologi",
+        "darkSectionDesc1": "Vi hjælper organisationer med at håndtere digital forandring og sikre vækst med innovative, skalerbare og sikre teknologiløsninger.",
+        "darkSectionDesc2": "Vi kombinerer forretningsekspertise, teknologiske kapaciteter og brancheindsigt for at hjælpe organisationer med at modernisere drift, forbedre effektivitet, forbinde mennesker og processer og skabe varig forretningsværdi.",
         "visionTitle": "Vision",
-        "visionDesc": "At blive en førende leverandør af transformative teknologiløsninger, der hjælper virksomheder med at trives i et digitalt landskab i hurtig forandring. Vi vil skabe en fremtid, hvor teknologi er katalysator for innovation, vækst og positiv forandring.",
+        "visionDesc": "At være en betroet teknologipartner for organisationer, der søger at transformere, innovere og trives i en hastigt foranderlig digital verden, hvor teknologi muliggør vækst, operationel excellence og meningsfulde forretningsresultater.",
         "missionTitle": "Mission",
-        "missionDesc": "Vi prioriterer innovation og investerer i forskning og udvikling for at skabe nye produkter, services og platforme, der imødekommer markedstendenser og kundebehov. Vi sætter kundens behov i centrum for drift og beslutninger.",
+        "missionDesc": "Levere praktiske, innovative teknologiløsninger, der løser voksende forretningsbehov. Vi kombinerer kontinuerlig innovation, teknisk ekspertise og en dybdegående forståelse af vores kunders udfordringer for at levere løsninger, der forbedrer effektivitet, muliggør vækst og skaber langsigtet værdi.",
+        "missionDesc2": "Vi prioriterer innovation gennem forskning og udvikling for at levere services og skabe nye produkter og platforme, der adresserer forretningstrends og kundebehov. Vi prioriterer også kunderne ved at sætte deres krav og præferencer i centrum for vores drift og beslutninger.",
         "smartSolutions": "Smarte løsninger",
-        "smartSolutionsHeading": "Udnyt kraften i AI og IoT til at drive innovation, effektivitet og vækst på tværs af brancher.",
-        "transformTitle": "Transformér fremtiden med AIOT",
-        "transformDesc": "Styrk virksomheder med intelligente, forbundne løsninger til øget produktivitet. Lever sikre, skalerbare AIoT-teknologier, der driver innovation og vækst.",
-        "transformBoxTitle": "Transformér fremtiden med AIOT",
+        "smartSolutionsHeading": "Udnytter kraften i intelligente teknologier til at fremme innovation, effektivitet og udvidelse tværs brancher.",
+        "transformTitle": "Transformerer fremtiden med intelligent teknologi",
+        "transformDesc": "Styrker virksomheder med intelligente, forbundne løsninger, der øger produktiviteten og muliggør smartere drift. Vi leverer sikre, skalerbare teknologier, der hjælper dig med at innovere, forbedre effektivitet og vokse bæredygtigt.",
+        "transformBoxTitle": "Transformerer fremtiden med intelligent teknologi",
         "list1": "Intelligent automatisering",
-        "list2": "Realtidsindsigt",
+        "list2": "Realtidsinformation",
         "list3": "Skalerbar vækst",
+        "coreValuesTitle": "Kerneværdier",
+        "coreValues": [
+            "Innovation",
+            "Kundefokus",
+            "Fremragende kvalitet",
+            "Agilitet",
+            "Integritet og tillid",
+            "Samarbejde"
+        ],
         "presenceTitle": "Vores tilstedeværelse",
         "presenceHighlight": "Tilstedeværelse",
-        "presenceHeading": "Udvid globalt, innover lokalt",
-        "presenceDesc": "Med kontorer i Asien og Europa er vi tilgængelige 24/7.",
+        "presenceHeading": "Global udvidelse, lokal innovation",
+        "presenceDesc": "Med kontorer i Asien og Europa er vi tilgængelige for at forbinde 24/7.",
         "pakistan": "Pakistan",
         "uk": "UK",
         "uae": "UAE",
-        "ksa": "Saudi-Arabien",
+        "ksa": "KSA",
         "australia": "Australien",
         "lahore": "Lahore",
         "glasgow": "Glasgow",
         "dubai": "Abu Dhabi, UAE",
         "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUK": "AIOT Consulting L.L.C",
-        "companyUAE": "A I O Technology Consultancy - L.L.C ",
+        "companyUAE": "A I O Technology Consultancy - L.L.C",
         "companyGeneral": "AIOT Consulting",
         "address": "Adresse:",
         "email": "E-mail:",
         "phone": "Telefon:",
-        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gaden, Abu Dhabi, UAE",
-        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien"
+        "pakistanAddress": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan",
+        "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
+        "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom"
     },
     "clientWall": {
-        "heroTitle": "kundevæg",
-        "heroHighlight": "kunde",
-        "heroSubtitle": "Forpligtet til en grønnere fremtid: vores kundevæg",
-        "sectionSubtitle": "AIOT IT Solutions: styrk din forretning med gnidningsfri IT-outsourcing",
-        "sectionTitle": "Effektivitet, innovation og ekspertise tilpasset dine behov",
-        "sectionDesc": "Hos AIOT IT Solutions specialiserer vi os i pålidelig IT-outsourcing, der driver operationel excellence og omkostningseffektivitet. Vores ekspertteam sikrer, at din virksomhed drager fordel af moderne teknologier og innovative løsninger, samtidig med at overhead reduceres og produktiviteten øges.",
+        "heroTitle": "Kundevæg",
+        "heroHighlight": "Kunde",
+        "heroSubtitle": "Engageret i en fremtid: Vores kundevæg",
+        "sectionSubtitle": "Styrker din virksomhed gennem teknologi",
+        "sectionTitle": "Ekspertise, innovation og teknologi skræddersyet til dine behov",
+        "sectionDesc": "Vi hjælper organisationer med at løse komplekse forretningsudfordringer med praktiske, innovative og skalerbare teknologiløsninger. Vi specialiserer os i teknologirådgivning, digital transformation, enterprise-løsninger, cloud, cybersikkerhed, data, AI og administrerede services, og hjælper virksomheder med at forbedre effektivitet, styrke drift og realisere vækst.",
+        "sectionDesc2": "Fra strategi og implementering til løbende teknologistyring har vi hjulpet kunder med at opnå konkrete resultater, hvilket demonstrerer vores evne til at levere sikre, pålidelige og forretningsfokuserede løsninger, der arbejder smartere, tilpasser sig hurtigere og forbliver foran i en udviklende digital verden.",
         "clientsTitle": "Vores kunder",
         "clientsHighlight": "Kunder",
-        "clientsDesc": "Betroet af førende virksomheder for innovative IT-løsninger og uovertruffen ekspertise."
+        "clientsDesc": "Betroet af ledende virksomheder for innovative IT-løsninger og uovertruffen ekspertise."
     },
     "contact": {
         "heroTitle": "Kontakt os",
         "heroHighlight": "Kontakt",
         "heroSubtitle": "Kom i kontakt med vores team",
         "introTitle": "Lad os forbindes",
-        "introHeading": "Vi vil gerne høre fra dig",
-        "introDesc": "Uanset om du har et spørgsmål om vores services, har brug for teknisk support eller vil drøfte et projekt, er vores team klar til at hjælpe. Kontakt os via kanalerne nedenfor eller formularen.",
+        "introHeading": "Vi vil elske at høre fra dig",
+        "introDesc": "Uanset om du har et spørgsmål om vores services, brug for teknologisk vejledning, brug for support eller ønsker at diskutere et potentielt projekt, er vores team klar til at hjælpe. Kontakt os via en af kanalerne nedenfor eller udfyld kontaktformularen, og vi vil med glæde undersøge, hvordan vi kan støtte din virksomhed.",
         "phoneTitle": "Telefon",
         "emailTitle": "E-mail",
         "hoursTitle": "Åbningstider",
-        "hours": "Man – fre / 10:00 – 19:00",
+        "hours": "Man til fre / 09:00 til 18:00",
         "formTitle": "Send os en besked",
         "nameLabel": "Fulde navn *",
         "namePlaceholder": "Indtast dit fulde navn",
@@ -309,26 +326,169 @@
         "subjectLabel": "Emne *",
         "subjectPlaceholder": "Hvordan kan vi hjælpe?",
         "messageLabel": "Besked *",
-        "messagePlaceholder": "Fortæl os mere om din henvendelse...",
+        "messagePlaceholder": "Fortæl os mere om din forespørgsel...",
         "sendButton": "Send besked",
         "officesTitle": "Vores kontorer",
-        "pakistanOffice": "Kontor i Pakistan",
-        "ukOffice": "Kontor i UK",
-        "uaeOffice": "Kontor i UAE",
+        "pakistanOffice": "Pakistan-kontor",
+        "ukOffice": "UK-kontor",
+        "uaeOffice": "UAE-kontor",
         "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
-        "companyUAE": "A I O Information Technology",
+        "companyUAE": "A I O Technology Consultancy - L.L.C",
         "companyUK": "AIOT Consulting L.L.C",
-        "pakistanAddress": "15/1C, GECHS, Fase III, Peco Road, Lahore 54100, Punjab, Pakistan",
-        "ukAddress": "3 Hoy Avenue, Glasgow, Storbritannien",
-        "uaeAddress": "Kontor M23, Madinat Office, Al Najda-gaden, Abu Dhabi, UAE",
+        "pakistanAddress": "15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan",
+        "ukAddress": "3 Hoy Avenue, Glasgow, United Kingdom",
+        "uaeAddress": "Office M23, Madinat Office, Al Najda Street, Abu Dhabi, UAE",
         "mapView": "Kortvisning",
         "mapCity": "Lahore, Pakistan"
     },
+    "newsPage": {
+        "eyebrow": "Ressourcer",
+        "title": "Nyheder",
+        "subtitle": "Virksomhedsopdateringer, produktlanceringer og milepæle, der former din fremtid.",
+        "sectionLabel": "Seneste opdateringer",
+        "sectionTitle": "Følg med i de seneste nyheder med os.",
+        "sectionDesc": "Følg annonceringer, lanceringer og partnerskabshistorier, der afspejler, hvordan vi hjælper organisationer med at innovere med tillid.",
+        "cta": "Tal med vores team",
+        "items": [
+            {
+                "tag": "Meddelelse",
+                "date": "sep. 2026",
+                "title": "Vi udvider vores regionale tilstedeværelse i Asien og Europa.",
+                "excerpt": "Nye leveringshubs og partnerprogrammer styrker vores support til kunder gennem digital transformation.",
+                "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
+                "featured": true
+            },
+            {
+                "tag": "Produkt",
+                "date": "aug. 2026",
+                "title": "Intelligente automatiseringsopdateringer tværs vores enterprise-suite",
+                "excerpt": "Nye funktioner, der hjælper teams med at forenkle opgaver og handle på indsigt i realtid.",
+                "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Partnerskab",
+                "date": "jul. 2026",
+                "title": "Samarbejdsalliancer accelererer cloud- og ERP-levering.",
+                "excerpt": "Tættere samarbejde med ledende platforme for at bringe skalerbare løsninger hurtigere på markedet.",
+                "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
+            },
+            {
+                "tag": "Virksomhed",
+                "date": "jun. 2026",
+                "title": "Vi anerkendes for kundefokuseret teknologirådgivning.",
+                "excerpt": "En milepæl, der afspejler vores dedikation til praktisk innovation og varig forretningsværdi.",
+                "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
+            }
+        ]
+    },
+    "blogsPage": {
+        "eyebrow": "Ressourcer",
+        "title": "Blogs",
+        "subtitle": "Indsigt, trends og eksperters perspektiver på teknologi og forretningsinnovation.",
+        "sectionLabel": "Fra bloggen",
+        "sectionTitle": "Idéer, der hjælper dig fremad",
+        "sectionDesc": "Udforsk praktiske artikler om digital transformation, intelligent teknologi og opbygning af robuste, vækstklare organisationer.",
+        "readMore": "Læs artikel",
+        "ctaTitle": "Vil du have skræddersyet vejledning til din virksomhed?",
+        "ctaDesc": "Vores konsulenter hjælper dig med at omdanne idéer til sikre, skalerbare teknologiprogrammer, der leverer definerbare resultater.",
+        "cta": "Kontakt os",
+        "posts": [
+            {
+                "category": "Digital transformation",
+                "readTime": "6 min. læsning",
+                "title": "Hvordan intelligente systemer omdanner kompleksitet til fokus",
+                "excerpt": "Praktiske måder at forbinde mennesker, processer og platforme, så beslutninger bevæger sig hurtigere gennem virksomheden.",
+                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cloud og ERP",
+                "readTime": "5 min. læsning",
+                "title": "Opbygning af skalerbare fundamenter for vækst",
+                "excerpt": "Hvorfor sikker, tilpasningsdygtig teknologiarkitektur skiller kortsigtede løsninger fra langsigtet værdi.",
+                "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "AI og automatisering",
+                "readTime": "7 min. læsning",
+                "title": "Fra indsigt til handling med smartere drift",
+                "excerpt": "Udforsk, hvordan automatisering og analyse hjælper teams med at forbedre effektiviteten, samtidig med at den menneskelige kontekst bevares.",
+                "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Cybersikkerhed",
+                "readTime": "4 min. læsning",
+                "title": "Sikkerhed, der understøtter innovation frem for at bremse den.",
+                "excerpt": "Et kundefokuseret perspektiv på at beskytte systemer, samtidig med at leveringen forbliver agil og forretningsresultaterne klare.",
+                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Ledelse",
+                "readTime": "5 min. læsning",
+                "title": "Ledelse af forandring i en forbundet digital verden",
+                "excerpt": "Vejledning til organisationer, der navigerer i transformation med tillid, klarhed og målbare fremskridt.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
+            },
+            {
+                "category": "Forretningstrends",
+                "readTime": "6 min. læsning",
+                "title": "Hvad emerging technology betyder for morgendagens virksomheder",
+                "excerpt": "Trends værd at følge, og hvordan man tager dem i brug med en praktisk, resultatorienteret roadmap.",
+                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
+            }
+        ]
+    },
+    "insightsPage": {
+        "eyebrow": "Ressourcer",
+        "title": "Innovation gennem indsigt",
+        "subtitle": "Thought leadership og nyttige strategier, der hjælper din organisation med at transformere, innovere og trives.",
+        "introLabel": "Thought Leadership",
+        "introTitle": "Omdanner nye trends til langsigtet fordel",
+        "introDesc1": "Innovation sammen med indsigt samler strategi, brancheperspektiv og teknologisk ekspertise for at hjælpe ledere med at navigere i forandring med klarhed.",
+        "introDesc2": "Fra digital transformation og intelligent automatisering til sikre, skalerbare platforme deler vi systemer, der hjælper organisationer med at omdanne mål til handling.",
+        "quote": "Teknologi skaber den største værdi, når den er praktisk, sikker og designet omkring reelle kundebehov.",
+        "cta": "Diskutér din roadmap",
+        "pillar1Title": "Strategi med klarhed",
+        "pillar1Desc": "Definér, hvor teknologi skaber den største værdi, og byg en roadmap, dine teams kan udføre med tillid.",
+        "pillar2Title": "Forbundne kapaciteter",
+        "pillar2Desc": "Tilpasning af mennesker, processer, data og platforme for at gøre drift smartere, hurtigere og mere robust.",
+        "pillar3Title": "Observerbare resultater",
+        "pillar3Desc": "Ret opmærksomheden mod effektivitet, vækst og kundepåvirkning – ikke teknologi for teknologiens skyld.",
+        "frameworkLabel": "Insight Framework",
+        "frameworkTitle": "En praktisk vej fra idé til effekt",
+        "frameworkDesc": "Brug denne enkle tilgang til at prioritere initiativer, reducere risiko og holde transformationen fokuseret på stabil vækst.",
+        "insights": [
+            {
+                "step": "01",
+                "title": "Start med forretningsudfordringen.",
+                "desc": "Ram transformationen ind omkring resultater: produktivitet, oplevelse, robusthed – og vælg derefter den rette teknologiske vej."
+            },
+            {
+                "step": "02",
+                "title": "Design til skala og sikkerhed",
+                "desc": "Byg fundamenter, der understøtter vækst, beskytter kritiske systemer og tilpasser sig, når markeder og kundebehov udvikler sig."
+            },
+            {
+                "step": "03",
+                "title": "Aktivér indsigt tværs organisationen.",
+                "desc": "Omdan data og intelligent automatisering til daglig beslutningsstøtte for ledere og frontlinjeteams."
+            },
+            {
+                "step": "04",
+                "title": "Bevar momentum med partnere.",
+                "desc": "Kombinér kontinuerlig innovation med kundecentreret levering, så fremskridt opbygges over tid."
+            }
+        ],
+        "bannerTitle": "Klar til at innovere med formål?",
+        "bannerDesc": "Samarbejd med os om at omdanne viden til sikre, skalerbare løsninger, der forbedrer effektivitet og skaber langsigtet værdi.",
+        "bannerCta": "Start en samtale"
+    },
     "footer": {
         "newsletterTitle": "FÅ OPDATERINGER",
+        "newsletterHeading": "Hold dig foran med indsigt fra AIOT",
+        "newsletterDesc": "Produktopdateringer, tips til digital transformation og partnerskabsnyheder direkte i din indbakke.",
         "emailPlaceholder": "Indtast din e-mail...",
         "subscribe": "Abonner",
-        "description": "Vi former din fremtid på ny.",
+        "description": "Omformer din fremtid med AI, IoT og enterprise-teknologiløsninger, der skaber reelle forretningsresultater.",
         "quickLinks": "Genveje",
         "home": "Hjem",
         "about": "Om os",
@@ -343,151 +503,36 @@
         "pos": "POS",
         "connector": "Connector",
         "hcm": "HCM",
+        "language": "Sprog",
+        "followUs": "Følg os",
         "rights": "Alle rettigheder forbeholdes.",
         "copyright": "Copyright © {year} AIOT. Alle rettigheder forbeholdes.",
+        "letsTalk": "Lad os tale",
         "privacyPolicy": "Privatlivspolitik",
-        "termsAndConditions": "Vilkår og betingelser"
+        "termsAndConditions": "Vilkår og betingelser",
+        "termsOfService": "Servicevilkår"
     },
-    "newsPage": {
-        "eyebrow": "Ressourcer",
-        "title": "Nyheder",
-        "subtitle": "Virksomhedsopdateringer, produktlanceringer og milepæle, der former AIOT's fremtid.",
-        "sectionLabel": "Seneste opdateringer",
-        "sectionTitle": "Hold dig opdateret med AIOT-nyheder",
-        "sectionDesc": "Følg meddelelser, lanceringer og partnerskabshistorier, der viser, hvordan vi hjælper organisationer med at innovere trygt.",
-        "cta": "Tal med vores team",
-        "items": [
-            {
-                "tag": "Meddelelse",
-                "date": "Sep 2026",
-                "title": "AIOT udvider regional tilstedeværelse i Asien og Europa",
-                "excerpt": "Nye delivery hubs og partnerprogrammer styrker, hvordan vi støtter kunder gennem digital transformation.",
-                "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
-                "featured": true
-            },
-            {
-                "tag": "Produkt",
-                "date": "Aug 2026",
-                "title": "Opdateringer af intelligent automatisering i vores enterprise-suite",
-                "excerpt": "Nye funktioner hjælper teams med at strømline drift og handle på realtidsindsigter.",
-                "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
-            },
-            {
-                "tag": "Partnerskab",
-                "date": "Jul 2026",
-                "title": "Strategiske partnerskaber accelererer cloud- og ERP-levering",
-                "excerpt": "Tættere samarbejde med førende platforme bringer skalerbare løsninger hurtigere på markedet.",
-                "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
-            },
-            {
-                "tag": "Virksomhed",
-                "date": "Jun 2026",
-                "title": "AIOT anerkendt for kundefokuseret teknologirådgivning",
-                "excerpt": "En milepæl, der afspejler vores engagement i praktisk innovation og varig forretningsværdi.",
-                "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
-            }
-        ]
-    },
-    "blogsPage": {
-        "eyebrow": "Ressourcer",
-        "title": "Blogs",
-        "subtitle": "Indsigter, trends og ekspertperspektiver om teknologi og forretningsinnovation.",
-        "sectionLabel": "Fra bloggen",
-        "sectionTitle": "Idéer der hjælper dig videre",
-        "sectionDesc": "Udforsk praktiske artikler om digital transformation, intelligent teknologi og organisationer klar til vækst.",
-        "readMore": "Læs artikel",
-        "ctaTitle": "Vil du have skræddersyet vejledning til din forretning?",
-        "ctaDesc": "Vores konsulenter hjælper dig med at omsætte idéer til sikre, skalerbare teknologiprogrammer med målbare resultater.",
-        "cta": "Kontakt os",
-        "posts": [
-            {
-                "category": "Digital transformation",
-                "readTime": "6 min læsning",
-                "title": "Hvordan intelligente systemer gør kompleksitet til klarhed",
-                "excerpt": "Praktiske måder at forbinde mennesker, processer og platforme, så beslutninger bevæger sig hurtigere.",
-                "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
-            },
-            {
-                "category": "Cloud & ERP",
-                "readTime": "5 min læsning",
-                "title": "Byg skalerbare fundamenter for vækst",
-                "excerpt": "Hvorfor sikker, tilpasningsdygtig arkitektur skiller kortsigtede fixes fra langsigtet værdi.",
-                "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
-            },
-            {
-                "category": "AI & automatisering",
-                "readTime": "7 min læsning",
-                "title": "Fra indsigt til handling med smartere drift",
-                "excerpt": "Hvordan automatisering og analytics forbedrer effektiviteten uden at miste det menneskelige perspektiv.",
-                "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
-            },
-            {
-                "category": "Cybersikkerhed",
-                "readTime": "4 min læsning",
-                "title": "Sikkerhed, der understøtter innovation",
-                "excerpt": "Et kundefokuseret blik på beskyttelse af systemer med agile leverancer og klare forretningsresultater.",
-                "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
-            },
-            {
-                "category": "Lederskab",
-                "readTime": "5 min læsning",
-                "title": "Lede forandring i en forbundet digital verden",
-                "excerpt": "Vejledning til organisationer, der navigerer transformation med ro, klarhed og målbare fremskridt.",
-                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
-            },
-            {
-                "category": "Branchetrends",
-                "readTime": "6 min læsning",
-                "title": "Hvad emerging technology betyder for morgendagens virksomheder",
-                "excerpt": "Trends værd at følge og hvordan du adopterer dem med en praktisk, resultatorienteret roadmap.",
-                "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
-            }
-        ]
-    },
-    "insightsPage": {
-        "eyebrow": "Ressourcer",
-        "title": "Innover med indsigter",
-        "subtitle": "Thought leadership og praktiske strategier, der hjælper din organisation med at transformere, innovere og trives.",
-        "introLabel": "Thought leadership",
-        "introTitle": "Gør nye trends til varig fordel",
-        "introDesc1": "Innover med indsigter samler strategi, brancheperspektiv og teknologiekspertise, så ledere kan navigere forandring med klarhed.",
-        "introDesc2": "Fra digital transformation og intelligent automatisering til sikre, skalerbare platforme vi deler rammer der går fra ambition til eksekvering.",
-        "quote": "Teknologi skaber mest værdi, når den er praktisk, sikker og designet omkring reelle kundebehov.",
-        "cta": "Drøft jeres roadmap",
-        "pillar1Title": "Strategi med klarhed",
-        "pillar1Desc": "Definér hvor teknologi skaber mest værdi, og byg en roadmap jeres teams kan eksekvere med tryghed.",
-        "pillar2Title": "Forbundne kapabiliteter",
-        "pillar2Desc": "Sæt mennesker, processer, data og platforme i trit, så driften bliver smartere, hurtigere og mere resilient.",
-        "pillar3Title": "Målbare resultater",
-        "pillar3Desc": "Fokusér på effektivitet, vækst og kundeeffekt ikke teknologi for teknologiens skyld.",
-        "frameworkLabel": "Indsigtsramme",
-        "frameworkTitle": "En praktisk vej fra idé til effekt",
-        "frameworkDesc": "Brug denne simple linse til at prioritere initiativer, reducere risiko og holde transformation fokuseret på bæredygtig vækst.",
-        "insights": [
-            {
-                "step": "01",
-                "title": "Start med forretningsudfordringen",
-                "desc": "Ram transformationen omkring resultater produktivitet, oplevelse, robusthed og vælg den rette teknologivej."
-            },
-            {
-                "step": "02",
-                "title": "Design til skala og sikkerhed",
-                "desc": "Byg fundamenter, der understøtter vækst, beskytter kritiske systemer og tilpasser sig markedet."
-            },
-            {
-                "step": "03",
-                "title": "Aktivér indsigt i hele organisationen",
-                "desc": "Gør data og intelligent automatisering til daglig beslutningsstøtte for ledere og frontlinjeteams."
-            },
-            {
-                "step": "04",
-                "title": "Oprethold momentum med partnere",
-                "desc": "Kombinér løbende innovation med kundefokuseret levering, så fremskridt akkumuleres."
-            }
-        ],
-        "bannerTitle": "Klar til at innovere med formål?",
-        "bannerDesc": "Samarbejd med AIOT om at omsætte indsigter til sikre, skalerbare løsninger, der forbedrer effektivitet og skaber langsigtet værdi.",
-        "bannerCta": "Start en samtale"
+    "privacyPolicy": {
+        "eyebrow": "Juridisk",
+        "title": "Privatlivspolitik",
+        "subtitle": "Hvordan AIOT indsamler, bruger og beskytter dine oplysninger.",
+        "lastUpdatedLabel": "Sidst opdateret",
+        "lastUpdated": "28. august 2026",
+        "intro": "AIOT Consulting (\"AIOT\", \"vi\", \"os\" eller \"vores\") respekterer dit privatliv. Denne privatlivspolitik forklarer, hvordan vi indsamler, bruger, opbevarer og beskytter oplysninger, når du besøger vores hjemmeside, kontakter os eller bruger vores services.",
+        "collectTitle": "Oplysninger vi indsamler",
+        "collectDesc": "Vi kan indsamle personlige oplysninger, du giver direkte, såsom dit navn, e-mailadresse, telefonnummer, virksomhedsoplysninger og indholdet af beskeder, når du kontakter os, booker en demo eller tilmelder dig opdateringer. Vi kan også indsamle begrænsede tekniske data såsom browsertype, enhedsoplysninger og besøgte sider for at forbedre webstedets ydeevne og sikkerhed.",
+        "useTitle": "Hvordan vi bruger dine oplysninger",
+        "useDesc": "Vi bruger indsamlede oplysninger til at besvare forespørgsler, levere efterspurgte services, forbedre vores hjemmeside og produkter, sende relevante opdateringer, når du har tilmeldt dig, og beskytte mod misbrug eller uautoriseret adgang. Vi sælger ikke dine personlige oplysninger.",
+        "sharingTitle": "Deling og videregivelse",
+        "sharingDesc": "Vi kan dele oplysninger med betroede tjenesteudbydere, der hjælper os med at drive vores hjemmeside og virksomhed, kun i det omfang det er nødvendigt for at udføre deres tjenester. Vi kan også videregive oplysninger, når det kræves ved lov, eller for at beskytte rettigheder, sikkerhed og tryghed for AIOT, vores brugere eller andre.",
+        "securityTitle": "Datasikkerhed",
+        "securityDesc": "Vi anvender rimelige administrative, tekniske og organisatoriske foranstaltninger til at beskytte personlige oplysninger mod uautoriseret adgang, tab, misbrug eller ændring. Ingen overførselsmetode via internettet er fuldt sikker, så vi opfordrer dig til at anvende gode praksisser, når du deler data online.",
+        "rightsTitle": "Dine rettigheder",
+        "rightsDesc": "Afhængigt af din placering kan du have ret til at få adgang til, rette, opdatere eller anmode om sletning af dine personlige oplysninger. Du kan også til enhver tid afmelde dig markedsføringskommunikation. For at udøve disse rettigheder, kontakt os venligst via oplysningerne nedenfor.",
+        "contactTitle": "Kontakt os",
+        "contactDesc": "Hvis du har spørgsmål til denne privatlivspolitik, eller hvordan vi behandler dine data, er du velkommen til at kontakte os.",
+        "contactCta": "Gå til kontaktsiden",
+        "changes": "Vi kan opdatere denne privatlivspolitik fra tid til anden. Eventuelle ændringer vil blive offentliggjort på denne side med en opdateret revisionsdato. Fortsat brug af vores hjemmeside efter ændringer betyder, at du accepterer den reviderede politik."
     },
     "banner": {
         "upperText": "Teknologi",
@@ -603,96 +648,96 @@
     },
     "consulting": {
         "heroHighlight": "Rådgivning",
-        "heroSubtitle": "Frigør agilitet, omfavn innovation: Vi er jeres partner i transformation",
+        "heroSubtitle": "Frigør agilitet, omfavn innovation: Vi er din partner i transformation",
         "eyebrow": "Rådgivning",
-        "heroTitle": "Strategi der gør teknologi til en fordel",
-        "heroDesc": "AIOT hjælper ledere med at definere retning, modernisere drift og designe skalerbare platforme fra rådgivning til eksekvering.",
+        "heroTitle": "Strategi, der omdanner teknologi til en fordel",
+        "heroDesc": "AIOT hjælper ledere med at definere retning, modernisere drift og designe platforme, der skalerer fra rådgivning til udførelse.",
         "heroCta": "Tal med en rådgiver",
-        "heroSecondary": "Udforsk kapabiliteter",
+        "heroSecondary": "Udforsk kapaciteter",
         "expertiseLabel": "Vores ekspertise",
-        "introTitle": "Rådgivning bygget til målbare resultater",
-        "introDesc": "Vi kombinerer strategisk indsigt, branchedybde og praktisk teknologiexpertise, så I kan bevæge jer hurtigere, reducere risiko og skabe varig konkurrencefordel.",
-        "capabilitiesLabel": "Kapabiliteter",
-        "approachLabel": "Sådan arbejder vi",
-        "approachTitle": "En klar vej fra indsigt til impact",
-        "approachDesc": "Hvert engagement følger en disciplineret metode så strategi bliver leverance, ikke en præsentation.",
-        "learnMore": "Drøft denne service",
-        "ctaTitle": "Klar til at forme jeres næste skridt?",
+        "introTitle": "Rådgivning bygget til definerbare resultater",
+        "introDesc": "Vi kombinerer strategisk perspektiv, brancheindsigt og praktisk teknologisk ekspertise for at hjælpe dig med at bevæge dig hurtigere, reducere risiko og levere varig konkurrencefordel.",
+        "capabilitiesLabel": "Kapaciteter",
+        "approachLabel": "Hvordan vi arbejder",
+        "approachTitle": "En klar vej fra indsigt til effekt",
+        "approachDesc": "Hvert samarbejde følger en disciplineret metode, så strategi bliver til levering – ikke bare et slideshow.",
+        "learnMore": "Diskutér denne service",
+        "ctaTitle": "Klar til at forme dit næste skridt?",
         "ctaDesc": "Book en konsultation og gå derfra med klarhed om prioriteter, arkitektur og en praktisk roadmap.",
-        "ctaButton": "Planlæg en konsultation",
+        "ctaButton": "Book en konsultation",
         "services": [
             {
                 "title": "IT-strategi og rådgivning",
                 "shortTitle": "IT-strategi og rådgivning",
-                "heading": "Align teknologi med forretningsambitioner",
-                "content": "Vi hjælper ledelsen med at sætte en klar teknologidagsorden investeringsprioriteter, driftsmodeller og governance så IT bliver en vækstmotor frem for et omkostningscenter.",
+                "heading": "Tilpas teknologi med forretningsambitioner.",
+                "content": "Vi hjælper ledere med at fastlægge en klar teknologidagsorden, investeringsprioriteter, driftsmodeller og governance, så IT bliver en vækstmotor og ikke en omkostningsenhed.",
                 "points": [
                     "Enterprise IT-vision og driftsmodel",
-                    "Investeringsprioritering og business cases",
+                    "Investeringsprioritering og værdicases",
                     "Governance, risiko og leverandørstrategi"
                 ]
             },
             {
                 "title": "Digital transformationsrådgivning",
                 "shortTitle": "Digital transformation",
-                "heading": "Genopfind hvordan jeres organisation arbejder",
-                "content": "Fra kunderejser til back-office-platforme designer vi transformationsprogrammer, der forbinder mennesker, processer og teknologi med adoption fra dag ét.",
+                "heading": "Genopfind, hvordan din organisation arbejder.",
+                "content": "Fra kunderejser til back-office-platforme designer vi transformationsprogrammer, der forbinder mennesker, proces og teknologi med adoption indbygget fra dag ét.",
                 "points": [
-                    "Transformations-roadmap og change design",
+                    "Transformations-roadmap og forandringsdesign",
                     "Redesign af kunde- og medarbejderoplevelse",
-                    "Program governance og værdiopfølgning"
+                    "Programstyring og værdiopfølgning"
                 ]
             },
             {
                 "title": "Forretningsprocesrådgivning",
-                "shortTitle": "Forretningsprocesser",
-                "heading": "Forenkle flows. Frigør performance.",
-                "content": "Vi diagnosticerer friktion i kritiske processer, redesigner end-to-end workflows og introducerer automatisering, hvor det skaber reel kapacitet ikke kompleksitet.",
+                "shortTitle": "Forretningsproces",
+                "heading": "Forenkl flows. Frigør performance.",
+                "content": "Vi diagnosticerer friktion i kritiske processer, redesigner end-to-end workflows og introducerer automatisering, hvor det skaber reel kapacitet – ikke kompleksitet.",
                 "points": [
-                    "Proces-discovery og modenhedsvurdering",
-                    "Design af mål-driftsmodel",
-                    "Automatisering og kontinuerlig forbedring"
+                    "Procesopdagelse og modenhedsvurdering",
+                    "Design af target operating model",
+                    "Automatisering og løbende forbedring"
                 ]
             },
             {
-                "title": "Teknologivurdering og roadmap",
-                "shortTitle": "Tech-vurdering",
-                "heading": "Vid hvor I står. Planlæg hvor I skal hen.",
-                "content": "Vi vurderer applikationer, infrastruktur, data og sikkerhedsstilling og omsætter fund til en sekventeret roadmap, jeres teams kan eksekvere med tillid.",
+                "title": "Teknologivurdering og roadmapping",
+                "shortTitle": "Teknologivurdering",
+                "heading": "Vid, hvor du står. Planlæg, hvor du skal hen.",
+                "content": "Vi evaluerer applikationer, infrastruktur, data og sikkerhedsniveau og omdanner derefter resultaterne til en sekventeret roadmap, dine teams kan udføre med tillid.",
                 "points": [
-                    "Application- og infrastruktur-health checks",
-                    "Gap-analyse vs. branchebenchmarks",
-                    "Faseret roadmap med omkostnings- og risikobillede"
+                    "Sundhedstjek af applikationer og infrastruktur",
+                    "Gap-analyse mod branchestandarder",
+                    "Faseopdelt roadmap med omkostnings- og risikooverblik"
                 ]
             },
             {
                 "title": "Cloud og enterprise-arkitektur",
                 "shortTitle": "Cloud og arkitektur",
-                "heading": "Arkitektur for skala, resiliens og hastighed",
-                "content": "Vi designer cloud- og enterprise-arkitekturer, der er sikre by default, omkostningsbevidste og klar til AI, integrationer og multi-cloud-vækst.",
+                "heading": "Design til skala, robusthed og hastighed",
+                "content": "Vi designer cloud- og enterprise-arkitekturer, der er sikre som standard, kostbevidste og klar til AI, integrationer og multi-cloud-vækst.",
                 "points": [
                     "Referencearkitekturer og landing zones",
-                    "Integrations-, data- og platform-blueprints",
-                    "Security-, FinOps- og reliability-mønstre"
+                    "Integrations-, data- og platformblueprints",
+                    "Sikkerheds-, FinOps- og pålidelighedsmønstre"
                 ]
             }
         ],
         "processSteps": [
             {
-                "title": "Discover",
-                "desc": "Forstå mål, begrænsninger og nuværende tilstand"
+                "title": "Opdag",
+                "desc": "Forstå mål, begrænsninger og nuværende tilstand."
             },
             {
-                "title": "Define",
+                "title": "Definér",
                 "desc": "Form strategi, prioriteter og succeskriterier"
             },
             {
-                "title": "Design",
-                "desc": "Arkitektur løsninger og en faseret roadmap"
+                "title": "Udform",
+                "desc": "Design løsninger og en faseopdelt roadmap"
             },
             {
-                "title": "Deliver",
-                "desc": "Guide eksekvering og mål resultater"
+                "title": "Levér",
+                "desc": "Guide udførelsen og mål resultaterne"
             }
         ],
         "statsList": [
@@ -704,7 +749,7 @@
             {
                 "value": "50",
                 "suffix": "+",
-                "label": "Ekspertrådgivere"
+                "label": "Ekspertkonsulenter"
             },
             {
                 "value": "98",
@@ -714,7 +759,193 @@
             {
                 "value": "25",
                 "suffix": "+",
-                "label": "Brancher betjent"
+                "label": "Betjente brancher"
+            }
+        ]
+    },
+    "implementation": {
+        "heroHighlight": "Implementering",
+        "heroSubtitle": "Fra blueprint til go-live – enterprise-løsninger leveret med præcision",
+        "expertiseLabel": "Det vi implementerer",
+        "introTitle": "Implementering, der omdanner strategi til fungerende systemer",
+        "introDesc": "Vi designer, konfigurerer og udruller enterprise-platforme, der passer til, hvordan din virksomhed drives – med veldefinerede tidsplaner, stærk governance og adoption indbygget i hver release.",
+        "capabilitiesLabel": "Kapaciteter",
+        "approachLabel": "Hvordan vi leverer",
+        "approachTitle": "En afprøvet vej fra design til go-live",
+        "approachDesc": "Vi kombinerer dyb produktekspertise med disciplineret levering, så hver implementering lander til tiden, inden for scope og klar til brugerne.",
+        "learnMore": "Udforsk denne løsning",
+        "services": [
+            {
+                "title": "Enterprise-teknologiløsninger",
+                "shortTitle": "Enterprise-teknologi",
+                "heading": "Byg din virksomheds digitale rygrad.",
+                "content": "Vi implementerer centrale enterprise-platforme – ERP, CRM, samarbejde og skræddersyede applikationer – der forbinder teams, data og processer i ét pålideligt driftssystem.",
+                "points": [
+                    "Løsningsdesign og fit-gap-workshops",
+                    "Konfiguration, integration og datamigrering",
+                    "Brugeraktivering og hypercare-support"
+                ]
+            },
+            {
+                "title": "SAP- og HANA-løsninger",
+                "shortTitle": "SAP & HANA",
+                "heading": "Moderniser økonomi og drift på SAP",
+                "content": "Fra S/4HANA og HANA-analyse til modulimplementeringer hjælper vi dig med at implementere SAP med rene processer, stærke kontroller og en roadmap, der beskytter din investering.",
+                "points": [
+                    "S/4HANA og klassiske SAP-implementeringer",
+                    "HANA-analyse og rapporteringsfundamenter",
+                    "Procesredesign tilpasset SAP best practices."
+                ]
+            },
+            {
+                "title": "Oracle NetSuite-løsninger",
+                "shortTitle": "Oracle NetSuite",
+                "heading": "Driv din virksomhed på ét cloud-ERP.",
+                "content": "Vi implementerer NetSuite til økonomi, lager, CRM og drift tilpasset din branche med SuiteScripts, workflows og integrationer, der skalerer, når du vokser.",
+                "points": [
+                    "Opsætning af NetSuite ERP, CRM og e-handel",
+                    "Skræddersyede workflows, SuiteScripts og dashboards",
+                    "Klar til multi-subsidiary og multi-currency"
+                ]
+            },
+            {
+                "title": "Microsoft- og produktløsninger",
+                "shortTitle": "Microsoft og produkter",
+                "heading": "Driv produktivitet med Microsoft og vores produkter",
+                "content": "Vi leverer Microsoft 365, Dynamics, Azure, Power Platform og vores produktsuiter, der gør det muligt for dine teams at samarbejde, automatisere og innovere på en betroet stack.",
+                "points": [
+                    "Microsoft 365, Dynamics og Power Platform",
+                    "Azure cloud- og identitetsfundamenter",
+                    "Udrulning og integration af vores produkt"
+                ]
+            },
+            {
+                "title": "Modernisering af forsyning",
+                "shortTitle": "Modernisering af forsyning",
+                "heading": "Moderne systemer til moderne forsyningsselskaber",
+                "content": "Vi hjælper forsyningsselskaber med at modernisere fakturering, kundeoplevelse, feltdrift og net-tilknyttede platforme med sikre, compliant implementeringer bygget til regulerede miljøer.",
+                "points": [
+                    "CIS-, fakturerings- og kundeoplevelsesplatforme",
+                    "Modernisering af feltservice og drift",
+                    "Compliance-klare integrationer og dataflows."
+                ]
+            },
+            {
+                "title": "Data- og sikkerhedsløsninger",
+                "shortTitle": "Data og sikkerhed",
+                "heading": "Beskyt data. Frigør indsigt.",
+                "content": "Vi implementerer dataplatforme, analyse og sikkerhedskontroller, der holder oplysninger troværdige, tilgængelige og beskyttede – fra lakehouse-fundamenter til identitet og adgang.",
+                "points": [
+                    "Dataplatforme, pipelines og analyse",
+                    "Identitets-, adgangs- og sikkerhedsbaselines",
+                    "Governance, opbevaring og compliance-kontroller"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "Vurdér",
+                "desc": "Afgræns krav, risici og succeskriterier"
+            },
+            {
+                "title": "Udform",
+                "desc": "Blueprint af processer, arkitektur og integrationer"
+            },
+            {
+                "title": "Byg",
+                "desc": "Konfigurer, migrer, integrer og test grundigt."
+            },
+            {
+                "title": "Lancér",
+                "desc": "Go-live med træning, hypercare og overdragelse"
+            }
+        ]
+    },
+    "managedServices": {
+        "heroHighlight": "Administrerede",
+        "heroRest": "Services",
+        "heroSubtitle": "Altid-tændt drift, overvågning og support, der holder dit digitale landskab sundt",
+        "expertiseLabel": "Det vi driver",
+        "introTitle": "Administrerede services, der beskytter performance og frigør dine teams",
+        "introDesc": "Vi tager ejerskab over den daglige teknologidrift – applikationer, cloud, sikkerhed og support – så dine medarbejdere kan fokusere på udvikling, mens vi holder systemerne pålidelige, sikre og klar.",
+        "capabilitiesLabel": "Kapaciteter",
+        "approachLabel": "Hvordan vi drifter",
+        "approachTitle": "En driftsmodel bygget til klarhed kombineret med uptime",
+        "approachDesc": "Klare SLA'er, forebyggende overvågning og løbende forbedring, så administrerede services føles som en forlængelse af dit team – ikke en black box.",
+        "learnMore": "Diskutér denne service",
+        "services": [
+            {
+                "title": "Applikationsstyringsservices",
+                "shortTitle": "Applikationsstyring",
+                "heading": "Hold applikationer stabile, opdaterede og under forbedring.",
+                "content": "Vi administrerer forbedringer, incidents, releases og performance for dine forretningskritiske applikationer med disciplineret change control og målbare serviceniveauer.",
+                "points": [
+                    "L2/L3-applikationssupport og forbedringer",
+                    "Release management og change control",
+                    "Performance-tuning og løbende forbedring"
+                ]
+            },
+            {
+                "title": "Cloud- og infrastrukturstyring",
+                "shortTitle": "Cloud og infrastruktur",
+                "heading": "Drift cloud og infrastruktur med tillid.",
+                "content": "Fra landing zones til day-2-drift overvåger, patcher, optimerer og styrer vi dit cloud- og infrastrukturlandskab for omkostninger, robusthed og skala.",
+                "points": [
+                    "24x7 overvågning og incident response",
+                    "Patching, kapacitets- og kostoptimering",
+                    "Multi-cloud og hybrid drift"
+                ]
+            },
+            {
+                "title": "IT-support og service desk",
+                "shortTitle": "IT-support og desk",
+                "heading": "Responsiv support, dine brugere kan stole på",
+                "content": "Vores service desk løser sager hurtigt, kommunikerer klart og eskalerer med kontekst, hvilket giver en ensartet oplevelse tværs kanaler og tidszoner.",
+                "points": [
+                    "Multikanal service desk og SLA'er",
+                    "Endpoint-, identitets- og adgangssupport",
+                    "Knowledge base og selvbetjeningsaktivering"
+                ]
+            },
+            {
+                "title": "Cybersikkerhed og overvågning",
+                "shortTitle": "Cybersikkerhed",
+                "heading": "Opdag trusler. Reducér risiko. Vær foran.",
+                "content": "Vi overvåger løbende din sikkerhedsposition, reagerer på alarmer og hærder miljøer, så vi finder sårbarheder tidligt og indeslutter incidents hurtigt.",
+                "points": [
+                    "SOC-lignende overvågning og alarmtriage",
+                    "Sårbarhedsstyring og hærdning",
+                    "Identitets-, endpoint- og cloud-sikkerhedsdrift"
+                ]
+            },
+            {
+                "title": "Data, backup og disaster recovery",
+                "shortTitle": "Backup og DR",
+                "heading": "Beskyt det, der betyder noget. Genskab, når det gælder.",
+                "content": "Vi designer og driver backup- og disaster recovery-programmer med afprøvede gendannelsesveje, klare RPO/RTO-mål og rapportering, dit lederskab kan stole på.",
+                "points": [
+                    "Design af backup-politik og løbende validering",
+                    "Disaster recovery-runbooks og øvelser",
+                    "RPO/RTO-rapportering og compliance-dokumentation"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "Onboard",
+                "desc": "Kortlæg systemer, SLA'er og driftsbaselines"
+            },
+            {
+                "title": "Stabilisér",
+                "desc": "Fjern støj, luk huller og fastsæt sundhedsmålinger."
+            },
+            {
+                "title": "Drift",
+                "desc": "Overvåg, supportér og forbedr hver dag."
+            },
+            {
+                "title": "Optimer",
+                "desc": "Reducér risiko, kost og spildtid over tid."
             }
         ]
     },
@@ -793,180 +1024,6 @@
                 "step": "04",
                 "title": "Support",
                 "desc": "Løbende optimering"
-            }
-        ]
-    },
-    "implementation": {
-        "heroHighlight": "Implementering",
-        "heroSubtitle": "Fra blueprint til go-live, enterprise-løsninger leveret med præcision",
-        "expertiseLabel": "Hvad vi implementerer",
-        "introTitle": "Implementering der gør strategi til fungerende systemer",
-        "introDesc": "AIOT designer, konfigurerer og deployer enterprise-platforme, der passer til jeres forretning, med klare tidsplaner, stærk governance og adoption i hver release.",
-        "capabilitiesLabel": "Kapabiliteter",
-        "approachLabel": "Sådan leverer vi",
-        "approachTitle": "En dokumenteret vej fra design til go-live",
-        "approachDesc": "Vi kombinerer dyb produktexpertise med disciplineret delivery, så hver implementering lander til tiden, inden for scope og klar til brugere.",
-        "learnMore": "Udforsk denne løsning",
-        "services": [
-            {
-                "title": "Enterprise-teknologiløsninger",
-                "shortTitle": "Enterprise Tech",
-                "heading": "Byg den digitale rygrad i jeres forretning",
-                "content": "Vi implementerer centrale enterprise-platforme — ERP, CRM, samarbejde og skræddersyede applikationer — der forbinder teams, data og processer i ét pålideligt operativsystem.",
-                "points": [
-                    "Solution design og fit-gap workshops",
-                    "Konfiguration, integration og datamigration",
-                    "User enablement og hypercare-support"
-                ]
-            },
-            {
-                "title": "SAP- og HANA-løsninger",
-                "shortTitle": "SAP og HANA",
-                "heading": "Moderniser finance og drift på SAP",
-                "content": "Fra S/4HANA og HANA analytics til moduludrulninger hjælper vi med SAP-implementering med rene processer, stærke kontroller og en roadmap, der beskytter jeres investering.",
-                "points": [
-                    "S/4HANA- og klassiske SAP-implementeringer",
-                    "HANA analytics- og reporting-fundament",
-                    "Proces-redesign aligned med SAP best practice"
-                ]
-            },
-            {
-                "title": "Oracle NetSuite-løsninger",
-                "shortTitle": "Oracle NetSuite",
-                "heading": "Kør forretningen på ét cloud-ERP",
-                "content": "Vi implementerer NetSuite til finance, inventory, CRM og drift tilpasset jeres branche med SuiteScripts, workflows og integrationer, der skalerer med væksten.",
-                "points": [
-                    "NetSuite ERP, CRM og e-commerce setup",
-                    "Custom workflows, SuiteScripts og dashboards",
-                    "Multi-subsidiary og multi-currency readiness"
-                ]
-            },
-            {
-                "title": "Microsoft- og produktløsninger",
-                "shortTitle": "Microsoft og produkter",
-                "heading": "Styrk produktiviteten med Microsoft og AIOT-produkter",
-                "content": "Vi leverer Microsoft 365, Dynamics, Azure, Power Platform og AIOT-produktpakker, så jeres teams samarbejder, automatiserer og innoverer på en betroet stack.",
-                "points": [
-                    "Microsoft 365, Dynamics og Power Platform",
-                    "Azure cloud- og identity-fundament",
-                    "AIOT-produktudrulning og integration"
-                ]
-            },
-            {
-                "title": "Utility Modernization",
-                "shortTitle": "Utility Modernization",
-                "heading": "Moderne systemer til moderne utilities",
-                "content": "Vi hjælper utilities med at modernisere billing, kundeoplevelse, field operations og netnære platforme med sikre, compliant implementeringer, bygget til regulerede miljøer.",
-                "points": [
-                    "CIS-, billing- og kundeoplevelsesplatforme",
-                    "Field service- og operations-modernisering",
-                    "Compliance-ready integrationer og dataflows"
-                ]
-            },
-            {
-                "title": "Data- og sikkerhedsløsninger",
-                "shortTitle": "Data og sikkerhed",
-                "heading": "Beskyt data. Frigør indsigt.",
-                "content": "Vi implementerer dataplatforme, analytics og sikkerhedskontroller, der holder information troværdig, tilgængelig og beskyttet fra lakehouse til identity and access.",
-                "points": [
-                    "Dataplatforme, pipelines og analytics",
-                    "Identity-, access- og security-baselines",
-                    "Governance-, retention- og compliance-kontroller"
-                ]
-            }
-        ],
-        "processSteps": [
-            { "title": "Vurder", "desc": "Afgræns krav, risici og succeskriterier" },
-            { "title": "Design", "desc": "Blueprint processer, arkitektur og integrationer" },
-            { "title": "Byg", "desc": "Konfigurer, migrer, integrer og test grundigt" },
-            { "title": "Lancér", "desc": "Go-live med træning, hypercare og overdragelse" }
-        ]
-    },
-    "managedServices": {
-        "heroHighlight": "Managed",
-        "heroRest": "Services",
-        "heroSubtitle": "Altid-til-drift, overvågning og support der holder jeres digitale estate sundt",
-        "expertiseLabel": "Hvad vi driver",
-        "introTitle": "Managed services der beskytter performance og frigør jeres teams",
-        "introDesc": "AIOT overtager den daglige teknologidrift — applikationer, cloud, sikkerhed og support — så jeres folk kan fokusere på vækst, mens vi holder systemer pålidelige, sikre og klar.",
-        "capabilitiesLabel": "Kapabiliteter",
-        "approachLabel": "Sådan opererer vi",
-        "approachTitle": "En run-model bygget til klarhed og uptime",
-        "approachDesc": "Klare SLA'er, proaktiv overvågning og kontinuerlig forbedring så managed services føles som en forlængelse af jeres team, ikke en black box.",
-        "learnMore": "Drøft denne service",
-        "services": [
-            {
-                "title": "Application Management Services",
-                "shortTitle": "Application Management",
-                "heading": "Hold applikationer stabile, opdaterede og i udvikling",
-                "content": "Vi håndterer enhancements, incidents, releases og performance for jeres forretningskritiske applikationer med disciplineret change control og målbare service levels.",
-                "points": [
-                    "L2/L3 application support og enhancements",
-                    "Release management og change control",
-                    "Performance tuning og kontinuerlig forbedring"
-                ]
-            },
-            {
-                "title": "Cloud- og infrastrukturstyring",
-                "shortTitle": "Cloud og infrastruktur",
-                "heading": "Drift cloud og infrastruktur med tillid",
-                "content": "Fra landing zones til day-2 operations overvåger, patcher, optimerer og styrer vi jeres cloud- og infrastrukturestate for omkostning, resiliens og skala.",
-                "points": [
-                    "24×7 overvågning og incident response",
-                    "Patching, kapacitet og omkostningsoptimering",
-                    "Multi-cloud og hybrid operations"
-                ]
-            },
-            {
-                "title": "IT-support og service desk",
-                "shortTitle": "IT-support og desk",
-                "heading": "Responsiv support jeres brugere kan stole på",
-                "content": "Vores service desk løser tickets hurtigt, kommunikerer klart og eskalerer med kontekst en konsistent oplevelse på tværs af kanaler og tidszoner.",
-                "points": [
-                    "Multi-channel service desk og SLA'er",
-                    "Endpoint-, identity- og access-support",
-                    "Knowledge base og self-service enablement"
-                ]
-            },
-            {
-                "title": "Cybersikkerhed og overvågning",
-                "shortTitle": "Cybersikkerhed",
-                "heading": "Opdag trusler. Reducer risiko. Hold foran.",
-                "content": "Vi overvåger løbende sikkerhedsstilling, reagerer på alerts og hardener miljøer så sårbarheder findes tidligt og incidents inddæmmes hurtigt.",
-                "points": [
-                    "SOC-style monitoring og alert triage",
-                    "Vulnerability management og hardening",
-                    "Identity-, endpoint- og cloud security ops"
-                ]
-            },
-            {
-                "title": "Data, backup og disaster recovery",
-                "shortTitle": "Backup og DR",
-                "heading": "Beskyt det vigtige. Gendan når det tæller.",
-                "content": "Vi designer og driver backup- og DR-programmer med testede restore-stier, klare RPO/RTO-mål og rapportering ledelsen kan stole på.",
-                "points": [
-                    "Backup policy design og kontinuerlig validering",
-                    "Disaster recovery runbooks og drills",
-                    "RPO/RTO-rapportering og compliance-evidens"
-                ]
-            }
-        ],
-        "processSteps": [
-            {
-                "title": "Onboard",
-                "desc": "Kortlæg systemer, SLA'er og operative baselines"
-            },
-            {
-                "title": "Stabilize",
-                "desc": "Reducer støj, luk gaps og sæt health metrics"
-            },
-            {
-                "title": "Operate",
-                "desc": "Overvåg, support og forbedr hver dag"
-            },
-            {
-                "title": "Optimize",
-                "desc": "Reducer risiko, omkostning og toil over tid"
             }
         ]
     }

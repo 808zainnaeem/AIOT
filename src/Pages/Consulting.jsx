@@ -41,7 +41,7 @@ const SERVICE_META = [
     id: 'cloud-architecture',
     icon: Network,
     image:
-      'https://images.unsplash.com/photo-1544197150-b99a580bb7a2?auto=format&fit=crop&w=1400&q=80',
+      'https://avatars.mds.yandex.net/i?id=38f2eee072377192e408f31a5f21c96a77ca6220-5498735-images-thumbs&n=13',
   },
 ];
 
@@ -50,9 +50,9 @@ const FALLBACK = {
   heroRest: '',
   heroSubtitle: 'Unlock Agility, Embrace Innovation: We are your Partner in Transformation',
   expertiseLabel: 'Our Expertise',
-  introTitle: 'Consulting built for measurable outcomes',
+  introTitle: 'Consulting built for definable outcomes',
   introDesc:
-    'We combine strategic insight, industry depth, and practical technology expertise to help you move faster, reduce risk, and create lasting competitive advantage.',
+    'We combine strategic perspective, industry depth, and practical technology expertise to help you move faster, reduce risk, and deliver lasting competitive advantage.',
   capabilitiesLabel: 'Capabilities',
   approachLabel: 'How We Work',
   approachTitle: 'A clear path from insight to impact',
@@ -65,17 +65,17 @@ const FALLBACK = {
       shortTitle: 'IT Strategy & Advisory',
       heading: 'Align technology with business ambition',
       content:
-        'We help executives set a clear technology agenda, investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost centre.',
+        'We help executives set a clear technology agenda, investment priorities, operating models, and governance so IT becomes a growth engine, not a cost centre.',
       points: [
         'Enterprise IT vision & operating model',
-        'Investment prioritization & value cases',
+        'Investment prioritisation & value cases',
         'Governance, risk & vendor strategy',
       ],
     },
     {
       title: 'Digital Transformation Consulting',
       shortTitle: 'Digital Transformation',
-      heading: 'Reinvent how your organisation works',
+      heading: 'Reinvent how your organisation works.',
       content:
         'From customer journeys to back-office platforms, we design transformation programs that connect people, process, and technology with adoption built in from day one.',
       points: [

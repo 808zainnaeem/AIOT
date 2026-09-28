@@ -207,8 +207,8 @@ export default function ServicesStats() {
                             className="text-gray-600 max-w-2xl mx-auto md:mx-0 leading-relaxed"
                             variants={headerVariants}
                         >
-                            {t.servicesDescription ||
-                                'We help businesses streamline operations, enhance decision-making, and drive digital transformation with precision.'}
+                        {t.servicesDescription ||
+                            'We help businesses simplify operations and business decisions, and drive digital transformation with accuracy.'}
                         </motion.p>
 
                         <motion.div

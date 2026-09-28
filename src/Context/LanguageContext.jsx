@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useMemo } from 'react';
+import React, { createContext, useState, useEffect, useMemo, useCallback } from 'react';
 import en from '../Languages/en.json';
 import {
     SUPPORTED_LANGUAGES,
@@ -52,8 +52,20 @@ function deepMerge(base, override) {
 
 function getSavedLanguage() {
     if (typeof window === 'undefined') return null;
-    const saved = window.localStorage.getItem('aiot-language');
-    return localeLoaders[saved] ? saved : null;
+    try {
+        const saved = window.localStorage.getItem('aiot-language');
+        return localeLoaders[saved] ? saved : null;
+    } catch {
+        return null;
+    }
+}
+
+function persistLanguage(code) {
+    try {
+        window.localStorage.setItem('aiot-language', code);
+    } catch {
+        // Private mode / blocked storage should not break switching
+    }
 }
 
 function getInitialLanguage() {
@@ -61,32 +73,48 @@ function getInitialLanguage() {
 }
 
 export function LanguageProvider({ children }) {
-    const [language, setLanguageState] = useState(getInitialLanguage);
+    const initialLanguage = getInitialLanguage();
+    const [language, setLanguageState] = useState(initialLanguage);
     const [localePack, setLocalePack] = useState(en);
+    const [localeCode, setLocaleCode] = useState(initialLanguage);
 
-    const setLanguage = (code) => {
+    const setLanguage = useCallback((code) => {
         if (!localeLoaders[code]) return;
         setLanguageState(code);
-        window.localStorage.setItem('aiot-language', code);
-    };
+        persistLanguage(code);
+    }, []);
 
     useEffect(() => {
         let cancelled = false;
-        const load = localeLoaders[language] || localeLoaders.en;
+        const target = language;
+        const load = localeLoaders[target] || localeLoaders.en;
 
-        load().then((mod) => {
-            if (cancelled) return;
-            setLocalePack(mod.default || mod);
-        });
+        load()
+            .then((mod) => {
+                if (cancelled) return;
+                setLocalePack(mod.default || mod);
+                setLocaleCode(target);
+            })
+            .catch(() => {
+                if (cancelled) return;
+                setLocalePack(en);
+                setLocaleCode('en');
+            });
 
         return () => {
             cancelled = true;
         };
     }, [language]);
 
+    // Never expose / merge a pack from a different language than the active one
+    const activeLocalePack =
+        localeCode === language ? localePack : language === 'en' ? en : null;
+
     const translations = useMemo(() => {
-        return language === 'en' ? en : deepMerge(en, localePack);
-    }, [language, localePack]);
+        if (language === 'en') return en;
+        if (!activeLocalePack) return en;
+        return deepMerge(en, activeLocalePack);
+    }, [language, activeLocalePack]);
 
     useEffect(() => {
         document.documentElement.dir = RTL_LANGUAGES.includes(language) ? 'rtl' : 'ltr';
@@ -107,6 +135,7 @@ export function LanguageProvider({ children }) {
                 if (cancelled || !localeLoaders[code]) return;
                 if (getSavedLanguage()) return;
                 setLanguageState(code);
+                persistLanguage(code);
             });
         }, 4000);
 
@@ -121,10 +150,10 @@ export function LanguageProvider({ children }) {
             language,
             setLanguage,
             translations,
-            localePack,
+            localePack: activeLocalePack || en,
             languages: SUPPORTED_LANGUAGES,
         }),
-        [language, translations, localePack]
+        [language, setLanguage, translations, activeLocalePack]
     );
 
     return (

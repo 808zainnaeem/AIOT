@@ -61,11 +61,11 @@ const SERVICE_META = [
 const FALLBACK = {
   heroHighlight: 'Implementation',
   heroRest: '',
-  heroSubtitle: 'From blueprint to go-live, enterprise solutions delivered with precision',
+  heroSubtitle: 'From blueprint to go-live, enterprise solutions delivered with accuracy',
   expertiseLabel: 'What We Implement',
   introTitle: 'Implementation that turns strategy into working systems',
   introDesc:
-    ' We designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.',
+    'We design, configure, and deploy enterprise platforms that fit how your business runs with well-defined timelines, strong governance, and adoption built into every release.',
   capabilitiesLabel: 'Capabilities',
   approachLabel: 'How We Deliver',
   approachTitle: 'A proven path from design to go-live',
@@ -76,7 +76,7 @@ const FALLBACK = {
     {
       title: 'Enterprise Technology Solutions',
       shortTitle: 'Enterprise Tech',
-      heading: 'Build the digital backbone of your business',
+      heading: 'Build the digital backbone of your business.',
       content:
         'We implement core enterprise platforms ERP, CRM, collaboration, and custom applications that connect teams, data, and processes into one reliable operating system.',
       points: [
@@ -100,9 +100,9 @@ const FALLBACK = {
     {
       title: 'Oracle NetSuite Solutions',
       shortTitle: 'Oracle NetSuite',
-      heading: 'Run your business on one cloud ERP',
+      heading: 'Run your business on one cloud ERP.',
       content:
-        'We implement NetSuite for finance, inventory, CRM, and operations tailored to your industry with SuiteScripts, workflows, and integrations that scale as you grow.',
+        'We implement NetSuite for finance, inventory, CRM, and operations adapted to your industry with SuiteScripts, workflows, and integrations that scale as you grow.',
       points: [
         'NetSuite ERP, CRM & e-commerce setup',
         'Custom workflows, SuiteScripts & dashboards',
@@ -114,16 +114,16 @@ const FALLBACK = {
       shortTitle: 'Microsoft & Products',
       heading: 'Power productivity with Microsoft and our products',
       content:
-        'We deliver Microsoft 365, Dynamics, Azure, Power Platform, and our products suites so your teams collaborate, automate, and innovate on a trusted stack.',
+        'We deliver Microsoft 365, Dynamics, Azure, Power Platform, and our product suites, enabling your teams to collaborate, automate, and innovate on a trusted stack.',
       points: [
         'Microsoft 365, Dynamics & Power Platform',
         'Azure cloud & identity foundations',
-        'Our products rollout & integration',
+        'Our product rollout & integration',
       ],
     },
     {
-      title: 'Utility Modernization',
-      shortTitle: 'Utility Modernization',
+      title: 'Utility Modernisation',
+      shortTitle: 'Utility Modernisation',
       heading: 'Modern systems for modern utilities',
       content:
         'We help utilities modernise billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.',

@@ -52,12 +52,12 @@ const FALLBACK = {
   expertiseLabel: 'What We Run',
   introTitle: 'Managed services that protect performance and free your teams',
   introDesc:
-    'We takes ownership of day-to-day technology operations, applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.',
+    'We take ownership of day-to-day technology operations, applications, cloud, security, and support so your people can focus on advancement while we keep systems reliable, secure, and ready.',
   capabilitiesLabel: 'Capabilities',
   approachLabel: 'How We Operate',
-  approachTitle: 'A run model built for clarity and uptime',
+  approachTitle: 'A run model built for clarity coupled with uptime',
   approachDesc:
-    'Clear SLAs, proactive monitoring, and continuous improvement so managed services feel like an extension of your team, not a black box.',
+    'Clear SLAs, preventive monitoring, and continuous improvement so managed services feel like an extension of your team, not a black box.',
   learnMore: 'Discuss this service',
   services: [
     {
@@ -89,7 +89,7 @@ const FALLBACK = {
       shortTitle: 'IT Support & Desk',
       heading: 'Responsive support your users can trust',
       content:
-        'Our service desk resolves tickets fast, communicates clearly, and escalates with context, delivering a consistent experience across channels and time zones.',
+        'Our service desk resolves tickets quickly, communicates clearly, and escalates with context, delivering a consistent experience across channels and time zones.',
       points: [
         'Multi-channel service desk & SLAs',
         'Endpoint, identity & access support',
@@ -111,7 +111,7 @@ const FALLBACK = {
     {
       title: 'Data, Backup & Disaster Recovery',
       shortTitle: 'Backup & DR',
-      heading: 'Protect what matters. Recover when it counts.',
+      heading: 'Guard what matters. Recover when it counts.',
       content:
         'We design and run backup and disaster recovery programs with tested restore paths, clear RPO/RTO targets, and reporting your leadership can rely on.',
       points: [

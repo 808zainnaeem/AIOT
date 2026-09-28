@@ -20,34 +20,37 @@
         "bookADemo": "预约演示",
         "menuLabel": "菜单",
         "exploreArrow": "探索 →",
-        "demoBannerTitle": "助力企业成功的解决方案伙伴"
+        "demoBannerTitle": "您成就商业成功的解决方案伙伴"
     },
     "dropdown": {
         "aboutUs": {
             "whoWeAre": "我们是谁",
-            "whoWeAreDesc": "我们将人工智能与物联网相结合，推动创新并交付面向未来的技术解决方案。",
+            "whoWeAreDesc": "我们是一家锐意进取的技术咨询公司，为制造、金融、医疗等行业提供切实可行、可扩展且安全的解决方案，助力企业拥抱创新，迎接互联的数字化未来。",
             "clientWall": "客户墙",
-            "clientWallDesc": "我们自豪地为行业领导者提供创新技术解决方案，带来切实成果。",
+            "clientWallDesc": "我们自豪地为行业领军企业提供创新技术解决方案，带来真实可见的成果。",
             "contactUs": "联系我们",
-            "contactUsDesc": "联系 AIOT IT Solutions，开启智能、创新且具有变革力的技术解决方案。"
+            "contactUsDesc": "联系我们的IT解决方案团队，获取智能、创新的技术解决方案。",
+            "panelLabel": "关于我们",
+            "panelTitle": "创新与真实成效并存",
+            "panelDesc": "了解我们是谁、我们服务的客户，以及如何与我们的团队开启对话。"
         },
         "whatWeDo": {
             "technology": "实施",
-            "technologyDesc": "AIOT IT Solutions 驱动数字化转型",
+            "technologyDesc": "AIOT IT解决方案驱动数字化转型",
             "implementation": "实施",
-            "implementationDesc": "AIOT IT Solutions 驱动数字化转型",
+            "implementationDesc": "AIOT IT解决方案驱动数字化转型",
             "technologyDrivenInnovation": "技术驱动的创新解决方案",
             "nextGenTechnology": "下一代技术解决方案",
             "enterpriseSap": "企业 SAP 解决方案",
             "utilityModernization": "公用事业现代化",
             "oracleNetsuite": "Oracle NetSuite 解决方案",
             "consulting": "咨询",
-            "consultingDesc": "战略性技术咨询，优化运营并推动增长。",
+            "consultingDesc": "战略性技术咨询，优化运营并驱动增长。",
             "technologySolutionsProvider": "技术解决方案提供商",
             "outSourcing": "托管服务",
-            "outSourcingDesc": "可靠的托管服务，含监控、维护与端到端支持。",
+            "outSourcingDesc": "可靠的托管服务，提供监控、维护及端到端支持。",
             "managedServices": "托管服务",
-            "managedServicesDesc": "可靠的托管服务，含监控、维护与端到端支持。",
+            "managedServicesDesc": "可靠的托管服务，提供监控、维护及端到端支持。",
             "strategicOffshore": "战略性离岸解决方案",
             "itStrategy": "IT 战略与顾问",
             "digitalTransformation": "数字化转型咨询",
@@ -63,9 +66,9 @@
             "itSupport": "IT 支持与服务台",
             "cyberMonitoring": "网络安全与监控",
             "backupDr": "数据、备份与灾难恢复",
-            "panelLabel": "我们交付的价值",
-            "panelTitle": "端到端数字化卓越",
-            "panelDesc": "从战略到运行：咨询、实施与托管服务，尽在同一合作伙伴。"
+            "panelLabel": "我们提供的价值",
+            "panelTitle": "端到端的数字化卓越",
+            "panelDesc": "从战略规划到持续运营：咨询、实施与托管服务，一站式合作伙伴全程护航。"
         },
         "solutions": {
             "industries": "行业",
@@ -80,95 +83,95 @@
             "solutions": "解决方案",
             "connector": "Connector",
             "hireLawyerOnline": "在线聘请律师",
-            "sapBusinessOneUi": "SAP Business One 用户界面",
+            "sapBusinessOneUi": "BridgeHub 用户界面",
             "hrManagementSystem": "人力资源管理系统"
         },
         "resources": {
             "news": "新闻",
-            "newsDesc": "了解 AIOT IT Solutions 的最新新闻与创新动态。",
+            "newsDesc": "公司动态、产品发布与里程碑，共同塑造您的未来。",
             "blogs": "博客",
-            "blogsDesc": "探索关于技术与创新的洞察、趋势和专家观点。",
-            "innovateWithInsights": "以洞察推动创新",
-            "innovateWithInsightsDesc": "通过新兴趋势与思想领导力，发现提升业务的策略。",
+            "blogsDesc": "探索关于技术与创新的洞见、趋势与专家观点。",
+            "innovateWithInsights": "以洞见驱动创新",
+            "innovateWithInsightsDesc": "通过新兴趋势与前沿思想，发现强化业务的方法。",
             "panelLabel": "知识中心",
-            "panelTitle": "保持知情，保持领先。",
-            "panelDesc": "新闻、博客与洞察，帮助您把握技术趋势与业务转型。"
+            "panelTitle": "知悉动态，保持领先。",
+            "panelDesc": "新闻、博客与深度分析，助您把握技术趋势与业务转型方向。"
         },
         "partners": {
-            "sapDesc": "与我们合作，借助先进的云解决方案，改变中小企业的全球运营方式。",
-            "oracleNetsuiteDesc": "了解与 Oracle NetSuite 合作带来的全面业务解决方案优势。",
-            "microsoftDesc": "我们的微软合作伙伴关系以先进解决方案增强企业能力。",
+            "sapDesc": "与我们合作，借助前沿云端解决方案，提升中小企业的全球化运营水平。",
+            "oracleNetsuiteDesc": "了解与 Oracle NetSuite 合作，获取全面业务解决方案的优势。",
+            "microsoftDesc": "我们与 Microsoft 的合作伙伴关系，以先进解决方案增强企业能力。",
             "cloudiaxDesc": "Cloudiax 帮助企业以强大的云解决方案增强 SAP 能力。",
-            "cloudSolutionsDesc": "我们的专业能力确保顺畅的云迁移与多云集成。"
+            "cloudSolutionsDesc": "凭借专业能力，我们提供顺畅的云迁移与多云集成服务。"
         }
     },
     "Hero": {
-        "demoBannerTitle": "助力企业成功的 <br> 解决方案伙伴",
-        "whoWeAreDesc": "我们将人工智能与物联网相结合，推动创新并交付面向未来的技术解决方案。",
+        "demoBannerTitle": "您成就商业成功的 <br> 解决方案伙伴",
+        "whoWeAreDesc": "我们是一家技术咨询公司，提供切实可行、可扩展且安全的解决方案，帮助企业拥抱创新，迎接互联的数字化未来。",
         "learnMore": "了解更多",
         "slides": [
             {
-                "title": "助力企业成功的 <br> 解决方案伙伴",
-                "description": "我们将人工智能与物联网相结合，推动创新并交付面向未来的技术解决方案。"
+                "title": "您成就商业成功的 <br> 解决方案伙伴",
+                "description": "我们是一家技术咨询公司，提供切实可行、可扩展且安全的解决方案，帮助企业拥抱创新，迎接互联的数字化未来。"
             },
             {
-                "title": "互联系统。<br>更智能的决策。",
-                "description": "统一数据、云和企业平台，让团队以更清晰、更自信的方式更快推进。"
+                "title": "互联系统。<br> 更智慧的决策。",
+                "description": "统一数据、云与企业平台，让您的团队更专注、更可靠地加速前行。"
             },
             {
-                "title": "构建。防护。<br>自信扩展。",
-                "description": "从网络安全到现代基础设施，我们保护并驱动支撑业务运转的技术。"
+                "title": "构建。安全。<br> 自信扩展。",
+                "description": "从网络安全到网络基础设施，我们保护并驱动支撑您业务运转的技术。"
             },
             {
-                "title": "驱动业务增长的 <br> 产品矩阵。",
-                "description": "PeopleHub HCM、ProcessHub Operations Suite、CommerceHub Unified Commerce Platform 以及我们完整的业务套件，帮助组织在统一生态中完成招聘、运营、销售与扩展。"
+                "title": "驱动您业务发展的 <br> 产品。",
+                "description": "PeopleHub HCM、ProcessHub 运营套件、CommerceHub 统一商务平台，以及我们全面的业务套件，帮助企业在一个互联的生态系统中完成招聘、运营、销售与扩展。"
             }
         ]
     },
     "whatWeDoSection": {
         "title": "我们的业务",
-        "subtitle": "面向智能连接的定制化解决方案",
+        "subtitle": "智能互联解决方案",
         "consulting": "咨询",
-        "consultingDesc": "我们帮助制定以技术驱动业务成功的战略。团队通过先进的数字化工具与技术，优化您的增长路径。",
+        "consultingDesc": "我们帮助制定以技术驱动业务成功的战略。团队运用先进的数字工具与技术，制定优化增长路径的方案。",
         "implementation": "实施",
-        "implementationDesc": "我们在主要技术和业务职能领域的专家，交付全面的业务解决方案。",
+        "implementationDesc": "我们的顾问团队横跨主要技术领域与业务职能，提供全面的业务解决方案。",
         "managedServices": "托管服务",
-        "managedServicesDesc": "我们的托管服务团队通过监控、维护和端到端支持，守护您的数字化投资。"
+        "managedServicesDesc": "我们的团队通过监控、维护与端到端支持，保障您的数字化投资。"
     },
     "philosophy": {
         "title": "我们的理念",
-        "heading": "为互联未来而创新",
-        "paragraph1": "我们专注于开发并交付能够应对客户不断变化的需求与挑战的技术解决方案。我们重视敏捷、适应与响应能力，以便快速应对市场变化和客户要求。",
+        "heading": "为融合未来而创造",
+        "paragraph1": "我们打造能够满足客户不断变化的需求与挑战的技术解决方案。我们高度重视敏捷性、适应力与响应速度，以便快速应对客户日益发展的需求。",
         "quote": "以智能、云驱动的解决方案变革运营，兼顾增长与简洁。",
-        "paragraph2": "我们打造具有前瞻性的解决方案，重新定义企业运营方式，帮助他们在不断演进的数字环境中保持领先。",
+        "paragraph2": "我们打造的解决方案，帮助企业更高效地运营，并在不断变化的数字世界中保持领先。",
         "readMore": "阅读更多"
     },
     "servicesStats": {
         "servicesTitle": "我们的服务",
-        "servicesHeading": "我们提供什么",
-        "servicesDescription": "我们帮助企业精简运营、提升决策，并以精准方式推动数字化转型。",
-        "statFeedback": "好评",
+        "servicesHeading": "我们提供的服务",
+        "servicesDescription": "我们帮助企业简化运营与业务决策，精准驱动数字化转型。",
+        "statFeedback": "正面反馈",
         "statProjects": "项目",
         "statUsers": "用户",
         "statContributors": "贡献者",
-        "serviceWebEnterprise": "Web与企业应用",
-        "descWebEnterprise": "为性能、可扩展性和顺畅业务流打造的定制 Web 与企业应用。",
-        "serviceCloudDevOps": "云与DevOps",
+        "serviceWebEnterprise": "网站与企业应用",
+        "descWebEnterprise": "为性能、可扩展性及流畅业务流程而定制开发的网站与企业应用。",
+        "serviceCloudDevOps": "云与 DevOps",
         "descCloudDevOps": "云架构、CI/CD 流水线与 DevOps 实践，加速交付并提升可靠性。",
         "serviceCybersecurity": "网络安全",
-        "descCybersecurity": "端到端安全策略，保护系统、数据与用户免受数字威胁。",
+        "descCybersecurity": "端到端的安全策略，保护系统、数据与用户免受不断演变的数字威胁。",
         "serviceMobileApps": "移动应用",
-        "descMobileApps": "原生与跨平台移动体验，兼顾互动、速度与易用性。",
+        "descMobileApps": "原生与跨平台移动应用体验，专注于互动性、速度与易用性。",
         "serviceAI": "人工智能与机器学习",
-        "descAI": "智能模型与自动化，将数据转化为预测、洞察与更优决策。",
+        "descAI": "智能模型与自动化，将数据转化为预测、洞见与更明智的决策。",
         "serviceBigData": "大数据与分析",
-        "descBigData": "先进分析与数据平台，发现趋势并驱动数据驱动增长。",
-        "serviceUIUX": "UI/UX设计",
-        "descUIUX": "以人为中心的界面与体验设计，让数字产品清晰、直观、愉悦。",
-        "serviceERP": "ERP与业务自动化",
-        "descERP": "ERP 系统与流程自动化，将财务、运营与团队连接在同一流程中。",
+        "descBigData": "先进的分析技术与数据平台，发现趋势并驱动数据驱动型增长。",
+        "serviceUIUX": "UI/UX 设计",
+        "descUIUX": "以人为本的界面与体验设计，让数字产品清晰、直观且令人愉悦。",
+        "serviceERP": "ERP 与业务自动化",
+        "descERP": "ERP 系统与流程自动化，将财务、运营与团队整合为一体化流程。",
         "serviceBlockchain": "区块链解决方案",
-        "descBlockchain": "安全透明的区块链方案，支持信任、可追溯与新一代数字交易。"
+        "descBlockchain": "安全、透明的区块链解决方案，为信任、可追溯性与下一代在线交易提供支持。"
     },
     "techInnovation": {
         "subtitle": "明日科技",
@@ -180,85 +183,97 @@
     },
     "ourProducts": {
         "sectionTitle": "我们的产品",
-        "heading": "满足各种需求的先进解决方案",
-        "description": "探索我们的产品系列，旨在提升性能、精简运营并推动增长。从人工智能分析到可扩展云解决方案，我们的产品以精准可靠满足多样化业务需求。",
+        "heading": "满足各类需求的先进解决方案",
+        "description": "我们的产品系列可提升性能、简化运营并驱动增长。从数据分析到云解决方案，我们以细致周到、可靠稳健的方式满足多样化的业务需求。",
         "items": [
             {
-                "title": "企业资源计划",
-                "description": "一体化 ERP，从单一可信数据源管理财务、库存与运营，助力成长型企业。"
+                "title": "BusinessHub ERP",
+                "description": "一体化 ERP 系统，通过统一的数据源管理财务、库存与运营，助力成长型企业发展。"
             },
             {
-                "title": "SAP Business One 用户界面",
-                "description": "通过我们易用的 SAP Business One 界面提升业务运营，实现顺畅导航与高效的企业资源管理。"
+                "title": "BridgeHub User Interface",
+                "description": "通过使用专为无缝导航与高效管理企业资源而设计的 SAP Business One 界面，改善您的业务运营。"
             },
             {
-                "title": "人力资本管理",
-                "description": "完整的人力资本管理平台，帮助招聘、管理并发展团队，薪资、考勤与人才工具集于一体。"
+                "title": "PeopleHub HCM",
+                "description": "一款完整的人力资本管理平台，集薪资、考勤与人才管理工具于一体，助您招聘、管理并发展员工队伍。"
             },
             {
-                "title": "统一商务平台",
-                "description": "统一商务平台，连接销售渠道、库存与客户旅程，实现一致的销售与履约。"
+                "title": "CommerceHub UCP",
+                "description": "统一商务平台，连接销售渠道、库存与客户旅程，让您的销售与履约始终保持一致。"
             },
             {
-                "title": "运营套件",
-                "description": "通过互联工作流、自动化以及跨团队与流程的可见性，精简日常运营。"
+                "title": "ProcessHub Operations Suite",
+                "description": "通过互联的工作流、自动化以及跨团队与流程的可视化，简化日常运营。"
             },
             {
                 "title": "PortedForm",
-                "description": "使用免费、快速、易用的在线编辑器编辑、批注和管理 PDF，适合日常文档工作流。",
+                "description": "免费、快速且易用的在线 PDF 编辑器，可编辑、注释与管理 PDF 文件，满足日常文档处理需求。",
                 "free": true
             },
             {
-                "title": "在线聘请律师",
-                "description": "通过我们简洁的在线平台连接经验丰富的法律专业人士，轻松找到并聘请合适的律师。"
+                "title": "Hire Lawyer Online",
+                "description": "通过我们简化的在线平台，与经验丰富的法律专业人士取得联系，轻松找到并聘请符合您需求的律师。"
             },
             {
-                "title": "视觉人工智能",
-                "description": "借助人工智能视觉，将视觉数据转化为可执行洞察，支持监控、检测与更明智的决策。"
+                "title": "InsightHub Vision AI",
+                "description": "借助人工智能视觉技术，将视觉数据转化为可应用的洞见，支持监控、检测与更智慧的决策。"
             },
             {
-                "title": "患者护理",
-                "description": "患者护理平台，帮助医疗团队管理病历、预约与随访，带来更顺畅的临床体验。"
+                "title": "HealthHub Patient Care",
+                "description": "一款患者护理平台，帮助医疗团队管理病历、预约与随访，打造更顺畅的临床体验。"
             },
             {
-                "title": "连接器",
-                "description": "通过我们的连接器轻松集成并管理系统，支持 WhatsApp、蜂窝 API 与邮件通信，简化数据流。"
+                "title": "Connector",
+                "description": "借助我们的连接器，轻松集成并管理您的系统，通过 WhatsApp、移动通信 API 与电子邮件实现沟通，优化业务流程。"
             }
         ],
-        "showMore": "显示更多"
+        "showMore": "查看更多",
+        "freeLabel": "免费"
     },
     "about": {
         "heroTitle": "我们是谁",
-        "heroSubtitle": "在每一步重新定义成就",
+        "heroSubtitle": "以技术赋能企业",
         "whoWeAre": "我们是谁",
-        "mainHeading": "以 AIOT 解决方案创新未来",
-        "desc1": "我们是一家前瞻性的 IT 公司，致力于通过尖端人工智能与物联网技术变革行业。",
-        "desc2": "创新热情是公司的核心。我们的专家团队运用 AIoT 的力量，交付智能、可扩展且安全的解决方案。",
-        "feature1Title": "人工智能驱动的创新",
-        "feature1Desc": "通过强大的人工智能解决方案释放效率与自动化。",
-        "feature2Title": "无缝物联网集成",
-        "feature2Desc": "连接设备，获取实时洞察并实现更智能的运营。",
-        "feature3Title": "可扩展且安全的解决方案",
-        "feature3Desc": "凭借安全、可扩展的 AIoT 解决方案自信成长。",
-        "darkSectionTitle": "以智能 AIOT 解决方案赋能明天",
-        "darkSectionDesc1": "AIOT 是面向企业的 IT 解决方案提供商，致力于以创新技术赋能企业。我们专注于软件开发、人工智能集成、物联网、云计算与数字化转型。我们的使命是交付先进、可靠且可扩展的解决方案，推动效率、生产力与增长。",
-        "darkSectionDesc2": "我们致力于引领 AIOT 创新，以智能解决方案赋能企业，变革运营并推动增长。",
+        "mainHeading": "以技术<br />赋能企业",
+        "desc1": "我们是一家锐意进取的技术咨询公司，帮助企业驾驭变革、拥抱创新，创造持久的商业价值。",
+        "desc2": "我们专注于安全的解决方案，帮助企业变革运营、实现可衡量的投资回报、降低风险并达成合规要求，助力企业迎接互联的数字化未来。",
+        "feature1Title": "创新与转型",
+        "feature1Desc": "通过技术将业务难题转化为机遇，让客户对未来增长充满信心与动力。",
+        "feature2Title": "互联与智能解决方案",
+        "feature2Desc": "连接人员、流程、数据与技术，实现更智能的运营。",
+        "feature3Title": "可扩展且安全的技术",
+        "feature3Desc": "构建可靠的技术基础，支撑增长与长期成功。",
+        "aboutUs": "关于我们",
+        "darkSectionTitle": "以技术赋能企业",
+        "darkSectionDesc1": "我们借助创新、可扩展且安全的技术解决方案，帮助企业应对数字化变革，实现稳健增长。",
+        "darkSectionDesc2": "我们融合商业专长、技术能力与行业洞察，帮助企业实现运营现代化、提升效率、连接人员与流程，并创造持久的商业价值。",
         "visionTitle": "愿景",
-        "visionDesc": "成为变革性技术解决方案的领先提供商，帮助企业与组织在快速变化的数字环境中蓬勃发展。我们希望创造一个以技术作为创新、增长与积极变革催化剂的未来。",
+        "visionDesc": "成为寻求转型、创新并在快速变化的数字世界中蓬勃发展的企业值得信赖的技术合作伙伴，以技术驱动增长、卓越运营与有意义的业务成果。",
         "missionTitle": "使命",
-        "missionDesc": "我们重视创新，投资研发以打造应对新兴市场趋势与客户需求的新产品、服务与平台。我们也以客户为中心，将客户需求置于运营与决策的核心。",
+        "missionDesc": "提供切实可行、创新的技术解决方案，满足不断增长的业务需求。我们将持续创新、技术专长与对客户挑战的深入理解相结合，交付能够提升效率、促进增长并创造长期价值的解决方案。",
+        "missionDesc2": "我们通过研发优先推动创新，交付服务并打造能够应对业务趋势与客户需求的新产品和平台。我们同样以客户为先，将客户的需求与偏好置于运营与决策的核心。",
         "smartSolutions": "智能解决方案",
-        "smartSolutionsHeading": "发挥人工智能与物联网的力量，在各行业推动创新、效率与增长。",
-        "transformTitle": "以 AIOT 变革未来",
-        "transformDesc": "以智能互联解决方案赋能企业，提升生产力。交付安全、可扩展的 AIoT 技术，推动创新与增长。",
-        "transformBoxTitle": "以 AIOT 变革未来",
+        "smartSolutionsHeading": "运用智能技术的力量，推动各行业的创新、效率提升与业务扩展。",
+        "transformTitle": "以智能技术变革未来",
+        "transformDesc": "以智能、互联的解决方案提升生产力并实现更智慧的运营，赋能企业发展。我们提供安全、可扩展的技术，帮助您创新、提升效率并实现可持续增长。",
+        "transformBoxTitle": "以智能技术变革未来",
         "list1": "智能自动化",
-        "list2": "实时洞察",
+        "list2": "实时信息",
         "list3": "可扩展增长",
-        "presenceTitle": "我们的布局",
+        "coreValuesTitle": "核心价值观",
+        "coreValues": [
+            "创新",
+            "以客户为中心",
+            "卓越",
+            "敏捷",
+            "诚信与信任",
+            "协作"
+        ],
+        "presenceTitle": "我们的业务布局",
         "presenceHighlight": "布局",
         "presenceHeading": "全球拓展，本地创新",
-        "presenceDesc": "我们在亚洲与欧洲设有办公室，全天候可联系。",
+        "presenceDesc": "我们在亚洲与欧洲均设有办事处，可实现全天候 24/7 联络。",
         "pakistan": "巴基斯坦",
         "uk": "英国",
         "uae": "阿联酋",
@@ -266,124 +281,102 @@
         "australia": "澳大利亚",
         "lahore": "拉合尔",
         "glasgow": "格拉斯哥",
-        "dubai": "阿布扎比",
+        "dubai": "阿联酋阿布扎比",
         "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
         "companyUK": "AIOT Consulting L.L.C",
-        "companyUAE": "A I O Technology Consultancy - L.L.C ",
+        "companyUAE": "A I O Technology Consultancy - L.L.C",
         "companyGeneral": "AIOT Consulting",
         "address": "地址：",
-        "email": "邮箱：",
-        "phone": "电话：",
-        "uaeAddress": "M23办公室，Madinat Office，纳达街，阿布扎比，阿联酋",
-        "ukAddress": "3 Hoy Avenue，格拉斯哥，英国"
+        "email": "电子邮箱：",
+        "phone": "电话号码：",
+        "pakistanAddress": "巴基斯坦旁遮普省拉合尔54100，PECO路，GECHS第三期，15/1C",
+        "uaeAddress": "阿联酋阿布扎比 Al Najda 街 Madinat 办公楼 M23 室",
+        "ukAddress": "英国格拉斯哥 Hoy Avenue 3号"
     },
     "clientWall": {
         "heroTitle": "客户墙",
         "heroHighlight": "客户",
-        "heroSubtitle": "致力于更绿色的未来：我们的客户墙",
-        "sectionSubtitle": "AIOT IT Solutions：以顺畅的 IT 外包赋能您的业务",
-        "sectionTitle": "量身定制的效率、创新与专业能力",
-        "sectionDesc": "在 AIOT IT Solutions，我们专注于可靠的 IT 外包服务，推动卓越运营与成本效率。专家团队确保您的企业受益于前沿技术与创新解决方案，同时降低开销并提升生产力。",
+        "heroSubtitle": "致力于共创未来：我们的客户墙",
+        "sectionSubtitle": "以技术赋能您的业务",
+        "sectionTitle": "专业能力、创新与量身定制的技术",
+        "sectionDesc": "我们帮助企业以切实可行、创新且可扩展的技术解决方案解决复杂的业务挑战。我们专注于技术咨询、数字化转型、企业解决方案、云计算、网络安全、数据、人工智能与托管服务，帮助企业提升效率、强化运营并实现增长。",
+        "sectionDesc2": "从战略规划、实施到持续的技术管理，我们帮助客户取得了显著成果，充分展现了我们交付安全、可靠、以业务为核心解决方案的能力——运作更智能、适应更迅速，并在不断发展的数字世界中保持领先。",
         "clientsTitle": "我们的客户",
         "clientsHighlight": "客户",
-        "clientsDesc": "领先企业信赖我们提供创新的 IT 解决方案与卓越专业能力。"
+        "clientsDesc": "凭借创新的 IT 解决方案与无可比拟的专业能力，赢得众多行业领军企业的信赖。"
     },
     "contact": {
         "heroTitle": "联系我们",
         "heroHighlight": "联系",
         "heroSubtitle": "与我们的团队取得联系",
-        "introTitle": "让我们连接",
-        "introHeading": "我们期待您的来信",
-        "introDesc": "无论您对我们的服务有疑问、需要技术支持，还是想讨论潜在项目，我们的团队都随时准备协助。请通过以下渠道或联系表单与我们联系。",
+        "introTitle": "让我们联系",
+        "introHeading": "我们期待您的声音",
+        "introDesc": "无论您对我们的服务有疑问，需要技术指导与支持，或是想探讨潜在项目，我们的团队都随时准备为您提供帮助。请通过以下任一渠道联系我们，或填写联系表单，我们将乐意了解如何为您的业务提供支持。",
         "phoneTitle": "电话",
-        "emailTitle": "邮箱",
+        "emailTitle": "电子邮箱",
         "hoursTitle": "营业时间",
-        "hours": "周一至周五 / 10:00 – 19:00",
-        "formTitle": "发送消息",
-        "nameLabel": "全名 *",
-        "namePlaceholder": "请输入您的全名",
+        "hours": "周一至周五 / 上午9:00至下午6:00",
+        "formTitle": "给我们留言",
+        "nameLabel": "姓名 *",
+        "namePlaceholder": "请输入您的姓名",
         "emailLabel": "电子邮箱 *",
-        "emailPlaceholder": "请输入您的邮箱",
+        "emailPlaceholder": "请输入您的电子邮箱",
         "phoneLabel": "电话号码",
         "phonePlaceholder": "请输入您的电话号码",
         "subjectLabel": "主题 *",
-        "subjectPlaceholder": "我们能如何帮助您？",
+        "subjectPlaceholder": "我们能为您提供什么帮助？",
         "messageLabel": "留言 *",
-        "messagePlaceholder": "请告诉我们更多关于您的咨询……",
-        "sendButton": "发送消息",
-        "officesTitle": "我们的办公室",
+        "messagePlaceholder": "请详细描述您的需求……",
+        "sendButton": "发送留言",
+        "officesTitle": "我们的办公地点",
         "pakistanOffice": "巴基斯坦办公室",
         "ukOffice": "英国办公室",
         "uaeOffice": "阿联酋办公室",
         "companyPakistan": "AIOT Consulting (Pvt.) Ltd.",
-        "companyUAE": "A I O Information Technology",
+        "companyUAE": "A I O Technology Consultancy - L.L.C",
         "companyUK": "AIOT Consulting L.L.C",
         "pakistanAddress": "巴基斯坦旁遮普省拉合尔54100，PECO路，GECHS第三期，15/1C",
-        "ukAddress": "3 Hoy Avenue，格拉斯哥，英国",
-        "uaeAddress": "M23办公室，Madinat Office，纳达街，阿布扎比，阿联酋",
+        "ukAddress": "英国格拉斯哥 Hoy Avenue 3号",
+        "uaeAddress": "阿联酋阿布扎比 Al Najda 街 Madinat 办公楼 M23 室",
         "mapView": "地图视图",
         "mapCity": "巴基斯坦拉合尔"
-    },
-    "footer": {
-        "newsletterTitle": "获取更新",
-        "emailPlaceholder": "请输入您的邮箱……",
-        "subscribe": "订阅",
-        "description": "重塑您的未来。",
-        "quickLinks": "快捷链接",
-        "home": "首页",
-        "about": "关于我们",
-        "contact": "联系我们",
-        "solutions": "解决方案",
-        "allInOneSuit": "一体化套件",
-        "sapUI": "SAP Business One 用户界面",
-        "hrSystem": "人力资源管理系统",
-        "hireLawyer": "在线聘请律师",
-        "moreSolutions": "更多解决方案",
-        "attendee": "Attendee",
-        "pos": "POS",
-        "connector": "Connector",
-        "hcm": "HCM",
-        "rights": "保留所有权利。",
-        "copyright": "版权所有 © {year} AIOT。保留所有权利。",
-        "privacyPolicy": "隐私政策",
-        "termsAndConditions": "条款与条件"
     },
     "newsPage": {
         "eyebrow": "资源",
         "title": "新闻",
-        "subtitle": "公司动态、产品发布与塑造 AIOT 未来的重要里程碑。",
+        "subtitle": "公司动态、产品发布与里程碑，共同塑造您的未来。",
         "sectionLabel": "最新动态",
-        "sectionTitle": "关注 AIOT 新闻，掌握最新进展",
-        "sectionDesc": "跟踪公告、发布与合作故事，了解我们如何帮助组织自信创新。",
+        "sectionTitle": "与我们一起紧跟最新资讯。",
+        "sectionDesc": "关注我们的公告、发布与合作故事，了解我们如何助力企业自信创新。",
         "cta": "联系我们的团队",
         "items": [
             {
                 "tag": "公告",
-                "date": "Sep 2026",
-                "title": "AIOT 扩大在亚洲与欧洲的区域布局",
-                "excerpt": "新的交付中心与合作伙伴计划强化我们在数字化转型中对客户的支持。",
+                "date": "2026年9月",
+                "title": "我们正在扩大在亚洲与欧洲的区域布局。",
+                "excerpt": "新的交付中心与合作伙伴计划，进一步加强了我们在数字化转型中为客户提供的支持。",
                 "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
                 "featured": true
             },
             {
                 "tag": "产品",
-                "date": "Aug 2026",
-                "title": "企业套件智能自动化功能更新",
-                "excerpt": "全新能力帮助团队简化运营并基于实时洞察采取行动。",
+                "date": "2026年8月",
+                "title": "企业套件全线推出智能自动化更新",
+                "excerpt": "全新功能帮助团队简化任务，并根据实时洞察采取行动。",
                 "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=480&fit=crop"
             },
             {
                 "tag": "合作",
-                "date": "Jul 2026",
-                "title": "战略合作加速云与 ERP 交付",
-                "excerpt": "与领先平台更深度的协作，使可扩展解决方案更快推向市场。",
+                "date": "2026年7月",
+                "title": "协同联盟加速云与 ERP 交付。",
+                "excerpt": "与领先平台的深度合作，让可扩展的解决方案更快推向市场。",
                 "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&h=480&fit=crop"
             },
             {
                 "tag": "公司",
-                "date": "Jun 2026",
-                "title": "AIOT 因以客户为中心的技术咨询获认可",
-                "excerpt": "这一里程碑体现了我们对务实创新与长期业务价值的承诺。",
+                "date": "2026年6月",
+                "title": "我们的客户导向型技术咨询获得业界认可。",
+                "excerpt": "这一里程碑体现了我们对务实创新与持久商业价值的坚守。",
                 "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
             }
         ]
@@ -391,103 +384,155 @@
     "blogsPage": {
         "eyebrow": "资源",
         "title": "博客",
-        "subtitle": "关于技术与商业创新的洞察、趋势与专家观点。",
-        "sectionLabel": "来自博客",
-        "sectionTitle": "助力前行的想法",
-        "sectionDesc": "探索数字化转型、智能技术与面向增长的组织建设等实用文章。",
+        "subtitle": "关于技术与商业创新的洞见、趋势与专家观点。",
+        "sectionLabel": "博客精选",
+        "sectionTitle": "助您前行的思考与见解",
+        "sectionDesc": "探索关于数字化转型、智能技术以及打造韧性强、蓄势增长型组织的实用文章。",
         "readMore": "阅读文章",
-        "ctaTitle": "需要为业务量身定制的指导吗？",
-        "ctaDesc": "我们的顾问帮助您将想法转化为安全、可扩展、可衡量成果的技术项目。",
+        "ctaTitle": "想为您的企业获取定制指导？",
+        "ctaDesc": "我们的顾问帮助您将想法转化为安全、可扩展且能带来明确成果的技术方案。",
         "cta": "联系我们",
         "posts": [
             {
                 "category": "数字化转型",
-                "readTime": "6 分钟阅读",
-                "title": "智能系统如何将复杂性转化为清晰",
-                "excerpt": "连接人员、流程与平台的实用方法，让决策在全企业更快推进。",
+                "readTime": "阅读需6分钟",
+                "title": "智能系统如何化繁为简，聚焦重点",
+                "excerpt": "连接人员、流程与平台的实用方法，让业务决策更快速地推进。",
                 "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=520&fit=crop"
             },
             {
                 "category": "云与 ERP",
-                "readTime": "5 分钟阅读",
-                "title": "为增长构建可扩展的基础",
-                "excerpt": "安全、可适应的技术架构为何是短期修补与长期价值的关键区别。",
+                "readTime": "阅读需5分钟",
+                "title": "构建可扩展的增长基础",
+                "excerpt": "为何安全、灵活的技术架构，是区分短期修补与长期价值的关键。",
                 "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
             },
             {
-                "category": "AI 与自动化",
-                "readTime": "7 分钟阅读",
-                "title": "从洞察到行动：更智能的运营",
-                "excerpt": "探索自动化与分析如何在保留人文语境的同时提升效率。",
+                "category": "人工智能与自动化",
+                "readTime": "阅读需7分钟",
+                "title": "以更智慧的运营，将洞察转化为行动",
+                "excerpt": "探索自动化与数据分析如何在提升效率的同时，兼顾人性化因素。",
                 "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=520&fit=crop"
             },
             {
                 "category": "网络安全",
-                "readTime": "4 分钟阅读",
-                "title": "支持创新而非阻碍的安全",
-                "excerpt": "以保护系统为核心、同时保持敏捷交付与清晰业务成果的客户视角。",
+                "readTime": "阅读需4分钟",
+                "title": "支持创新而非拖慢创新的安全防护。",
+                "excerpt": "以客户为先的视角保护系统安全，同时保持敏捷交付与清晰的业务成果。",
                 "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=520&fit=crop"
             },
             {
                 "category": "领导力",
-                "readTime": "5 分钟阅读",
+                "readTime": "阅读需5分钟",
                 "title": "在互联数字世界中引领变革",
-                "excerpt": "为以信心、清晰与可衡量进展应对转型的组织提供指导。",
+                "excerpt": "为企业提供指引，助其以信心、清晰的方向与可衡量的进展驾驭转型。",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=520&fit=crop"
             },
             {
-                "category": "行业趋势",
-                "readTime": "6 分钟阅读",
-                "title": "新兴技术对明日企业意味着什么",
-                "excerpt": "值得关注的趋势——以及如何以务实、成果导向的路线图采用它们。",
+                "category": "商业趋势",
+                "readTime": "阅读需6分钟",
+                "title": "新兴技术对未来企业意味着什么",
+                "excerpt": "值得关注的趋势，以及如何以务实、注重成果的路线图加以应用。",
                 "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=520&fit=crop"
             }
         ]
     },
     "insightsPage": {
         "eyebrow": "资源",
-        "title": "以洞察驱动创新",
-        "subtitle": "思想领导力与实用策略，帮助您的组织转型、创新并持续成长。",
-        "introLabel": "思想领导力",
-        "introTitle": "把新兴趋势转化为持久优势",
-        "introDesc1": "以洞察驱动创新融合战略、行业视角与技术专长，帮助领导者清晰应对变化。",
-        "introDesc2": "从数字化转型与智能自动化，到安全可扩展的平台——我们分享从愿景到落地的框架。",
-        "quote": "当技术实用、安全并以真实客户需求为中心时，才能创造最大价值。",
-        "cta": "讨论您的路线图",
+        "title": "以洞见驱动创新",
+        "subtitle": "前沿思想与实用策略，助力您的企业转型、创新并蓬勃发展。",
+        "introLabel": "前沿思想",
+        "introTitle": "将新兴趋势转化为长期优势",
+        "introDesc1": "创新与洞见相辅相成，汇聚战略思维、行业视角与技术专长，帮助企业领导者清晰应对变革。",
+        "introDesc2": "从数字化转型、智能自动化到安全可扩展的平台，我们分享能够帮助企业将目标转化为执行的系统方法。",
+        "quote": "当技术切实可行、安全可靠，并围绕真实客户需求设计时，才能创造最大价值。",
+        "cta": "探讨您的发展路线图",
         "pillar1Title": "清晰的战略",
-        "pillar1Desc": "明确技术在何处创造最大价值，并构建团队能够自信执行的路线图。",
-        "pillar2Title": "互联能力",
-        "pillar2Desc": "对齐人员、流程、数据与平台，让运营更智能、更快、更有韧性。",
-        "pillar3Title": "可衡量成果",
-        "pillar3Desc": "聚焦效率、增长与客户影响——而非为技术而技术。",
-        "frameworkLabel": "洞察框架",
-        "frameworkTitle": "从想法到影响的实用路径",
-        "frameworkDesc": "用这个简单视角排定优先级、降低风险，并让转型始终聚焦可持续增长。",
+        "pillar1Desc": "明确技术创造最大价值的方向，制定团队能够自信执行的路线图。",
+        "pillar2Title": "互联的能力",
+        "pillar2Desc": "统筹人员、流程、数据与平台，让运营更智能、更快速、更具韧性。",
+        "pillar3Title": "可观测的成果",
+        "pillar3Desc": "聚焦效率、增长与客户价值，而非为技术而技术。",
+        "frameworkLabel": "洞见框架",
+        "frameworkTitle": "从构想到成效的实用路径",
+        "frameworkDesc": "运用这一简洁框架，优先安排举措、降低风险，让转型始终聚焦于稳健增长。",
         "insights": [
             {
                 "step": "01",
-                "title": "从业务挑战出发",
-                "desc": "围绕生产力、体验与韧性等成果构建转型，再选择合适的技术路径。"
+                "title": "从业务挑战出发。",
+                "desc": "围绕成果——生产力、体验与韧性——构建转型框架，再选择合适的技术路径。"
             },
             {
                 "step": "02",
-                "title": "为规模与安全而设计",
-                "desc": "构建支持增长、保护关键系统并能适应市场与客户需求变化的基础。"
+                "title": "为规模化与安全性而设计",
+                "desc": "构建支撑增长的基础，保护关键系统，并随市场与客户需求的演变灵活调整。"
             },
             {
                 "step": "03",
-                "title": "在全组织激活洞察",
-                "desc": "将数据与智能自动化转化为领导者与一线团队的日常决策支持。"
+                "title": "在全组织范围内激活洞见。",
+                "desc": "将数据与智能自动化转化为领导者与一线团队日常决策的支持力量。"
             },
             {
                 "step": "04",
-                "title": "与伙伴保持动能",
-                "desc": "将持续创新与客户导向的交付结合，使进展不断累积。"
+                "title": "与合作伙伴共同保持发展势头。",
+                "desc": "将持续创新与以客户为中心的交付相结合，让进步随时间不断累积。"
             }
         ],
-        "bannerTitle": "准备好有目标地创新了吗？",
-        "bannerDesc": "与 AIOT 合作，将洞察转化为安全、可扩展的解决方案，提升效率并创造长期价值。",
-        "bannerCta": "开始对话"
+        "bannerTitle": "准备好有目标地开展创新了吗？",
+        "bannerDesc": "与我们合作，将知识转化为安全、可扩展的解决方案，提升效率并创造长期价值。",
+        "bannerCta": "开启对话"
+    },
+    "footer": {
+        "newsletterTitle": "获取更新",
+        "newsletterHeading": "借助 AIOT 洞见，保持领先",
+        "newsletterDesc": "产品更新、数字化转型资讯与合作动态，直达您的收件箱。",
+        "emailPlaceholder": "请输入您的邮箱……",
+        "subscribe": "订阅",
+        "description": "以人工智能、物联网与企业技术解决方案重塑您的未来，驱动真实的业务成果。",
+        "quickLinks": "快捷链接",
+        "home": "首页",
+        "about": "关于我们",
+        "contact": "联系我们",
+        "solutions": "解决方案",
+        "allInOneSuit": "一体化套件",
+        "sapUI": "BridgeHub 用户界面",
+        "hrSystem": "人力资源管理系统",
+        "hireLawyer": "在线聘请律师",
+        "moreSolutions": "更多解决方案",
+        "attendee": "Attendee",
+        "pos": "POS",
+        "connector": "Connector",
+        "hcm": "HCM",
+        "language": "语言",
+        "followUs": "关注我们",
+        "rights": "保留所有权利。",
+        "copyright": "版权所有 © {year} AIOT。保留所有权利。",
+        "letsTalk": "联系我们",
+        "privacyPolicy": "隐私政策",
+        "termsAndConditions": "条款与条件",
+        "termsOfService": "服务条款"
+    },
+    "privacyPolicy": {
+        "eyebrow": "法律",
+        "title": "隐私政策",
+        "subtitle": "AIOT 如何收集、使用及保护您的信息。",
+        "lastUpdatedLabel": "最近更新",
+        "lastUpdated": "2026年8月28日",
+        "intro": "AIOT Consulting（以下简称“AIOT”、“我们”）尊重您的隐私。本隐私政策说明了当您访问我们的网站、联系我们或使用我们的服务时，我们如何收集、使用、存储及保护相关信息。",
+        "collectTitle": "我们收集的信息",
+        "collectDesc": "当您联系我们、预约演示或订阅更新时，我们可能会收集您直接提供的个人信息，例如姓名、电子邮箱、电话号码、公司信息及留言内容。我们也可能收集有限的技术数据，例如浏览器类型、设备信息及浏览页面，以提升网站性能与安全性。",
+        "useTitle": "我们如何使用您的信息",
+        "useDesc": "我们使用所收集的信息来回应咨询、提供所需服务、改进我们的网站与产品，在您选择订阅时发送相关更新，并防范滥用或未经授权的访问。我们不会出售您的个人信息。",
+        "sharingTitle": "信息共享与披露",
+        "sharingDesc": "我们可能会将信息共享给协助我们运营网站与业务的可信服务提供商，且仅限于其提供服务所需的范围。我们也可能在法律要求下，或为保护 AIOT、用户或他人的权利、安全与保障时披露相关信息。",
+        "securityTitle": "数据安全",
+        "securityDesc": "我们采取合理的管理、技术与组织措施，保护个人信息不被未经授权地访问、丢失、滥用或篡改。由于互联网传输方式无法做到绝对安全，我们建议您在网上分享数据时采取良好的安全习惯。",
+        "rightsTitle": "您的权利",
+        "rightsDesc": "根据您所在的地区，您可能拥有访问、更正、更新或请求删除您个人信息的权利。您也可以随时选择退出营销类通讯。如需行使这些权利，请通过以下方式联系我们。",
+        "contactTitle": "联系我们",
+        "contactDesc": "如果您对本隐私政策或我们处理数据的方式有任何疑问，请随时与我们联系。",
+        "contactCta": "前往联系页面",
+        "changes": "我们可能会不时更新本隐私政策。任何变更都会发布在本页面，并附上更新后的修订日期。变更后继续使用我们的网站，即表示您接受修订后的政策。"
     },
     "banner": {
         "upperText": "技术",
@@ -603,75 +648,75 @@
     },
     "consulting": {
         "heroHighlight": "咨询",
-        "heroSubtitle": "释放敏捷力，拥抱创新：我们是您转型之路上的伙伴",
+        "heroSubtitle": "释放敏捷，拥抱创新：我们是您转型路上的合作伙伴",
         "eyebrow": "咨询",
-        "heroTitle": "将技术转化为竞争优势的战略",
-        "heroDesc": "AIOT 帮助领导者明确方向、现代化运营并设计可扩展的平台——从顾问建议到落地执行。",
-        "heroCta": "联系顾问",
-        "heroSecondary": "了解能力",
-        "expertiseLabel": "我们的专长",
-        "introTitle": "以可衡量成果为导向的咨询",
-        "introDesc": "我们结合战略洞察、行业深度与务实的技术经验，帮助您更快前进、降低风险并建立持久的竞争优势。",
+        "heroTitle": "让技术转化为优势的战略",
+        "heroDesc": "AIOT 帮助企业领导者明确方向、实现运营现代化，并架构从顾问咨询到执行落地均可扩展的平台。",
+        "heroCta": "咨询顾问",
+        "heroSecondary": "探索我们的能力",
+        "expertiseLabel": "我们的专业能力",
+        "introTitle": "为明确成果而生的咨询服务",
+        "introDesc": "我们融合战略视野、行业深度与务实的技术专长，帮助您加快步伐、降低风险，并创造持久的竞争优势。",
         "capabilitiesLabel": "能力",
-        "approachLabel": "工作方式",
-        "approachTitle": "从洞察到影响的一条清晰路径",
-        "approachDesc": "每个项目都遵循严谨的方法——让战略成为交付，而非停留在幻灯片。",
-        "learnMore": "洽谈此项服务",
-        "ctaTitle": "准备好规划下一步了吗？",
-        "ctaDesc": "预约咨询，带着对优先级、架构与可行路线图的清晰认识离开。",
+        "approachLabel": "我们的工作方式",
+        "approachTitle": "从洞见到成效的清晰路径",
+        "approachDesc": "每一次合作都遵循严谨的方法论，让战略真正落地实施，而非停留在幻灯片上。",
+        "learnMore": "咨询此项服务",
+        "ctaTitle": "准备好规划您的下一步了吗？",
+        "ctaDesc": "预约咨询，带着清晰的优先事项、架构方案与切实可行的路线图离开。",
         "ctaButton": "预约咨询",
         "services": [
             {
-                "title": "IT 战略与顾问服务",
+                "title": "IT 战略与顾问",
                 "shortTitle": "IT 战略与顾问",
-                "heading": "让技术与业务雄心对齐",
-                "content": "我们帮助高管制定清晰的技术议程——投资优先级、运营模式与治理——使 IT 成为增长引擎而非成本中心。",
+                "heading": "让技术与业务愿景保持一致。",
+                "content": "我们帮助高管制定清晰的技术议程、投资优先事项、运营模式与治理架构，让 IT 成为增长引擎，而非成本中心。",
                 "points": [
                     "企业 IT 愿景与运营模式",
-                    "投资优先级与价值论证",
+                    "投资优先级排序与价值论证",
                     "治理、风险与供应商战略"
                 ]
             },
             {
                 "title": "数字化转型咨询",
                 "shortTitle": "数字化转型",
-                "heading": "重塑组织的运作方式",
-                "content": "从客户旅程到后台平台，我们设计连接人员、流程与技术的转型项目——从第一天起便将落地采用纳入设计。",
+                "heading": "重塑组织的运作方式。",
+                "content": "从客户旅程到后台平台，我们设计的转型方案将人员、流程与技术紧密相连，并从第一天起就融入采纳机制。",
                 "points": [
                     "转型路线图与变革设计",
                     "客户与员工体验重塑",
-                    "项目治理与价值跟踪"
+                    "项目治理与价值追踪"
                 ]
             },
             {
                 "title": "业务流程咨询",
                 "shortTitle": "业务流程",
-                "heading": "简化流程，释放绩效",
-                "content": "我们诊断关键流程中的摩擦，重新设计端到端工作流，并在能创造真实产能而非复杂性的环节引入自动化。",
+                "heading": "简化流程，释放效能。",
+                "content": "我们诊断关键流程中的摩擦点，重新设计端到端工作流，并在能够真正创造产能而非增加复杂度的地方引入自动化。",
                 "points": [
-                    "流程发现与成熟度评估",
+                    "流程梳理与成熟度评估",
                     "目标运营模式设计",
                     "自动化与持续改进"
                 ]
             },
             {
-                "title": "技术评估与路线图",
+                "title": "技术评估与路线图规划",
                 "shortTitle": "技术评估",
-                "heading": "认清现状，规划未来",
-                "content": "我们评估应用、基础设施、数据与安全态势，并将发现转化为团队可自信执行的分阶段路线图。",
+                "heading": "了解现状，规划方向。",
+                "content": "我们评估应用、基础设施、数据与安全态势，并将评估结果转化为团队能够自信执行的分阶段路线图。",
                 "points": [
                     "应用与基础设施健康检查",
-                    "与行业基准的差距分析",
-                    "含成本与风险视角的分阶段路线图"
+                    "对标行业基准的差距分析",
+                    "兼顾成本与风险的分阶段路线图"
                 ]
             },
             {
                 "title": "云与企业架构",
                 "shortTitle": "云与架构",
-                "heading": "为规模、韧性与速度而架构",
-                "content": "我们设计默认安全、成本可控且为 AI、集成与多云增长做好准备的企业与云架构。",
+                "heading": "为规模化、韧性与速度而架构",
+                "content": "我们设计的云与企业架构默认具备安全性、注重成本效益，并为人工智能、系统集成与多云增长做好准备。",
                 "points": [
-                    "参考架构与 landing zones",
+                    "参考架构与着陆区设计",
                     "集成、数据与平台蓝图",
                     "安全、FinOps 与可靠性模式"
                 ]
@@ -680,11 +725,11 @@
         "processSteps": [
             {
                 "title": "发现",
-                "desc": "理解目标、约束与现状"
+                "desc": "了解目标、约束条件与现状。"
             },
             {
                 "title": "定义",
-                "desc": "形成战略、优先级与成功指标"
+                "desc": "明确战略、优先事项与成功指标"
             },
             {
                 "title": "设计",
@@ -704,7 +749,7 @@
             {
                 "value": "50",
                 "suffix": "+",
-                "label": "专家顾问"
+                "label": "专业顾问"
             },
             {
                 "value": "98",
@@ -715,6 +760,192 @@
                 "value": "25",
                 "suffix": "+",
                 "label": "服务行业"
+            }
+        ]
+    },
+    "implementation": {
+        "heroHighlight": "实施",
+        "heroSubtitle": "从蓝图到上线，精准交付企业解决方案",
+        "expertiseLabel": "我们实施的领域",
+        "introTitle": "将战略转化为可运行系统的实施服务",
+        "introDesc": "我们设计、配置并部署与您业务运作方式相契合的企业平台，配合明确的时间表、严谨的治理，并在每次发布中融入采纳机制。",
+        "capabilitiesLabel": "能力",
+        "approachLabel": "我们的交付方式",
+        "approachTitle": "从设计到上线的成熟路径",
+        "approachDesc": "我们将深厚的产品专长与严谨的交付管理相结合，确保每次实施都能按时、按范围完成，并做好用户准备。",
+        "learnMore": "探索此解决方案",
+        "services": [
+            {
+                "title": "企业技术解决方案",
+                "shortTitle": "企业技术",
+                "heading": "构建您业务的数字化主干。",
+                "content": "我们实施 ERP、CRM、协作平台及定制应用等核心企业平台，将团队、数据与流程整合为一个可靠的运营体系。",
+                "points": [
+                    "解决方案设计与差距分析工作坊",
+                    "配置、集成与数据迁移",
+                    "用户赋能与上线关键期支持"
+                ]
+            },
+            {
+                "title": "SAP 与 HANA 解决方案",
+                "shortTitle": "SAP 与 HANA",
+                "heading": "基于 SAP 实现财务与运营现代化",
+                "content": "从 S/4HANA 与 HANA 分析到模块上线，我们帮助您以规范的流程、严格的控制以及保护投资的路线图来实施 SAP。",
+                "points": [
+                    "S/4HANA 与经典 SAP 实施",
+                    "HANA 分析与报表基础建设",
+                    "对标 SAP 最佳实践的流程重塑。"
+                ]
+            },
+            {
+                "title": "Oracle NetSuite 解决方案",
+                "shortTitle": "Oracle NetSuite",
+                "heading": "以一体化云 ERP 运营您的业务。",
+                "content": "我们为财务、库存、CRM 与运营实施 NetSuite，并结合适配您所在行业的 SuiteScripts、工作流与集成方案，随业务增长而扩展。",
+                "points": [
+                    "NetSuite ERP、CRM 与电商配置",
+                    "定制工作流、SuiteScripts 与仪表盘",
+                    "多子公司与多币种支持"
+                ]
+            },
+            {
+                "title": "Microsoft 与产品解决方案",
+                "shortTitle": "Microsoft 与产品",
+                "heading": "借助 Microsoft 与我们的产品提升生产力",
+                "content": "我们交付 Microsoft 365、Dynamics、Azure、Power Platform 以及我们的产品套件，让您的团队能够在可信赖的技术栈上协作、自动化与创新。",
+                "points": [
+                    "Microsoft 365、Dynamics 与 Power Platform",
+                    "Azure 云与身份基础架构",
+                    "我们的产品部署与集成"
+                ]
+            },
+            {
+                "title": "公用事业现代化",
+                "shortTitle": "公用事业现代化",
+                "heading": "为现代公用事业构建现代系统",
+                "content": "我们帮助公用事业企业实现计费、客户体验、现场运营与电网相关平台的现代化，以适应受监管环境的安全合规实施方案。",
+                "points": [
+                    "CIS、计费与客户体验平台",
+                    "现场服务与运营现代化",
+                    "合规就绪的集成与数据流。"
+                ]
+            },
+            {
+                "title": "数据与安全解决方案",
+                "shortTitle": "数据与安全",
+                "heading": "保护数据，释放洞见。",
+                "content": "我们实施数据平台、分析工具与安全控制，从湖仓基础架构到身份与访问管理，确保信息可信、可获取且受到保护。",
+                "points": [
+                    "数据平台、数据管道与分析",
+                    "身份、访问与安全基线",
+                    "治理、留存与合规控制"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "评估",
+                "desc": "界定需求范围、风险与成功标准"
+            },
+            {
+                "title": "设计",
+                "desc": "规划流程蓝图、架构与集成方案"
+            },
+            {
+                "title": "构建",
+                "desc": "配置、迁移、集成并进行全面测试。"
+            },
+            {
+                "title": "上线",
+                "desc": "配合培训、上线关键期支持与交接完成上线"
+            }
+        ]
+    },
+    "managedServices": {
+        "heroHighlight": "托管",
+        "heroRest": "服务",
+        "heroSubtitle": "全天候运营、监控与支持，保障您的数字资产健康运行",
+        "expertiseLabel": "我们运营的领域",
+        "introTitle": "保障性能并解放团队的托管服务",
+        "introDesc": "我们承担日常技术运营、应用、云、安全与支持工作，让您的团队专注于业务发展，而我们则确保系统可靠、安全且随时可用。",
+        "capabilitiesLabel": "能力",
+        "approachLabel": "我们的运营方式",
+        "approachTitle": "兼顾清晰透明与高可用性的运营模式",
+        "approachDesc": "清晰的服务水平协议（SLA）、预防性监控与持续改进，让托管服务成为您团队的延伸，而非一个不透明的黑箱。",
+        "learnMore": "咨询此项服务",
+        "services": [
+            {
+                "title": "应用管理服务",
+                "shortTitle": "应用管理",
+                "heading": "保持应用稳定、更新并持续改进。",
+                "content": "我们以严谨的变更控制与可衡量的服务水平，管理您业务关键应用的功能增强、事件处理、发布与性能表现。",
+                "points": [
+                    "L2/L3 应用支持与功能增强",
+                    "发布管理与变更控制",
+                    "性能调优与持续改进"
+                ]
+            },
+            {
+                "title": "云与基础设施管理",
+                "shortTitle": "云与基础设施",
+                "heading": "自信运营云与基础设施。",
+                "content": "从着陆区到日常运营，我们持续监控、修补、优化并治理您的云与基础设施资产，兼顾成本、韧性与规模。",
+                "points": [
+                    "24×7 监控与事件响应",
+                    "补丁管理、容量与成本优化",
+                    "多云与混合环境运营"
+                ]
+            },
+            {
+                "title": "IT 支持与服务台",
+                "shortTitle": "IT 支持与服务台",
+                "heading": "用户可信赖的快速响应支持",
+                "content": "我们的服务台快速解决工单、沟通清晰，并附带完整背景进行升级处理，在各渠道与时区之间提供一致的服务体验。",
+                "points": [
+                    "多渠道服务台与 SLA",
+                    "终端、身份与访问支持",
+                    "知识库与自助服务赋能"
+                ]
+            },
+            {
+                "title": "网络安全与监控",
+                "shortTitle": "网络安全",
+                "heading": "检测威胁，降低风险，保持领先。",
+                "content": "我们持续监控您的安全态势、响应告警并加固环境，从而及早发现漏洞并快速控制事件。",
+                "points": [
+                    "SOC 式监控与告警分级处理",
+                    "漏洞管理与安全加固",
+                    "身份、终端与云安全运营"
+                ]
+            },
+            {
+                "title": "数据、备份与灾难恢复",
+                "shortTitle": "备份与灾难恢复",
+                "heading": "守护重要资产，在关键时刻恢复业务。",
+                "content": "我们设计并运行备份与灾难恢复方案，配备经过验证的恢复路径、明确的 RPO/RTO 目标，以及管理层可信赖的报告。",
+                "points": [
+                    "备份策略设计与持续验证",
+                    "灾难恢复手册与演练",
+                    "RPO/RTO 报告与合规证明"
+                ]
+            }
+        ],
+        "processSteps": [
+            {
+                "title": "接入",
+                "desc": "梳理系统、SLA 与运营基线"
+            },
+            {
+                "title": "稳定",
+                "desc": "消除干扰、补齐差距并设定健康指标。"
+            },
+            {
+                "title": "运营",
+                "desc": "每日监控、支持并持续改进。"
+            },
+            {
+                "title": "优化",
+                "desc": "持续降低风险、成本与重复性工作。"
             }
         ]
     },
@@ -793,180 +1024,6 @@
                 "step": "04",
                 "title": "支持",
                 "desc": "持续优化"
-            }
-        ]
-    },
-    "implementation": {
-        "heroHighlight": "实施",
-        "heroSubtitle": "从蓝图到 go-live，精准交付企业级解决方案",
-        "expertiseLabel": "我们实施的内容",
-        "introTitle": "将战略转化为可用系统的实施",
-        "introDesc": "AIOT 设计、配置并部署贴合业务运作方式的企业平台，时间表清晰、治理有力，并在每次发布中内置用户 adoption。",
-        "capabilitiesLabel": "能力",
-        "approachLabel": "交付方式",
-        "approachTitle": "从设计到 go-live 的成熟路径",
-        "approachDesc": "我们将深厚的产品专长与规范的交付相结合，使每次实施按时、按范围落地并为用户就绪。",
-        "learnMore": "了解此解决方案",
-        "services": [
-            {
-                "title": "企业技术解决方案",
-                "shortTitle": "Enterprise Tech",
-                "heading": "构建业务的数字化骨干",
-                "content": "我们实施核心企业平台 ERP、CRM、协作与定制应用，将团队、数据与流程连接为可靠的操作系统。",
-                "points": [
-                    "方案设计与 fit-gap 工作坊",
-                    "配置、集成与数据迁移",
-                    "用户赋能与 hypercare 支持"
-                ]
-            },
-            {
-                "title": "SAP & HANA Solutions",
-                "shortTitle": "SAP & HANA",
-                "heading": "在 SAP 上现代化财务与运营",
-                "content": "从 S/4HANA 与 HANA 分析到模块推广，我们帮助您以清晰流程、强管控与保护投资的路线图实施 SAP。",
-                "points": [
-                    "S/4HANA 与经典 SAP 实施",
-                    "HANA 分析与报表基础",
-                    "与 SAP 最佳实践对齐的流程重塑"
-                ]
-            },
-            {
-                "title": "Oracle NetSuite Solutions",
-                "shortTitle": "Oracle NetSuite",
-                "heading": "在单一云 ERP 上运行业务",
-                "content": "我们为财务、库存、CRM 与运营实施 NetSuite，按行业定制 SuiteScripts、工作流与集成，随业务增长扩展。",
-                "points": [
-                    "NetSuite ERP、CRM 与电商配置",
-                    "自定义工作流、SuiteScripts 与仪表板",
-                    "多子公司与多币种就绪"
-                ]
-            },
-            {
-                "title": "Microsoft 与产品解决方案",
-                "shortTitle": "Microsoft & Products",
-                "heading": "以 Microsoft 与 AIOT 产品提升生产力",
-                "content": "我们交付 Microsoft 365、Dynamics、Azure、Power Platform 与 AIOT 产品套件，让团队在可信技术栈上协作、自动化与创新。",
-                "points": [
-                    "Microsoft 365、Dynamics 与 Power Platform",
-                    "Azure 云与身份基础",
-                    "AIOT 产品推广与集成"
-                ]
-            },
-            {
-                "title": "Utility Modernization",
-                "shortTitle": "Utility Modernization",
-                "heading": "现代公用事业的现代系统",
-                "content": "我们帮助公用事业现代化计费、客户体验、现场运营与电网相关平台，为受监管环境打造安全、合规的实施。",
-                "points": [
-                    "CIS、计费与客户体验平台",
-                    "现场服务与运营现代化",
-                    "合规就绪的集成与数据流"
-                ]
-            },
-            {
-                "title": "数据与安全解决方案",
-                "shortTitle": "Data & Security",
-                "heading": "保护数据，释放洞察",
-                "content": "我们实施数据平台、分析与安全控制，使信息可信、可访问且受保护，从 lakehouse 基础到身份与访问。",
-                "points": [
-                    "数据平台、管道与分析",
-                    "身份、访问与安全基线",
-                    "治理、保留与合规控制"
-                ]
-            }
-        ],
-        "processSteps": [
-            { "title": "评估", "desc": "明确需求、风险与成功标准范围" },
-            { "title": "设计", "desc": "规划流程、架构与集成蓝图" },
-            { "title": "构建", "desc": "配置、迁移、集成并充分测试" },
-            { "title": "上线", "desc": "go-live，含培训、hypercare 与交接" }
-        ]
-    },
-    "managedServices": {
-        "heroHighlight": "托管",
-        "heroRest": "服务",
-        "heroSubtitle": "全天候运营、监控与支持，让您的数字环境保持健康",
-        "expertiseLabel": "我们运营的内容",
-        "introTitle": "保护性能、解放团队的托管服务",
-        "introDesc": "AIOT 负责日常技术运营——应用、云、安全与支持——让您的团队专注增长，我们保持系统可靠、安全并就绪。",
-        "capabilitiesLabel": "能力",
-        "approachLabel": "运营方式",
-        "approachTitle": "为清晰与可用性而建的运行模型",
-        "approachDesc": "清晰的 SLA、主动监控与持续改进——让托管服务像团队的延伸，而非黑盒。",
-        "learnMore": "讨论此项服务",
-        "services": [
-            {
-                "title": "应用管理服务",
-                "shortTitle": "应用管理",
-                "heading": "保持应用稳定、最新并持续改进",
-                "content": "我们管理业务关键应用的增强、事件、发布与性能——变更管控严谨，服务级别可衡量。",
-                "points": [
-                    "L2/L3 应用支持与增强",
-                    "发布管理与变更控制",
-                    "性能调优与持续改进"
-                ]
-            },
-            {
-                "title": "云与基础设施管理",
-                "shortTitle": "云与基础设施",
-                "heading": "自信运营云与基础设施",
-                "content": "从 landing zones 到 day-2 运营，我们监控、打补丁、优化并治理您的云与基础设施，兼顾成本、韧性与规模。",
-                "points": [
-                    "7×24 监控与事件响应",
-                    "补丁、容量与成本优化",
-                    "多云与混合运营"
-                ]
-            },
-            {
-                "title": "IT 支持与服务台",
-                "shortTitle": "IT 支持与服务台",
-                "heading": "用户可信赖的响应式支持",
-                "content": "我们的服务台快速解决工单、清晰沟通并带上下文升级——跨渠道与时区的一致体验。",
-                "points": [
-                    "多渠道服务台与 SLA",
-                    "终端、身份与访问支持",
-                    "知识库与自助服务赋能"
-                ]
-            },
-            {
-                "title": "网络安全与监控",
-                "shortTitle": "网络安全",
-                "heading": "发现威胁，降低风险，保持领先",
-                "content": "我们持续监控安全态势、响应告警并加固环境——尽早发现漏洞、快速遏制事件。",
-                "points": [
-                    "SOC 式监控与告警分诊",
-                    "漏洞管理与加固",
-                    "身份、终端与云安全运营"
-                ]
-            },
-            {
-                "title": "数据、备份与灾难恢复",
-                "shortTitle": "备份与 DR",
-                "heading": "保护关键资产，在关键时刻恢复",
-                "content": "我们设计并运行备份与 DR 计划，具备经测试的恢复路径、清晰的 RPO/RTO 目标以及领导层可依赖的报表。",
-                "points": [
-                    "备份策略设计与持续验证",
-                    "灾难恢复 runbook 与演练",
-                    "RPO/RTO 报表与合规证据"
-                ]
-            }
-        ],
-        "processSteps": [
-            {
-                "title": "接入",
-                "desc": "梳理系统、SLA 与运营基线"
-            },
-            {
-                "title": "稳定",
-                "desc": "降低噪音、弥补差距并设定健康指标"
-            },
-            {
-                "title": "运营",
-                "desc": "每日监控、支持与改进"
-            },
-            {
-                "title": "优化",
-                "desc": "随时间降低风险、成本与重复劳动"
             }
         ]
     }

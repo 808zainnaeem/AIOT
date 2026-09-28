@@ -10,11 +10,12 @@ import { getNavPartners } from '../Utils/navPartners';
 import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 const Navbar = () => {
-    const { language, setLanguage, translations, localePack } = useContext(LanguageContext);
+    const { language, setLanguage, translations } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
-    const navbarTrans = localePack?.navbar || translations.navbar || {};
-    const dropdownTrans = localePack?.dropdown || translations.dropdown || {};
-    const footerTrans = localePack?.footer || translations.footer || {};
+    // Always use merged translations — localePack can lag behind language during async load
+    const navbarTrans = translations.navbar || {};
+    const dropdownTrans = translations.dropdown || {};
+    const footerTrans = translations.footer || {};
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [hoveredItem, setHoveredItem] = useState(null);
@@ -91,7 +92,7 @@ const Navbar = () => {
                             { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: `${ROUTES.implementation}#sap-hana` },
                             { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: `${ROUTES.implementation}#oracle-netsuite` },
                             { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: `${ROUTES.implementation}#microsoft-product` },
-                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: `${ROUTES.implementation}#utility-modernization` },
+                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernisation', icon: Settings, url: `${ROUTES.implementation}#utility-modernization` },
                             { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: `${ROUTES.implementation}#data-security` },
                         ]
                     },
@@ -265,10 +266,10 @@ const Navbar = () => {
                         </div>
                         </div>
 
-                        <div className="relative">
+                        <div className="relative z-[60]">
                                 <button
                                     type="button"
-                                    onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                                    onClick={() => setLanguageDropdownOpen((open) => !open)}
                                     className="flex items-center gap-2 text-sm tracking-wider transition-all duration-200 font-[450]"
                                     style={{ color: '#111111' }}
                                     aria-label="Select language"
@@ -282,15 +283,24 @@ const Navbar = () => {
                                     </svg>
                                 </button>
                                 {languageDropdownOpen && (
-                                    <div className="absolute right-0 mt-2 w-44 max-h-80 overflow-y-auto bg-white shadow-lg rounded-md z-5000">
+                                    <div
+                                        className="absolute right-0 mt-2 w-44 max-h-80 overflow-y-auto bg-white shadow-lg rounded-md z-[70]"
+                                        role="listbox"
+                                        aria-label="Languages"
+                                    >
                                         {languages.map((lang) => (
                                             <button
                                                 key={lang.code}
+                                                type="button"
+                                                role="option"
+                                                aria-selected={language === lang.code}
                                                 onClick={() => {
                                                     setLanguage(lang.code);
                                                     setLanguageDropdownOpen(false);
                                                 }}
-                                                className="w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
+                                                className={`w-full px-4 py-2 text-left hover:bg-gray-100 text-sm ${
+                                                    language === lang.code ? 'font-semibold bg-gray-50' : ''
+                                                }`}
                                             >
                                                 {lang.name}
                                             </button>
@@ -807,7 +817,11 @@ const Navbar = () => {
                                     {languages.map((lang) => (
                                         <button
                                             key={lang.code}
-                                            onClick={() => setLanguage(lang.code)}
+                                            type="button"
+                                            onClick={() => {
+                                                setLanguage(lang.code);
+                                                setSidebarOpen(false);
+                                            }}
                                             className={`text-left text-sm ${language === lang.code ? 'font-bold' : 'text-gray-600'}`}
                                             style={{ color: language === lang.code ? colors.logo : undefined }}
                                         >
