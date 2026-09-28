@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
+import { ROUTES } from '../Utils/routes';
 
 const DEFAULT_HERO_BG =
   'https://i.postimg.cc/6569bGpp/Chat-GPT-Image-Sep-14-2026-10-26-11-AM.png';
@@ -121,7 +122,7 @@ export default function ServiceOfferingPage({
         heading: base[i]?.heading || fallback.services[i].heading,
         content: base[i]?.content || fallback.services[i].content,
         points: base[i]?.points?.length ? base[i].points : fallback.services[i].points,
-        ctaLink: meta.ctaLink || base[i]?.ctaLink || '/contact',
+        ctaLink: meta.ctaLink || base[i]?.ctaLink || ROUTES.contact,
       };
     });
   }, [
@@ -347,7 +348,7 @@ export default function ServiceOfferingPage({
                   </ul>
 
                   <Link
-                    to={service.ctaLink || '/contact'}
+                    to={service.ctaLink || ROUTES.contact}
                     className="mt-9 inline-flex items-center gap-2 px-7 py-3 rounded-lg text-sm font-semibold border-2 transition hover:text-white"
                     style={{ borderColor: '#111827', color: '#111827' }}
                     onMouseEnter={(e) => {

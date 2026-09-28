@@ -48,7 +48,7 @@ const SERVICE_META = [
 const FALLBACK = {
   heroHighlight: 'Consulting',
   heroRest: '',
-  heroSubtitle: 'Unlock Agility, Embrace Innovation: AIOT, Your Partner in Transformation',
+  heroSubtitle: 'Unlock Agility, Embrace Innovation: We are your Partner in Transformation',
   expertiseLabel: 'Our Expertise',
   introTitle: 'Consulting built for measurable outcomes',
   introDesc:
@@ -65,7 +65,7 @@ const FALLBACK = {
       shortTitle: 'IT Strategy & Advisory',
       heading: 'Align technology with business ambition',
       content:
-        'We help executives set a clear technology agenda investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost center.',
+        'We help executives set a clear technology agenda, investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost centre.',
       points: [
         'Enterprise IT vision & operating model',
         'Investment prioritization & value cases',
@@ -75,7 +75,7 @@ const FALLBACK = {
     {
       title: 'Digital Transformation Consulting',
       shortTitle: 'Digital Transformation',
-      heading: 'Reinvent how your organization works',
+      heading: 'Reinvent how your organisation works',
       content:
         'From customer journeys to back-office platforms, we design transformation programs that connect people, process, and technology with adoption built in from day one.',
       points: [
@@ -89,7 +89,7 @@ const FALLBACK = {
       shortTitle: 'Business Process',
       heading: 'Simplify flows. Unlock performance.',
       content:
-        'We diagnose friction across critical processes, redesign end-to-end workflows, and introduce automation where it creates real capacity not complexity.',
+        'We diagnose friction across critical processes, redesign end-to-end workflows, and introduce automation where it creates real capacity, not complexity.',
       points: [
         'Process discovery & maturity assessment',
         'Target operating model design',
@@ -104,7 +104,7 @@ const FALLBACK = {
         'We evaluate applications, infrastructure, data, and security posture, then translate findings into a sequenced roadmap your teams can execute with confidence.',
       points: [
         'Application & infrastructure health checks',
-        'Gap analysis vs. industry benchmarks',
+        'Gap analysis vs industry benchmarks',
         'Phased roadmap with cost & risk view',
       ],
     },

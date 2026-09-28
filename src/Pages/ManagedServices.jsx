@@ -52,7 +52,7 @@ const FALLBACK = {
   expertiseLabel: 'What We Run',
   introTitle: 'Managed services that protect performance and free your teams',
   introDesc:
-    'AIOT takes ownership of day-to-day technology operations applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.',
+    'We takes ownership of day-to-day technology operations, applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.',
   capabilitiesLabel: 'Capabilities',
   approachLabel: 'How We Operate',
   approachTitle: 'A run model built for clarity and uptime',
@@ -77,10 +77,10 @@ const FALLBACK = {
       shortTitle: 'Cloud & Infrastructure',
       heading: 'Operate cloud and infrastructure with confidence',
       content:
-        'From landing zones to day-2 operations, we monitor, patch, optimize, and govern your cloud and infrastructure estate for cost, resilience, and scale.',
+        'From landing zones to day-2 operations, we monitor, patch, optimise, and govern your cloud and infrastructure estate for cost, resilience, and scale.',
       points: [
         '24×7 monitoring & incident response',
-        'Patching, capacity & cost optimization',
+        'Patching, capacity & cost optimisation',
         'Multi-cloud & hybrid operations',
       ],
     },
@@ -89,7 +89,7 @@ const FALLBACK = {
       shortTitle: 'IT Support & Desk',
       heading: 'Responsive support your users can trust',
       content:
-        'Our service desk resolves tickets fast, communicates clearly, and escalates with context delivering a consistent experience across channels and time zones.',
+        'Our service desk resolves tickets fast, communicates clearly, and escalates with context, delivering a consistent experience across channels and time zones.',
       points: [
         'Multi-channel service desk & SLAs',
         'Endpoint, identity & access support',
@@ -101,7 +101,7 @@ const FALLBACK = {
       shortTitle: 'Cybersecurity',
       heading: 'Detect threats. Reduce risk. Stay ahead.',
       content:
-        'We continuously monitor security posture, respond to alerts, and harden environments so vulnerabilities are found early and incidents are contained quickly.',
+        'We continuously monitor your security posture, respond to alerts, and harden environments so we find vulnerabilities early and contain incidents quickly.',
       points: [
         'SOC-style monitoring & alert triage',
         'Vulnerability management & hardening',

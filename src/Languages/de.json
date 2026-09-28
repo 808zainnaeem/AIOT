@@ -603,7 +603,7 @@
     },
     "consulting": {
         "heroHighlight": "Beratung",
-        "heroSubtitle": "Agilität freisetzen, Innovation nutzen: AIOT, Ihr Partner für Transformation",
+        "heroSubtitle": "Agilität freisetzen, Innovation annehmen: Wir sind Ihr Partner für Transformation",
         "eyebrow": "Beratung",
         "heroTitle": "Strategie, die Technologie in einen Vorteil verwandelt",
         "heroDesc": "AIOT unterstützt Führungskräfte dabei, Richtung zu definieren, Abläufe zu modernisieren und skalierbare Plattformen zu gestalten von der Beratung bis zur Umsetzung.",
@@ -798,10 +798,10 @@
     },
     "implementation": {
         "heroHighlight": "Implementierung",
-        "heroSubtitle": "Vom Blueprint bis Go-live Enterprise-Lösungen präzise geliefert",
+        "heroSubtitle": "Vom Blueprint bis zum Go-live – Enterprise-Lösungen, präzise geliefert",
         "expertiseLabel": "Was wir implementieren",
         "introTitle": "Implementierung, die Strategie in laufende Systeme verwandelt",
-        "introDesc": "AIOT entwirft, konfiguriert und rollt Enterprise-Plattformen aus, die zu Ihrem Geschäft passen mit klaren Timelines, starker Governance und Adoption in jedem Release.",
+        "introDesc": "AIOT entwirft, konfiguriert und rollt Enterprise-Plattformen aus, die zu Ihrem Geschäft passen – mit klaren Zeitplänen, starker Governance und Adoption in jedem Release.",
         "capabilitiesLabel": "Leistungen",
         "approachLabel": "So liefern wir",
         "approachTitle": "Ein bewährter Weg vom Design zum Go-live",
@@ -812,7 +812,7 @@
                 "title": "Enterprise-Technology-Lösungen",
                 "shortTitle": "Enterprise Tech",
                 "heading": "Das digitale Rückgrat Ihres Unternehmens aufbauen",
-                "content": "Wir implementieren zentrale Enterprise-Plattformen ERP, CRM, Collaboration und Individualanwendungen die Teams, Daten und Prozesse in einem zuverlässigen Betriebssystem verbinden.",
+                "content": "Wir implementieren zentrale Enterprise-Plattformen – ERP, CRM, Collaboration und Individualanwendungen –, die Teams, Daten und Prozesse in einem zuverlässigen Betriebssystem verbinden.",
                 "points": [
                     "Solution Design und Fit-Gap-Workshops",
                     "Konfiguration, Integration und Datenmigration",
@@ -820,21 +820,21 @@
                 ]
             },
             {
-                "title": "SAP- & HANA-Lösungen",
+                "title": "SAP & HANA Solutions",
                 "shortTitle": "SAP & HANA",
                 "heading": "Finance und Operations auf SAP modernisieren",
                 "content": "Von S/4HANA und HANA Analytics bis zu Modul-Rollouts helfen wir bei der SAP-Implementierung mit sauberen Prozessen, starken Controls und einer Roadmap, die Ihre Investition schützt.",
                 "points": [
                     "S/4HANA- und klassische SAP-Implementierungen",
                     "HANA Analytics- und Reporting-Grundlagen",
-                    "Prozess-Redesign aligned mit SAP Best Practice"
+                    "Prozess-Redesign im Einklang mit SAP Best Practices"
                 ]
             },
             {
-                "title": "Oracle NetSuite-Lösungen",
+                "title": "Oracle NetSuite Solutions",
                 "shortTitle": "Oracle NetSuite",
                 "heading": "Ihr Geschäft auf einem Cloud-ERP betreiben",
-                "content": "Wir implementieren NetSuite für Finance, Inventory, CRM und Operations branchenspezifisch mit SuiteScripts, Workflows und Integrationen, die mit Ihrem Wachstum skalieren.",
+                "content": "Wir implementieren NetSuite für Finance, Inventory, CRM und Operations – branchenspezifisch – mit SuiteScripts, Workflows und Integrationen, die mit Ihrem Wachstum skalieren.",
                 "points": [
                     "NetSuite ERP, CRM und E-Commerce Setup",
                     "Custom Workflows, SuiteScripts und Dashboards",
@@ -842,7 +842,7 @@
                 ]
             },
             {
-                "title": "Microsoft- & Produktlösungen",
+                "title": "Microsoft & Product Solutions",
                 "shortTitle": "Microsoft & Products",
                 "heading": "Produktivität mit Microsoft und AIOT-Produkten steigern",
                 "content": "Wir liefern Microsoft 365, Dynamics, Azure, Power Platform und AIOT-Produktsuiten, damit Ihre Teams auf einem vertrauenswürdigen Stack zusammenarbeiten, automatisieren und innovieren.",
@@ -853,10 +853,10 @@
                 ]
             },
             {
-                "title": "Utility-Modernisierung",
+                "title": "Utility Modernization",
                 "shortTitle": "Utility Modernization",
                 "heading": "Moderne Systeme für moderne Utilities",
-                "content": "Wir unterstützen Utilities bei der Modernisierung von Billing, Customer Experience, Field Operations und netznahen Plattformen mit sicheren, compliant Implementierungen für regulierte Umgebungen.",
+                "content": "Wir unterstützen Utilities bei der Modernisierung von Billing, Customer Experience, Field Operations und netznahen Plattformen mit sicheren, compliance-fähigen Implementierungen für regulierte Umgebungen.",
                 "points": [
                     "CIS-, Billing- und Customer-Experience-Plattformen",
                     "Field Service- und Operations-Modernisierung",
@@ -864,10 +864,10 @@
                 ]
             },
             {
-                "title": "Daten- & Security-Lösungen",
+                "title": "Data & Security Solutions",
                 "shortTitle": "Data & Security",
                 "heading": "Daten schützen. Insights freisetzen.",
-                "content": "Wir implementieren Datenplattformen, Analytics und Security Controls, die Informationen vertrauenswürdig, zugänglich und geschützt halten von Lakehouse bis Identity and Access.",
+                "content": "Wir implementieren Datenplattformen, Analytics und Security Controls, die Informationen vertrauenswürdig, zugänglich und geschützt halten – von Lakehouse-Fundamenten bis Identity and Access.",
                 "points": [
                     "Datenplattformen, Pipelines und Analytics",
                     "Identity-, Access- und Security-Baselines",
@@ -876,31 +876,19 @@
             }
         ],
         "processSteps": [
-            {
-                "title": "Assess",
-                "desc": "Anforderungen, Risiken und Erfolgskriterien scopen"
-            },
-            {
-                "title": "Design",
-                "desc": "Prozesse, Architektur und Integrationen blueprinten"
-            },
-            {
-                "title": "Build",
-                "desc": "Konfigurieren, migrieren, integrieren und gründlich testen"
-            },
-            {
-                "title": "Launch",
-                "desc": "Go-live mit Training, Hypercare und Übergabe"
-            }
+            { "title": "Analysieren", "desc": "Anforderungen, Risiken und Erfolgskriterien eingrenzen" },
+            { "title": "Entwerfen", "desc": "Prozesse, Architektur und Integrationen blueprinten" },
+            { "title": "Umsetzen", "desc": "Konfigurieren, migrieren, integrieren und gründlich testen" },
+            { "title": "Starten", "desc": "Go-live mit Training, Hypercare und Übergabe" }
         ]
     },
     "managedServices": {
         "heroHighlight": "Managed",
         "heroRest": "Services",
-        "heroSubtitle": "Dauerhafte Operations, Monitoring und Support für ein gesundes digitales Estate",
+        "heroSubtitle": "Permanente Operations, Monitoring und Support für ein gesundes digitales Estate",
         "expertiseLabel": "Was wir betreiben",
         "introTitle": "Managed Services, die Performance schützen und Teams entlasten",
-        "introDesc": "AIOT übernimmt den täglichen Technologiebetrieb Anwendungen, Cloud, Security und Support damit sich Ihre Teams auf Wachstum konzentieren, während wir Systeme zuverlässig, sicher und einsatzbereit halten.",
+        "introDesc": "AIOT übernimmt den täglichen Technologiebetrieb — Anwendungen, Cloud, Security und Support —, damit sich Ihre Teams auf Wachstum konzentieren können, während wir Systeme zuverlässig, sicher und einsatzbereit halten.",
         "capabilitiesLabel": "Leistungen",
         "approachLabel": "So operieren wir",
         "approachTitle": "Ein Run-Modell für Klarheit und Uptime",

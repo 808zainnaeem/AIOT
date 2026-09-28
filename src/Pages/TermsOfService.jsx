@@ -4,6 +4,7 @@ import { FileText } from 'lucide-react';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 import { TERMS_META, TERMS_SECTIONS } from '../Utils/termsOfServiceContent';
+import { ROUTES } from '../Utils/routes';
 
 function SectionBody({ section }) {
     return (
@@ -110,7 +111,7 @@ export default function TermsOfService() {
                         <p>Website: {TERMS_META.website}</p>
                         <p>Address: {TERMS_META.address}</p>
                         <Link
-                            to="/privacy-policy"
+                            to={ROUTES.privacyPolicy}
                             className="inline-flex items-center gap-1 mt-3 font-semibold hover:opacity-80 transition"
                             style={{ color: colors.logo }}
                         >

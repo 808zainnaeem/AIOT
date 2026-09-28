@@ -603,7 +603,7 @@
     },
     "consulting": {
         "heroHighlight": "Conseil",
-        "heroSubtitle": "Libérez l'agilité, embracez l'innovation : AIOT, votre partenaire de transformation",
+        "heroSubtitle": "Libérez l'agilité, embrassez l'innovation : nous sommes votre partenaire de transformation",
         "eyebrow": "Conseil",
         "heroTitle": "Une stratégie qui transforme la technologie en avantage",
         "heroDesc": "AIOT aide les dirigeants à définir la direction, moderniser les opérations et concevoir des plateformes évolutives du conseil à l'exécution.",
@@ -613,7 +613,7 @@
         "introTitle": "Du conseil orienté vers des résultats mesurables",
         "introDesc": "Nous combinons vision stratégique, connaissance sectorielle et expertise technologique concrète pour vous aider à avancer plus vite, réduire les risques et créer un avantage concurrentiel durable.",
         "capabilitiesLabel": "Capacités",
-        "approachLabel": "Notre approche",
+        "approachLabel": "Comment nous travaillons",
         "approachTitle": "Un chemin clair de l'insight à l'impact",
         "approachDesc": "Chaque mission suit une méthode rigoureuse pour que la stratégie devienne de la livraison, pas une présentation.",
         "learnMore": "Discuter de ce service",
@@ -798,21 +798,21 @@
     },
     "implementation": {
         "heroHighlight": "Implémentation",
-        "heroSubtitle": "Du blueprint au go-live des solutions enterprise livrées avec précision",
+        "heroSubtitle": "Du blueprint au go-live, des solutions enterprise livrées avec précision",
         "expertiseLabel": "Ce que nous implémentons",
         "introTitle": "Une implémentation qui transforme la stratégie en systèmes opérationnels",
-        "introDesc": "AIOT conçoit, configure et déploie des plateformes enterprise adaptées à votre façon de travailler avec des délais clairs, une gouvernance solide et l'adoption intégrée à chaque release.",
+        "introDesc": "AIOT conçoit, configure et déploie des plateformes enterprise adaptées au fonctionnement de votre entreprise, avec des calendriers clairs, une gouvernance solide et l'adoption intégrée à chaque release.",
         "capabilitiesLabel": "Capacités",
         "approachLabel": "Notre mode de livraison",
         "approachTitle": "Un parcours éprouvé de la conception au go-live",
-        "approachDesc": "Nous combinons une expertise produit approfondie et une livraison disciplinée pour que chaque implémentation soit dans les temps, dans le périmètre et prête pour les utilisateurs.",
+        "approachDesc": "Nous combinons une expertise produit approfondie et une livraison disciplinée pour que chaque implémentation soit livrée dans les délais, dans le périmètre et prête pour les utilisateurs.",
         "learnMore": "Explorer cette solution",
         "services": [
             {
                 "title": "Solutions de technologie d'entreprise",
-                "shortTitle": "Tech enterprise",
+                "shortTitle": "Enterprise Tech",
                 "heading": "Construire l'épine dorsale numérique de votre entreprise",
-                "content": "Nous implémentons les plateformes enterprise clés ERP, CRM, collaboration et applications sur mesure qui connectent équipes, données et processus en un système d'exploitation fiable.",
+                "content": "Nous implémentons les plateformes enterprise clés — ERP, CRM, collaboration et applications sur mesure — qui connectent équipes, données et processus en un système d'exploitation fiable.",
                 "points": [
                     "Conception de solution et ateliers fit-gap",
                     "Configuration, intégration et migration de données",
@@ -820,9 +820,9 @@
                 ]
             },
             {
-                "title": "Solutions SAP et HANA",
-                "shortTitle": "SAP et HANA",
-                "heading": "Moderniser finance et opérations sur SAP",
+                "title": "Solutions SAP & HANA",
+                "shortTitle": "SAP & HANA",
+                "heading": "Moderniser la finance et les opérations sur SAP",
                 "content": "De S/4HANA et l'analytique HANA aux déploiements modulaires, nous vous aidons à implémenter SAP avec des processus propres, des contrôles solides et une feuille de route qui protège votre investissement.",
                 "points": [
                     "Implémentations S/4HANA et SAP classique",
@@ -834,7 +834,7 @@
                 "title": "Solutions Oracle NetSuite",
                 "shortTitle": "Oracle NetSuite",
                 "heading": "Piloter votre entreprise sur un ERP cloud unique",
-                "content": "Nous implémentons NetSuite pour la finance, l'inventaire, le CRM et les opérations adapté à votre secteur avec SuiteScripts, workflows et intégrations qui évoluent avec votre croissance.",
+                "content": "Nous implémentons NetSuite pour la finance, l'inventaire, le CRM et les opérations, adapté à votre secteur, avec SuiteScripts, workflows et intégrations qui évoluent avec votre croissance.",
                 "points": [
                     "Mise en place NetSuite ERP, CRM et e-commerce",
                     "Workflows personnalisés, SuiteScripts et tableaux de bord",
@@ -843,7 +843,7 @@
             },
             {
                 "title": "Solutions Microsoft et produits",
-                "shortTitle": "Microsoft et produits",
+                "shortTitle": "Microsoft & Products",
                 "heading": "Booster la productivité avec Microsoft et les produits AIOT",
                 "content": "Nous déployons Microsoft 365, Dynamics, Azure, Power Platform et les suites produits AIOT pour que vos équipes collaborent, automatisent et innovent sur une stack de confiance.",
                 "points": [
@@ -853,58 +853,46 @@
                 ]
             },
             {
-                "title": "Modernisation des utilities",
-                "shortTitle": "Modernisation utilities",
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
                 "heading": "Des systèmes modernes pour des utilities modernes",
-                "content": "Nous aidons les utilities à moderniser facturation, expérience client, opérations terrain et plateformes réseau avec des implémentations sécurisées et conformes pour les environnements réglementés.",
+                "content": "Nous aidons les utilities à moderniser la facturation, l'expérience client, les opérations terrain et les plateformes liées au réseau grâce à des implémentations sécurisées et conformes, conçues pour les environnements réglementés.",
                 "points": [
                     "Plateformes CIS, facturation et expérience client",
                     "Modernisation du service terrain et des opérations",
-                    "Intégrations et flux de données conformes"
+                    "Intégrations et flux de données prêts pour la conformité"
                 ]
             },
             {
                 "title": "Solutions données et sécurité",
-                "shortTitle": "Données et sécurité",
+                "shortTitle": "Data & Security",
                 "heading": "Protéger les données. Libérer l'insight.",
-                "content": "Nous implémentons plateformes de données, analytique et contrôles de sécurité qui gardent l'information fiable, accessible et protégée des fondations lakehouse à l'identité et l'accès.",
+                "content": "Nous implémentons des plateformes de données, de l'analytique et des contrôles de sécurité qui maintiennent l'information fiable, accessible et protégée — des fondations lakehouse à l'identité et l'accès.",
                 "points": [
                     "Plateformes de données, pipelines et analytique",
                     "Référentiels identité, accès et sécurité",
-                    "Contrôles gouvernance, rétention et conformité"
+                    "Contrôles de gouvernance, rétention et conformité"
                 ]
             }
         ],
         "processSteps": [
-            {
-                "title": "Évaluer",
-                "desc": "Cadrer exigences, risques et critères de succès"
-            },
-            {
-                "title": "Concevoir",
-                "desc": "Blueprint processus, architecture et intégrations"
-            },
-            {
-                "title": "Construire",
-                "desc": "Configurer, migrer, intégrer et tester en profondeur"
-            },
-            {
-                "title": "Lancer",
-                "desc": "Go-live avec formation, hypercare et passation"
-            }
+            { "title": "Évaluer", "desc": "Cadrer exigences, risques et critères de succès" },
+            { "title": "Concevoir", "desc": "Modéliser processus, architecture et intégrations" },
+            { "title": "Construire", "desc": "Configurer, migrer, intégrer et tester en profondeur" },
+            { "title": "Lancer", "desc": "Go-live avec formation, hypercare et passation" }
         ]
     },
     "managedServices": {
-        "heroHighlight": "Services",
-        "heroRest": "gérés",
-        "heroSubtitle": "Opérations, surveillance et support en continu pour un patrimoine digital sain",
+        "heroHighlight": "Managed",
+        "heroRest": "Services",
+        "heroSubtitle": "Opérations, surveillance et support en continu pour un patrimoine numérique sain",
         "expertiseLabel": "Ce que nous opérons",
         "introTitle": "Des services gérés qui protègent la performance et libèrent vos équipes",
-        "introDesc": "AIOT prend en charge les opérations technologiques au quotidien applications, cloud, sécurité et support pour que vos équipes se concentrent sur la croissance pendant que nous maintenons des systèmes fiables, sécurisés et prêts.",
+        "introDesc": "AIOT prend en charge les opérations technologiques au quotidien — applications, cloud, sécurité et support — pour que vos équipes se concentrent sur la croissance, pendant que nous maintenons des systèmes fiables, sécurisés et prêts.",
         "capabilitiesLabel": "Capacités",
         "approachLabel": "Notre mode d'opération",
         "approachTitle": "Un modèle d'exploitation fondé sur la clarté et la disponibilité",
-        "approachDesc": "SLA clairs, surveillance proactive et amélioration continue pour que les services gérés prolongent votre équipe, sans boîte noire.",
+        "approachDesc": "Des SLA clairs, une surveillance proactive et une amélioration continue, pour que les services managés prolongent votre équipe — et non une boîte noire.",
         "learnMore": "Discuter de ce service",
         "services": [
             {
@@ -933,7 +921,7 @@
                 "title": "Support IT et service desk",
                 "shortTitle": "Support IT et desk",
                 "heading": "Un support réactif en qui vos utilisateurs ont confiance",
-                "content": "Notre service desk résout les tickets rapidement, communique clairement et escalade avec le contexte une expérience cohérente sur les canaux et fuseaux horaires.",
+                "content": "Notre service desk résout les tickets rapidement, communique clairement et escalade avec le contexte, pour offrir une expérience cohérente sur les canaux et fuseaux horaires.",
                 "points": [
                     "Service desk multicanal et SLA",
                     "Support endpoints, identité et accès",
@@ -944,7 +932,7 @@
                 "title": "Cybersécurité et surveillance",
                 "shortTitle": "Cybersécurité",
                 "heading": "Détecter les menaces. Réduire le risque. Rester en avance.",
-                "content": "Nous surveillons en continu la posture de sécurité, répondons aux alertes et durcissons les environnements pour détecter tôt les vulnérabilités et contenir rapidement les incidents.",
+                "content": "Nous surveillons en continu votre posture de sécurité, répondons aux alertes et durcissons les environnements pour détecter tôt les vulnérabilités et contenir rapidement les incidents.",
                 "points": [
                     "Surveillance type SOC et triage des alertes",
                     "Gestion des vulnérabilités et durcissement",
@@ -965,8 +953,8 @@
         ],
         "processSteps": [
             {
-                "title": "Onboarding",
-                "desc": "Cartographier systèmes, SLA et bases opérationnelles"
+                "title": "Onboard",
+                "desc": "Cartographier les systèmes, les SLA et les bases opérationnelles"
             },
             {
                 "title": "Stabiliser",

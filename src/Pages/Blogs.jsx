@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
+import { ROUTES } from '../Utils/routes';
 
 export default function Blogs() {
     const { translations, language, localePack } = useContext(LanguageContext);
@@ -41,7 +42,7 @@ export default function Blogs() {
             category: 'Cloud & ERP',
             readTime: '5 min read',
             title: 'Building scalable foundations for growth',
-            excerpt: 'Why secure, adaptable technology architecture is the difference between short-term fixes and long-term value.',
+            excerpt: 'Why secure, adaptable technology architecture separates short-term fixes from long-term value.',
             image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop',
         },
         {
@@ -204,7 +205,7 @@ export default function Blogs() {
                         </p>
                         <button
                             type="button"
-                            onClick={() => navigate('/contact')}
+                            onClick={() => navigate(ROUTES.contact)}
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
                             style={{ backgroundColor: colors.logo }}
                         >

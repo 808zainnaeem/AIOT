@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
+import { ROUTES } from '../Utils/routes';
 
 export default function InnovateWithInsights() {
     const { translations, language, localePack } = useContext(LanguageContext);
@@ -46,14 +47,14 @@ export default function InnovateWithInsights() {
             title: t.pillar2Title || 'Connected capabilities',
             desc:
                 t.pillar2Desc ||
-                'Align people, processes, data, and platforms so operations become smarter, faster, and more resilient.',
+                'Align people, processes, data, and platforms to make operations smarter, faster, and more resilient.',
         },
         {
             Icon: LineChart,
             title: t.pillar3Title || 'Measurable outcomes',
             desc:
                 t.pillar3Desc ||
-                'Focus on efficiency, growth, and customer impact not technology for its own sake.',
+                'Focus on efficiency, growth, and customer impact, not technology for its own sake.',
         },
     ];
 
@@ -153,11 +154,11 @@ export default function InnovateWithInsights() {
                             </p>
                             <p className="text-gray-600 leading-relaxed mb-8">
                                 {t.introDesc2 ||
-                                    'From digital transformation and intelligent automation to secure, scalable platforms we share frameworks that move organisations from ambition to execution.'}
+                                    'From digital transformation and intelligent automation to secure, scalable platforms, we share frameworks that help organisations turn ambition into execution.'}
                             </p>
                             <button
                                 type="button"
-                                onClick={() => navigate('/contact')}
+                                onClick={() => navigate(ROUTES.contact)}
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
                                 style={{ backgroundColor: colors.logo }}
                             >
@@ -310,7 +311,7 @@ export default function InnovateWithInsights() {
                             </p>
                             <button
                                 type="button"
-                                onClick={() => navigate('/contact')}
+                                onClick={() => navigate(ROUTES.contact)}
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold bg-white transition hover:opacity-95"
                                 style={{ color: colors.logo }}
                             >

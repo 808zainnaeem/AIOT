@@ -67,7 +67,7 @@ export default function AboutPage() {
                 className="relative h-80 md:h-96 bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(https://i.postimg.cc/wjn57QkV/Gemini-Generated-Image-616xj1616xj1616x.jpg)',
+                        'linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(https://i.postimg.cc/CKfTJ8s8/Chat-GPT-Image-Sep-22-2026-11-30-49-AM.png)',
                 }}
             >
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6 text-center">
@@ -160,15 +160,15 @@ export default function AboutPage() {
             </section>
 
             {/* Dark Section - Vision & Mission */}
-            <section className="relative bg-[#0b0b0b] text-white py-20 md:py-24 px-6 md:px-8 overflow-hidden">
+            <section className="relative bg-[#0b0b0b] text-gray-900 py-20 md:py-24 px-6 md:px-8 overflow-hidden">
                 <div
-                    className="absolute inset-0 bg-cover bg-center opacity-25"
+                    className="absolute inset-0 bg-cover bg-center opacity-95"
                     style={{
                         backgroundImage:
-                            'url(https://i.postimg.cc/7PC2T2f1/Gemini-Generated-Image-h6ndm1h6ndm1h6nd.jpg)',
+                            'url(https://i.postimg.cc/ry4GcwfM/Chat-GPT-Image-Sep-22-2026-11-35-36-AM.png)',
                     }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/45 to-white/60" />
 
                 <div className="max-w-7xl mx-auto relative z-10">
                     <motion.div
@@ -187,11 +187,11 @@ export default function AboutPage() {
                                     {t.aboutUs}
                                 </p>
                             )}
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-gray-900">
                                 {t.darkSectionTitle}
                             </h2>
-                            <p className="text-gray-300 leading-relaxed mb-5">{t.darkSectionDesc1}</p>
-                            <p className="text-gray-400 leading-relaxed">{t.darkSectionDesc2}</p>
+                            <p className="text-gray-800 leading-relaxed mb-5">{t.darkSectionDesc1}</p>
+                            <p className="text-gray-700 leading-relaxed">{t.darkSectionDesc2}</p>
                         </motion.div>
 
                         <motion.div className="space-y-5" variants={stagger}>
@@ -223,18 +223,18 @@ export default function AboutPage() {
         return (
             <motion.div
                 key={title}
-                className="flex gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                className="flex gap-5 rounded-2xl border border-gray-200/80 bg-white/70 p-6 backdrop-blur-sm shadow-sm"
                 variants={fadeUp}
             >
                 <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-black"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-white"
                     style={{ backgroundColor: colors.logo }}
                 >
                     <Icon className="w-6 h-6" />
                 </div>
                 <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">{title}</h3>
-                    <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                    <h3 className="text-xl md:text-2xl font-bold mb-2 text-gray-900">{title}</h3>
+                    <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                         {displayText}
                     </p>
 
@@ -315,7 +315,7 @@ export default function AboutPage() {
                     style={{ boxShadow: '0 20px 50px rgba(15, 23, 42, 0.12)' }}
                 >
                     <img
-                        src="https://i.postimg.cc/pV4ZqKZB/Gemini-Generated-Image-6twac06twac06twa.jpg"
+                        src="https://i.postimg.cc/5jcn4HCF/Chat-GPT-Image-Sep-22-2026-11-41-05-AM.png   "
                         alt="Business meeting"
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -543,11 +543,11 @@ export default function AboutPage() {
                             transition={{ duration: 0.55 }}
                         >
                             <div
-                                className="bg-gray-50 rounded-2xl p-4 md:p-6 lg:sticky lg:top-24 overflow-hidden border border-gray-100"
+                                className="bg-gray-50 rounded-2xl  lg:sticky lg:top-24 overflow-hidden border border-gray-100"
                                 style={{ boxShadow: '0 12px 36px rgba(15, 23, 42, 0.06)' }}
                             >
                                 <img
-                                    src="/map.jpg"
+                                    src="https://i.postimg.cc/MGD61V6L/Gemini-Generated-Image-rc8njzrc8njzrc8n.jpg"
                                     alt="World Map"
                                     className="w-full rounded-xl object-cover"
                                 />

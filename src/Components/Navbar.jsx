@@ -1,11 +1,12 @@
 // src/Components/Navbar.js (Updated with colors and language integration; design and all other things remain the same)
 import React, { useState, useContext, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { X, ArrowRight, GlobeIcon, Zap, Layers, Building, Settings, Cloud, Briefcase, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock, FileText } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { X, ArrowRight, GlobeIcon, Layers, Settings, Cloud, Newspaper, BookOpen, Lightbulb, Users, Phone, Database, Store, Workflow, Scale, Eye, HeartPulse, Building2, Compass, RefreshCw, ClipboardList, Network, Shield, Server, Headset, HardDrive, AppWindow, Box, Lock, FileText } from 'lucide-react';
 import { LanguageContext, SUPPORTED_LANGUAGES } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
 import { getSolutionsProducts, getMoreSolutionsProducts } from '../Utils/productCatalog';
+import { ROUTES } from '../Utils/routes';
+import { getNavPartners } from '../Utils/navPartners';
 import { AIOT_SOCIAL_LINKS } from './SocialIcons';
 
 const Navbar = () => {
@@ -33,48 +34,16 @@ const Navbar = () => {
     const socialIcons = AIOT_SOCIAL_LINKS;
 
     const menuItems = [
-        { id: 'home', title: navbarTrans.menu?.home || 'Home', link: '/' },
-        { id: 'aboutUs', title: navbarTrans.menu?.aboutUs || 'About Us', link: '/About' },
-        { id: 'whatWeDo', title: navbarTrans.menu?.whatWeDo || 'What We Do', link: '/' },
-        { id: 'solutions', title: navbarTrans.menu?.solutions || 'Solutions', link: '/' },
-        { id: 'resources', title: navbarTrans.menu?.resources || 'Resources', link: '/' },
-        { id: 'partners', title: navbarTrans.menu?.partners || 'Partners', link: '/' },
+        { id: 'home', title: navbarTrans.menu?.home || 'Home', link: ROUTES.home },
+        { id: 'aboutUs', title: navbarTrans.menu?.aboutUs || 'About Us', link: ROUTES.about, dropdown: true },
+        { id: 'whatWeDo', title: navbarTrans.menu?.whatWeDo || 'What We Do', dropdown: true },
+        { id: 'solutions', title: navbarTrans.menu?.solutions || 'Solutions', dropdown: true },
+        { id: 'resources', title: navbarTrans.menu?.resources || 'Resources', dropdown: true },
+        { id: 'partners', title: navbarTrans.menu?.partners || 'Partners', dropdown: true },
         { id: 'marketplace', title: navbarTrans.menu?.marketplace || 'Marketplace', link: 'https://www.nizam365.com' },
     ];
 
-    const partners = [
-        {
-            name: 'SAP',
-            logo: 'data:image/png;base64,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',
-            desc: dropdownTrans.partners?.sapDesc || 'Partner with us to transform how SMEs operate globally using cutting-edge, cloud-based solutions.',
-            url: 'https://www.sap.com',
-        },
-        {
-            name: 'Oracle NetSuite',
-            logo: 'data:image/png;base64,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',
-            desc: dropdownTrans.partners?.oracleNetsuiteDesc || 'Discover the benefits of partnering with Oracle NetSuite for comprehensive business solutions.',
-            url: 'https://www.netsuite.com',
-        },
-        {
-            name: 'Microsoft',
-            logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX////zUSN/uQICpO//uQH///39//r//fLr///tsxD//+Z5qQDxUSX//9wAkdHu///+/+vQjXz/9O1pudHQjXPR+PnTSx1/tAD7+coAo/HhUCXu+dP5//oAm+N4rgCAuAGnwm0Ak9e2QRXESCHBiXv/9fLu+NlvnwBzmgDVUivHiYT/9Pbr+stwqAB4pADAinLCkGfVs6Srv3T9+P/3/+/J+fr+87f7+MoAgbkNjslqqsb+78TqvD7frCJssME4QYTWAAACUElEQVR4nO3dXXPSQBSA4ZV4diEFkqKtDa6iVuoH9atUW9T6/39WN9DYXtSZwslKyLxvh7A3zeyTXTq92cEYIiIiIiIiIiIiIiIiIiIiIqKGJlJetj2LmMntpXKuNWh6d+fZfmFDUz5Lqe6irAbJv2bolK0+gTZPVeXRjOLeHKo6fjsVL3Lybk/V+zzaKrrDvqrx/sh7sc9fdjqTyaTTWb6tPZjspTGFjzQFoQ1rWAo1Idyu0CPceWH7d2n7he3fpQgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIEOEGwv7yZ+1Bf7w/tV7saWOF4o7Hqj58nDln5PTTM1Wf4wntl6eqvn6biTfm5OyVqjMXbZeKG2nKB84Yn4lLc12NPU8szhqTeTeaWk1iI07x78Nba3DbvGTm4aOoI8Zbw/IY9ebnr8XMZEnzmW4WNWnuvbfi2YffFevDAs7n/ly1hOFe8YgHur4fZOfOzPMfRxt3EV6DeH9Ls8vXNw1vXg8aVG/Dxc+udWJ//e6puor3P013mBRFkRSr64MHSTV48SQzYZMd9R6r6g1iCsNEN6lIdkeoqBJeINx5Yft3KUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRIgQIUKECBEiRPh/hZxGQBhTuFAJkzp3aZyDpNnlYqhp8WclvKrhdF6krwXOuqqy8nisiEsHqtKIR53rqcHf6UxERERERERERERERERERERERERb7hpQ1W08w53kmAAAAABJRU5ErkJggg==',
-            desc: dropdownTrans.partners?.microsoftDesc || 'Our Microsoft Partnership enhances business capabilities with cutting-edge solutions.',
-            url: 'https://partner.microsoft.com',
-        },
-        {
-            name: 'Cloudiax',
-            logo: 'https://www.cloudiax.com/wp-content/themes/cloud/image/logo_cloudiax.svg',
-            desc: dropdownTrans.partners?.cloudiaxDesc || 'Cloudiax enables businesses to enhance SAP capabilities with powerful cloud solutions.',
-            url: 'https://www.cloudiax.com',
-        },
-        {
-            name: 'Cloud Solutions',
-            logo: '/partners/cloud-solutions.png',
-            cover: true,
-            desc: dropdownTrans.partners?.cloudSolutionsDesc || 'Our expertise ensures seamless cloud migration and multi-cloud integration.',
-            url: 'https://bmp-erp.com',
-        },
-    ];
+    const partners = getNavPartners(dropdownTrans);
 
     const getDropdownContent = (menuId) => {
         const content = {
@@ -82,58 +51,58 @@ const Navbar = () => {
                 cols: [
                     {
                         title: dropdownTrans.aboutUs?.whoWeAre || 'Who We Are',
-                        desc: dropdownTrans.aboutUs?.whoWeAreDesc || 'We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.',
-                        url: '/about',
+                        desc: dropdownTrans.aboutUs?.whoWeAreDesc || 'We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.',
+                        url: ROUTES.about,
                         icon: Users,
                     },
                     {
                         title: dropdownTrans.aboutUs?.clientWall || 'Client wall',
                         desc: dropdownTrans.aboutUs?.clientWallDesc || 'Proudly serving industry leaders with innovative technology solutions that deliver real results.',
-                        url: '/clientwall',
+                        url: ROUTES.clientWall,
                         icon: Building2,
                     },
                     {
                         title: dropdownTrans.aboutUs?.contactUs || 'Contact Us',
                         desc: dropdownTrans.aboutUs?.contactUsDesc || 'Get in touch with our IT Solutions your gateway to smart, innovative, and transformative tech solutions.',
-                        url: '/contact',
+                        url: ROUTES.contact,
                         icon: Phone,
                     },
                 ],
                 image: null,
                 customPanel: true,
-                imageLabel: dropdownTrans.aboutUs?.panelLabel || 'About AIOT',
+                imageLabel: dropdownTrans.aboutUs?.panelLabel || 'About us',
             },
             whatWeDo: {
                 cols: [
                     {
                         title: dropdownTrans.whatWeDo?.consulting || 'Consulting',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.itStrategy || 'IT Strategy & Advisory', icon: Compass, url: '/consulting#it-strategy' },
-                            { text: dropdownTrans.whatWeDo?.digitalTransformation || 'Digital Transformation Consulting', icon: RefreshCw, url: '/consulting#digital-transformation' },
-                            { text: dropdownTrans.whatWeDo?.businessProcess || 'Business Process Consulting', icon: Workflow, url: '/consulting#business-process' },
-                            { text: dropdownTrans.whatWeDo?.techAssessment || 'Technology Assessment & Roadmapping', icon: ClipboardList, url: '/consulting#tech-assessment' },
-                            { text: dropdownTrans.whatWeDo?.cloudEnterpriseArch || 'Cloud & Enterprise Architecture', icon: Network, url: '/consulting#cloud-architecture' },
+                            { text: dropdownTrans.whatWeDo?.itStrategy || 'IT Strategy & Advisory', icon: Compass, url: `${ROUTES.consulting}#it-strategy` },
+                            { text: dropdownTrans.whatWeDo?.digitalTransformation || 'Digital Transformation Consulting', icon: RefreshCw, url: `${ROUTES.consulting}#digital-transformation` },
+                            { text: dropdownTrans.whatWeDo?.businessProcess || 'Business Process Consulting', icon: Workflow, url: `${ROUTES.consulting}#business-process` },
+                            { text: dropdownTrans.whatWeDo?.techAssessment || 'Technology Assessment & Roadmapping', icon: ClipboardList, url: `${ROUTES.consulting}#tech-assessment` },
+                            { text: dropdownTrans.whatWeDo?.cloudEnterpriseArch || 'Cloud & Enterprise Architecture', icon: Network, url: `${ROUTES.consulting}#cloud-architecture` },
                         ]
                     },
                     {
                         title: dropdownTrans.whatWeDo?.implementation || 'Implementation',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.enterpriseTech || 'Enterprise Technology Solutions', icon: Layers, url: '/implementation#enterprise-tech' },
-                            { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: '/implementation#sap-hana' },
-                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: '/implementation#oracle-netsuite' },
-                            { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: '/implementation#microsoft-product' },
-                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: '/implementation#utility-modernization' },
-                            { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: '/implementation#data-security' },
+                            { text: dropdownTrans.whatWeDo?.enterpriseTech || 'Enterprise Technology Solutions', icon: Layers, url: `${ROUTES.implementation}#enterprise-tech` },
+                            { text: dropdownTrans.whatWeDo?.sapHana || 'SAP & HANA Solutions', icon: Database, url: `${ROUTES.implementation}#sap-hana` },
+                            { text: dropdownTrans.whatWeDo?.oracleNetsuite || 'Oracle NetSuite Solutions', icon: Cloud, url: `${ROUTES.implementation}#oracle-netsuite` },
+                            { text: dropdownTrans.whatWeDo?.microsoftProduct || 'Microsoft & Product Solutions', icon: Box, url: `${ROUTES.implementation}#microsoft-product` },
+                            { text: dropdownTrans.whatWeDo?.utilityModernization || 'Utility Modernization', icon: Settings, url: `${ROUTES.implementation}#utility-modernization` },
+                            { text: dropdownTrans.whatWeDo?.dataSecurity || 'Data & Security Solutions', icon: Shield, url: `${ROUTES.implementation}#data-security` },
                         ]
                     },
                     {
                         title: dropdownTrans.whatWeDo?.managedServices || 'Managed Services',
                         list: [
-                            { text: dropdownTrans.whatWeDo?.appManagement || 'Application Management Services', icon: AppWindow, url: '/managed-services#app-management' },
-                            { text: dropdownTrans.whatWeDo?.cloudInfra || 'Cloud & Infrastructure Management', icon: Server, url: '/managed-services#cloud-infra' },
-                            { text: dropdownTrans.whatWeDo?.itSupport || 'IT Support & Service Desk', icon: Headset, url: '/managed-services#it-support' },
-                            { text: dropdownTrans.whatWeDo?.cyberMonitoring || 'Cybersecurity & Monitoring', icon: Lock, url: '/managed-services#cyber-monitoring' },
-                            { text: dropdownTrans.whatWeDo?.backupDr || 'Data, Backup & Disaster Recovery', icon: HardDrive, url: '/managed-services#backup-dr' },
+                            { text: dropdownTrans.whatWeDo?.appManagement || 'Application Management Services', icon: AppWindow, url: `${ROUTES.managedServices}#app-management` },
+                            { text: dropdownTrans.whatWeDo?.cloudInfra || 'Cloud & Infrastructure Management', icon: Server, url: `${ROUTES.managedServices}#cloud-infra` },
+                            { text: dropdownTrans.whatWeDo?.itSupport || 'IT Support & Service Desk', icon: Headset, url: `${ROUTES.managedServices}#it-support` },
+                            { text: dropdownTrans.whatWeDo?.cyberMonitoring || 'Cybersecurity & Monitoring', icon: Lock, url: `${ROUTES.managedServices}#cyber-monitoring` },
+                            { text: dropdownTrans.whatWeDo?.backupDr || 'Data, Backup & Disaster Recovery', icon: HardDrive, url: `${ROUTES.managedServices}#backup-dr` },
                         ]
                     },
                 ],
@@ -168,20 +137,20 @@ const Navbar = () => {
                 cols: [
                     {
                         title: dropdownTrans.resources?.news || 'News',
-                        desc: dropdownTrans.resources?.newsDesc || 'Stay updated with the latest news and innovations from AIOT IT Solutions.',
-                        url: '/news',
+                        desc: dropdownTrans.resources?.newsDesc || 'Stay up to date with the latest news and innovations from our Solutions.',
+                        url: ROUTES.news,
                         icon: Newspaper,
                     },
                     {
                         title: dropdownTrans.resources?.blogs || 'Blogs',
                         desc: dropdownTrans.resources?.blogsDesc || 'Explore insights, trends, and expert opinions on technology and innovation.',
-                        url: '/blogs',
+                        url: ROUTES.blogs,
                         icon: BookOpen,
                     },
                     {
                         title: dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
                         desc: dropdownTrans.resources?.innovateWithInsightsDesc || 'Discover strategies to enhance your business through emerging trends and thought leadership.',
-                        url: '/innovate-with-insights',
+                        url: ROUTES.innovateWithInsights,
                         icon: Lightbulb,
                     },
                 ],
@@ -203,10 +172,16 @@ const Navbar = () => {
     };
 
     const handleNavClick = (link) => {
-        if (link && link.startsWith('http')) {
+        if (!link) {
+            setSidebarOpen(false);
+            setMobileDropdownItem(null);
+            setHoveredItem(null);
+            return;
+        }
+        if (link.startsWith('http')) {
             const openInNewTab = !link.includes('/Plans');
             window.open(link, openInNewTab ? '_blank' : '_self', openInNewTab ? 'noopener,noreferrer' : undefined);
-        } else if (link) {
+        } else {
             navigate(link);
         }
         setSidebarOpen(false);
@@ -256,22 +231,28 @@ const Navbar = () => {
                     <div className={`flex items-center h-20 ${language === 'ar' ? 'justify-between gap-35' : 'justify-between'}`}>
                         <div className='flex items-center gap-40'>
 
-                        <div onClick={() => handleNavClick('/')} className="cursor-pointer">
-                            <img src="/NewLogo.png" alt="AIOT Logo" className="h-15 w-auto" />
+                        <div onClick={() => handleNavClick(ROUTES.home)} className="cursor-pointer" role="link" tabIndex={0} aria-label="AIOT home" onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleNavClick(ROUTES.home); }}>
+                            <img src="/NewLogo.png" alt="AIOT Logo" className="h-15 w-auto" width="120" height="48" />
                         </div>
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex items-center gap-8 relative h-[80px]">
                             {menuItems.map((item, index) => {
-                                const hasDropdown = !['home', 'marketplace'].includes(item.id);
+                                const hasDropdown = Boolean(item.dropdown);
                                 const isOpen = hoveredItem === index;
                                 return (
                                     <button
                                         key={item.id}
-                                        onClick={() => handleNavClick(item.link)}
+                                        type="button"
+                                        onClick={() => {
+                                            if (hasDropdown && !item.link) return;
+                                            if (item.link) handleNavClick(item.link);
+                                        }}
                                         onMouseEnter={() => hasDropdown && setHoveredItem(index)}
                                         className="relative h-full text-sm tracking-wide font-[500] transition-colors duration-200"
                                         style={{ color: isOpen ? colors.logo : '#111111' }}
+                                        aria-expanded={hasDropdown ? isOpen : undefined}
+                                        aria-haspopup={hasDropdown ? 'true' : undefined}
                                     >
                                         {item.title}
                                         <span
@@ -286,13 +267,17 @@ const Navbar = () => {
 
                         <div className="relative">
                                 <button
+                                    type="button"
                                     onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
                                     className="flex items-center gap-2 text-sm tracking-wider transition-all duration-200 font-[450]"
-                                    style={{ color: '#000000ff' }}
+                                    style={{ color: '#111111' }}
+                                    aria-label="Select language"
+                                    aria-expanded={languageDropdownOpen}
+                                    aria-haspopup="listbox"
                                 >
-                                    <GlobeIcon size={18} />
+                                    <GlobeIcon size={18} aria-hidden="true" />
                                     {(languages.find((lang) => lang.code === language)?.displayCode || language).toUpperCase()}
-                                    <svg className={`w-4 h-4 transition-transform ${languageDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className={`w-4 h-4 transition-transform ${languageDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </button>
@@ -322,20 +307,15 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Mega Dropdown */}
-                <AnimatePresence>
                 {hoveredItem !== null && !['home', 'marketplace'].includes(menuItems[hoveredItem]?.id) && (
-                    <motion.div
+                    <div
                         key={menuItems[hoveredItem].id}
-                        className="absolute top-full left-0 w-full z-50"
+                        className="absolute top-full left-0 w-full z-50 animate-[fadeIn_0.15s_ease-out]"
                         style={{
                             backgroundColor: '#fff',
                             boxShadow: '0 24px 60px rgba(15, 23, 42, 0.12)',
                             borderTop: `3px solid ${colors.logo}`,
                         }}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 8 }}
-                        transition={{ duration: 0.2, ease: 'easeOut' }}
                         onMouseEnter={() => setHoveredItem(hoveredItem)}
                         onMouseLeave={() => setHoveredItem(null)}
                     >
@@ -368,6 +348,7 @@ const Navbar = () => {
                                                         href={col.url}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
+                                                        aria-label={`${col.title} partner website`}
                                                         className="group h-full rounded-2xl border bg-white p-5 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                                                         style={{ borderColor: `${colors.logo}22` }}
                                                     >
@@ -377,13 +358,15 @@ const Navbar = () => {
                                                         >
                                                             <img
                                                                 src={col.logo || 'https://via.placeholder.com/150?text=Logo'}
-                                                                alt={col.title}
+                                                                alt=""
+                                                                loading="lazy"
+                                                                decoding="async"
                                                                 className="max-h-12 max-w-full object-contain"
                                                                 onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Logo'; }}
                                                             />
                                                         </div>
                                                         <h3 className="text-sm font-bold mb-2 text-gray-900">{col.title}</h3>
-                                                        <p className="text-[11px] text-gray-500 leading-relaxed line-clamp-3 flex-1">
+                                                        <p className="text-[11px] text-gray-700 leading-relaxed line-clamp-3 flex-1">
                                                             {col.desc}
                                                         </p>
                                                         <span
@@ -476,7 +459,7 @@ const Navbar = () => {
                                                             </button>
                                                         ) : !isSolutions && (
                                                             <button
-                                                                onClick={() => handleNavClick('/contact')}
+                                                                onClick={() => handleNavClick(ROUTES.contact)}
                                                                 className="mt-5 text-sm font-semibold inline-flex items-center gap-1 w-fit"
                                                                 style={{ color: colors.logo }}
                                                             >
@@ -504,22 +487,22 @@ const Navbar = () => {
                                                     <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-4 text-white">
                                                         <Users size={20} />
                                                     </div>
-                                                    <p className="text-white/70 text-[11px] font-semibold tracking-wide mb-2">
+                                                    <p className="text-white/90 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
                                                         {dropdownTrans.aboutUs?.panelTitle || 'Innovation with real impact'}
                                                     </h3>
-                                                    <p className="text-white/80 text-sm leading-relaxed">
+                                                    <p className="text-white/90 text-sm leading-relaxed">
                                                         {dropdownTrans.aboutUs?.panelDesc || 'Discover who we are, the clients we serve, and how to start a conversation with our team.'}
                                                     </p>
                                                 </div>
 
                                                 <div className="relative space-y-2.5 mt-6">
                                                     {[
-                                                        { label: dropdownTrans.aboutUs?.whoWeAre || 'Who We Are', url: '/about' },
-                                                        { label: dropdownTrans.aboutUs?.clientWall || 'Client wall', url: '/clientwall' },
-                                                        { label: dropdownTrans.aboutUs?.contactUs || 'Contact Us', url: '/contact' },
+                                                        { label: dropdownTrans.aboutUs?.whoWeAre || 'Who We Are', url: ROUTES.about },
+                                                        { label: dropdownTrans.aboutUs?.clientWall || 'Client wall', url: ROUTES.clientWall },
+                                                        { label: dropdownTrans.aboutUs?.contactUs || 'Contact Us', url: ROUTES.contact },
                                                     ].map((item) => (
                                                         <button
                                                             key={item.label}
@@ -529,7 +512,7 @@ const Navbar = () => {
                                                         >
                                                             <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
                                                             <span className="text-white text-sm font-medium flex-1">{item.label}</span>
-                                                            <ArrowRight size={13} className="text-white/70" />
+                                                            <ArrowRight size={13} className="text-white/90" aria-hidden="true" />
                                                         </button>
                                                     ))}
                                                 </div>
@@ -548,13 +531,13 @@ const Navbar = () => {
                                                 <div className="absolute top-1/2 right-4 w-16 h-16 rounded-2xl rotate-12 border border-white/15 pointer-events-none" />
 
                                                 <div className="relative">
-                                                    <p className="text-white/70 text-[11px] font-semibold tracking-wide mb-2">
+                                                    <p className="text-white/90 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
                                                         {dropdownTrans.whatWeDo?.panelTitle || 'End-to-end digital excellence'}
                                                     </h3>
-                                                    <p className="text-white/80 text-sm leading-relaxed">
+                                                    <p className="text-white/90 text-sm leading-relaxed">
                                                         {dropdownTrans.whatWeDo?.panelDesc || 'From strategy to run: consulting, implementation, and managed services under one partner.'}
                                                     </p>
                                                 </div>
@@ -563,15 +546,15 @@ const Navbar = () => {
                                                     {[
                                                         {
                                                             label: dropdownTrans.whatWeDo?.consulting || 'Consulting',
-                                                            url: '/consulting',
+                                                            url: ROUTES.consulting,
                                                         },
                                                         {
                                                             label: dropdownTrans.whatWeDo?.implementation || dropdownTrans.whatWeDo?.technology || 'Implementation',
-                                                            url: '/implementation',
+                                                            url: ROUTES.implementation,
                                                         },
                                                         {
                                                             label: dropdownTrans.whatWeDo?.managedServices || dropdownTrans.whatWeDo?.outSourcing || 'Managed Services',
-                                                            url: '/managed-services',
+                                                            url: ROUTES.managedServices,
                                                         },
                                                     ].map(({ label, url }) => (
                                                         <button
@@ -582,12 +565,12 @@ const Navbar = () => {
                                                         >
                                                             <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0" />
                                                             <span className="text-white text-sm font-medium flex-1">{label}</span>
-                                                            <ArrowRight size={13} className="text-white/70" />
+                                                            <ArrowRight size={13} className="text-white/90" aria-hidden="true" />
                                                         </button>
                                                     ))}
                                                     <button
                                                         type="button"
-                                                        onClick={() => handleNavClick('/contact')}
+                                                        onClick={() => handleNavClick(ROUTES.contact)}
                                                         className="w-full mt-1 rounded-full bg-white py-2.5 text-sm font-bold hover:bg-orange-50 transition inline-flex items-center justify-center gap-1.5"
                                                         style={{ color: colors.logo }}
                                                     >
@@ -623,13 +606,13 @@ const Navbar = () => {
                                                     >
                                                         <Lightbulb size={20} />
                                                     </div>
-                                                    <p className="text-white/65 text-[11px] font-semibold tracking-wide mb-2">
+                                                    <p className="text-white/90 text-[11px] font-semibold tracking-wide mb-2">
                                                         {imageLabel}
                                                     </p>
                                                     <h3 className="text-white text-xl font-bold leading-snug mb-3">
                                                         {dropdownTrans.resources?.panelTitle || 'Stay informed. Stay ahead.'}
                                                     </h3>
-                                                    <p className="text-white/75 text-sm leading-relaxed">
+                                                    <p className="text-white/90 text-sm leading-relaxed">
                                                         {dropdownTrans.resources?.panelDesc || 'News, blogs, and insights to help you navigate technology trends and business transformation.'}
                                                     </p>
                                                 </div>
@@ -638,15 +621,15 @@ const Navbar = () => {
                                                     {[
                                                         {
                                                             label: dropdownTrans.resources?.news || 'News',
-                                                            url: '/news',
+                                                            url: ROUTES.news,
                                                         },
                                                         {
                                                             label: dropdownTrans.resources?.blogs || 'Blogs',
-                                                            url: '/blogs',
+                                                            url: ROUTES.blogs,
                                                         },
                                                         {
                                                             label: dropdownTrans.resources?.innovateWithInsights || 'Innovate with Insights',
-                                                            url: '/innovate-with-insights',
+                                                            url: ROUTES.innovateWithInsights,
                                                         },
                                                     ].map((item) => (
                                                         <button
@@ -676,9 +659,8 @@ const Navbar = () => {
                                 );
                             })()}
                         </div>
-                    </motion.div>
+                    </div>
                 )}
-                </AnimatePresence>
             </nav>
 
             {/* Mobile Sidebar */}
@@ -694,13 +676,15 @@ const Navbar = () => {
                         </div>
                         <div className="py-4">
                             {menuItems.map((item, index) => {
-                                const hasDropdown = !['home', 'marketplace'].includes(item.id);
+                                const hasDropdown = Boolean(item.dropdown);
                                 const isOpen = mobileDropdownItem === index;
                                 return (
                                     <div key={item.id}>
                                         <button
+                                            type="button"
                                             onClick={() => hasDropdown ? toggleMobileDropdown(index) : handleNavClick(item.link)}
                                             className={`w-full text-left px-6 py-4 font-semibold hover:bg-gray-50 flex justify-between items-center `}
+                                            aria-expanded={hasDropdown ? isOpen : undefined}
                                         >
                                             <span style={{ color: item.id === 'marketplace' ? colors.logo : '#000000ff' }}>{item.title}</span>
                                             {hasDropdown && (

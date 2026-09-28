@@ -603,7 +603,7 @@
     },
     "consulting": {
         "heroHighlight": "Rådgivning",
-        "heroSubtitle": "Frigør agilitet, omfavn innovation: AIOT, jeres partner i transformation",
+        "heroSubtitle": "Frigør agilitet, omfavn innovation: Vi er jeres partner i transformation",
         "eyebrow": "Rådgivning",
         "heroTitle": "Strategi der gør teknologi til en fordel",
         "heroDesc": "AIOT hjælper ledere med at definere retning, modernisere drift og designe skalerbare platforme fra rådgivning til eksekvering.",
@@ -798,10 +798,10 @@
     },
     "implementation": {
         "heroHighlight": "Implementering",
-        "heroSubtitle": "Fra blueprint til go-live enterprise-løsninger leveret med præcision",
+        "heroSubtitle": "Fra blueprint til go-live, enterprise-løsninger leveret med præcision",
         "expertiseLabel": "Hvad vi implementerer",
         "introTitle": "Implementering der gør strategi til fungerende systemer",
-        "introDesc": "AIOT designer, konfigurerer og deployer enterprise-platforme, der passer til jeres forretning med klare tidsplaner, stærk governance og adoption i hver release.",
+        "introDesc": "AIOT designer, konfigurerer og deployer enterprise-platforme, der passer til jeres forretning, med klare tidsplaner, stærk governance og adoption i hver release.",
         "capabilitiesLabel": "Kapabiliteter",
         "approachLabel": "Sådan leverer vi",
         "approachTitle": "En dokumenteret vej fra design til go-live",
@@ -812,7 +812,7 @@
                 "title": "Enterprise-teknologiløsninger",
                 "shortTitle": "Enterprise Tech",
                 "heading": "Byg den digitale rygrad i jeres forretning",
-                "content": "Vi implementerer centrale enterprise-platforme ERP, CRM, samarbejde og skræddersyede applikationer der forbinder teams, data og processer i ét pålideligt operativsystem.",
+                "content": "Vi implementerer centrale enterprise-platforme — ERP, CRM, samarbejde og skræddersyede applikationer — der forbinder teams, data og processer i ét pålideligt operativsystem.",
                 "points": [
                     "Solution design og fit-gap workshops",
                     "Konfiguration, integration og datamigration",
@@ -853,10 +853,10 @@
                 ]
             },
             {
-                "title": "Utility-modernisering",
-                "shortTitle": "Utility-modernisering",
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
                 "heading": "Moderne systemer til moderne utilities",
-                "content": "Vi hjælper utilities med at modernisere billing, kundeoplevelse, field operations og netnære platforme med sikre, compliant implementeringer til regulerede miljøer.",
+                "content": "Vi hjælper utilities med at modernisere billing, kundeoplevelse, field operations og netnære platforme med sikre, compliant implementeringer, bygget til regulerede miljøer.",
                 "points": [
                     "CIS-, billing- og kundeoplevelsesplatforme",
                     "Field service- og operations-modernisering",
@@ -876,22 +876,10 @@
             }
         ],
         "processSteps": [
-            {
-                "title": "Assess",
-                "desc": "Scope krav, risici og succeskriterier"
-            },
-            {
-                "title": "Design",
-                "desc": "Blueprint processer, arkitektur og integrationer"
-            },
-            {
-                "title": "Build",
-                "desc": "Konfigurer, migrer, integrer og test grundigt"
-            },
-            {
-                "title": "Launch",
-                "desc": "Go-live med træning, hypercare og overdragelse"
-            }
+            { "title": "Vurder", "desc": "Afgræns krav, risici og succeskriterier" },
+            { "title": "Design", "desc": "Blueprint processer, arkitektur og integrationer" },
+            { "title": "Byg", "desc": "Konfigurer, migrer, integrer og test grundigt" },
+            { "title": "Lancér", "desc": "Go-live med træning, hypercare og overdragelse" }
         ]
     },
     "managedServices": {
@@ -900,7 +888,7 @@
         "heroSubtitle": "Altid-til-drift, overvågning og support der holder jeres digitale estate sundt",
         "expertiseLabel": "Hvad vi driver",
         "introTitle": "Managed services der beskytter performance og frigør jeres teams",
-        "introDesc": "AIOT overtager den daglige teknologidrift applikationer, cloud, sikkerhed og support så jeres folk kan fokusere på vækst, mens vi holder systemer pålidelige, sikre og klar.",
+        "introDesc": "AIOT overtager den daglige teknologidrift — applikationer, cloud, sikkerhed og support — så jeres folk kan fokusere på vækst, mens vi holder systemer pålidelige, sikre og klar.",
         "capabilitiesLabel": "Kapabiliteter",
         "approachLabel": "Sådan opererer vi",
         "approachTitle": "En run-model bygget til klarhed og uptime",

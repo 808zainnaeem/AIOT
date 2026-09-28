@@ -73,6 +73,8 @@ export default function ClientWall() {
                 <img
                     src={client.logo}
                     alt={client.name}
+                    loading="lazy"
+                    decoding="async"
                     className={`h-full w-full object-contain object-center transition-all duration-300 ${
                         isDark ? '' : 'grayscale hover:grayscale-0'
                     }`}
@@ -142,7 +144,7 @@ export default function ClientWall() {
                     <div className="mb-16 grid grid-cols-1 items-center gap-8 sm:mb-24 sm:gap-12 lg:mb-32 lg:grid-cols-2 lg:gap-16">
                         <div>
                             <img
-                                src="https://i.postimg.cc/7LktXSqf/Chat-GPT-Image-Sep-14-2026-10-32-47-AM.png"
+                                src="https://i.postimg.cc/2y4LR3dg/Untitled-design-(2).png"
                                 alt="Team collaboration"
                                 className="w-full rounded-lg shadow-lg"
                             />

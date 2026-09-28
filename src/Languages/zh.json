@@ -603,7 +603,7 @@
     },
     "consulting": {
         "heroHighlight": "咨询",
-        "heroSubtitle": "释放敏捷力，拥抱创新：AIOT，您转型路上的伙伴",
+        "heroSubtitle": "释放敏捷力，拥抱创新：我们是您转型之路上的伙伴",
         "eyebrow": "咨询",
         "heroTitle": "将技术转化为竞争优势的战略",
         "heroDesc": "AIOT 帮助领导者明确方向、现代化运营并设计可扩展的平台——从顾问建议到落地执行。",
@@ -616,7 +616,7 @@
         "approachLabel": "工作方式",
         "approachTitle": "从洞察到影响的一条清晰路径",
         "approachDesc": "每个项目都遵循严谨的方法——让战略成为交付，而非停留在幻灯片。",
-        "learnMore": "了解此项服务",
+        "learnMore": "洽谈此项服务",
         "ctaTitle": "准备好规划下一步了吗？",
         "ctaDesc": "预约咨询，带着对优先级、架构与可行路线图的清晰认识离开。",
         "ctaButton": "预约咨询",
@@ -636,7 +636,7 @@
                 "title": "数字化转型咨询",
                 "shortTitle": "数字化转型",
                 "heading": "重塑组织的运作方式",
-                "content": "从客户旅程到后台平台，我们设计连接人员、流程与技术的转型项目——从第一天起就内置 adoption。",
+                "content": "从客户旅程到后台平台，我们设计连接人员、流程与技术的转型项目——从第一天起便将落地采用纳入设计。",
                 "points": [
                     "转型路线图与变革设计",
                     "客户与员工体验重塑",
@@ -798,21 +798,21 @@
     },
     "implementation": {
         "heroHighlight": "实施",
-        "heroSubtitle": "从蓝图到 go-live——精准交付企业级解决方案",
+        "heroSubtitle": "从蓝图到 go-live，精准交付企业级解决方案",
         "expertiseLabel": "我们实施的内容",
         "introTitle": "将战略转化为可用系统的实施",
-        "introDesc": "AIOT 设计、配置并部署贴合业务运作的企业平台——时间表清晰、治理有力，并在每次发布中内置 adoption。",
+        "introDesc": "AIOT 设计、配置并部署贴合业务运作方式的企业平台，时间表清晰、治理有力，并在每次发布中内置用户 adoption。",
         "capabilitiesLabel": "能力",
         "approachLabel": "交付方式",
         "approachTitle": "从设计到 go-live 的成熟路径",
-        "approachDesc": "我们将深厚的产品专长与规范的交付相结合，使每次实施按时、按范围完成并为用户就绪。",
+        "approachDesc": "我们将深厚的产品专长与规范的交付相结合，使每次实施按时、按范围落地并为用户就绪。",
         "learnMore": "了解此解决方案",
         "services": [
             {
                 "title": "企业技术解决方案",
-                "shortTitle": "企业技术",
+                "shortTitle": "Enterprise Tech",
                 "heading": "构建业务的数字化骨干",
-                "content": "我们实施核心企业平台——ERP、CRM、协作与定制应用——将团队、数据与流程连接为可靠的操作系统。",
+                "content": "我们实施核心企业平台 ERP、CRM、协作与定制应用，将团队、数据与流程连接为可靠的操作系统。",
                 "points": [
                     "方案设计与 fit-gap 工作坊",
                     "配置、集成与数据迁移",
@@ -820,8 +820,8 @@
                 ]
             },
             {
-                "title": "SAP 与 HANA 解决方案",
-                "shortTitle": "SAP 与 HANA",
+                "title": "SAP & HANA Solutions",
+                "shortTitle": "SAP & HANA",
                 "heading": "在 SAP 上现代化财务与运营",
                 "content": "从 S/4HANA 与 HANA 分析到模块推广，我们帮助您以清晰流程、强管控与保护投资的路线图实施 SAP。",
                 "points": [
@@ -831,10 +831,10 @@
                 ]
             },
             {
-                "title": "Oracle NetSuite 解决方案",
+                "title": "Oracle NetSuite Solutions",
                 "shortTitle": "Oracle NetSuite",
                 "heading": "在单一云 ERP 上运行业务",
-                "content": "我们为财务、库存、CRM 与运营实施 NetSuite——按行业定制 SuiteScripts、工作流与集成，随增长扩展。",
+                "content": "我们为财务、库存、CRM 与运营实施 NetSuite，按行业定制 SuiteScripts、工作流与集成，随业务增长扩展。",
                 "points": [
                     "NetSuite ERP、CRM 与电商配置",
                     "自定义工作流、SuiteScripts 与仪表板",
@@ -843,7 +843,7 @@
             },
             {
                 "title": "Microsoft 与产品解决方案",
-                "shortTitle": "Microsoft 与产品",
+                "shortTitle": "Microsoft & Products",
                 "heading": "以 Microsoft 与 AIOT 产品提升生产力",
                 "content": "我们交付 Microsoft 365、Dynamics、Azure、Power Platform 与 AIOT 产品套件，让团队在可信技术栈上协作、自动化与创新。",
                 "points": [
@@ -853,10 +853,10 @@
                 ]
             },
             {
-                "title": "公用事业现代化",
-                "shortTitle": "公用事业现代化",
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
                 "heading": "现代公用事业的现代系统",
-                "content": "我们帮助公用事业现代化计费、客户体验、现场运营与电网相关平台——为受监管环境打造安全、合规的实施。",
+                "content": "我们帮助公用事业现代化计费、客户体验、现场运营与电网相关平台，为受监管环境打造安全、合规的实施。",
                 "points": [
                     "CIS、计费与客户体验平台",
                     "现场服务与运营现代化",
@@ -865,9 +865,9 @@
             },
             {
                 "title": "数据与安全解决方案",
-                "shortTitle": "数据与安全",
+                "shortTitle": "Data & Security",
                 "heading": "保护数据，释放洞察",
-                "content": "我们实施数据平台、分析与安全控制，使信息可信、可访问且受保护——从 lakehouse 基础到身份与访问。",
+                "content": "我们实施数据平台、分析与安全控制，使信息可信、可访问且受保护，从 lakehouse 基础到身份与访问。",
                 "points": [
                     "数据平台、管道与分析",
                     "身份、访问与安全基线",
@@ -876,28 +876,16 @@
             }
         ],
         "processSteps": [
-            {
-                "title": "评估",
-                "desc": "明确范围、需求、风险与成功标准"
-            },
-            {
-                "title": "设计",
-                "desc": "蓝图化流程、架构与集成"
-            },
-            {
-                "title": "构建",
-                "desc": "配置、迁移、集成并充分测试"
-            },
-            {
-                "title": "上线",
-                "desc": "go-live 含培训、hypercare 与交接"
-            }
+            { "title": "评估", "desc": "明确需求、风险与成功标准范围" },
+            { "title": "设计", "desc": "规划流程、架构与集成蓝图" },
+            { "title": "构建", "desc": "配置、迁移、集成并充分测试" },
+            { "title": "上线", "desc": "go-live，含培训、hypercare 与交接" }
         ]
     },
     "managedServices": {
         "heroHighlight": "托管",
         "heroRest": "服务",
-        "heroSubtitle": "持续运营、监控与支持，保持数字环境健康",
+        "heroSubtitle": "全天候运营、监控与支持，让您的数字环境保持健康",
         "expertiseLabel": "我们运营的内容",
         "introTitle": "保护性能、解放团队的托管服务",
         "introDesc": "AIOT 负责日常技术运营——应用、云、安全与支持——让您的团队专注增长，我们保持系统可靠、安全并就绪。",
@@ -905,7 +893,7 @@
         "approachLabel": "运营方式",
         "approachTitle": "为清晰与可用性而建的运行模型",
         "approachDesc": "清晰的 SLA、主动监控与持续改进——让托管服务像团队的延伸，而非黑盒。",
-        "learnMore": "了解此项服务",
+        "learnMore": "讨论此项服务",
         "services": [
             {
                 "title": "应用管理服务",

@@ -1,0 +1,39 @@
+# AIOT | AIOTCons
+
+> Analytical, Intelligent, Optimised Technology Consulting
+
+AIOT (AIOTCons / AIOT Consulting) delivers AI, IoT, consulting, implementation, and managed services for enterprises. Headquarters: Lahore, Pakistan. Website: https://aiotcons.com/
+
+## Brand names
+
+- AIOT
+- AIOTCons
+- AIOT Consulting
+- aiotcons.com
+
+## Contact
+
+- Email: info@aiotcons.com
+- Address: 15/1C, GECHS, Phase III, Peco Road, Lahore 54100, Punjab, Pakistan
+- Social: https://www.linkedin.com/company/AIOTCons
+
+## Main pages
+
+- [Home](https://aiotcons.com/): Company overview and offerings
+- [About](https://aiotcons.com/about): Who we are
+- [Consulting](https://aiotcons.com/consulting): Strategy and advisory services
+- [Implementation](https://aiotcons.com/implementation): Enterprise technology delivery
+- [Managed Services](https://aiotcons.com/managed-services): Ongoing IT and application support
+- [SAP Solutions](https://aiotcons.com/sap-solutions): SAP and HANA expertise
+- [Oracle NetSuite](https://aiotcons.com/oracle-netsuite): Cloud ERP solutions
+- [Technology Driven](https://aiotcons.com/technology-driven): Enterprise technology solutions
+- [Next Generation](https://aiotcons.com/next-generation): Microsoft and next-gen products
+- [Utility Transformation](https://aiotcons.com/utility-transformation): Utility modernization
+- [Client Wall](https://aiotcons.com/client-wall): Trusted clients
+- [News](https://aiotcons.com/news): Company news
+- [Blogs](https://aiotcons.com/blogs): Insights and articles
+- [Contact](https://aiotcons.com/contact): Get in touch
+
+## Sitemap
+
+https://aiotcons.com/sitemap.xml

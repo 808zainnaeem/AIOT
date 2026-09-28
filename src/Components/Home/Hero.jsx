@@ -1,17 +1,29 @@
-import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { AnimatePresence, motion, useInView } from 'framer-motion';
+import React, {
+    Suspense,
+    lazy,
+    useContext,
+    useEffect,
+    useMemo,
+    useRef,
+    useState,
+} from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Colors } from '../../Utils/Colors';
 import { LanguageContext } from '../../Context/LanguageContext';
-import HeroProductScene from './HeroProductScene';
+
+const HeroProductScene = lazy(() => import('./HeroProductScene'));
+
+/** Local compressed poster = fast LCP */
+const HERO_POSTER_WEBP = '/hero-poster.webp';
+const HERO_POSTER_JPG = '/hero-poster.jpg';
 
 const SLIDE_MEDIA = [
     {
-        // First slide background video
-        type: 'video',
-        video: 'https://aiotwebsites.s3.eu-north-1.amazonaws.com/Animate_futuristic_AI_digital_un%E2%80%A6_202609010927.mp4',
-        poster: 'https://i.postimg.cc/MGZbX9JK/Chat-GPT-Image-Sep-1-2026-09-21-40-AM.png',
+        type: 'image',
+        image: HERO_POSTER_JPG,
+        webp: HERO_POSTER_WEBP,
         alt: 'AIOT digital solutions',
+        priority: true,
     },
     {
         type: 'image',
@@ -25,7 +37,7 @@ const SLIDE_MEDIA = [
     },
     {
         type: 'products',
-        alt: 'AIOT product ecosystem',
+        alt: 'Our products ecosystem',
         duration: 8000,
     },
 ];
@@ -34,7 +46,7 @@ const FALLBACK_SLIDES = [
     {
         title: 'Your Solution Partner <br> for Business Success',
         description:
-            'We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.',
+            'We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.',
     },
     {
         title: 'Accelerate. <br> Innovate. <br> Grow Without Limits.',
@@ -53,56 +65,33 @@ const FALLBACK_SLIDES = [
     },
 ];
 
-// At least 5 seconds per slide (including the video)
-const SLIDE_MS = 5000;
-const SlideMedia = ({ slide, sliderActive, inView }) => {
-    const videoRef = useRef(null);
+const SLIDE_MS = 6000;
+/** Keep first slide long enough for LCP to settle before carousel moves. */
+const FIRST_SLIDE_MS = 9000;
 
-    useEffect(() => {
-        const video = videoRef.current;
-        if (!video || slide.type !== 'video') return undefined;
-
-        // Keep video playing on hover (first slide).
-        // Only pause when the section is out of view.
-        if (inView) {
-            const playPromise = video.play();
-            if (playPromise) playPromise.catch(() => {});
-        } else {
-            video.pause();
-        }
-
-        return undefined;
-    }, [inView, slide.type, slide.video]);
-
+const SlideMedia = ({ slide }) => {
     if (slide.type === 'products') {
-        return <HeroProductScene />;
-    }
-
-    if (slide.type === 'video') {
         return (
-            <motion.video
-                ref={videoRef}
-                key={slide.video}
-                src={slide.video}
-                poster={slide.poster}
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-                animate={{ scale: sliderActive ? 1.12 : 1.04 }}
-                transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }}
-            />
+            <Suspense fallback={<div className="absolute inset-0 bg-[#0c0a09]" aria-hidden="true" />}>
+                <HeroProductScene />
+            </Suspense>
         );
     }
 
     return (
-        <motion.img
-            src={slide.image}
-            alt={slide.alt}
-            className="absolute inset-0 w-full h-full object-cover"
-            animate={{ scale: sliderActive ? 1.12 : 1.04 }}
-            transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }}
-        />
+        <picture>
+            {slide.webp ? <source srcSet={slide.webp} type="image/webp" /> : null}
+            <img
+                src={slide.image}
+                alt={slide.alt}
+                width={1280}
+                height={720}
+                loading={slide.priority ? 'eager' : 'lazy'}
+                fetchPriority={slide.priority ? 'high' : 'low'}
+                decoding={slide.priority ? 'async' : 'async'}
+                className="absolute inset-0 h-full w-full object-cover"
+            />
+        </picture>
     );
 };
 
@@ -111,15 +100,12 @@ const HomePage = () => {
     const { translations, language, localePack } = useContext(LanguageContext);
     const colors = Colors[language] || Colors.en;
     const sectionRef = useRef(null);
-    const inView = useInView(sectionRef, { amount: 0.35, once: false });
+    const [inView, setInView] = useState(true);
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
-    const [direction, setDirection] = useState(1);
+    const [carouselReady, setCarouselReady] = useState(false);
 
     const slides = useMemo(() => {
-        // Use the active locale's Hero.slides when present.
-        // Do not use deep-merged English slides for other languages that omit
-        // `slides` — that would keep English copy after a language switch.
         const localSlides = localePack?.Hero?.slides;
         const hasLocalSlides = Array.isArray(localSlides) && localSlides.length > 0;
         const slideCopy = hasLocalSlides
@@ -147,104 +133,82 @@ const HomePage = () => {
     }, [translations, language, localePack]);
 
     useEffect(() => {
+        const node = sectionRef.current;
+        if (!node || typeof IntersectionObserver === 'undefined') return undefined;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => setInView(entry.isIntersecting),
+            { threshold: 0.2 }
+        );
+        observer.observe(node);
+        return () => observer.disconnect();
+    }, []);
+
+    // Delay carousel so LCP image/text can settle (PSI mobile).
+    useEffect(() => {
+        const t = window.setTimeout(() => setCarouselReady(true), 2500);
+        return () => window.clearTimeout(t);
+    }, []);
+
+    useEffect(() => {
         setIndex(0);
-        setDirection(1);
     }, [language]);
 
     useEffect(() => {
-        if (!inView || paused) return undefined;
-        const ms = slides[index]?.duration || SLIDE_MS;
+        if (!inView || paused || !carouselReady) return undefined;
+        const ms = index === 0 ? FIRST_SLIDE_MS : slides[index]?.duration || SLIDE_MS;
         const timer = window.setTimeout(() => {
-            setDirection(1);
             setIndex((current) => (current + 1) % slides.length);
         }, ms);
         return () => window.clearTimeout(timer);
-    }, [inView, paused, index, slides]);
+    }, [inView, paused, index, slides, carouselReady]);
 
     const goPrev = () => {
-        setDirection(-1);
+        setCarouselReady(true);
         setIndex((current) => (current - 1 + slides.length) % slides.length);
     };
 
     const goNext = () => {
-        setDirection(1);
+        setCarouselReady(true);
         setIndex((current) => (current + 1) % slides.length);
     };
 
     const goTo = (next) => {
-        setDirection(next > index ? 1 : -1);
+        setCarouselReady(true);
         setIndex(next);
     };
 
     const active = slides[index] || slides[0];
-
-    const mediaVariants = {
-        enter: (dir) => ({
-            opacity: 0,
-            scale: 1.06,
-            x: dir > 0 ? 40 : -40,
-        }),
-        center: {
-            opacity: 1,
-            scale: 1,
-            x: 0,
-        },
-        exit: (dir) => ({
-            opacity: 0,
-            scale: 1.02,
-            x: dir > 0 ? -30 : 30,
-        }),
-    };
-
-    const textVariants = {
-        enter: (dir) => ({
-            opacity: 0,
-            y: 36,
-            x: dir > 0 ? 24 : -24,
-            filter: 'blur(6px)',
-        }),
-        center: {
-            opacity: 1,
-            y: 0,
-            x: 0,
-            filter: 'blur(0px)',
-        },
-        exit: (dir) => ({
-            opacity: 0,
-            y: -20,
-            x: dir > 0 ? -16 : 16,
-            filter: 'blur(4px)',
-        }),
-    };
-
-    const sliderActive = inView && !paused;
+    const sliderActive = inView && !paused && carouselReady;
+    const progressMs = sliderActive
+        ? index === 0
+            ? FIRST_SLIDE_MS
+            : active.duration || SLIDE_MS
+        : 0;
 
     return (
         <section
             ref={sectionRef}
-            style={{ backgroundColor: background }}
+            style={{ backgroundColor: background || '#0c0a09' }}
             className="relative h-[calc(100svh-11.5rem)] sm:h-[calc(100svh-10.5rem)] lg:h-[calc(100svh-9.5rem)] flex flex-col overflow-hidden"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
-            {/* Full-bleed media slides */}
-            <div className="absolute inset-0 z-0">
-                <AnimatePresence mode="wait" custom={direction}>
-                    <motion.div
-                        key={`media-${index}`}
-                        className="absolute inset-0"
-                        custom={direction}
-                        variants={mediaVariants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                    >
-                       <SlideMedia slide={active} sliderActive={sliderActive} inView={inView} />
-                    </motion.div>
-                </AnimatePresence>
+            {/* Instant CSS paint so FCP is not blocked by remote media */}
+            <div
+                className="absolute inset-0 z-0"
+                style={{
+                    background:
+                        'radial-gradient(ellipse 80% 60% at 20% 80%, #ED623933 0%, transparent 55%), linear-gradient(160deg, #0c0a09 0%, #1a1512 45%, #0c0a09 100%)',
+                }}
+                aria-hidden="true"
+            />
 
-                {/* Cinematic brand overlays */}
+            <div className="absolute inset-0 z-0">
+                <div key={`media-${index}`} className="absolute inset-0">
+                    <SlideMedia slide={active} />
+                </div>
+
                 {active.type === 'products' ? (
                     <>
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/80 via-[#0c0a09]/25 to-transparent" />
@@ -252,8 +216,8 @@ const HomePage = () => {
                     </>
                 ) : (
                     <>
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/50 via-[#0c0a09]/45 to-transparent" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/35 via-[#0c0a09]/25 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/55 via-[#0c0a09]/40 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/40 via-[#0c0a09]/25 to-transparent" />
                     </>
                 )}
                 <div
@@ -262,71 +226,57 @@ const HomePage = () => {
                         background: `radial-gradient(ellipse 70% 55% at 15% 85%, ${colors.logo}55 0%, transparent 60%)`,
                     }}
                 />
-                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
             </div>
 
-            {/* Side nav arrows */}
             <div className="absolute inset-y-0 left-0 right-0 z-20 pointer-events-none flex items-center justify-between px-3 sm:px-5 md:px-7">
                 <button
                     type="button"
                     aria-label="Previous slide"
                     onClick={goPrev}
-                    className="pointer-events-auto group w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/25 backdrop-blur-md text-white flex items-center justify-center transition hover:border-white/50 hover:bg-black/40"
+                    className="pointer-events-auto group w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/30 bg-black/40 text-white flex items-center justify-center transition hover:border-white/60 hover:bg-black/55"
                 >
-                    <ChevronLeft size={20} className="transition group-hover:-translate-x-0.5" />
+                    <ChevronLeft size={20} aria-hidden="true" />
                 </button>
                 <button
                     type="button"
                     aria-label="Next slide"
                     onClick={goNext}
-                    className="pointer-events-auto group w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 bg-black/25 backdrop-blur-md text-white flex items-center justify-center transition hover:border-white/50 hover:bg-black/40"
+                    className="pointer-events-auto group w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/30 bg-black/40 text-white flex items-center justify-center transition hover:border-white/60 hover:bg-black/55"
                 >
-                    <ChevronRight size={20} className="transition group-hover:translate-x-0.5" />
+                    <ChevronRight size={20} aria-hidden="true" />
                 </button>
             </div>
 
-            {/* Content bottom left */}
             <div className="relative z-10 flex-grow flex flex-col justify-end min-h-0">
                 <div className="max-w-7xl w-full mx-auto px-6 sm:px-10 md:px-14 lg:px-16 pb-8 md:pb-10 pt-6">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-end">
                         <div className="lg:col-span-8 max-w-3xl">
-                            <AnimatePresence mode="wait" custom={direction}>
-                                <motion.div
-                                    key={`${language}-copy-${index}`}
-                                    custom={direction}
-                                    variants={textVariants}
-                                    initial="enter"
-                                    animate="center"
-                                    exit="exit"
-                                    transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                                >
-                                    <div className="flex items-center gap-3 mb-3 md:mb-4">
-                                        
-                                        <span className="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-white/45">
-                                            {String(index + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-                                        </span>
-                                    </div>
+                            <div key={`${language}-copy-${index}`}>
+                                <div className="flex items-center gap-3 mb-3 md:mb-4">
+                                    <span className="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-white/90">
+                                        {String(index + 1).padStart(2, '0')} /{' '}
+                                        {String(slides.length).padStart(2, '0')}
+                                    </span>
+                                </div>
 
-                                    <h1
-                                        className="font-[Space_Grotesk,sans-serif] text-[1.85rem] sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold leading-[1.08] tracking-tight text-white max-w-3xl"
-                                        dangerouslySetInnerHTML={{ __html: active.title }}
-                                    />
+                                <h1
+                                    className="font-[Space_Grotesk,sans-serif] text-[1.85rem] sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold leading-[1.08] tracking-tight text-white max-w-3xl"
+                                    dangerouslySetInnerHTML={{ __html: active.title }}
+                                />
 
-                                    <div
-                                        className="mt-3 md:mt-4 h-1 w-14 rounded-full origin-left"
-                                        style={{ backgroundColor: colors.logo }}
-                                    />
+                                <div
+                                    className="mt-3 md:mt-4 h-1 w-14 rounded-full origin-left"
+                                    style={{ backgroundColor: colors.logo }}
+                                />
 
-                                    <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-white/78 max-w-xl leading-relaxed font-light">
-                                        {active.description}
-                                    </p>
-                                </motion.div>
-                            </AnimatePresence>
+                                <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-white max-w-xl leading-relaxed font-normal opacity-95">
+                                    {active.description}
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Progress cluster bottom right on desktop */}
                         <div className="lg:col-span-4 flex lg:justify-end">
-                            <div className="w-full max-w-xs">
+                            <div className="w-full max-w-xs" role="tablist" aria-label="Hero slides">
                                 <div className="flex items-center gap-2.5">
                                     {slides.map((_, i) => {
                                         const isActive = i === index;
@@ -334,26 +284,28 @@ const HomePage = () => {
                                             <button
                                                 key={i}
                                                 type="button"
+                                                role="tab"
+                                                aria-selected={isActive}
                                                 aria-label={`Go to slide ${i + 1}`}
                                                 onClick={() => goTo(i)}
-                                                className="relative h-1.5 flex-1 rounded-full overflow-hidden bg-white/20 transition hover:bg-white/35"
+                                                className="relative h-1.5 flex-1 rounded-full overflow-hidden bg-white/30 transition hover:bg-white/45"
                                             >
                                                 {isActive ? (
-                                                    <motion.span
-                                                        key={`bar-${index}`}
-                                                        className="absolute inset-y-0 left-0 rounded-full"
-                                                        style={{ backgroundColor: colors.logo }}
-                                                        initial={{ width: '0%' }}
-                                                        animate={{ width: '100%' }}
-                                                        transition={{
-                                                            duration: sliderActive ? (active.duration || SLIDE_MS) / 1000 : 0,
-                                                            ease: 'linear',
+                                                    <span
+                                                        key={`bar-${index}-${progressMs}`}
+                                                        className="absolute inset-y-0 left-0 w-full rounded-full origin-left"
+                                                        style={{
+                                                            backgroundColor: colors.logo,
+                                                            transform: 'scaleX(0)',
+                                                            animation: progressMs
+                                                                ? `hero-progress ${progressMs}ms linear forwards`
+                                                                : 'none',
                                                         }}
                                                     />
                                                 ) : i < index ? (
                                                     <span
                                                         className="absolute inset-0 rounded-full"
-                                                        style={{ backgroundColor: `${colors.logo}99` }}
+                                                        style={{ backgroundColor: `${colors.logo}cc` }}
                                                     />
                                                 ) : null}
                                             </button>

@@ -1,34 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { Suspense, lazy, useContext, useEffect } from 'react';
+import { BrowserRouter as Router, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { LanguageContext } from './Context/LanguageContext';
-import { Colors } from './Utils/Colors';
 import Navbar from './Components/Navbar';
-import PageLoader from './Components/PageLoader';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Home from './Pages/Home'; // Import the Home component
-import About from './Pages/Whoweare'; // Import the About component
-import Clientwall from './Pages/Clientwall'; // Import the Clientwall component
-import Contact from './Pages/Contact'; // Import the Contact component
-import './App.css'
+import Seo from './Components/Seo';
 import FooterSection from './Components/Footer';
-import TechnologyDriven from './Pages/TechnologyDriven';
-import NextGenration from './Pages/NextGenration';
-import SapSolutions from './Pages/SapSolutions';
-import UtilityTransformation from './Pages/UtilityTransformation';
-import OracleNetsuite from './Pages/OracleNetsuite';
-import Consulting from './Pages/Consulting';
-import Implementation from './Pages/Implementation';
-import ManagedServices from './Pages/ManagedServices';
-import PrivacyPolicy from './Pages/PrivacyPolicy';
-import TermsOfService from './Pages/TermsOfService';
-import News from './Pages/News';
-import Blogs from './Pages/Blogs';
-import InnovateWithInsights from './Pages/InnovateWithInsights';
+import { REDIRECTS, ROUTES } from './Utils/routes';
+import Home from './Pages/Home';
+import './App.css';
+
+const About = lazy(() => import('./Pages/Whoweare'));
+const Clientwall = lazy(() => import('./Pages/Clientwall'));
+const Contact = lazy(() => import('./Pages/Contact'));
+const TechnologyDriven = lazy(() => import('./Pages/TechnologyDriven'));
+const NextGenration = lazy(() => import('./Pages/NextGenration'));
+const SapSolutions = lazy(() => import('./Pages/SapSolutions'));
+const UtilityTransformation = lazy(() => import('./Pages/UtilityTransformation'));
+const OracleNetsuite = lazy(() => import('./Pages/OracleNetsuite'));
+const Consulting = lazy(() => import('./Pages/Consulting'));
+const Implementation = lazy(() => import('./Pages/Implementation'));
+const ManagedServices = lazy(() => import('./Pages/ManagedServices'));
+const PrivacyPolicy = lazy(() => import('./Pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./Pages/TermsOfService'));
+const News = lazy(() => import('./Pages/News'));
+const Blogs = lazy(() => import('./Pages/Blogs'));
+const InnovateWithInsights = lazy(() => import('./Pages/InnovateWithInsights'));
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    // Keep hash deep-links (e.g. /consulting#it-strategy) for page-level scroll handlers
     if (hash) return;
     window.scrollTo(0, 0);
   }, [pathname, hash]);
@@ -36,75 +36,58 @@ function ScrollToTop() {
   return null;
 }
 
+function RouteFallback() {
+  return (
+    <div className="min-h-[40vh] flex items-center justify-center" role="status" aria-label="Loading page">
+      <span className="sr-only">Loading page</span>
+    </div>
+  );
+}
+
 function App() {
-  const { language, setLanguage, translations } = useContext(LanguageContext);
-  const color = Colors[language] || Colors.en; // Get color settings based on selected language
-  const [loading, setLoading] = useState(true);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     const splash = document.getElementById('aiot-splash');
     if (splash) splash.remove();
-
-    const started = Date.now();
-    const minMs = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 2400;
-    let done = false;
-
-    const finish = () => {
-      if (done) return;
-      done = true;
-      const remaining = Math.max(0, minMs - (Date.now() - started));
-      window.setTimeout(() => setLoading(false), remaining);
-    };
-
-    if (document.readyState === 'complete') {
-      finish();
-    } else {
-      window.addEventListener('load', finish);
-    }
-
-    const fallback = window.setTimeout(finish, 3500);
-    document.documentElement.style.overflow = 'hidden';
-
-    return () => {
-      window.removeEventListener('load', finish);
-      window.clearTimeout(fallback);
-      document.documentElement.style.overflow = '';
-    };
+    document.documentElement.style.overflow = '';
   }, []);
-
-  useEffect(() => {
-    document.documentElement.style.overflow = loading ? 'hidden' : '';
-  }, [loading]);
 
   return (
     <Router>
       <ScrollToTop />
-      <PageLoader visible={loading} />
+      <Seo />
+      <a href="#main-content" className="sr-only">
+        Skip to content
+      </a>
       <Navbar />
-      <Routes key={language}>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/clientwall" element={<Clientwall />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/technology-driven" element={<TechnologyDriven />} />
-        <Route exact path="/next-genration" element={<NextGenration />} />
-        <Route exact path="/sap-solutions" element={<SapSolutions />} />
-        <Route exact path="/utility-transformation" element={<UtilityTransformation />} />
-        <Route exact path="/oracle-netsuite" element={<OracleNetsuite />} />
-        <Route exact path="/consulting" element={<Consulting />} />
-        <Route exact path="/implementation" element={<Implementation />} />
-        <Route exact path="/managed-services" element={<ManagedServices />} />
-        <Route exact path="/outsoursing" element={<ManagedServices />} />
-        <Route exact path="/outsourcing" element={<ManagedServices />} />
-        <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route exact path="/terms-and-conditions" element={<TermsOfService />} />
-        <Route exact path="/terms-conditions" element={<TermsOfService />} />
-        <Route exact path="/Terms-Conditions" element={<TermsOfService />} />
-        <Route exact path="/terms-of-service" element={<TermsOfService />} />
-        <Route exact path="/news" element={<News />} />
-        <Route exact path="/blogs" element={<Blogs />} />
-        <Route exact path="/innovate-with-insights" element={<InnovateWithInsights />} />
-      </Routes>
+      <main id="main-content">
+        <Suspense fallback={<RouteFallback />}>
+          <Routes key={language}>
+            <Route path={ROUTES.home} element={<Home />} />
+            <Route path={ROUTES.about} element={<About />} />
+            <Route path={ROUTES.clientWall} element={<Clientwall />} />
+            <Route path={ROUTES.contact} element={<Contact />} />
+            <Route path={ROUTES.technologyDriven} element={<TechnologyDriven />} />
+            <Route path={ROUTES.nextGeneration} element={<NextGenration />} />
+            <Route path={ROUTES.sapSolutions} element={<SapSolutions />} />
+            <Route path={ROUTES.utilityTransformation} element={<UtilityTransformation />} />
+            <Route path={ROUTES.oracleNetsuite} element={<OracleNetsuite />} />
+            <Route path={ROUTES.consulting} element={<Consulting />} />
+            <Route path={ROUTES.implementation} element={<Implementation />} />
+            <Route path={ROUTES.managedServices} element={<ManagedServices />} />
+            <Route path={ROUTES.privacyPolicy} element={<PrivacyPolicy />} />
+            <Route path={ROUTES.termsOfService} element={<TermsOfService />} />
+            <Route path={ROUTES.news} element={<News />} />
+            <Route path={ROUTES.blogs} element={<Blogs />} />
+            <Route path={ROUTES.innovateWithInsights} element={<InnovateWithInsights />} />
+
+            {REDIRECTS.map(({ from, to }) => (
+              <Route key={from} path={from} element={<Navigate to={to} replace />} />
+            ))}
+          </Routes>
+        </Suspense>
+      </main>
       <FooterSection />
     </Router>
   );

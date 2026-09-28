@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Calendar, Newspaper } from 'lucide-react';
 import { LanguageContext } from '../Context/LanguageContext';
 import { Colors } from '../Utils/Colors';
+import { ROUTES } from '../Utils/routes';
 
 export default function News() {
     const { translations, language, localePack } = useContext(LanguageContext);
@@ -29,8 +30,8 @@ export default function News() {
         {
             tag: 'Announcement',
             date: 'Sep 2026',
-            title: 'AIOT expands regional presence across Asia and Europe',
-            excerpt: 'New delivery hubs and partner programmes strengthen how we support clients through digital transformation.',
+            title: 'We expands regional presence across Asia and Europe',
+            excerpt: 'New delivery hubs and partner programmes strengthen our support for clients through digital transformation.',
             image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop',
             featured: true,
         },
@@ -51,8 +52,8 @@ export default function News() {
         {
             tag: 'Company',
             date: 'Jun 2026',
-            title: 'AIOT recognised for customer-focused technology consulting',
-            excerpt: 'A milestone that reflects our commitment to practical innovation and lasting business value.',
+            title: 'We recognised for customer-focused technology consulting',
+            excerpt: ' A milestone that reflects our commitment to practical innovation and lasting business value.',
             image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop',
         },
     ];
@@ -84,7 +85,7 @@ export default function News() {
                         {(t.title || 'News').includes(' ') ? ` ${(t.title || '').split(' ').slice(1).join(' ')}` : ''}
                     </h1>
                     <p className="text-lg text-white/85 max-w-2xl">
-                        {t.subtitle || 'Company updates, product releases, and milestones shaping the future of AIOT.'}
+                        {t.subtitle || 'Company updates, product releases, and milestones shaping our future.'}
                     </p>
                 </div>
             </div>
@@ -119,7 +120,7 @@ export default function News() {
                             }}
                         />
                         <motion.h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4" variants={fadeUp}>
-                            {t.sectionTitle || 'Stay informed with AIOT news'}
+                            {t.sectionTitle || 'Keep up with the latest news with us'}
                         </motion.h2>
                         <motion.p className="text-gray-600 max-w-3xl mx-auto leading-relaxed" variants={fadeUp}>
                             {t.sectionDesc ||
@@ -161,7 +162,7 @@ export default function News() {
                             <p className="text-gray-600 leading-relaxed mb-6">{featured.excerpt}</p>
                             <button
                                 type="button"
-                                onClick={() => navigate('/contact')}
+                                onClick={() => navigate(ROUTES.contact)}
                                 className="inline-flex items-center gap-2 w-fit px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition hover:opacity-90"
                                 style={{ backgroundColor: colors.logo }}
                             >

@@ -603,7 +603,7 @@
     },
     "consulting": {
         "heroHighlight": "Consultoría",
-        "heroSubtitle": "Libere agilidad, abrace la innovación: AIOT, su socio en la transformación",
+        "heroSubtitle": "Libere agilidad, abrace la innovación: somos su socio en la transformación",
         "eyebrow": "Consultoría",
         "heroTitle": "Estrategia que convierte la tecnología en ventaja",
         "heroDesc": "AIOT ayuda a los líderes a definir el rumbo, modernizar operaciones y diseñar plataformas escalables desde la asesoría hasta la ejecución.",
@@ -692,10 +692,10 @@
     },
     "implementation": {
         "heroHighlight": "Implementación",
-        "heroSubtitle": "Del blueprint al go-live soluciones empresariales entregadas con precisión",
+        "heroSubtitle": "Del blueprint al go-live, soluciones empresariales entregadas con precisión",
         "expertiseLabel": "Qué implementamos",
         "introTitle": "Implementación que convierte la estrategia en sistemas en funcionamiento",
-        "introDesc": "AIOT diseña, configura y despliega plataformas empresariales adaptadas a cómo opera su negocio con plazos claros, gobernanza sólida y adopción en cada release.",
+        "introDesc": "AIOT diseña, configura y despliega plataformas empresariales adaptadas a cómo opera su negocio, con plazos claros, gobernanza sólida y adopción integrada en cada release.",
         "capabilitiesLabel": "Capacidades",
         "approachLabel": "Cómo entregamos",
         "approachTitle": "Un camino probado del diseño al go-live",
@@ -704,9 +704,9 @@
         "services": [
             {
                 "title": "Soluciones de tecnología empresarial",
-                "shortTitle": "Tecnología empresarial",
+                "shortTitle": "Enterprise Tech",
                 "heading": "Construya la columna vertebral digital de su negocio",
-                "content": "Implementamos plataformas empresariales clave ERP, CRM, colaboración y aplicaciones a medida que conectan equipos, datos y procesos en un sistema operativo fiable.",
+                "content": "Implementamos plataformas empresariales clave — ERP, CRM, colaboración y aplicaciones a medida — que conectan equipos, datos y procesos en un sistema operativo fiable.",
                 "points": [
                     "Diseño de solución y talleres fit-gap",
                     "Configuración, integración y migración de datos",
@@ -714,8 +714,8 @@
                 ]
             },
             {
-                "title": "Soluciones SAP y HANA",
-                "shortTitle": "SAP y HANA",
+                "title": "Soluciones SAP & HANA",
+                "shortTitle": "SAP & HANA",
                 "heading": "Modernice finanzas y operaciones en SAP",
                 "content": "Desde S/4HANA y analítica HANA hasta despliegues modulares, le ayudamos a implementar SAP con procesos limpios, controles sólidos y una hoja de ruta que protege su inversión.",
                 "points": [
@@ -725,10 +725,10 @@
                 ]
             },
             {
-                "title": "Soluciones Oracle NetSuite",
+                "title": "Oracle NetSuite Solutions",
                 "shortTitle": "Oracle NetSuite",
                 "heading": "Gestione su negocio en un ERP cloud único",
-                "content": "Implementamos NetSuite para finanzas, inventario, CRM y operaciones adaptado a su sector con SuiteScripts, flujos de trabajo e integraciones que escalan con su crecimiento.",
+                "content": "Implementamos NetSuite para finanzas, inventario, CRM y operaciones, adaptado a su sector, con SuiteScripts, flujos de trabajo e integraciones que escalan con su crecimiento.",
                 "points": [
                     "Configuración de NetSuite ERP, CRM y e-commerce",
                     "Flujos personalizados, SuiteScripts y dashboards",
@@ -737,7 +737,7 @@
             },
             {
                 "title": "Soluciones Microsoft y productos",
-                "shortTitle": "Microsoft y productos",
+                "shortTitle": "Microsoft & Products",
                 "heading": "Impulse la productividad con Microsoft y productos AIOT",
                 "content": "Entregamos Microsoft 365, Dynamics, Azure, Power Platform y suites de productos AIOT para que sus equipos colaboren, automaticen e innoven en un stack de confianza.",
                 "points": [
@@ -747,10 +747,10 @@
                 ]
             },
             {
-                "title": "Modernización de utilities",
-                "shortTitle": "Modernización de utilities",
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
                 "heading": "Sistemas modernos para utilities modernas",
-                "content": "Ayudamos a utilities a modernizar facturación, experiencia de cliente, operaciones de campo y plataformas de red con implementaciones seguras y conformes para entornos regulados.",
+                "content": "Ayudamos a utilities a modernizar facturación, experiencia de cliente, operaciones de campo y plataformas de red con implementaciones seguras y conformes, diseñadas para entornos regulados.",
                 "points": [
                     "Plataformas CIS, facturación y experiencia de cliente",
                     "Modernización de servicio de campo y operaciones",
@@ -759,9 +759,9 @@
             },
             {
                 "title": "Soluciones de datos y seguridad",
-                "shortTitle": "Datos y seguridad",
+                "shortTitle": "Data & Security",
                 "heading": "Proteja los datos. Libere el insight.",
-                "content": "Implementamos plataformas de datos, analítica y controles de seguridad que mantienen la información fiable, accesible y protegida desde lakehouse hasta identidad y acceso.",
+                "content": "Implementamos plataformas de datos, analítica y controles de seguridad que mantienen la información fiable, accesible y protegida, desde lakehouse hasta identidad y acceso.",
                 "points": [
                     "Plataformas de datos, pipelines y analítica",
                     "Bases de identidad, acceso y seguridad",
@@ -771,18 +771,18 @@
         ],
         "processSteps": [
             { "title": "Evaluar", "desc": "Definir alcance, requisitos, riesgos y criterios de éxito" },
-            { "title": "Diseñar", "desc": "Blueprint de procesos, arquitectura e integraciones" },
+            { "title": "Diseñar", "desc": "Modelar procesos, arquitectura e integraciones" },
             { "title": "Construir", "desc": "Configurar, migrar, integrar y probar a fondo" },
             { "title": "Lanzar", "desc": "Go-live con formación, hypercare y traspaso" }
         ]
     },
     "managedServices": {
-        "heroHighlight": "Servicios",
-        "heroRest": "gestionados",
+        "heroHighlight": "Managed",
+        "heroRest": "Services",
         "heroSubtitle": "Operaciones, monitorización y soporte continuos que mantienen saludable su entorno digital",
         "expertiseLabel": "Qué operamos",
         "introTitle": "Servicios gestionados que protegen el rendimiento y liberan a sus equipos",
-        "introDesc": "AIOT asume las operaciones tecnológicas del día a día aplicaciones, cloud, seguridad y soporte para que su gente se centre en el crecimiento mientras mantenemos sistemas fiables, seguros y listos.",
+        "introDesc": "AIOT asume las operaciones tecnológicas del día a día — aplicaciones, cloud, seguridad y soporte — para que su gente se centre en el crecimiento, mientras mantenemos sistemas fiables, seguros y listos.",
         "capabilitiesLabel": "Capacidades",
         "approachLabel": "Cómo operamos",
         "approachTitle": "Un modelo de operación basado en claridad y uptime",
@@ -806,7 +806,7 @@
                 "heading": "Opere cloud e infraestructura con confianza",
                 "content": "Desde landing zones hasta operaciones del día 2, monitorizamos, parcheamos, optimizamos y gobernamos su cloud e infraestructura en coste, resiliencia y escala.",
                 "points": [
-                    "Monitorización e respuesta a incidentes 24×7",
+                    "Monitorización y respuesta a incidentes 24×7",
                     "Parches, capacidad y optimización de costes",
                     "Operaciones multicloud e híbridas"
                 ]
@@ -846,7 +846,7 @@
             }
         ],
         "processSteps": [
-            { "title": "Onboarding", "desc": "Mapear sistemas, SLA y líneas base operativas" },
+            { "title": "Onboard", "desc": "Mapear sistemas, SLA y líneas base operativas" },
             { "title": "Estabilizar", "desc": "Reducir ruido, cerrar brechas y fijar métricas de salud" },
             { "title": "Operar", "desc": "Monitorizar, soportar y mejorar cada día" },
             { "title": "Optimizar", "desc": "Reducir riesgo, coste y carga operativa con el tiempo" }

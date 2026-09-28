@@ -25,12 +25,12 @@
     "dropdown": {
         "aboutUs": {
             "whoWeAre": "Who We Are",
-            "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.",
+            "whoWeAreDesc": "We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.",
             "clientWall": "Client wall",
             "clientWallDesc": "Proudly serving industry leaders with innovative technology solutions that deliver real results.",
             "contactUs": "Contact Us",
             "contactUsDesc": "Get in touch with our IT Solutions your gateway to smart, innovative, and transformative tech solutions.",
-            "panelLabel": "About AIOT",
+            "panelLabel": "About us",
             "panelTitle": "Innovation with real impact",
             "panelDesc": "Discover who we are, the clients we serve, and how to start a conversation with our team."
         },
@@ -88,7 +88,7 @@
         },
         "resources": {
             "news": "News",
-            "newsDesc": "Stay updated with the latest news and innovations from AIOT IT Solutions.",
+            "newsDesc": "Stay up to date with the latest news and innovations from our Solutions.",
             "blogs": "Blogs",
             "blogsDesc": "Explore insights, trends, and expert opinions on technology and innovation.",
             "innovateWithInsights": "Innovate with Insights",
@@ -107,12 +107,12 @@
     },
     "Hero": {
         "demoBannerTitle": "Your Solution Partner <br> for Business Success",
-        "whoWeAreDesc": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions.",
+        "whoWeAreDesc": "We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future.",
         "learnMore": "Learn More",
         "slides": [
             {
                 "title": "Your Solution Partner <br> for Business Success",
-                "description": "We blend Artificial Intelligence and the Internet of Things to drive innovation and deliver future-ready tech solutions."
+                "description": "We are a forward-thinking technology consulting company that delivers practical, scalable, and secure solutions to help businesses embrace innovation and prepare for a connected digital future."
             },
             {
                 "title": "Connected Systems. <br> Smarter Decisions.",
@@ -344,17 +344,17 @@
     "newsPage": {
         "eyebrow": "Resources",
         "title": "News",
-        "subtitle": "Company updates, product releases, and milestones shaping the future of AIOT.",
+        "subtitle": "Company updates, product releases, and milestones shaping our future.",
         "sectionLabel": "Latest Updates",
-        "sectionTitle": "Stay informed with AIOT news",
+        "sectionTitle": "Keep up with the latest news with us",
         "sectionDesc": "Follow announcements, launches, and partnership stories that reflect how we help organisations innovate with confidence.",
         "cta": "Talk to our team",
         "items": [
             {
                 "tag": "Announcement",
                 "date": "Sep 2026",
-                "title": "AIOT expands regional presence across Asia and Europe",
-                "excerpt": "New delivery hubs and partner programmes strengthen how we support clients through digital transformation.",
+                "title": "We expands regional presence across Asia and Europe",
+                "excerpt": "New delivery hubs and partner programmes strengthen our support for clients through digital transformation.",
                 "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=600&fit=crop",
                 "featured": true
             },
@@ -375,8 +375,8 @@
             {
                 "tag": "Company",
                 "date": "Jun 2026",
-                "title": "AIOT recognised for customer-focused technology consulting",
-                "excerpt": "A milestone that reflects our commitment to practical innovation and lasting business value.",
+                "title": "We recognised for customer-focused technology consulting",
+                "excerpt": " A milestone that reflects our commitment to practical innovation and lasting business value.",
                 "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=480&fit=crop"
             }
         ]
@@ -404,7 +404,7 @@
                 "category": "Cloud & ERP",
                 "readTime": "5 min read",
                 "title": "Building scalable foundations for growth",
-                "excerpt": "Why secure, adaptable technology architecture is the difference between short-term fixes and long-term value.",
+                "excerpt": "Why secure, adaptable technology architecture separates short-term fixes from long-term value.",
                 "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=520&fit=crop"
             },
             {
@@ -444,15 +444,15 @@
         "introLabel": "Thought Leadership",
         "introTitle": "Turn emerging trends into lasting advantage",
         "introDesc1": "Innovate with Insights brings together strategy, industry perspective, and technology expertise to help leaders navigate change with clarity.",
-        "introDesc2": "From digital transformation and intelligent automation to secure, scalable platforms we share frameworks that move organisations from ambition to execution.",
+        "introDesc2": "From digital transformation and intelligent automation to secure, scalable platforms, we share frameworks that help organisations turn ambition into execution.",
         "quote": "Technology creates the most value when it is practical, secure, and designed around real customer needs.",
         "cta": "Discuss your roadmap",
         "pillar1Title": "Strategy with clarity",
         "pillar1Desc": "Define where technology creates the most value and build a roadmap your teams can execute with confidence.",
         "pillar2Title": "Connected capabilities",
-        "pillar2Desc": "Align people, processes, data, and platforms so operations become smarter, faster, and more resilient.",
+        "pillar2Desc": "Align people, processes, data, and platforms to make operations smarter, faster, and more resilient.",
         "pillar3Title": "Measurable outcomes",
-        "pillar3Desc": "Focus on efficiency, growth, and customer impact not technology for its own sake.",
+        "pillar3Desc": "Focus on efficiency, growth, and customer impact, not technology for its own sake.",
         "frameworkLabel": "Insight Framework",
         "frameworkTitle": "A practical path from idea to impact",
         "frameworkDesc": "Use this simple lens to prioritise initiatives, reduce risk, and keep transformation focused on sustainable growth.",
@@ -648,7 +648,7 @@
     },
     "consulting": {
         "heroHighlight": "Consulting",
-        "heroSubtitle": "Unlock Agility, Embrace Innovation: AIOT, Your Partner in Transformation",
+        "heroSubtitle": "Unlock Agility, Embrace Innovation: We are your Partner in Transformation",
         "eyebrow": "Consulting",
         "heroTitle": "Strategy that turns technology into advantage",
         "heroDesc": "AIOT helps leaders define direction, modernize operations, and architect platforms that scale from advisory through execution.",
@@ -670,7 +670,7 @@
                 "title": "IT Strategy & Advisory",
                 "shortTitle": "IT Strategy & Advisory",
                 "heading": "Align technology with business ambition",
-                "content": "We help executives set a clear technology agenda investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost center.",
+                "content": "We help executives set a clear technology agenda, investment priorities, operating models, and governance so IT becomes a growth engine rather than a cost centre.",
                 "points": [
                     "Enterprise IT vision & operating model",
                     "Investment prioritization & value cases",
@@ -680,7 +680,7 @@
             {
                 "title": "Digital Transformation Consulting",
                 "shortTitle": "Digital Transformation",
-                "heading": "Reinvent how your organization works",
+                "heading": "Reinvent how your organisation works",
                 "content": "From customer journeys to back-office platforms, we design transformation programs that connect people, process, and technology with adoption built in from day one.",
                 "points": [
                     "Transformation roadmap & change design",
@@ -692,7 +692,7 @@
                 "title": "Business Process Consulting",
                 "shortTitle": "Business Process",
                 "heading": "Simplify flows. Unlock performance.",
-                "content": "We diagnose friction across critical processes, redesign end-to-end workflows, and introduce automation where it creates real capacity not complexity.",
+                "content": "We diagnose friction across critical processes, redesign end-to-end workflows, and introduce automation where it creates real capacity, not complexity.",
                 "points": [
                     "Process discovery & maturity assessment",
                     "Target operating model design",
@@ -706,7 +706,7 @@
                 "content": "We evaluate applications, infrastructure, data, and security posture, then translate findings into a sequenced roadmap your teams can execute with confidence.",
                 "points": [
                     "Application & infrastructure health checks",
-                    "Gap analysis vs. industry benchmarks",
+                    "Gap analysis vs industry benchmarks",
                     "Phased roadmap with cost & risk view"
                 ]
             },
@@ -737,10 +737,10 @@
     },
     "implementation": {
         "heroHighlight": "Implementation",
-        "heroSubtitle": "From blueprint to go-live enterprise solutions delivered with precision",
+        "heroSubtitle": "From blueprint to go-live, enterprise solutions delivered with precision",
         "expertiseLabel": "What We Implement",
         "introTitle": "Implementation that turns strategy into working systems",
-        "introDesc": "AIOT designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.",
+        "introDesc": " We designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.",
         "capabilitiesLabel": "Capabilities",
         "approachLabel": "How We Deliver",
         "approachTitle": "A proven path from design to go-live",
@@ -761,12 +761,12 @@
             {
                 "title": "SAP & HANA Solutions",
                 "shortTitle": "SAP & HANA",
-                "heading": "Modernize finance and operations on SAP",
+                "heading": "Modernise finance and operations on SAP",
                 "content": "From S/4HANA and HANA analytics to module rollouts, we help you implement SAP with clean processes, strong controls, and a roadmap that protects your investment.",
                 "points": [
                     "S/4HANA & classic SAP implementations",
                     "HANA analytics & reporting foundations",
-                    "Process redesign aligned to SAP best practice"
+                    "Process redesign aligned to SAP best practices"
                 ]
             },
             {
@@ -783,22 +783,22 @@
             {
                 "title": "Microsoft & Product Solutions",
                 "shortTitle": "Microsoft & Products",
-                "heading": "Power productivity with Microsoft and AIOT products",
-                "content": "We deliver Microsoft 365, Dynamics, Azure, Power Platform, and AIOT product suites so your teams collaborate, automate, and innovate on a trusted stack.",
+                "heading": "Power productivity with Microsoft and our products",
+                "content": "We deliver Microsoft 365, Dynamics, Azure, Power Platform, and our product suites, enabling your teams to collaborate , automate, and innovate on a trusted stack.",
                 "points": [
                     "Microsoft 365, Dynamics & Power Platform",
                     "Azure cloud & identity foundations",
-                    "AIOT product rollout & integration"
+                    "Our products rollout & integration"
                 ]
             },
             {
                 "title": "Utility Modernization",
                 "shortTitle": "Utility Modernization",
                 "heading": "Modern systems for modern utilities",
-                "content": "We help utilities modernize billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.",
+                "content": "We help utilities modernise billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.",
                 "points": [
                     "CIS, billing & customer experience platforms",
-                    "Field service & operations modernization",
+                    "Field service & operations modernisation",
                     "Compliance-ready integrations & data flows"
                 ]
             },
@@ -806,7 +806,7 @@
                 "title": "Data & Security Solutions",
                 "shortTitle": "Data & Security",
                 "heading": "Protect data. Unlock insight.",
-                "content": "We implement data platforms, analytics, and security controls that keep information trustworthy, accessible, and protected from lakehouse foundations to identity and access.",
+                "content": "We implement data platforms, analytics, and security controls that keep information trustworthy, accessible, and protected, from lakehouse foundations to identity and access.",
                 "points": [
                     "Data platforms, pipelines & analytics",
                     "Identity, access & security baselines",
@@ -827,7 +827,7 @@
         "heroSubtitle": "Always-on operations, monitoring, and support that keep your digital estate healthy",
         "expertiseLabel": "What We Run",
         "introTitle": "Managed services that protect performance and free your teams",
-        "introDesc": "AIOT takes ownership of day-to-day technology operations applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.",
+        "introDesc": "We takes ownership of day-to-day technology operations, applications, cloud, security, and support so your people can focus on growth while we keep systems reliable, secure, and ready.",
         "capabilitiesLabel": "Capabilities",
         "approachLabel": "How We Operate",
         "approachTitle": "A run model built for clarity and uptime",
@@ -849,10 +849,10 @@
                 "title": "Cloud & Infrastructure Management",
                 "shortTitle": "Cloud & Infrastructure",
                 "heading": "Operate cloud and infrastructure with confidence",
-                "content": "From landing zones to day-2 operations, we monitor, patch, optimize, and govern your cloud and infrastructure estate for cost, resilience, and scale.",
+                "content": "From landing zones to day-2 operations, we monitor, patch, optimise, and govern your cloud and infrastructure estate for cost, resilience, and scale.",
                 "points": [
                     "24×7 monitoring & incident response",
-                    "Patching, capacity & cost optimization",
+                    "Patching, capacity & cost optimisation",
                     "Multi-cloud & hybrid operations"
                 ]
             },
@@ -860,7 +860,7 @@
                 "title": "IT Support & Service Desk",
                 "shortTitle": "IT Support & Desk",
                 "heading": "Responsive support your users can trust",
-                "content": "Our service desk resolves tickets fast, communicates clearly, and escalates with context delivering a consistent experience across channels and time zones.",
+                "content": "Our service desk resolves tickets fast, communicates clearly, and escalates with context, delivering a consistent experience across channels and time zones.",
                 "points": [
                     "Multi-channel service desk & SLAs",
                     "Endpoint, identity & access support",
@@ -871,7 +871,7 @@
                 "title": "Cybersecurity & Monitoring",
                 "shortTitle": "Cybersecurity",
                 "heading": "Detect threats. Reduce risk. Stay ahead.",
-                "content": "We continuously monitor security posture, respond to alerts, and harden environments so vulnerabilities are found early and incidents are contained quickly.",
+                "content": "We continuously monitor your security posture, respond to alerts, and harden environments so we find vulnerabilities early and contain incidents quickly.",
                 "points": [
                     "SOC-style monitoring & alert triage",
                     "Vulnerability management & hardening",

@@ -40,7 +40,7 @@ const SERVICE_META = [
     icon: Box,
     image:
       'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80',
-    ctaLink: '/next-genration',
+    ctaLink: '/next-generation',
   },
   {
     id: 'utility-modernization',
@@ -61,11 +61,11 @@ const SERVICE_META = [
 const FALLBACK = {
   heroHighlight: 'Implementation',
   heroRest: '',
-  heroSubtitle: 'From blueprint to go-live enterprise solutions delivered with precision',
+  heroSubtitle: 'From blueprint to go-live, enterprise solutions delivered with precision',
   expertiseLabel: 'What We Implement',
   introTitle: 'Implementation that turns strategy into working systems',
   introDesc:
-    'AIOT designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.',
+    ' We designs, configures, and deploys enterprise platforms that fit how your business runs with clear timelines, strong governance, and adoption built into every release.',
   capabilitiesLabel: 'Capabilities',
   approachLabel: 'How We Deliver',
   approachTitle: 'A proven path from design to go-live',
@@ -88,13 +88,13 @@ const FALLBACK = {
     {
       title: 'SAP & HANA Solutions',
       shortTitle: 'SAP & HANA',
-      heading: 'Modernize finance and operations on SAP',
+      heading: 'Modernise finance and operations on SAP',
       content:
         'From S/4HANA and HANA analytics to module rollouts, we help you implement SAP with clean processes, strong controls, and a roadmap that protects your investment.',
       points: [
         'S/4HANA & classic SAP implementations',
         'HANA analytics & reporting foundations',
-        'Process redesign aligned to SAP best practice',
+        'Process redesign aligned to SAP best practices',
       ],
     },
     {
@@ -112,13 +112,13 @@ const FALLBACK = {
     {
       title: 'Microsoft & Product Solutions',
       shortTitle: 'Microsoft & Products',
-      heading: 'Power productivity with Microsoft and AIOT products',
+      heading: 'Power productivity with Microsoft and our products',
       content:
-        'We deliver Microsoft 365, Dynamics, Azure, Power Platform, and AIOT product suites so your teams collaborate, automate, and innovate on a trusted stack.',
+        'We deliver Microsoft 365, Dynamics, Azure, Power Platform, and our products suites so your teams collaborate, automate, and innovate on a trusted stack.',
       points: [
         'Microsoft 365, Dynamics & Power Platform',
         'Azure cloud & identity foundations',
-        'AIOT product rollout & integration',
+        'Our products rollout & integration',
       ],
     },
     {
@@ -126,10 +126,10 @@ const FALLBACK = {
       shortTitle: 'Utility Modernization',
       heading: 'Modern systems for modern utilities',
       content:
-        'We help utilities modernize billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.',
+        'We help utilities modernise billing, customer experience, field operations, and grid-adjacent platforms with secure, compliant implementations built for regulated environments.',
       points: [
         'CIS, billing & customer experience platforms',
-        'Field service & operations modernization',
+        'Field service & operations modernisation',
         'Compliance-ready integrations & data flows',
       ],
     },
@@ -138,7 +138,7 @@ const FALLBACK = {
       shortTitle: 'Data & Security',
       heading: 'Protect data. Unlock insight.',
       content:
-        'We implement data platforms, analytics, and security controls that keep information trustworthy, accessible, and protected from lakehouse foundations to identity and access.',
+        'We implement data platforms, analytics, and security controls that keep information trustworthy, accessible, and protected, from lakehouse foundations to identity and access.',
       points: [
         'Data platforms, pipelines & analytics',
         'Identity, access & security baselines',

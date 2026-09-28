@@ -602,15 +602,15 @@
         ]
     },
     "consulting": {
-        "heroHighlight": "Konsultation",
-        "heroSubtitle": "Frigör agility, omfamna innovation: AIOT, er partner i transformation",
-        "eyebrow": "Konsultation",
+        "heroHighlight": "Rådgivning",
+        "heroSubtitle": "Frigör agilitet, omfamna innovation: Vi är er partner i transformation",
+        "eyebrow": "Rådgivning",
         "heroTitle": "Strategi som gör teknik till fördel",
         "heroDesc": "AIOT hjälper ledare att definiera riktning, modernisera verksamhet och forma skalbara plattformar från rådgivning till genomförande.",
         "heroCta": "Prata med en rådgivare",
         "heroSecondary": "Utforska kapabiliteter",
         "expertiseLabel": "Vår expertis",
-        "introTitle": "Konsultation byggd för mätbara resultat",
+        "introTitle": "Rådgivning byggd för mätbara resultat",
         "introDesc": "Vi kombinerar strategisk insikt, branschdjup och praktisk teknikexpertis för att hjälpa er röra er snabbare, minska risk och skapa bestående konkurrensfördel.",
         "capabilitiesLabel": "Kapabiliteter",
         "approachLabel": "Så arbetar vi",
@@ -798,10 +798,10 @@
     },
     "implementation": {
         "heroHighlight": "Implementering",
-        "heroSubtitle": "Från blueprint till go-live enterprise-lösningar levererade med precision",
+        "heroSubtitle": "Från blueprint till go-live, enterprise-lösningar levererade med precision",
         "expertiseLabel": "Vad vi implementerar",
         "introTitle": "Implementering som gör strategi till fungerande system",
-        "introDesc": "AIOT designar, konfigurerar och driftsätter enterprise-plattformar som passar er verksamhet med tydliga tidsplaner, stark governance och adoption i varje release.",
+        "introDesc": "AIOT designar, konfigurerar och driftsätter enterprise-plattformar som passar er verksamhet, med tydliga tidsplaner, stark governance och adoption i varje release.",
         "capabilitiesLabel": "Kapabiliteter",
         "approachLabel": "Så levererar vi",
         "approachTitle": "En beprövad väg från design till go-live",
@@ -812,7 +812,7 @@
                 "title": "Enterprise-teknologilösningar",
                 "shortTitle": "Enterprise Tech",
                 "heading": "Bygg den digitala ryggraden i er verksamhet",
-                "content": "Vi implementerar centrala enterprise-plattformar ERP, CRM, samarbete och skräddarsydda applikationer som kopplar team, data och processer till ett pålitligt operativsystem.",
+                "content": "Vi implementerar centrala enterprise-plattformar — ERP, CRM, samarbete och skräddarsydda applikationer — som kopplar team, data och processer till ett pålitligt operativsystem.",
                 "points": [
                     "Solution design och fit-gap-workshops",
                     "Konfiguration, integration och datamigration",
@@ -853,10 +853,10 @@
                 ]
             },
             {
-                "title": "Utility-modernisering",
-                "shortTitle": "Utility-modernisering",
+                "title": "Utility Modernization",
+                "shortTitle": "Utility Modernization",
                 "heading": "Moderna system för moderna utilities",
-                "content": "Vi hjälper utilities modernisera billing, kundupplevelse, fältverksamhet och nätrelaterade plattformar med säkra, compliant implementeringar för reglerade miljöer.",
+                "content": "Vi hjälper utilities modernisera billing, kundupplevelse, fältverksamhet och nätrelaterade plattformar med säkra, compliant implementeringar, byggda för reglerade miljöer.",
                 "points": [
                     "CIS-, billing- och kundupplevelseplattformar",
                     "Field service- och operations-modernisering",
@@ -876,22 +876,10 @@
             }
         ],
         "processSteps": [
-            {
-                "title": "Assess",
-                "desc": "Scope krav, risker och framgångskriterier"
-            },
-            {
-                "title": "Design",
-                "desc": "Blueprint processer, arkitektur och integrationer"
-            },
-            {
-                "title": "Build",
-                "desc": "Konfigurera, migrera, integrera och testa noggrant"
-            },
-            {
-                "title": "Launch",
-                "desc": "Go-live med utbildning, hypercare och överlämning"
-            }
+            { "title": "Bedöm", "desc": "Avgränsa krav, risker och framgångskriterier" },
+            { "title": "Designa", "desc": "Blueprint processer, arkitektur och integrationer" },
+            { "title": "Bygg", "desc": "Konfigurera, migrera, integrera och testa noggrant" },
+            { "title": "Lansera", "desc": "Go-live med utbildning, hypercare och överlämning" }
         ]
     },
     "managedServices": {
@@ -900,7 +888,7 @@
         "heroSubtitle": "Alltid-på drift, övervakning och support som håller er digitala miljö hälsosam",
         "expertiseLabel": "Vad vi driver",
         "introTitle": "Managed services som skyddar prestanda och frigör era team",
-        "introDesc": "AIOT tar ansvar för den dagliga teknikdriften applikationer, cloud, säkerhet och support så ert folk kan fokusera på tillväxt medan vi håller system pålitliga, säkra och redo.",
+        "introDesc": "AIOT tar ansvar för den dagliga teknikdriften — applikationer, cloud, säkerhet och support — så ert folk kan fokusera på tillväxt medan vi håller system pålitliga, säkra och redo.",
         "capabilitiesLabel": "Kapabiliteter",
         "approachLabel": "Så opererar vi",
         "approachTitle": "En run-modell byggd för tydlighet och uptime",
